@@ -1,0 +1,5 @@
+{% for c in site.collections %}
+  {% if page.url contains c.label %}
+    {% assign collection = c %}
+  {% endif %}
+{% endfor %}

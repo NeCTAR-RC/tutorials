@@ -1,0 +1,86 @@
+---
+layout: default
+---
+{% include collection.html %}
+
+{% assign name = collection.label %}
+{% assign pages = site[name] | where_exp: "item", "item.order != null" | sort: "order" %}
+
+{% for link in pages %}
+  {% if link.title == page.title %}
+      {% unless forloop.first %}
+        {% assign prev = tmpprev %}
+            {% endunless %}
+        {% unless forloop.last %}
+            {% assign next = pages[forloop.index] %}
+        {% endunless %}
+      {% endif %}
+  {% assign tmpprev = link %}
+{% endfor %}
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        {% include sidebar_nav.html %}
+      </div>
+    </nav>
+
+    <main role="main" class="md-content col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+
+        <h1 class="h2">{{ page.title }}</h1>
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+
+            {% if prev %}
+            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-secondary" role="button">Previous</a>
+			{% else %}
+            <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Previous</a>
+			{% endif %}
+            {% if next %}
+            <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-secondary" role="button">Next</a>
+			{% else %}
+            <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Next</a>
+			{% endif %}
+          </div>
+        </div>
+      </div>
+
+      {{ content }}
+
+      <nav>
+        <ul class="pagination">
+          {% if prev %}
+          <li class="page-item">
+            <a class="page-link" href="{{ prev.url | prepend: site.baseurl }}" tabindex="-1">Previous</a>
+          </li>
+          {% else %}
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          {% endif %}
+      
+          {% for item in pages -%}
+          <li class="page-item {% if item.url == page.url %}active{% endif %}">
+            <a class="page-link" href="{{ item.url }}">{{ item.order }} 
+            {% if item.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+          {% endfor %}
+      
+          {% if next %}
+          <li class="page-item">
+            <a class="page-link" href="{{ next.url | prepend: site.baseurl }}">Next</a>
+          </li>
+          {% else %}
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Next</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+      
+    </main>
+  </div>
+</div>

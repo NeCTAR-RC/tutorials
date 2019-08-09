@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body class="d-flex flex-column h-100">
+    {% include nav.html %}
+
+	<main role="main" class="flex-shrink-0">
+    {{ content }}
+	</main>
+
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+    {% include js.html %}
+  </body>
+</html>

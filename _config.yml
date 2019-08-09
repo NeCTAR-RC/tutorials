@@ -1,0 +1,109 @@
+title: Nectar Research Cloud tutorials
+email: support@ehelp.edu.au
+description: >-
+  Nectar Research Cloud tutorials
+url: ""
+baseurl: ""
+
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+repository: NeCTAR-RC/tutorials
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "tutorial"
+
+collections:
+  launching-virtual-machines:
+    output: true
+    title: Launching Virtual Machines
+    permalink: /:collection/:name
+    summary: Launching a virtual machine using the Nectar Dashboard and the launching dialog
+    categories: Beginner
+    tags:
+      - Cloud Starter
+      - Launching
+      - dashboard
+    difficulty: 1
+    duration: 21
+    status: draft
+    published: 2019-05-14
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  connecting:
+    output: true
+    permalink: /:collection/:name
+    title: Access using SSH and web-based VNC
+    summary: Access your Virtual Machine's command line using your Terminal and ssh or the web-based vnc console.
+    categories: Beginner
+    tags:
+      - Cloud Starter
+      - connecting
+      - terminal
+    difficulty: 1
+    duration: 16
+    status: draft
+    published: 2019-05-14
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  advanced-networking:
+    output: true
+    permalink: /:collection/:name
+    title: Advanced Networking
+    summary: Learn to implement some advanced networking concepts in your Nectar Research Cloud project
+    categories: Advanced
+    tags:
+      - advanced networking
+      - private network
+      - router
+      - floating ip address
+    difficulty: 5
+    duration: 58
+    status: draft
+    published: 2019-05-20
+    author: Just Berkhout <just.berkhout@utas.edu.au
+
+  training-foo-bar:
+    output: true
+    permalink: /:collection/:name
+    title: Training foo bar
+    summary: Move it up and down and shake it all around
+    categories: Intermediate
+    tags:
+      - advanced networking
+      - private network
+      - router
+      - floating ip address
+    difficulty: 3
+    duration: 25
+    status: draft
+    published: 2019-05-20
+    author: Just Berkhout <just.berkhout@utas.edu.au
+
+  training-baz:
+    output: true
+    permalink: /:collection/:name
+    title: Training baz
+    summary: Advanced bazness
+    categories: Advanced
+    tags:
+      - advanced networking
+      - private network
+      - router
+      - floating ip address
+    difficulty: 2
+    duration: 20
+    status: draft
+    published: 2019-05-20
+    author: Just Berkhout <just.berkhout@utas.edu.au

@@ -1,0 +1,17 @@
+---
+layout:
+---
+{% assign collections = site.collections | where_exp:"item","item.title != null" %}
+[{%- for collection in collections %}
+  {
+    "title": "{{ collection.title | escape }}",
+    "url": "{{ site.baseurl }}/{{ collection.label }}",
+    "summary": "{{ collection.summary }}",
+    "categories": "{{ collection.categories }}",
+    "tags": {{ collection.tags | jsonify }},
+    "difficulty": {{ collection.difficulty }},
+    "duration": "{{ collection.duration }} minutes",
+    "status": "{{ collection.status }}",
+    "published": "{{ collection.published | date: "%-d %B %Y" }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor -%}]

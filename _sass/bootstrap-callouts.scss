@@ -1,0 +1,57 @@
+// https://gist.github.com/matthiasg/6153853#gistcomment-1283209
+
+@mixin bs-callout($color, $bgcolor) {
+  display: block;
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border: 1px solid;
+  border-left-width: 5px;
+  border-color: lighten($color, 25%);
+  border-left-color: $color;
+  background-color: $bgcolor;
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: $color;
+  }
+  strong {
+    font-size: 1.3em;
+    color: $color;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code, .highlight {
+    background-color: #fff;
+  }
+}
+
+$bs-default:   #777;
+$bs-primary:   darken(#428bca, 6.5%); // #337ab7
+$bs-success:   #5cb85c;
+$bs-info:      #5bc0de;
+$bs-warning:   #f0ad4e;
+$bs-danger:    #d9534f;
+
+.callout {
+  @include bs-callout($bs-default, lighten($bs-default, 50%));
+}
+
+.callout-primary {
+  @include bs-callout($bs-primary, lighten($bs-primary, 50%));
+}
+
+.callout-danger {
+  @include bs-callout($bs-danger, lighten($bs-danger, 40%));
+}
+
+.callout-warning {
+  @include bs-callout($bs-warning, lighten($bs-warning, 35%));
+}
+
+.callout-info {
+  @include bs-callout($bs-info, lighten($bs-info, 20%));
+}
+
+.callout-success {
+  @include bs-callout($bs-success, lighten($bs-success, 40%));
+}

@@ -1,0 +1,10 @@
+{%- for item in pages_list -%}
+  {%- if item.title != null -%}
+    {%- if item.order != null -%}
+      <li class="nav-item{% if item.url == page.url %} active{% endif %}">
+        <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+      </li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{% assign pages_list = nil %}

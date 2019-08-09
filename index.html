@@ -1,0 +1,48 @@
+---
+layout: home
+title: Home
+order: 00
+---
+
+  <div class="container py-5">
+
+    <header class="py-3">
+      <h1 class="display-4">Nectar Research Cloud tutorials</h1>
+      <div class="row">
+  	    <div class="col-md-6">
+          <p class="lead">Nectar Research Cloud tutorials will help you get the most out of the Nectar Research Cloud. Whether you are getting started, trying to increase your efficiency or you're looking to hone your skills.</p>
+          <p class="lead">This site may is a trial and demostration only and will help determine whether we publish tutorials in this easy to search, easy to follow format.</p>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="row">
+      <div class="col-md-6">
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button id="search-filter-button" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Topics</button>
+          <div class="dropdown-menu search-filter-menu">
+            <a class="dropdown-item" href="#">All Topics</a>
+            <a class="dropdown-item" href="#">Beginner</a>
+            <a class="dropdown-item" href="#">Intermediate</a>
+            <a class="dropdown-item" href="#">Advanced</a>
+          </div>
+        </div>
+        <input id="search-input" type="search" class="form-control" placeholder="Search tutorials" aria-label="Search tutorials">
+        <div class="input-group-append">
+          <span id="search-clear" class="input-group-text bg-transparent border-left-0 border" style="display:none">
+  		  <i id="search-clear" class="fa fa-times"></i>
+  	    </span>
+          <span class="input-group-text">
+  		  <i class="fa fa-search"></i>
+  		</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="tutorial-list" class="card-group"></div>
+
+  </div>

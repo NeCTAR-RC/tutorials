@@ -1,0 +1,196 @@
+---
+---
+
+$baseurl: "{{ site.baseurl }}";
+
+@import "variables";
+@import "bootstrap/bootstrap";
+@import "syntax-highlighting";
+@import "bootstrap-4-jekyll/bootstrap-4-jekyll";
+@import "bootstrap_customization";
+@import "typeahead";
+@import "font-awesome/fontawesome";
+@import "font-awesome/solid";
+
+@import "bootstrap-callouts";
+
+body {
+  padding-top: 3.5rem;
+}
+
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  /*font-weight: 500;*/
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/*
+ * Utilities
+ */
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+pre {
+  background-color: #404040;
+  color: #ccc;
+}
+
+/* Force consistent style for console code */
+.language-console {
+  .highlight {
+    pre, code, span {
+      color: #fff;
+    }
+  }
+}
+
+/*
+ * Cards
+ */
+.card {
+  min-width: 220px;
+}
+
+.card-container {
+  a { 
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+/*
+ * Search
+ */
+#search-clear {
+  cursor: pointer;
+}
+
+
+/*
+ * Diffculty indicator
+ */
+.difficulty-indicator {
+    background-image: url($baseurl + "/assets/images/level-of-difficulty.svg");
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 3px;
+    text-indent: -99999px;
+    width: 75px;
+}
+
+.difficulty-indicator-1 {
+  background-position-x: -60px;
+}
+.difficulty-indicator-2 {
+  background-position-x: -45px;
+}
+.difficulty-indicator-3 {
+  background-position-x: -30px;
+}
+.difficulty-indicator-4 {
+  background-position-x: -15px;
+}
+.difficulty-indicator-5 {
+  background-position-x: 0px;
+}
+
+/*
+ * Sidebar items
+ */ 
+/* https://stackoverflow.com/questions/40463542/how-to-make-vertical-lines-between-list-items-using-css */
