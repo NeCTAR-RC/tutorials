@@ -1,9 +1,0 @@
-<ul class="nav flex-column docs-nav">
-
-  {% include collection.html %}
-
-  {% assign name = collection.label %}
-  {% assign pages_list = site[name] | sort: "order" %}
-
-  {% include sidebar_nav_items.html %}
-</ul>
