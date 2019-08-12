@@ -48,37 +48,6 @@ layout: default
 
       {{ content }}
 
-      <nav>
-        <ul class="pagination">
-          {% if prev %}
-          <li class="page-item">
-            <a class="page-link" href="{{ prev.url | prepend: site.baseurl }}" tabindex="-1">Previous</a>
-          </li>
-          {% else %}
-          <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">Previous</a>
-          </li>
-          {% endif %}
-      
-          {% for item in pages -%}
-          <li class="page-item {% if item.url == page.url %}active{% endif %}">
-            <a class="page-link" href="{{ item.url }}">{{ item.order }} 
-            {% if item.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
-          </li>
-          {% endfor %}
-      
-          {% if next %}
-          <li class="page-item">
-            <a class="page-link" href="{{ next.url | prepend: site.baseurl }}">Next</a>
-          </li>
-          {% else %}
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Next</a>
-          </li>
-          {% endif %}
-        </ul>
-      </nav>
-      
     </main>
   </div>
 </div>

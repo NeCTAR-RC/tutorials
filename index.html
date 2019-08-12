@@ -43,29 +43,29 @@ order: 00
       </div>
     </div>
 
-    <div id="tutorial-list" class="card-group pt-3">
+    <div id="tutorial-list" class="card-group pt-3 px-0">
 	  {% assign collections = site.collections | where_exp:"item","item.title != null" %}
       {% for tutorial in collections %}
-        <div class="card-container col-md-6 col-lg-4 mb-6 m-lg-0 py-3">
+        <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
           <a href="{{ site.baseurl }}/{{ tutorial.label }}">
             <div class="card shadow h-100">
               <div class="card-header text-light bg-dark">
                 {{ tutorial.categories }}
-                <h5 class="card-title">{{ tutorial.title }}</h5>
+                <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
               </div>
               <div class="card-body">
                 <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
                 <p class="card-text">{{ tutorial.summary }}</p>
               </div>
               <div class="card-footer">
-                <div class="row">
-                  <div class="col">
+                <div class="row no-gutters">
+                  <div class="col-xs-auto">
                     <small class="text-muted">Difficulty: </small>
                     <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
                       {{ tutorial.difficulty }} out of 5
                     </span>
                   </div>
-                  <div class="col">
+                  <div class="col text-right">
                     <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
                   </div>
                 </div>

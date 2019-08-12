@@ -116,10 +116,16 @@ pre {
  * Cards
  */
 .card {
-  min-width: 220px;
+  min-width: 280px;
 }
 
 .card-container {
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: 0.75em;
+  }
+
   a { 
     color: inherit;
     text-decoration: none;
@@ -139,13 +145,13 @@ pre {
  * Diffculty indicator
  */
 .difficulty-indicator {
-    background-image: url($baseurl + "/assets/images/level-of-difficulty.svg");
-    background-position-y: 5px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin-left: 3px;
-    text-indent: -99999px;
-    width: 75px;
+  background-image: url($baseurl + "/assets/images/level-of-difficulty.svg");
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 3px;
+  text-indent: -99999px;
+  width: 75px;
 }
 
 .difficulty-indicator-1 {

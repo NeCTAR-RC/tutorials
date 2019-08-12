@@ -25,59 +25,71 @@ task :preview do
   system "bundle exec jekyll serve -w -H 0.0.0.0"
 end # task :preview
 
-# Usage: rake post title="A Title" [date="2012-02-09"]
-desc "Begin a new post in #{CONFIG['posts']}"
-task :post do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
-  title = ENV["title"] || "new-post"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  begin
-    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
-  rescue
-    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
-    exit(-1)
-  end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+desc "Create a new tutorial"
+task :tutorial do
+  abort("Error: tutorial title not given, or too many arguments.") if ARGV.length != 2
+  ARGV.each {|a| task a.to_sym do; end}
+  title = ARGV[1]
+  tutorial = ARGV[1].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  abort("Error: directory already exists: '_#{tutorial}'") if File.exist?("_#{tutorial}")
+
+  puts "Creating new tutorial: #{tutorial}"
+  Dir.mkdir "_#{tutorial}"
+
+  # index
+  open("_#{tutorial}/index.md", 'w') do |f|
+    f.puts '---'
+    f.puts "redirect_to: /#{tutorial}/01-overview"
+    f.puts '---'
   end
 
-  puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "---"
-    post.puts ""
+  puts "Creating new page: _#{tutorial}/01-overview.md"
+  open("_#{tutorial}/01-overview.md", 'w') do |f|
+    f.puts '---'
+    f.puts 'title: Overview'
+    f.puts 'order: 1'
+    f.puts 'duration: 1'
+    f.puts '---'
+    f.puts ''
+    f.puts 'This tutorial... (replace this) '
+    f.puts ''
+    f.puts '### What you\'ll learn'
+    f.puts ''
+    f.puts '- '
+    f.puts '- '
+    f.puts '- '
+    f.puts ''
+    f.puts '### What you\'ll need'
+    f.puts ''
+    f.puts '- '
+    f.puts '- '
+    f.puts '- '
   end
-	exec("#{ENV['EDITOR']} #{filename}")
-end # task :post
 
-# Usage: rake page title="Foo bar"
-desc "Create a new page."
-task :page do
-  title = ENV["title"] || "new-page"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  filename = File.join(SOURCE, "#{slug}.#{CONFIG['post_ext']}")
-  title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  open("_config.yml", 'a') do |f|
+    f.puts "  #{tutorial}:"
+    f.puts '    output: true'
+    f.puts '    permalink: /:collection/:name'
+    f.puts "    title: #{title}"
+    f.puts "    summary: A tutorial for #{title}"
+    f.puts '    categories: Beginner # Beginner|Intermediate|Advanced'
+    f.puts '    tags:'
+    f.puts '      - Tutorial'
+    f.puts '    difficulty: 1 # number from 1 to 5'
+    f.puts '    duration: 10 # number of minutes'
+    f.puts '    status: draft # draft or published'
+    f.puts "    published: #{Time.now.strftime('%Y-%m-%d')}"
+    f.puts '    author: Your Name <your.name@email.domain>'
+    f.puts ''
   end
 
-  puts "Creating new page: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: page"
-    post.puts "title: \"#{title}\""
-    post.puts "permalink: \"/#{slug}/\""
-    post.puts 'group: "navigation"'
-    post.puts 'description: ""'
-    post.puts "---"
-    post.puts ""
-  end
-	exec("#{ENV['EDITOR']} #{filename}")
-end # task :page
+  puts "----------------------------------------------------------------------"
+  puts "A new skeleton tutorial has been created at _#{tutorial}, and"
+  puts "the initial configuration added to the end of _config.yml"
+  puts "Please edit _config.yml and update the metadata for the new tutorial."
+  puts "----------------------------------------------------------------------"
+end # task :test
+
 
 def ask(message, valid_options)
   if valid_options

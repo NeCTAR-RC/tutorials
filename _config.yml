@@ -24,6 +24,8 @@ defaults:
     values:
       layout: "tutorial"
 
+# New tutorials should be added by running:
+#   $ rake tutorial "My tutorial title"
 collections:
   launching-virtual-machines:
     output: true
@@ -74,36 +76,3 @@ collections:
     published: 2019-05-20
     author: Just Berkhout <just.berkhout@utas.edu.au
 
-  training-foo-bar:
-    output: true
-    permalink: /:collection/:name
-    title: Training foo bar
-    summary: Move it up and down and shake it all around
-    categories: Intermediate
-    tags:
-      - advanced networking
-      - private network
-      - router
-      - floating ip address
-    difficulty: 3
-    duration: 25
-    status: draft
-    published: 2019-05-20
-    author: Just Berkhout <just.berkhout@utas.edu.au
-
-  training-baz:
-    output: true
-    permalink: /:collection/:name
-    title: Training baz
-    summary: Advanced bazness
-    categories: Advanced
-    tags:
-      - advanced networking
-      - private network
-      - router
-      - floating ip address
-    difficulty: 2
-    duration: 20
-    status: draft
-    published: 2019-05-20
-    author: Just Berkhout <just.berkhout@utas.edu.au

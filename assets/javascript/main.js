@@ -71,26 +71,26 @@ $(function() {
     tutorialList.html('');
     $.each(results, function(i, result) {
       tutorialList.append('\
-        <div class="card-container col-md-6 col-lg-4 mb-6 m-lg-0 py-3">\
+        <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">\
           <a href="'+result.url+'">\
             <div class="card shadow h-100">\
               <div class="card-header text-light bg-dark">\
                 '+result.categories+'\
-                <h5 class="card-title">'+result.title+'</h5>\
+                <h5 class="card-title mb-0">'+result.title+'</h5>\
               </div>\
               <div class="card-body">\
                 <small class="text-muted">'+result.published+'</small>\
                 <p class="card-text">'+result.summary+'</p>\
               </div>\
               <div class="card-footer">\
-                <div class="row">\
-                  <div class="col">\
+                <div class="row no-gutters">\
+                  <div class="col-xs-auto">\
                     <small class="text-muted">Difficulty: </small>\
 					<span class="difficulty-indicator difficulty-indicator-'+result.difficulty+'">\
 					  '+result.difficulty+' out of 5\
 					</span>\
                   </div>\
-                  <div class="col">\
+                  <div class="col text-right">\
                     <small class="text-muted">Duration: '+result.duration+'</small>\
                   </div>\
                 </div>\
