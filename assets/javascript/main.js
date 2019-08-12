@@ -16,7 +16,7 @@ $(function() {
   });
 
   // Initialise
-  searchResults();
+  //searchResults();
 
   $('.search-filter-menu a').click(function(){
     $('#search-filter-button').text($(this).text());
@@ -93,7 +93,7 @@ $(function() {
                   <div class="col">\
                     <small class="text-muted">Duration: '+result.duration+'</small>\
                   </div>\
-                </div> \
+                </div>\
               </div>\
             </div>\
           </a>\

@@ -4,7 +4,7 @@ layout:
 {% assign collections = site.collections | where_exp:"item","item.title != null" %}
 [{%- for collection in collections %}
   {
-    "title": "{{ collection.title | escape }}",
+    "title": "{{ collection.title }}",
     "url": "{{ site.baseurl }}/{{ collection.label }}",
     "summary": "{{ collection.summary }}",
     "categories": "{{ collection.categories }}",

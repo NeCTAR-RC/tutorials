@@ -20,9 +20,9 @@ order: 00
     <div class="row">
       <div class="col-md-6">
 
-      <div class="input-group mb-3">
+      <div class="input-group">
         <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Topics</button>
+          <button id="search-filter-button" class="btn dropdown-toggle border" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Topics</button>
           <div class="dropdown-menu search-filter-menu">
             <a class="dropdown-item" href="#">All Topics</a>
             <a class="dropdown-item" href="#">Beginner</a>
@@ -32,10 +32,10 @@ order: 00
         </div>
         <input id="search-input" type="search" class="form-control" placeholder="Search tutorials" aria-label="Search tutorials">
         <div class="input-group-append">
-          <span id="search-clear" class="input-group-text bg-transparent border-left-0 border" style="display:none">
-  		  <i id="search-clear" class="fa fa-times"></i>
-  	    </span>
-          <span class="input-group-text">
+          <span id="search-clear" class="input-group-text bg-transparent border border-left-0" style="display:none">
+            <i id="search-clear" class="fa fa-times"></i>
+          </span>
+          <span class="input-group-text border">
   		  <i class="fa fa-search"></i>
   		</span>
         </div>
@@ -43,6 +43,37 @@ order: 00
       </div>
     </div>
 
-    <div id="tutorial-list" class="card-group"></div>
+    <div id="tutorial-list" class="card-group pt-3">
+	  {% assign collections = site.collections | where_exp:"item","item.title != null" %}
+      {% for tutorial in collections %}
+        <div class="card-container col-md-6 col-lg-4 mb-6 m-lg-0 py-3">
+          <a href="{{ site.baseurl }}/{{ tutorial.label }}">
+            <div class="card shadow h-100">
+              <div class="card-header text-light bg-dark">
+                {{ tutorial.categories }}
+                <h5 class="card-title">{{ tutorial.title }}</h5>
+              </div>
+              <div class="card-body">
+                <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
+                <p class="card-text">{{ tutorial.summary }}</p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col">
+                    <small class="text-muted">Difficulty: </small>
+                    <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
+                      {{ tutorial.difficulty }} out of 5
+                    </span>
+                  </div>
+                  <div class="col">
+                    <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+	</div>
 
   </div>
