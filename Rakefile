@@ -34,7 +34,12 @@ task :tutorial do
   abort("Error: directory already exists: '_#{tutorial}'") if File.exist?("_#{tutorial}")
 
   puts "Creating new tutorial: #{tutorial}"
+  puts "  ==> creating tutorial directory: _#{tutorial}"
   Dir.mkdir "_#{tutorial}"
+
+  tutorial_images = "assets/images/#{tutorial}"
+  puts "  ==> creating new tutorial images directory: #{tutorial_images}"
+  Dir.mkdir tutorial_images
 
   # index
   open("_#{tutorial}/index.md", 'w') do |f|
@@ -43,7 +48,7 @@ task :tutorial do
     f.puts '---'
   end
 
-  puts "Creating new page: _#{tutorial}/01-overview.md"
+  puts "  ==> creating first page: _#{tutorial}/01-overview.md"
   open("_#{tutorial}/01-overview.md", 'w') do |f|
     f.puts '---'
     f.puts 'title: Overview'
@@ -66,6 +71,7 @@ task :tutorial do
     f.puts '- '
   end
 
+  puts '  ==> updating site configuration: _config.yml'
   open("_config.yml", 'a') do |f|
     f.puts "  #{tutorial}:"
     f.puts '    output: true'
@@ -83,11 +89,14 @@ task :tutorial do
     f.puts ''
   end
 
+  puts ''
   puts "----------------------------------------------------------------------"
-  puts "A new skeleton tutorial has been created at _#{tutorial}, and"
-  puts "the initial configuration added to the end of _config.yml"
+  puts "A new skeleton tutorial has been created at _#{tutorial}, an"
+  puts "images directory created at #{tutorial_images} and the"
+  puts "the initial configuration added to the end of _config.yml."
   puts "Please edit _config.yml and update the metadata for the new tutorial."
   puts "----------------------------------------------------------------------"
+  puts ''
 end # task :test
 
 

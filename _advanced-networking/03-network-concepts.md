@@ -8,20 +8,19 @@ To make use of Advanced Networking you should be at least familiar the Networkin
 
 [IPv4 Address](https://en.wikipedia.org/wiki/IP_address) - A 32 bit number that represents a computer connected to a network, such as the public internet or a private local network. IPv4 addresses usually displayed in human readable format as 4 numbers between 0-255 separated by a dot.
 
-positive
-
-: *Example 1*: `192.168.0.1`
+*Example 1*: `192.168.0.1`
+{: .callout-primary}
 
 [Subnet](https://en.wikipedia.org/wiki/Subnetwork) - A logical subdivision of a network. A subnet contains a certain amount of IP addresses depending on its size (IP addresses ending in 0 and 255 are reserved). Computers in the same subnet do not need to use a router to communicate. Think of subnets as streets - each street has a set of houses (IPv4 addresses) belonging to it. On the public internet, street names are unique however in private networks they are not. In fact, there are 3 subnets that are reserved specifically for use in private networks, and NeCTAR strongly encourages using those subnets when creating Private Networks. Subnets can be expressed using a network address and a subnet mask or using CIDR notation.
 
-positive
-: *Example 2:* `192.168.100.0,255.255.255.0` is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: `192.168.100.1` -> `192.168.100.254`
+*Example 2:* `192.168.100.0,255.255.255.0` is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: `192.168.100.1` -> `192.168.100.254`
+{: .callout-primary}
 
-positive
-: *Example 3:* `192.168.100.0/24` is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. `255.255.255.0` converted to binary is `11111111.11111111.11111111.00000000` and 24 simply dictates the numbers of 1's on the left.
+*Example 3:* `192.168.100.0/24` is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. `255.255.255.0` converted to binary is `11111111.11111111.11111111.00000000` and 24 simply dictates the numbers of 1's on the left.
+{: .callout-primary}
 
-positive
-: *Example 4:* `10.0.0.0/8`, `172.16.0.0/12` and `192.168.0.0/16` are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.
+*Example 4:* `10.0.0.0/8`, `172.16.0.0/12` and `192.168.0.0/16` are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.
+{: .callout-primary}
 
 [Router](https://en.wikipedia.org/wiki/Router_(computing)) - A device that routes network traffic between subnets so that machines on different subnets are able to communicate. Routers generally do this by doing lookups in the router's routing table.
 
@@ -37,13 +36,13 @@ Route - a rule which contains the next routing device to send a packet to so tha
 
 [DNS (Domain Name System)](https://en.wikipedia.org/wiki/Domain_Name_System) - A protocol for translating domains into IP addresses. 
 
-positive
-: For example, [www.nectar.org.au](http://www.nectar.org.au/) is translated to `180.235.129.121` by a DNS Server.
+For example, [www.nectar.org.au](http://www.nectar.org.au/) is translated to `180.235.129.121` by a DNS Server.
+{: .callout-primary}
 
 [DNS Server (Name Server)](https://en.wikipedia.org/wiki/Name_server) - A service which utilises the DNS protocol to translate domains into IP addresses. 
 
-positive
-: There are many free public DNS servers, such as `8.8.8.8` and `8.8.4.4`.
+There are many free public DNS servers, such as `8.8.8.8` and `8.8.4.4`.
+{: .callout-primary}
 
 [DHCP (Dynamic Host Configuration Protocol)](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) -  a protocol for dynamically assigning IP addresses and routing information on a subnet. If a DHCP service is not present on a subnet, then an IP address and a subnet has to be manually set on each computer (static IP). If a DHCP service is present on a subnet, then the DHCP server decides what IP address (dynamic IP) to distribute to computers as they join the network. A DHCP allocation pool is a range of IP addresses that can be distributed to computers on the network.
 

@@ -6,8 +6,9 @@ This site is built with Jekyll and hosted on Github Pages.
 
 ## Setting up a local development environment
 
-Install:
- * Ruby bundler
+Install the Ruby packages:
+ * bundler
+ * rake
 
 To install Jekyll and all the required dependencies, run:
 ```sh
@@ -21,7 +22,20 @@ Then to serve the site, you can use:
 
 ## Adding a new tutorial
 
-Add the metadata to `_config.yml` under the `collections` section.
+A rake task will set up a skeleton tutorial for you, by typing:
+
+```sh
+# rake tutorial "Title of my new tutorial"
+```
+
+This command will create you:
+ * A new directory for hosting the markdown content
+ * An initial overview page for this new tutorial
+ * An images directory specific to your new tutorial
+ * A configuration entry in `_config.yml`
+
+You will then need to edit the metadata for your new tutorial in `_config.yml`
+under the `collections` section.
 
 You'll need the following YAML config:
 
@@ -42,9 +56,8 @@ You'll need the following YAML config:
     author: <Your Name>
 ```
 
-Assuming the ID of `your-tutorial-id`, create a top level directory of the same name, but **prefixed with an underscore**.
-
-Each page within your tutorial should have the following front matter:
+Then for the content of your tutorial, each page within your tutorial should
+have the following front matter:
 
 ```yaml
 ---
@@ -53,3 +66,6 @@ order: <number 1 to n for each page>
 duration: <estimated page duration>
 ---
 ```
+
+You will need to restart the preview process for Jekyll to render your new
+tutorial, but once it's done, it will be available from the root of the site.

@@ -36,7 +36,7 @@ Step 4a. From the Routers menu, click the name of your router, then select the I
 
 Step 4b. From within the Interfaces tab click **Add interface****:**
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/_VIUi9ccMCR_fu0xmAZxpxf7kHdMxkPSmA.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/VIUi9ccMCR_fu0xmAZxpxf7kHdMxkPSmA.png)
 
 Step 4c. From the Add Interface window, select the Subnet you created earlier from the drop down box. Ensure you set the IP Address (optional) to the IP address you specified in Creating a Private Network, Step 4, Gateway IP. Once completed, click **Add interface**:
 
