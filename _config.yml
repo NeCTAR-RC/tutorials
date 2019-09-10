@@ -31,14 +31,14 @@ collections:
     output: true
     title: Launching Virtual Machines
     permalink: /:collection/:name
-    summary: Launching a virtual machine using the Nectar Dashboard and the launching dialog
+    summary: Launching a virtual machine using the Nectar dashboard and the launch dialog
     categories: Beginner
     tags:
       - Cloud Starter
       - Launching
       - dashboard
     difficulty: 1
-    duration: 21
+    duration: 25
     status: draft
     published: 2019-05-14
     author: Just Berkhout <just.berkhout@utas.edu.au>
