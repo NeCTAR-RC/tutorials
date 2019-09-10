@@ -92,3 +92,17 @@ collections:
     published: 2019-09-10
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  sec-groups-101:
+    output: true
+    permalink: /:collection/:name
+    title: Security groups, the absolute basics
+    summary: Get ready to launch with the bare minimum ssh Security Group for your Nectar instance.
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 15 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-10
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
