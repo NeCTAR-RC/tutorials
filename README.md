@@ -9,6 +9,12 @@ This site is built with Jekyll and hosted on Github Pages.
 Install the Ruby packages:
  * bundler
  * rake
+and you will also need the Ruby development package for building native extensions.
+
+For Ubuntu, this can be done with:
+```sh
+# apt install ruby-dev ruby-bundler rake zlib1g-dev
+```
 
 To install Jekyll and all the required dependencies, run:
 ```sh
