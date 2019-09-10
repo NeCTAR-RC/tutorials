@@ -1,7 +1,7 @@
 ---
 title: Networks, Security Groups and Key Pair
 order: 04
-duration: 4
+duration: 5
 ---
 
 ### Networks
@@ -16,8 +16,8 @@ You can learn more about making your own private networks and other networking t
 
 Use the up-arrow button to select the `ssh` security group.
 
-positive
-: If you're following the Cloud Starter Curriculum, you created this in the tutorial *Security groups, the absolute basics* 
+If you're following the Cloud Starter Curriculum, you created this in the tutorial *Security groups, the absolute basics*
+{: .callout-warning} 
 
 ![Launch Security groups]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-secgroups.png)
 
@@ -26,17 +26,17 @@ positive
 Use the up-arrow button to select your public key. 
 
 If you're following the Cloud Starter Curriculum, you created this in the tutorial *Creating a keypair for use in Nectar*
-{: .callout}
-
-For connecting to your instance using SSH you will need to have selected a key pair.
 {: .callout-warning}
+
+For connecting to your instance using SSH you must select a key pair.
+{: .callout-danger}
 
 ![Launch Key Pair]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-key-pair.png)
 
 ### Optional tabs
 
-the tabs **Configuration**, **Server Groups** and **Metadata** are optional and are not part of this tutorial
+The tabs **Configuration**, **Server Groups** and **Metadata** are optional and are not part of this tutorial
 
 ### Launch
 
-Your are now ready to Launch your instance. 
+You are now ready to Launch your instance. 

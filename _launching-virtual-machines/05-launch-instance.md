@@ -18,6 +18,8 @@ Once the Status becomes **Active** your instance is ready.
 
 You have now successfully launched a Virtual Machine using the Nectar Research Cloud dashboard; Nectar has given your instance an IP address that you will need to connect to your instance. 
 
-High five!
+**High five!**
 
 ![High Five]({{ site.baseurl }}/assets/images/launching-virtual-machines/high-five.png)
+
+
