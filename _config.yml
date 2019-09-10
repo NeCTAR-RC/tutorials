@@ -74,5 +74,21 @@ collections:
     duration: 58
     status: draft
     published: 2019-05-20
-    author: Just Berkhout <just.berkhout@utas.edu.au
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  keypairs:
+    output: true
+    permalink: /:collection/:name
+    title: Creating a keypair for use in Nectar
+    summary: A tutorial for Creating a keypair for use in Nectar
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter
+      - security 
+      - authentication
+    difficulty: 1 # number from 1 to 5
+    duration: 13 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-10
+    author: Just Berkhout <just.berkhout@utas.edu.au>
 
