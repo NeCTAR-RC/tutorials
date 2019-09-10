@@ -17,12 +17,12 @@ end # task :setup
 
 desc "Launch preview environment"
 task :serve do
-  system "bundle exec jekyll serve -w -H 0.0.0.0"
+  system "bundle exec jekyll serve"
 end # task :serve
 
 desc "Launch preview environment"
 task :preview do
-  system "bundle exec jekyll serve -w -H 0.0.0.0"
+  system "bundle exec jekyll serve"
 end # task :preview
 
 desc "Create a new tutorial"
