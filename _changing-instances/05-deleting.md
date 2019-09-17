@@ -4,7 +4,7 @@ order: 5
 duration: 6
 ---
 
-By now you will have recognised a pattern in how to perform actions on your instances via the Nectar dashboard. We will perform one more: *Deleting*. When you're finished using your instance, or you are otherwise ready to throw it away, you can just Delete your instance using the Instance Action Menu. There's more info in the knowledge base about actions you can perform via the [Instance Action Menu Button](https://support.ehelp.edu.au/support/solutions/articles/6000184172-instance-action-menu-button).
+By now you will have recognised a pattern in how to perform actions on your instances via the Nectar dashboard. We will perform one more: *Deleting*. When you are finished using your instance, or you are otherwise ready to throw it away, you can just Delete your instance using the Instance Action Menu. There's more info in the knowledge base about actions you can perform via the [Instance Action Menu Button](https://support.ehelp.edu.au/support/solutions/articles/6000184172-instance-action-menu-button).
 
 **Warning**
 Deleting is irrevocable. Deleting erases all data on your instance primary and ephemeral drive (if it has one), including installed software, configuration settings and user data. 

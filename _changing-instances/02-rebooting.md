@@ -8,13 +8,13 @@ From time to time you may find the need to reboot your instance. Whether a softw
 
 ### From the `ssh` command line
 
-You can use the Linux command `shutdown` from your `ssh` command line. During shutdown and reboot your `ssh`-connection will be broken, but after successful rebooting you can reconnect to your instance. 
-
-The command for rebooting from the command line is given below:
+You can use the Linux command `shutdown` from your `ssh` command line. During shutdown and reboot your `ssh`-connection will be broken, but after successful rebooting you can reconnect to your instance. The command for rebooting from the command line is given below:
 
 ```bash
 $ sudo shutdown -r now
 ```
+
+
 
 You will typically need `sudo`-elevation to use the `shutdown`-command. You ask for a reboot using the `-r` argument. And you can indicate when you want the shutdown/reboot to take place. We're using `now`.
 
@@ -32,6 +32,8 @@ ssh: connect to host 144.6.226.175 port 22: Connection refused
 me@local:~$ ssh debian@144.6.226.175
 debian@acme-analysis:~$
 ```
+
+
 
 ### From the instances tab
 

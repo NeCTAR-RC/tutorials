@@ -15,7 +15,6 @@ Virtual Machines in the Nectar Research Cloud are very flexible. You have contro
 
 - Some spare capacity in your Nectar Research Cloud account for launching a trial instance and/or resizing an instance.
 
-
 **Setting up**
-As we'll be quite destructive in the sections *Rebuilding* and *Deleting* below, we strongly recommend you launch an instance specifically for the purpose of this tutorial.
+As we will be quite destructive in the sections *Rebuilding* and *Deleting* below, we strongly recommend that you launch a new instance specifically for the purpose of this tutorial.
 {: .callout-warning}

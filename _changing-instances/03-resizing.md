@@ -26,4 +26,3 @@ You won't be able to resize your instances beyond your allocated resource quota.
 
 ![Confirm Resize]({{ site.baseurl }}/assets/images/changing-instances/confirm-resize-status.png)
 
-## 
