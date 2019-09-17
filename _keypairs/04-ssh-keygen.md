@@ -46,10 +46,6 @@ A more generic way to generate a keypair is to use the `ssh-keygen` command from
 
 A key pair is just a pair of text files. You can view the contents of your key files with any text editor. 
 
-**Default key location**<br/>
-The `.ssh` directory that we created and used above, is a default location for private keys. Storing your private key in this location will save you typing the exact key file location every time you connect using `ssh`. More on that in our tutorial on Connecting
-{: .callout-warning}
-
 
 
 ### Importing your Public Key into Nectar
