@@ -106,3 +106,23 @@ collections:
     published: 2019-09-10
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  allocation-management:
+    output: true
+    permalink: /:collection/:name
+    title: Allocation Management
+    summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter
+      - expiry bot 
+      - amend 
+      - extend 
+      - user management 
+      - project manager 
+      - delegation 
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
