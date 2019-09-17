@@ -126,3 +126,17 @@ collections:
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  changing-instances:
+    output: true
+    permalink: /:collection/:name
+    title: Rebooting, Deleting, Rebuilding, Resizing
+    summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter
+    difficulty: 1 # number from 1 to 5
+    duration: 32 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
