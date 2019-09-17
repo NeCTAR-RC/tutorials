@@ -52,8 +52,7 @@ A key pair is just a pair of text files. You can view the contents of your key f
 
 To use your key pair with Nectar you need to *Import* your public key (`foo-bar-blah-key.pub` in the example above) into Nectar. 
 
-**Important**<br/>
-Make sure you import your **Public** key here, *not the private one*
+**Important** Make sure you import your *Public* key here, *not the private one*
 {: .callout-warning}
 
 1. in your Nectar dashboard, navigate to `Compute | Keypairs`
