@@ -140,3 +140,21 @@ collections:
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  cli-101:
+    output: true
+    permalink: /:collection/:name
+    title: Command line, sudo and apt
+    summary: Find your way around your instance from the command line. Learn to use admin privileges and install and maintain software
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter 
+      - cli
+      - command line
+      - sudo 
+      - apt
+    difficulty: 1 # number from 1 to 5
+    duration: 35 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
