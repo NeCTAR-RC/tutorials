@@ -22,10 +22,10 @@ You can now type commands into your console in just the same way you would in th
 $ sudo apt update
 ```
 
-positive
-: if you ran the command above in a Ubuntu or Debian instance, then  the operating system checks for updates to any installed components. It reports how many packages can be upgraded. You can learn more about the command line, sudo and installing and maintaining software on your instance in other tutorials.
+If you ran the command above in a Ubuntu or Debian instance, then  the operating system checks for updates to any installed components. It reports how many packages can be upgraded. You can learn more about the command line, sudo and installing and maintaining software on your instance in another tutorial.
+{: .callout-warning}
 
-negative
-: **the console vs. pasting and data**
+**the console vs. pasting and data**
 The console is a handy and straightforward web-based tool to get access to your instance command line. Two of its prominent drawbacks are that the console doesn't accept pasting data from the clipboard, nor can you transfer data from your local machine to your instance. 
+{: .callout-danger}
 

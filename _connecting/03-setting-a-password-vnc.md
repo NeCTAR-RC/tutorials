@@ -17,13 +17,13 @@ passwd: password updated successfully
 
 We do have some [advice on passwords](https://support.ehelp.edu.au/support/solutions/articles/6000213823-passwords).
 
-negative
-: **Important**
+**Important**
 Password authentication and `ssh` don't mix well these days on the Internet. Automated entry attempts on well-known user accounts with well-known or stolen passwords occur continuously. Virtual machines based on Nectar official images are preconfigured to disable `ssh` password authentication to prevent this type of unauthorised access. You should not change this. 
+{: .callout-danger}
 
- negative
-: **Leave `ssh` password authentication disabled**
+ **Leave `ssh` password authentication disabled**
 We're serious.
+{: .callout-danger}
 
 For more practical security guidelines and see the [security administration checklist](https://support.ehelp.edu.au/support/solutions/articles/6000091906-security-administration-checklist) in the Nectar knowledge base
 
