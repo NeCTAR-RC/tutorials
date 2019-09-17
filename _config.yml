@@ -157,3 +157,23 @@ collections:
     status: draft # draft or published
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  cloud-starter:
+    output: true
+    permalink: /:collection/:name
+    title: Cloud Starter Series
+    summary: Get started in the Nectar Research Cloud with this tutorial series. Learn how easy it is to launch VMs, to connect and to try something new.
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter
+      - 101
+      - entry level
+      - beginner
+      - Launch
+      - connect
+      - series
+    difficulty: 1 # number from 1 to 5
+    duration: 160 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>
