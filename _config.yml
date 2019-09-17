@@ -54,7 +54,7 @@ collections:
       - connecting
       - terminal
     difficulty: 1
-    duration: 16
+    duration: 17
     status: draft
     published: 2019-05-14
     author: Just Berkhout <just.berkhout@utas.edu.au>
