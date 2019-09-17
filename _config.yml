@@ -80,7 +80,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Creating a keypair for use in Nectar
-    summary: A tutorial for Creating a keypair for use in Nectar
+    summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
     categories: Beginner # Beginner|Intermediate|Advanced
     tags:
       - Cloud Starter
@@ -157,4 +157,3 @@ collections:
     status: draft # draft or published
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
-
