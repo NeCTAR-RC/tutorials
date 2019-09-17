@@ -31,14 +31,14 @@ collections:
     output: true
     title: Launching Virtual Machines
     permalink: /:collection/:name
-    summary: Launching a virtual machine using the Nectar Dashboard and the launching dialog
+    summary: Launching a virtual machine using the Nectar dashboard and the launch dialog
     categories: Beginner
     tags:
       - Cloud Starter
       - Launching
       - dashboard
     difficulty: 1
-    duration: 21
+    duration: 25
     status: draft
     published: 2019-05-14
     author: Just Berkhout <just.berkhout@utas.edu.au>
@@ -54,7 +54,7 @@ collections:
       - connecting
       - terminal
     difficulty: 1
-    duration: 16
+    duration: 17
     status: draft
     published: 2019-05-14
     author: Just Berkhout <just.berkhout@utas.edu.au>
@@ -80,7 +80,7 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Creating a keypair for use in Nectar
-    summary: A tutorial for Creating a keypair for use in Nectar
+    summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
     categories: Beginner # Beginner|Intermediate|Advanced
     tags:
       - Cloud Starter
@@ -92,3 +92,68 @@ collections:
     published: 2019-09-10
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  sec-groups-101:
+    output: true
+    permalink: /:collection/:name
+    title: Security groups, the absolute basics
+    summary: Get ready to launch with the bare minimum ssh Security Group for your Nectar instance.
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 15 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-10
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  allocation-management:
+    output: true
+    permalink: /:collection/:name
+    title: Allocation Management
+    summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter
+      - expiry bot 
+      - amend 
+      - extend 
+      - user management 
+      - project manager 
+      - delegation 
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  changing-instances:
+    output: true
+    permalink: /:collection/:name
+    title: Rebooting, Deleting, Rebuilding, Resizing
+    summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter
+    difficulty: 1 # number from 1 to 5
+    duration: 32 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
+  cli-101:
+    output: true
+    permalink: /:collection/:name
+    title: Command line, sudo and apt
+    summary: Find your way around your instance from the command line. Learn to use admin privileges and install and maintain software
+    categories: Beginner # Beginner|Intermediate|Advanced
+    tags:
+      - Cloud Starter 
+      - cli
+      - command line
+      - sudo 
+      - apt
+    difficulty: 1 # number from 1 to 5
+    duration: 35 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-17
+    author: Just Berkhout <just.berkhout@utas.edu.au>

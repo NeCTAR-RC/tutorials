@@ -11,7 +11,7 @@ In this tutorial you'll step through the *Launch dialog* to configure and launch
 
 **Cloud Starter**  
 This tutorial is part of the Nectar Cloud Starter curriculum. You should be familiar with the absolute basics of Security Groups, you should have a Keypair and you should have terminal software installed on your machine. If you think you need help with any of that, you should complete Cloud Starter tutorials before you start here. 
-{: .callout-primary}
+{: .callout-warning}
 
 ### What you'll learn
 

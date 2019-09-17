@@ -1,7 +1,7 @@
 ---
 title: Starting the Launch Dialog
 order: 02
-duration: 3
+duration: 5
 ---
 
 In this tutorial we will use the *Launch Dialog* and configure the most basic Virtual Machine we could think of. 

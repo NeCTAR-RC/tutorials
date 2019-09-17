@@ -53,9 +53,9 @@ Warning: Permanently added '144.6.227.37' (ECDSA) to the list of known hosts.
 remote-prompt:~$
 ```
 
-negative
-: Authenticity Warning 
+**Authenticity Warning** 
 If you receive a similar authenticity warning *when it's not your first connection* then `ssh` is telling you that something about your instance has materially changed. There is a variety of reasons that this can happen, most (*but not all*) of them benign. You can read more about this in the Nectar Knowledge base article [troubleshooting ssh access](https://support.ehelp.edu.au/support/solutions/articles/6000149723)
+{: .callout-danger}
 
 You should now have a connection to your instance. Notice that the *command prompt* has subtly changed to indicate what machine and account it is representing, e.g.:
 
