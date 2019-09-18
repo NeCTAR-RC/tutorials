@@ -18,43 +18,38 @@ layout: default
   {% assign tmpprev = link %}
 {% endfor %}
 
-<div class="container-fluid">
+<div class="container py-3">
 
   <div class="row">
 
-    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-      <ul class="nav flex-column docs-nav">
-      {% for item in pages -%}
-        {% if item.title != null -%}
-          {% if item.order != null -%}
-            <li class="nav-item">
-              <a class="nav-link{% if item.url == page.url %} active{% endif %}" href="{{ item.url }}">
-                <span>{{ item.order }}</span>
-                {{ item.title }}
-              </a>
-            </li>
-          {% endif -%}
+    <div class="list-group col-md-3 sidebar">
+    {% for item in pages -%}
+      {% if item.title != null -%}
+        {% if item.order != null -%}
+          <a href="{{ item.url }}" class="list-group-item list-group-item-action{% if item.url == page.url %} active{% endif %}">
+            <span>{{ item.order }}</span> {{ item.title }}
+          </a>
         {% endif -%}
-      {% endfor -%}
-      </ul>
-    </nav>
+      {% endif -%}
+    {% endfor -%}
+    </div>
 
-    <div class="md-content col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
 
-        <h1 class="h2">{{ page.title }}</h1>
+        <h1>{{ page.title }}</h1>
 
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">
             {% if prev -%}
-              <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-secondary" role="button">Previous</a>
+              <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Previous</a>
 			{% else -%}
-              <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Previous</a>
+              <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
 			{% endif -%}
             {% if next -%}
-              <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-secondary" role="button">Next</a>
+              <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
 			{% else -%}
-              <a href="#" class="btn btn-sm btn-outline-secondary" role="button">Next</a>
+              <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
 			{% endif -%}
           </div>
         </div>
