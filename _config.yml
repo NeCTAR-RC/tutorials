@@ -111,7 +111,7 @@ collections:
     permalink: /:collection/:name
     title: Allocation Management
     summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
-    categories: Beginner # Beginner|Intermediate|Advanced
+    categories: Non-technical # Beginner|Intermediate|Advanced
     tags:
       - Cloud Starter
       - expiry bot 
@@ -163,7 +163,7 @@ collections:
     permalink: /:collection/:name
     title: Cloud Starter Series
     summary: Get started in the Nectar Research Cloud with this tutorial series. Learn how easy it is to launch VMs, to connect and to try something new.
-    categories: Beginner # Beginner|Intermediate|Advanced
+    categories: Series #Beginner # Beginner|Intermediate|Advanced
     tags:
       - Cloud Starter
       - 101
