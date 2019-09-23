@@ -177,3 +177,20 @@ collections:
     status: draft # draft or published
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
+  dns-with-designate:
+    output: true
+    permalink: /:collection/:name
+    title: DNS with Designate
+    summary: Learn to manage your domain name records in Nectar
+    categories: Intermediate # Beginner|Intermediate|Advanced
+    tags:
+      - Dashboard
+      - DNS
+      - Zone
+      - Recordset
+      - Designate
+    difficulty: 2 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-19
+    author: Mark Endrei <mark.endrei@uq.edu.au>
