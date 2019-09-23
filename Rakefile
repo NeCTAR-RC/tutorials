@@ -78,7 +78,7 @@ task :tutorial do
     f.puts '    permalink: /:collection/:name'
     f.puts "    title: #{title}"
     f.puts "    summary: A tutorial for #{title}"
-    f.puts '    categories: Beginner # Beginner|Intermediate|Advanced'
+    f.puts '    categories: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical'
     f.puts '    tags:'
     f.puts '      - Tutorial'
     f.puts '    difficulty: 1 # number from 1 to 5'
