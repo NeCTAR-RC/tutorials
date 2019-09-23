@@ -1,6 +1,6 @@
 ---
 title: Delete a Record Set
-order: 6
+order: 7
 duration: 1
 ---
 
