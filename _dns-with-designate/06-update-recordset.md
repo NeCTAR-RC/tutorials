@@ -1,6 +1,6 @@
 ---
 title: Update a Record Set
-order: 5
+order: 6
 duration: 1
 ---
 
