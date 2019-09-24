@@ -8,15 +8,15 @@ Once you log in with the **Username** and **Password** you provided earlier, you
 
 You can launch R-Studio from here. We also provide a link to Shiny Server that has also been installed, and a link to access the instance desktop via browser.
 
-![Launch Building]({{ site.baseurl }}/assets/images/applications/rstudio-landing.png)
+![RStudio landing]({{ site.baseurl }}/assets/images/applications/rstudio-landing.png)
 
 R-Studio will require you to log in again with the **Username** and **Password** you provided earlier.
 
-![Launch Building]({{ site.baseurl }}/assets/images/applications/rstudio-signin.png)
+![RStudio sign in]({{ site.baseurl }}/assets/images/applications/rstudio-signin.png)
 
 R-Studio is now available!
 
-![Launch Building]({{ site.baseurl }}/assets/images/applications/rstudio-console.png)
+![RStudio console]({{ site.baseurl }}/assets/images/applications/rstudio-console.png)
 
 This application also offers access to R-Studio through *Remote Desktop* via *X2Go*. This might be especially useful for workloads that require visualisations that can't be handled from within the browser environment.
 
@@ -37,5 +37,5 @@ Once installed and running, you should click the `Create Session` button and pro
 
 Once you have created the session and connected, the XFCE desktop environment will appear and you can launch R-Studio from the Applications menu.
 
-![Launch Building]({{ site.baseurl }}/assets/images/applications/rstudio-desktop.png)
+![RStudio desktop](../assets/images/applications/rstudio-desktop.png)
 

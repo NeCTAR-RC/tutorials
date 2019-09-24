@@ -4,8 +4,6 @@ order: 1
 duration: 1
 ---
 
-### What are Applications
-
 Nectar have packaged some cloud-ready applications into the *Application Catalog* available from your [Nectar dashboard](https://dashboard.rc.nectar.org.au). You can browse the catalog and compose your own application environments running on the Nectar Research Cloud.
 
 In this tutorial you'll step through the *Quick Deploy* process for configuring and deploying an application from the catalog. Our example will be an *R-Studio* application. It gives secure access to a community edition R-Studio server, Shiny server as well as remote-desktop-based access via either your browser or X2Go.
