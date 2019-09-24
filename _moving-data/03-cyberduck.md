@@ -1,5 +1,5 @@
 ---
-title: Cyberduck - Graphical apps
+title: Cyberduck - GUI apps
 order: 3
 duration: 6
 ---
@@ -18,3 +18,4 @@ When you open Cyberduck you just click the Open Connection button. In the Open C
 
 
 We'll let you work out how to *Double click*, or *Drag-and-drop* files, *Create remote directories*, *Upload files*, *Save/Reuse session data* and *Disconnect* for yourself on your particular platform. 
+
