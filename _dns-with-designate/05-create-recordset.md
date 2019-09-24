@@ -1,6 +1,6 @@
 ---
 title: Create a Record Set
-order: 4
+order: 5
 duration: 1
 ---
 

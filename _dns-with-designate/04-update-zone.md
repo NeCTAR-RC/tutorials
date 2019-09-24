@@ -1,6 +1,6 @@
 ---
 title: Update a Zone
-order: 3
+order: 4
 duration: 1
 ---
 
