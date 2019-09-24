@@ -214,4 +214,21 @@ collections:
     duration: 10 # number of minutes
     status: draft # draft or published
     published: 2019-09-24
-    author: Your Name <your.name@email.domain>
+    author: Mark Endrei <mark.endrei@uq.edu.au>
+    
+  moving-data:
+    output: true
+    permalink: /:collection/:name
+    title: Moving data
+    summary: Learn some basic ways of copying data to and from your Nectar instance.
+    categories: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - scp
+      - cyberduck
+      - copy
+    difficulty: 1 # number from 1 to 5
+    duration: 18 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-24
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
