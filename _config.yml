@@ -121,7 +121,7 @@ collections:
       - project manager 
       - delegation 
     difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 23 # number of minutes
     status: draft # draft or published
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
@@ -191,7 +191,7 @@ collections:
       - Recordset
       - Designate
     difficulty: 2 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 20 # number of minutes
     status: draft # draft or published
     published: 2019-09-19
     author: Mark Endrei <mark.endrei@uq.edu.au>
@@ -211,7 +211,7 @@ collections:
       - guacamole
       - remote desktop
     difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
+    duration: 24 # number of minutes
     status: draft # draft or published
     published: 2019-09-24
     author: Mark Endrei <mark.endrei@uq.edu.au>

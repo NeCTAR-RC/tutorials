@@ -1,7 +1,7 @@
 ---
 title: Inspect Zones and Recordsets
 order: 3
-duration: 1
+duration: 3
 ---
 
 A default DNS zone based on the allocation project name is provisioned for all
