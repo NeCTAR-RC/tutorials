@@ -24,11 +24,11 @@ delete any records you wish within this zone.
 
 - Managing DNS services for your Nectar project
   - using the Nectar dashboard
-  - using the OpenStack CLI
+  - using the OpenStack CLI (optional)
 
 ### What you'll need
 
 - Access to a Nectar project
-- Access to the Nectar OpenStack CLI
+- An understanding of the Nectar OpenStack CLI
 
 

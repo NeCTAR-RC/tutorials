@@ -1,5 +1,5 @@
 ---
-title: Nectar Designate, In a nutshell
+title: Nectar DNS, In a nutshell
 order: 2
 duration: 1
 ---
