@@ -1,7 +1,7 @@
 ---
 title: Update a Zone
 order: 4
-duration: 1
+duration: 3
 ---
 
 You can update the description of your zone by navigating to **Project -> DNS

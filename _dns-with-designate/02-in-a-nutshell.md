@@ -1,7 +1,7 @@
 ---
 title: Nectar DNS, In a nutshell
 order: 2
-duration: 1
+duration: 3
 ---
 
 You can use the Nectar DNS Service to add Domain Name System (DNS) services to

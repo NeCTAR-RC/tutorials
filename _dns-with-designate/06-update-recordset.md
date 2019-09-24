@@ -1,7 +1,7 @@
 ---
 title: Update a Record Set
 order: 6
-duration: 1
+duration: 3
 ---
 
 Apart from being easier to remember than IP addresses, DNS records can also be

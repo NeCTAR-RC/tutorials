@@ -1,7 +1,7 @@
 ---
 title: Create a Record Set
 order: 5
-duration: 1
+duration: 4
 ---
 
 You can use the Nectar dashboard to create a new DNS record for an instance in

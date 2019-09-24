@@ -1,7 +1,7 @@
 ---
 title: Delete a Record Set
 order: 7
-duration: 1
+duration: 2
 ---
 
 To delete a DNS record that is no longer needed, navigate to **Project -> DNS
