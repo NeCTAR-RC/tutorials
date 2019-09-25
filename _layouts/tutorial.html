@@ -19,10 +19,9 @@ layout: default
 {% endfor %}
 
 <div class="container py-3">
-
   <div class="row">
 
-    <div class="list-group col-md-3 sidebar">
+    <div class="list-group col-md-3 sidebar d-none d-md-block">
     {% for item in pages -%}
       {% if item.title != null -%}
         {% if item.order != null -%}
@@ -60,6 +59,6 @@ layout: default
       {{ content }}
 
     </div>
-  </div>
 
+  </div>
 </div>
