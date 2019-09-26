@@ -232,3 +232,17 @@ collections:
     published: 2019-09-24
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  volume-storage:
+    output: true
+    permalink: /:collection/:name
+    title: Volume Storage
+    summary: "Learn to use Volume Storage: Nectar's virtual USB-sticks."
+    categories: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - Tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 21 # number of minutes
+    status: draft # draft or published
+    published: 2019-09-26
+    author: Just Berkhout <just.berkhout@utas.edu.au>
+
