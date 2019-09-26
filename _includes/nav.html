@@ -1,26 +1,9 @@
-{% assign pages_list = site.pages | sort:"order" %}
-
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="container py-2">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-      {%- for item in pages_list -%}
-        {%- if item.title != null -%}
-          {%- if item.order != null -%}
-            <li class="nav-item{% if item.url == page.url %} active{% endif %}">
-              <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
-            </li>
-          {%- endif -%}
-        {%- endif -%}
-      {%- endfor -%}
-      </ul>
-      <div class="d-none d-md-block">
-        <img src="{{ site.baseurl }}/assets/images/logo.svg" alt="">
-      </div>
-    </div>
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/images/logo.svg" alt="">
+	</a>
+
   </div>
 </nav>

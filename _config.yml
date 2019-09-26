@@ -2,8 +2,8 @@ title: Nectar Research Cloud tutorials
 email: support@ehelp.edu.au
 description: >-
   Nectar Research Cloud tutorials
-url: ""
-baseurl: ""
+url:
+baseurl: 
 
 # Build settings
 plugins:

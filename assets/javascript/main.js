@@ -72,7 +72,7 @@ $(function() {
     $.each(results, function(i, result) {
       tutorialList.append('\
         <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">\
-          <a href="'+result.url+'">\
+          <a href="'+result.url+'/01-overview">\
             <div class="card shadow h-100">\
               <div class="card-header text-light bg-dark">\
                 '+result.categories+'\
@@ -80,7 +80,7 @@ $(function() {
               </div>\
               <div class="card-body">\
                 <small class="text-muted">'+result.published+'</small>\
-                <p class="card-text">'+result.summary+'</p>\
+                <p class="card-text py-2">'+result.summary+'</p>\
               </div>\
               <div class="card-footer">\
                 <div class="row no-gutters">\
