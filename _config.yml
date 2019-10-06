@@ -172,7 +172,7 @@ collections:
       - Launch
       - connect
       - series
-    difficulty: 1 # number from 1 to 5
+    difficulty: 0 # number from 1 to 5
     duration: 160 # number of minutes
     status: draft # draft or published
     published: 2019-09-17

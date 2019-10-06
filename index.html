@@ -9,7 +9,7 @@ order: 0
     <header class="py-3">
       <h1 class="display-3">Nectar Research Cloud tutorials</h1>
       <div class="row">
-  	    <div class="col-md-6">
+          <div class="col-md-6">
           <p class="lead">Nectar Research Cloud tutorials will help you get the most out of the Nectar Research Cloud. Whether you are getting started, trying to increase your efficiency or you're looking to hone your skills.</p>
           <p class="lead">This site may is a trial and demostration only and will help determine whether we publish tutorials in this easy to search, easy to follow format.</p>
         </div>
@@ -38,26 +38,31 @@ order: 0
             <i id="search-clear" class="fa fa-times"></i>
           </span>
           <span class="input-group-text border">
-  		  <i class="fa fa-search"></i>
-  		</span>
+            <i class="fa fa-search"></i>
+          </span>
         </div>
       </div>
       </div>
     </div>
 
     {% comment %}
-	  These cards are also rendered in javascript to handle the search form.
-	  Any changes you make here should be replicated exactly to the showResults
-	  function in /assets/javascript/main.js
-	{% endcomment %}
+      These cards are also rendered in javascript to handle the search form.
+      Any changes you make here should be replicated exactly to the showResults
+      function in /assets/javascript/main.js
+    {% endcomment %}
     <div id="tutorial-list" class="card-group pt-3 px-0">
-	  {% assign collections = site.collections | where_exp:"item","item.title != null" %}
+      {% assign collections = site.collections | where_exp:"item","item.title != null" | sort: 'difficulty' %}
       {% for tutorial in collections %}
         <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
           <a href="{{ site.baseurl }}/{{ tutorial.label }}/01-overview">
             <div class="card shadow h-100">
               <div class="card-header text-light bg-dark">
-                {{ tutorial.categories }}
+                <div class="card-category">
+                  <small class="title text-uppercase">{{ tutorial.categories }}</small>
+                  {% if tutorial.categories == "Series" %}
+                    <img src="{{ site.baseurl }}/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">
+                  {% endif %}
+                </div>
                 <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
               </div>
               <div class="card-body">
@@ -81,6 +86,6 @@ order: 0
           </a>
         </div>
       {% endfor %}
-	</div>
+    </div>
 
   </div>

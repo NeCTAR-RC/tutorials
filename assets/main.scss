@@ -110,8 +110,16 @@ pre {
     color: inherit;
     text-decoration: none;
   }
+
 }
 
+.card-category {
+
+  .series {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 /*
  * Search
@@ -127,6 +135,7 @@ pre {
 .difficulty-indicator {
   background-image: url($baseurl + "/assets/images/level-of-difficulty.svg");
   background-position-y: 5px;
+  background-position-x: -75px;
   background-repeat: no-repeat;
   display: inline-block;
   margin-left: 3px;

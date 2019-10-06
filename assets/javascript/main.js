@@ -4,7 +4,7 @@ $(function() {
     $('.md-content img').addClass('img-fluid');
     $('.md-content img').addClass('shadow');
     
-	$('.md-content blockquote').addClass('blockquote');
+    $('.md-content blockquote').addClass('blockquote');
 });
 
 $(function() {
@@ -12,7 +12,7 @@ $(function() {
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: baseurl + '/search.json',
-	cache: false, /* remove for production */
+    cache: false, /* remove for production */
   });
 
   // Initialise
@@ -20,16 +20,16 @@ $(function() {
 
   $('.search-filter-menu a').click(function(){
     $('#search-filter-button').text($(this).text());
-	searchResults();
+  searchResults();
   });
 
   $('#search-input').on('keyup keypress blur change', function() {
     var clear = $('#search-clear');
     if ($(this).val() === '') {
       clear.hide();
-	} else {
+    } else {
       clear.show();
-	}
+    }
     searchResults();
   });
 
@@ -53,51 +53,58 @@ $(function() {
   }
 
   function filterResults(results) {
-	var filter = $('#search-filter-button').text();
-	console.log('Filtering by: ' + filter);
+    var filter = $('#search-filter-button').text();
+    console.log('Filtering by: ' + filter);
 
-	var filteredResults = [];
-	for (i in results) {
-	  var result = results[i];
-	  if (result.categories == filter || filter == 'All Topics') {
+    var filteredResults = [];
+    for (i in results) {
+      var result = results[i];
+      if (result.categories == filter || filter == 'All Topics') {
         filteredResults.push(result);
-	  }
-	}
+      }
+    }
     showResults(filteredResults);
   }
 
   function showResults(results) {
     var tutorialList = $('#tutorial-list');
     tutorialList.html('');
-    $.each(results, function(i, result) {
-      tutorialList.append('\
-        <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">\
-          <a href="'+result.url+'/01-overview">\
-            <div class="card shadow h-100">\
-              <div class="card-header text-light bg-dark">\
-                '+result.categories+'\
-                <h5 class="card-title mb-0">'+result.title+'</h5>\
-              </div>\
-              <div class="card-body">\
-                <small class="text-muted">'+result.published+'</small>\
-                <p class="card-text py-2">'+result.summary+'</p>\
-              </div>\
-              <div class="card-footer">\
-                <div class="row no-gutters">\
-                  <div class="col-xs-auto">\
-                    <small class="text-muted">Difficulty: </small>\
-					<span class="difficulty-indicator difficulty-indicator-'+result.difficulty+'">\
-					  '+result.difficulty+' out of 5\
-					</span>\
-                  </div>\
-                  <div class="col text-right">\
-                    <small class="text-muted">Duration: '+result.duration+'</small>\
-                  </div>\
-                </div>\
-              </div>\
-            </div>\
-          </a>\
-        </div>');
+    var result = '';
+    $.each(results, function(i, tutorial) {
+      result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
+      result += '  <a href="' + baseurl + '/' + tutorial.label + '/01-overview">';
+      result += '    <div class="card shadow h-100">';
+      result += '      <div class="card-header text-light bg-dark">';
+      result += '        <div class="card-category">';
+      result += '          <small class="title text-uppercase">' + tutorial.categories + '</small>';
+      if (tutorial.categories == 'Series') {
+        result += '            <img src="' + baseurl + '/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">';
+      }
+      result += '        </div>';
+      result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
+      result += '      </div>';
+      result += '      <div class="card-body">';
+      result += '        <small class="text-muted">' + tutorial.published + '</small>';
+      result += '        <p class="card-text py-2">' + tutorial.summary + '</p>';
+      result += '      </div>';
+      result += '      <div class="card-footer">';
+      result += '        <div class="row no-gutters">';
+      result += '          <div class="col-xs-auto">';
+      result += '            <small class="text-muted">Difficulty: </small>';
+      result += '            <span class="difficulty-indicator difficulty-indicator-' + tutorial.difficulty + '">';
+      result += '              ' + tutorial.difficulty + ' out of 5';
+      result += '            </span>';
+      result += '          </div>';
+      result += '          <div class="col text-right">';
+      result += '            <small class="text-muted">Duration: ' + tutorial.duration + '</small>';
+      result += '          </div>';
+      result += '        </div>';
+      result += '      </div>';
+      result += '    </div>';
+      result += '  </a>';
+      result += '</div>';
     });
+    tutorialList.html(result);
   }
+
 });
