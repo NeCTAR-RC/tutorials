@@ -11,16 +11,12 @@ $(function() {
   var tutorials = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: baseurl + '/search.json',
-    cache: false, /* remove for production */
+    prefetch: baseurl + '/search.json?q=' + Date.now(), /* remove Date for production caching */
   });
-
-  // Initialise
-  //searchResults();
 
   $('.search-filter-menu a').click(function(){
     $('#search-filter-button').text($(this).text());
-  searchResults();
+    searchResults();
   });
 
   $('#search-input').on('keyup keypress blur change', function() {
@@ -54,12 +50,10 @@ $(function() {
 
   function filterResults(results) {
     var filter = $('#search-filter-button').text();
-    console.log('Filtering by: ' + filter);
-
     var filteredResults = [];
     for (i in results) {
       var result = results[i];
-      if (result.categories == filter || filter == 'All Topics') {
+      if (result.category == filter || filter == 'All Topics') {
         filteredResults.push(result);
       }
     }
@@ -76,8 +70,8 @@ $(function() {
       result += '    <div class="card shadow h-100">';
       result += '      <div class="card-header text-light bg-dark">';
       result += '        <div class="card-category">';
-      result += '          <small class="title text-uppercase">' + tutorial.categories + '</small>';
-      if (tutorial.categories == 'Series') {
+      result += '          <small class="title text-uppercase">' + tutorial.category + '</small>';
+      if (tutorial.category == 'Series') {
         result += '            <img src="' + baseurl + '/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">';
       }
       result += '        </div>';
