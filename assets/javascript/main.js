@@ -72,7 +72,7 @@ $(function() {
     var result = '';
     $.each(results, function(i, tutorial) {
       result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
-      result += '  <a href="' + baseurl + '/' + tutorial.label + '/01-overview">';
+      result += '  <a href="' + tutorial.url + '">';
       result += '    <div class="card shadow h-100">';
       result += '      <div class="card-header text-light bg-dark">';
       result += '        <div class="card-category">';

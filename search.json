@@ -1,7 +1,7 @@
 ---
 layout:
 ---
-{% assign collections = site.collections | where_exp:"item","item.title != null" %}
+{% assign collections = site.collections | where_exp:"item","item.title != null" | sort: 'difficulty' -%}
 [{%- for collection in collections %}
   {
     "title": "{{ collection.title }}",
@@ -13,5 +13,6 @@ layout:
     "duration": "{{ collection.duration }} minutes",
     "status": "{{ collection.status }}",
     "published": "{{ collection.published | date: "%-d %B %Y" }}"
-  }{% unless forloop.last %},{% endunless %}
-{% endfor -%}]
+  }{% unless forloop.last -%},{% endunless -%}
+{% endfor %}
+]

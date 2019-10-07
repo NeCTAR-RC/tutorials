@@ -56,7 +56,7 @@ order: 0
       {% assign collections = site.collections | where_exp:"item","item.title != null" | sort: 'difficulty' %}
       {% for tutorial in collections %}
         <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
-          <a href="{{ site.baseurl }}/{{ tutorial.label }}/01-overview">
+          <a href="{{ site.baseurl }}/{{ tutorial.label }}">
             <div class="card shadow h-100">
               <div class="card-header text-light bg-dark">
                 <div class="card-category">
