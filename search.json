@@ -1,13 +1,13 @@
 ---
 layout:
 ---
-{% assign collections = site.collections | where_exp:"item","item.title != null" | sort: 'difficulty' -%}
-[{%- for collection in collections %}
+{% include tutorials.html -%}
+[{% for collection in tutorials %}
   {
     "title": "{{ collection.title }}",
     "url": "{{ site.baseurl }}/{{ collection.label }}",
     "summary": "{{ collection.summary }}",
-    "categories": "{{ collection.categories }}",
+    "category": "{{ collection.category }}",
     "tags": {{ collection.tags | jsonify }},
     "difficulty": {{ collection.difficulty }},
     "duration": "{{ collection.duration }} minutes",

@@ -3,7 +3,7 @@ email: support@ehelp.edu.au
 description: >-
   Nectar Research Cloud tutorials
 url:
-baseurl: 
+baseurl:
 
 # Build settings
 plugins:
@@ -22,7 +22,7 @@ defaults:
   - scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "tutorial"
+      layout: tutorial
 
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
@@ -32,10 +32,10 @@ collections:
     title: Launching Virtual Machines
     permalink: /:collection/:name
     summary: Launching a virtual machine using the Nectar dashboard and the launch dialog
-    categories: Beginner
+    category: Beginner
     tags:
-      - Cloud Starter
-      - Launching
+      - cloud starter
+      - launching
       - dashboard
     difficulty: 1
     duration: 25
@@ -48,9 +48,9 @@ collections:
     permalink: /:collection/:name
     title: Access using SSH and web-based VNC
     summary: Access your Virtual Machine's command line using your Terminal and ssh or the web-based vnc console.
-    categories: Beginner
+    category: Beginner
     tags:
-      - Cloud Starter
+      - cloud starter
       - connecting
       - terminal
     difficulty: 1
@@ -64,7 +64,7 @@ collections:
     permalink: /:collection/:name
     title: Advanced Networking
     summary: Learn to implement some advanced networking concepts in your Nectar Research Cloud project
-    categories: Advanced
+    category: Advanced
     tags:
       - advanced networking
       - private network
@@ -81,14 +81,14 @@ collections:
     permalink: /:collection/:name
     title: Creating a keypair for use in Nectar
     summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
-    categories: Beginner # Beginner|Intermediate|Advanced
+    category: Beginner
     tags:
-      - Cloud Starter
-      - security 
+      - cloud starter
+      - security
       - authentication
-    difficulty: 1 # number from 1 to 5
-    duration: 13 # number of minutes
-    status: draft # draft or published
+    difficulty: 1
+    duration: 13
+    status: draft
     published: 2019-09-10
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
@@ -97,12 +97,14 @@ collections:
     permalink: /:collection/:name
     title: Security groups, the absolute basics
     summary: Get ready to launch with the bare minimum ssh Security Group for your Nectar instance.
-    categories: Beginner # Beginner|Intermediate|Advanced
+    category: Beginner
     tags:
-      - Tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 15 # number of minutes
-    status: draft # draft or published
+      - tutorial
+      - networking
+      - security
+    difficulty: 1
+    duration: 15
+    status: draft
     published: 2019-09-10
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
@@ -111,18 +113,18 @@ collections:
     permalink: /:collection/:name
     title: Allocation Management
     summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
-    categories: Non-technical # Beginner|Intermediate|Advanced
+    category: Non-technical
     tags:
-      - Cloud Starter
-      - expiry bot 
-      - amend 
-      - extend 
-      - user management 
-      - project manager 
-      - delegation 
-    difficulty: 1 # number from 1 to 5
-    duration: 23 # number of minutes
-    status: draft # draft or published
+      - cloud starter
+      - expiry bot
+      - amend
+      - extend
+      - user management
+      - project manager
+      - delegation
+    difficulty: 1
+    duration: 23
+    status: draft
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
@@ -131,12 +133,12 @@ collections:
     permalink: /:collection/:name
     title: Rebooting, Deleting, Rebuilding, Resizing
     summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
-    categories: Beginner # Beginner|Intermediate|Advanced
+    category: Beginner
     tags:
-      - Cloud Starter
-    difficulty: 1 # number from 1 to 5
-    duration: 32 # number of minutes
-    status: draft # draft or published
+      - cloud starter
+    difficulty: 1
+    duration: 32
+    status: draft
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
@@ -145,16 +147,16 @@ collections:
     permalink: /:collection/:name
     title: Command line, sudo and apt
     summary: Find your way around your instance from the command line. Learn to use admin privileges and install and maintain software
-    categories: Beginner # Beginner|Intermediate|Advanced
+    category: Beginner
     tags:
-      - Cloud Starter 
+      - cloud starter
       - cli
       - command line
-      - sudo 
+      - sudo
       - apt
-    difficulty: 1 # number from 1 to 5
-    duration: 35 # number of minutes
-    status: draft # draft or published
+    difficulty: 1
+    duration: 35
+    status: draft
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
@@ -163,72 +165,72 @@ collections:
     permalink: /:collection/:name
     title: Cloud Starter Series
     summary: Get started in the Nectar Research Cloud with this tutorial series. Learn how easy it is to launch VMs, to connect and to try something new.
-    categories: Series #Beginner # Beginner|Intermediate|Advanced
+    category: Series
     tags:
-      - Cloud Starter
+      - cloud starter
       - 101
       - entry level
       - beginner
-      - Launch
+      - launch
       - connect
       - series
-    difficulty: 0 # number from 1 to 5
-    duration: 160 # number of minutes
-    status: draft # draft or published
+    difficulty: 0
+    duration: 160
+    status: draft
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
-    
+
   dns-with-designate:
     output: true
     permalink: /:collection/:name
     title: DNS with Designate
     summary: Learn to manage your domain name records in Nectar
-    categories: Intermediate # Beginner|Intermediate|Advanced
+    category: Intermediate
     tags:
-      - Dashboard
-      - DNS
-      - Zone
-      - Recordset
-      - Designate
-    difficulty: 2 # number from 1 to 5
-    duration: 20 # number of minutes
-    status: draft # draft or published
+      - dashboard
+      - dns
+      - cone
+      - recordset
+      - designate
+    difficulty: 2
+    duration: 20
+    status: draft
     published: 2019-09-19
     author: Mark Endrei <mark.endrei@uq.edu.au>
-    
+
   applications:
     output: true
     permalink: /:collection/:name
     title: Applications
     summary: Learn to quick deploy an application environment from our catalog with this R-Studio example.
-    categories: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Beginner
     tags:
       - application
       - dashboard
-      - R-studio
+      - r-studio
       - shiny
       - x2go
       - guacamole
       - remote desktop
-    difficulty: 1 # number from 1 to 5
-    duration: 24 # number of minutes
-    status: draft # draft or published
+    difficulty: 1
+    duration: 24
+    status: draft
     published: 2019-09-24
     author: Mark Endrei <mark.endrei@uq.edu.au>
-    
+
   moving-data:
     output: true
     permalink: /:collection/:name
     title: Moving data
     summary: Learn some basic ways of copying data to and from your Nectar instance.
-    categories: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Beginner
     tags:
       - scp
       - cyberduck
       - copy
-    difficulty: 1 # number from 1 to 5
-    duration: 18 # number of minutes
-    status: draft # draft or published
+    difficulty: 1
+    duration: 18
+    status: draft
     published: 2019-09-24
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
@@ -237,12 +239,12 @@ collections:
     permalink: /:collection/:name
     title: Volume Storage
     summary: "Learn to use Volume Storage: Nectar's virtual USB-sticks."
-    categories: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    category: Beginner
     tags:
-      - Tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 21 # number of minutes
-    status: draft # draft or published
+      - tutorial
+    difficulty: 1
+    duration: 21
+    status: draft
     published: 2019-09-26
     author: Just Berkhout <just.berkhout@utas.edu.au>
 

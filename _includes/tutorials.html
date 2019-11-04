@@ -1,0 +1,10 @@
+{% comment -%}
+This file can be included into other files to make the tutorials list variable
+available. The output should be:
+  - 'Series' category first, ordered by difficulty
+  - All other categories, ordered by difficulty
+{% endcomment -%}
+
+{% assign series = site.collections | where_exp:"item","item.category == 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
+{% assign nonseries = site.collections | where_exp:"item","item.category != 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
+{% assign tutorials = series | concat:nonseries -%}

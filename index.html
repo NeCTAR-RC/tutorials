@@ -53,17 +53,17 @@ order: 0
       function in /assets/javascript/main.js
     {% endcomment %}
     <div id="tutorial-list" class="card-group pt-3 px-0">
-      {% assign collections = site.collections | where_exp:"item","item.title != null" | sort: 'difficulty' %}
-      {% for tutorial in collections %}
+      {% include tutorials.html %}
+      {% for tutorial in tutorials %}
         <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
-          <a href="{{ site.baseurl }}/{{ tutorial.label }}">
+          <a href="{{ tutorial.label | relative_url }}">
             <div class="card shadow h-100">
               <div class="card-header text-light bg-dark">
                 <div class="card-category">
-                  <small class="title text-uppercase">{{ tutorial.categories }}</small>
-                  {% if tutorial.categories == "Series" %}
-                    <img src="{{ site.baseurl }}/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">
-                  {% endif %}
+                  <small class="title text-uppercase">{{ tutorial.category }}</small>
+                  {% if tutorial.category == "Series" -%}
+                    <img src="{{ '/assets/images/series-badge.svg' | relative_url }}" class="series float-right" alt="Nectar Series">
+                  {% endif -%}
                 </div>
                 <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
               </div>
