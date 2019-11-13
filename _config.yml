@@ -248,3 +248,17 @@ collections:
     published: 2019-09-26
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
+  snapshots:
+    output: true
+    permalink: /:collection/:name
+    title: Snapshots
+    summary: "Learn to use Snapshot to make a copy or backup of a Nectar instance."
+    category: Beginner
+    tags:
+      - tutorial
+    difficulty: 1
+    duration: 15
+    status: draft
+    published: 2019-11-05
+    author: Your Name <xiao.fu@utas.edu.au>
+
