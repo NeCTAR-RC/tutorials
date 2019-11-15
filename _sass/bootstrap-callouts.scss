@@ -28,7 +28,7 @@
 $bs-default:   #777;
 $bs-primary:   darken(#428bca, 6.5%); // #337ab7
 $bs-success:   #5cb85c;
-$bs-info:      #5bc0de;
+$bs-info:      #5187c3;
 $bs-warning:   #f0ad4e;
 $bs-danger:    #d9534f;
 
@@ -45,11 +45,11 @@ $bs-danger:    #d9534f;
 }
 
 .callout-warning {
-  @include bs-callout($bs-warning, lighten($bs-warning, 35%));
+  @include bs-callout($bs-warning, lighten($bs-warning, 36%));
 }
 
 .callout-info {
-  @include bs-callout($bs-info, lighten($bs-info, 20%));
+  @include bs-callout($bs-info, lighten($bs-info, 43%));
 }
 
 .callout-success {
