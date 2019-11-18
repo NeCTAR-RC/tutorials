@@ -23,9 +23,12 @@ Your browser's default download folder is not an appropriate place to store your
    ```bash
    $ cd ~
    $ mkdir .ssh
+   $ chmod 700 .ssh/
    ```
    
-2. Move your downloaded Private key file into your new key folder.
-
+2. Move your downloaded Private key file into your new key folder. The file access permissions on your private key file matter too. You can set the right permissions using the command 
+   ```bash
+   $ chmod 600 .ssh/<your downloaded private key>
+   ```
 That's all there's to *the Nectar convenience method*. 
 
