@@ -11,7 +11,7 @@ Before you get to that, you need to have a keypair and register your Public key 
 A Public-Private keypair is a pair of files, your Private key and your Public key. They uniquely belong to each other. Your Private key file is yours, and yours alone. You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise and authenticate you in a remote computer account. 
 
 **Important**<br/>
-Keep your Private key private and secure
+Keep your Private key *private and secure*
 {: .callout-danger}
 
 When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account. This way you can use `ssh` to connect to your VM using the three essential connection elements: the computer's IP address, the user account, and the private key that is securely stored on your computer.

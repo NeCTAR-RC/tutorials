@@ -1,7 +1,7 @@
 ---
 title: ssh-keygen method
 order: 4
-duration: 4
+duration: 5
 ---
 
 A more generic way to generate a keypair is to use the `ssh-keygen` command from the command line in your terminal. You then need to import your Public Key into Nectar for Nectar use. 

@@ -1,7 +1,7 @@
 ---
 title: Nectar convenience method
 order: 3
-duration: 2
+duration: 3
 ---
 Nectar can generate a keypair for you. It's easy and your Public key is automatically registered in your Nectar account. You will have to ensure that your downloaded Private key file is in an appropriate and secure location on your computer.
 
