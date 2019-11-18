@@ -87,7 +87,7 @@ collections:
       - security
       - authentication
     difficulty: 1
-    duration: 13
+    duration: 16
     status: draft
     published: 2019-09-10
     author: Just Berkhout <just.berkhout@utas.edu.au>

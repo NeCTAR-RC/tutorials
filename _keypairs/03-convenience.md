@@ -1,7 +1,7 @@
 ---
 title: Nectar convenience method
 order: 3
-duration: 2
+duration: 3
 ---
 Nectar can generate a keypair for you. It's easy and your Public key is automatically registered in your Nectar account. You will have to ensure that your downloaded Private key file is in an appropriate and secure location on your computer.
 
@@ -10,7 +10,7 @@ To get your Nectar-generated key you follow these steps
 1. Logon to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and navigate to Key Pairs page
 2. Click the "**+** Create Key Pair" button
    ![key-pairs-page]({{ site.baseurl }}/assets/images/keypairs/key-pairs-page.png)
-3. in the Create Key Pair dialog, insert a meaningful name for your key
+3. in the Create Key Pair dialog, insert a meaningful name for your key and select Key type "SSH Key"
 2. Click the "**+** Create Key Pair" button
    ![create-key-dialog]({{ site.baseurl }}/assets/images/keypairs/create-key-dialog.png)
 5. Your Public key is now registered in the list 
@@ -23,9 +23,12 @@ Your browser's default download folder is not an appropriate place to store your
    ```bash
    $ cd ~
    $ mkdir .ssh
+   $ chmod 700 .ssh/
    ```
    
-2. Move your downloaded Private key file into your new key folder.
-
+2. Move your downloaded Private key file into your new key folder. The file access permissions on your private key file matter too. You can set the right permissions using the command 
+   ```bash
+   $ chmod 600 .ssh/<your downloaded private key>
+   ```
 That's all there's to *the Nectar convenience method*. 
 

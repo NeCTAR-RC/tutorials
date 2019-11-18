@@ -1,47 +1,35 @@
 ---
 title: ssh-keygen method
 order: 4
-duration: 4
+duration: 5
 ---
 
 A more generic way to generate a keypair is to use the `ssh-keygen` command from the command line in your terminal. You then need to import your Public Key into Nectar for Nectar use. 
 
 ### Generating your keypair
 
-1. Open Terminal. You will start off in your *“home”* directory. If you already had the terminal open before, make sure you are in the home directory, by simply typing
-   ```bash
-   $ cd ~
-   ```
+1. You can generate the key with the command. This will run the `keygen` command with the default options which is good for us. 
    
-1. Now, check if you already have a directory called `.ssh`, by typing 
    ```bash
-   $ ls -a
+   $ ssh-keygen
    ```
-   A list of files in your home directory will be printed. If you don’t see the name `.ssh` in this list, you can create the directory using the command: 
-   ```bash
-   $ mkdir .ssh
-   ```
-   and change to this directory: 
-   ```bash 
-   $ cd .ssh
-   ```
+   `ssh-keygen` will ask you these questions. Use the default filename (i.e. `/home/<user>/.ssh/id_rsa`) and for the purpose of this tutorial you can enter an empty passphrase.
    
-1. Now generate the key with 
-   (NOTE: you should choose a much better name than "*foo-bar-blah-key*")
    ```bash
-   $ ssh-keygen -t rsa -f foo-bar-blah-key
-   ```
-   `ssh-keygen` will ask you to 
-   ```bash
+   Enter file in which to save the key (/home/<user>/.ssh/id_rsa):
    Enter passphrase (empty for no passphrase):
+   Enter same passphrase again:
    ```
-   For the purpose of this tutorial you can enter an empty passphrase. 
-   `ssh-keygen` generates a pair of keys in the directory `.ssh`.
+   For the purpose of this tutorial you can enter an empty passphrase. `ssh-keygen` generates a pair of keys in the directory `.ssh`.
+   
+   `overwrite (y/n)`<br/>
+   If a file with the default key name already exists, `ssh-keygen` will warn you before overwriting. You should not overwrite any existing keys, unless you are absolutely certain it is not in use. Better to choose a different name.
+   {: .callout-danger}
    
 1. Verify that you have the files of your key pair:
    ```bash
-   $ ls
-   foo-bar-blah-key  foo-bar-blah-key.pub
+   $ ls ~/.ssh/
+   id_rsa  id_rsa.pub
    ```
 
 A key pair is just a pair of text files. You can view the contents of your key files with any text editor. 
@@ -50,7 +38,7 @@ A key pair is just a pair of text files. You can view the contents of your key f
 
 ### Importing your Public Key into Nectar
 
-To use your key pair with Nectar you need to *Import* your public key (`foo-bar-blah-key.pub` in the example above) into Nectar. 
+To use your key pair with Nectar you need to *Import* your public key (`id_rsa.pub` in the example above) into Nectar. 
 
 **Important** Make sure you import your *Public* key here, *not the private one*
 {: .callout-warning}
@@ -60,7 +48,7 @@ To use your key pair with Nectar you need to *Import* your public key (`foo-bar-
 3. In the `Import Public Key` dialog, 
    1. give your public key a **Key Pair Name** (this name doesn't need to match your key's filename or the label. You should choose a name that helps you stay meaningfully organised.)
    2. Select *SSH Key* for **Key Type** 
-   3. Load your public key from your public key file (`foo-bar-blah-key.pub` in our example), using the Choose File button and dialog **or**
+   3. Load your public key from your public key file (`id_rsa.pub` in our example), using the Choose File button and dialog **or**
    4. Paste the text of your public key in the **Public Key** field.
       The completed Import Public Key Dialog should look something like this
       ![import-key-completed-dialog]({{ site.baseurl }}/assets/images/keypairs/import-key-completed-dialog.png)
