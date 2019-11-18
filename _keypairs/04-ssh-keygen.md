@@ -38,7 +38,7 @@ A key pair is just a pair of text files. You can view the contents of your key f
 
 ### Importing your Public Key into Nectar
 
-To use your key pair with Nectar you need to *Import* your public key (`foo-bar-blah-key.pub` in the example above) into Nectar. 
+To use your key pair with Nectar you need to *Import* your public key (`id_rsa.pub` in the example above) into Nectar. 
 
 **Important** Make sure you import your *Public* key here, *not the private one*
 {: .callout-warning}
@@ -48,7 +48,7 @@ To use your key pair with Nectar you need to *Import* your public key (`foo-bar-
 3. In the `Import Public Key` dialog, 
    1. give your public key a **Key Pair Name** (this name doesn't need to match your key's filename or the label. You should choose a name that helps you stay meaningfully organised.)
    2. Select *SSH Key* for **Key Type** 
-   3. Load your public key from your public key file (`foo-bar-blah-key.pub` in our example), using the Choose File button and dialog **or**
+   3. Load your public key from your public key file (`id_rsa.pub` in our example), using the Choose File button and dialog **or**
    4. Paste the text of your public key in the **Public Key** field.
       The completed Import Public Key Dialog should look something like this
       ![import-key-completed-dialog]({{ site.baseurl }}/assets/images/keypairs/import-key-completed-dialog.png)
