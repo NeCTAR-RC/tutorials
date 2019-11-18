@@ -10,7 +10,7 @@ To get your Nectar-generated key you follow these steps
 1. Logon to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and navigate to Key Pairs page
 2. Click the "**+** Create Key Pair" button
    ![key-pairs-page]({{ site.baseurl }}/assets/images/keypairs/key-pairs-page.png)
-3. in the Create Key Pair dialog, insert a meaningful name for your key
+3. in the Create Key Pair dialog, insert a meaningful name for your key and select Key type "SSH Key"
 2. Click the "**+** Create Key Pair" button
    ![create-key-dialog]({{ site.baseurl }}/assets/images/keypairs/create-key-dialog.png)
 5. Your Public key is now registered in the list 
