@@ -7,7 +7,7 @@ Nectar can generate a keypair for you. It's easy and your Public key is automati
 
 To get your Nectar-generated key you follow these steps
 
-1. Logon to the [Nectar Dashboard]([https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au/)) and navigate to Key Pairs page
+1. Logon to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and navigate to Key Pairs page
 2. Click the "**+** Create Key Pair" button
    ![key-pairs-page]({{ site.baseurl }}/assets/images/keypairs/key-pairs-page.png)
 3. in the Create Key Pair dialog, insert a meaningful name for your key
