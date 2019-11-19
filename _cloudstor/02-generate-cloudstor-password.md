@@ -4,7 +4,7 @@ order: 2
 duration: 5
 ---
 
-1) Go to [CloudStor Dashboard](https://cloudstor.aarnet.edu.au/) and select the university or institution you are based. The login process is via AAF and is exactly the same as login to Nectar Cloud Dashboard.
+1) Go to [CloudStor Dashboard](https://cloudstor.aarnet.edu.au/) and select the university or institution you are based. The login process is via Australian Access Federation (AAF) and is exactly the same as login to Nectar Cloud Dashboard.
 
 ![CloudStor Login Page]({{site.baseurl}}/assets/images/cloudstor/cloudstor-login-page.png)
 
