@@ -265,13 +265,13 @@ collections:
   cloudstor:
     output: true
     permalink: /:collection/:name
-    title: AARNET Cloudstor
-    summary: "Learn to use AARNET Cloudstor in Nectar's Virtual Machine"
+    title: AARNet Cloudstor
+    summary: "Learn to use AARNet Cloudstor in Nectar's Virtual Machine"
     category: Beginner
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
-    duration: 21 # number of minutes
+    duration: 16 # number of minutes
     status: draft # draft or published
     published: 2019-11-13
     author: Ming Fu <xiao.fu@utas.edu.au>

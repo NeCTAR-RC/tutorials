@@ -1,14 +1,19 @@
 ---
-title: Setup AARNET CloudStor
+title: Setup AARNet CloudStor
 order: 3
 duration: 5
 ---
 
-1. Login to Nectar virtual machine via your prefered termianl software. In this tutorial, we use [Putty](https://putty.org). 
-2. start the CloudStor setup by typing `cloudstor-setup` at the command prompt, which will begin the setup. 
-3. The `cloudstor-setup` command will prompt you for your CloudStor `username` and `password`. Type in the username and password generated from the `Generate App passwords` previous section and following the prompt.
+1) Login to Nectar virtual machine via your preferred termianl software. Please refer to this [tutorial](/connecting/01-overview) for how to access virtual machine using SSH.
+
+2) Start the CloudStor setup by typing `cloudstor-setup` at the command prompt. 
+
+3) The `cloudstor-setup` command will prompt you for your CloudStor `username` and `password`. Type in the username and password generated from the previous section and following the prompt.
+
 ![VM Console Page1]({{site.baseurl}}/assets/images/cloudstor/cloudstor-console-password1.png)
-4. you should now be able to work with your CloudStor data at /cloudstore on your virtual machine.
+
+4) you should now be able to work with your CloudStor data at /cloudstore on your virtual machine.
+
 ![VM Console Page2]({{site.baseurl}}/assets/images/cloudstor/cloudstor-console-password2.png)
 
 

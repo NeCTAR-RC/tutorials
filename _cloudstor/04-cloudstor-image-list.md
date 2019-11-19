@@ -4,7 +4,7 @@ order: 4
 duration: 1
 ---
 
-The `cloudstor-setup` command is available in Nectar official images built after 10/10/2018. The table lists the current image builds that inlcude the command and the list may vary after new image builds released.
+The `cloudstor-setup` command is available in Nectar official images built after 10/10/2018. The table lists the current image builds that include the command and the list may vary after new image builds released.
 
 |Image Id|Image Name|Build|Date|
 |128486f1-10c6-49d4-8c92-0405d30b75a8|NeCTAR Debian 9 (Stretch) amd64|25|10/5/2019|
