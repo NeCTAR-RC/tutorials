@@ -18,7 +18,7 @@ duration: 1
 
 ### The command line and software
 
-[Command line, sudo and apt](/cli-sudo-apt)
+[Command line, sudo and apt](/cli-101)
 
 ### Changing instances
 

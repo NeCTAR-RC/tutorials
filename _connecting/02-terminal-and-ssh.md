@@ -22,18 +22,21 @@ When you launched your instance, you chose an *Image*. Nectar images have all be
 
 When you launched your instance you chose a keypair from the registered keypairs in your Nectar account. Nectar has now applied the public key of that pair to the default user account on the instance. This means that you can connect to this account, on this instance by specifying the file location of the private key of that pair. You should remind yourself of the private and secure location where your private key is stored now. 
 
-positive
-: Cloud Starters
+**Cloud Starters**
 In the tutorial *Creating a keypair for use in Nectar* you have created or downloaded your Private Key. The recommended location is the `.ssh` directory in your home directory, i.e. `~/.ssh`
+{: .callout-warning}
 
 #### Connection
 
-Below is the `ssh` command for our example. You should adjust it for the *private key*, *account* and *IP address* for your instance. 
-
-Note that the `-i` is short for `identity_file`. It is the argument passed to the `ssh` command that points to your private key file.
+Below is the `ssh` command for our example. You should adjust it for the *account* and *IP address* for your instance. 
 
 ```bash
-$ ssh -i ~/.ssh/foo-bar-blah-key ubuntu@144.6.227.37
+$ ssh ubuntu@144.6.227.37
+```
+If you have used a non-standard name or location for your private key, you must specify this to the `ssh`-command using the `-i`-argument. Our recommendation is for your key to be named `~/.ssh/id_rsa` so you don't have to do that, but if you insist: 
+
+```bash
+$ ssh -i /path/to/my/non-standard-key-name ubuntu@144.6.227.37
 ```
 
 Or if you like diagrams with arrows:
@@ -45,7 +48,7 @@ Or if you like diagrams with arrows:
 When you first connect to an instance (i.e. the *host*), your local `ssh`-software does not know of that host. `ssh` warns you that it can't establish the host's authenticity. If you've just launched your instance, and you're sure that the details are correct, you can answer *"yes"* to this prompt. `ssh` will now record that this is a known host that you agree to connect to, and won't bother you with this warning again.
 
 ```bash
-local-prompt:~$ ssh -i ~/.ssh/foo-bar-blah-key ubuntu@144.6.227.37
+local-prompt:~$ ssh ubuntu@144.6.227.37
 The authenticity of host '144.6.227.37 (144.6.227.37)' can't be established.
 ECDSA key fingerprint is SHA256:x1iQRugzRuabgCbD4WOCVvZycpgkagQZsOkLKHdFdtE.
 Are you sure you want to continue connecting (yes/no)? yes

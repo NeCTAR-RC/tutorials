@@ -8,3 +8,6 @@ In this tutorial you've learnt about Allocation Management. You've learnt what s
 
 All we hope for in return is that you remember us fondly, when you're attending any [banquets in Sweden](https://www.nobelprize.org/ceremonies/the-nobel-prize-award-ceremonies-and-banquets/).
 
+**Cloud Starter** 
+Congratulations. You've completed another step on your Cloud Computing journey. You're probably mostly done with it now. Jump back to the [Cloud Starter Series](/cloud-starter/02-tutorials) to check.
+{: .callout-success}
