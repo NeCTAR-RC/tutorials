@@ -8,6 +8,6 @@ A key pair is one of the bare necessities for adopting the Nectar Research Cloud
 If you haven't already done so, you should learn **the basics of security groups** and then learn to **Launch Virtual Machines** from the Nectar Dashboard. 
 
 **Cloud Starter**<br/>
-Congratulations. You've completed one of the prerequisite steps for Launching a Virtual Machine in the Nectar Research Cloud. Keep up the good work. 
-{: .callout-warning}
+Congratulations. You've completed one of the prerequisite steps for Launching a Virtual Machine in the Nectar Research Cloud. Keep up the good work. <br/>Continue with the [Cloud Starter Series](/cloud-starter/02-tutorials)
+{: .callout-success}
 
