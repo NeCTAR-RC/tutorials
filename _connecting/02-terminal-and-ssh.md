@@ -22,9 +22,9 @@ When you launched your instance, you chose an *Image*. Nectar images have all be
 
 When you launched your instance you chose a keypair from the registered keypairs in your Nectar account. Nectar has now applied the public key of that pair to the default user account on the instance. This means that you can connect to this account, on this instance by specifying the file location of the private key of that pair. You should remind yourself of the private and secure location where your private key is stored now. 
 
-positive
-: Cloud Starters
+**Cloud Starters**
 In the tutorial *Creating a keypair for use in Nectar* you have created or downloaded your Private Key. The recommended location is the `.ssh` directory in your home directory, i.e. `~/.ssh`
+{: .callout-warning}
 
 #### Connection
 
