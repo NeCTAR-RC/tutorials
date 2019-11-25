@@ -20,6 +20,10 @@ duration: 1
 
 [Command line, sudo and apt](/cli-101)
 
+### Data
+
+[Moving Data](/moving-data/)
+
 ### Changing instances
 
 [Rebooting, Resizing, Rebuilding and Deleting](/changing-instances)

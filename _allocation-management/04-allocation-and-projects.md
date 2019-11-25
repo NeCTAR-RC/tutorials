@@ -25,5 +25,5 @@ Project managers have access to a few functions that ordinary project members do
 - Project listed in *My Requests*, *Amend/Extend* ability
 - Allocation and Expiry process communications
 
-positive
-: Occasionally you might come across the term *tenancy* or *tenant-manager*. These art depr'cated words meaning *project* and *project manager* respectively. 
+Occasionally you might come across the term *tenancy* or *tenant-manager*. These art depr'cated words meaning *project* and *project manager* respectively. 
+{: .callout-warning}

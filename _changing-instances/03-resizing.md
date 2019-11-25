@@ -6,7 +6,7 @@ duration: 5
 
 One benefit of Virtual Machines over physical ones is that the virtual ones you can actually make bigger. Increasing the number of CPUs, the RAM and the hard drive in your computer was never this easy.
 
-Navigate to the Instances page on your Nectar Dashboard, and select *Resize instance* from the Action Menu of the instance you would like to resize. This will take you to the *Resize Instance dialog* where you can select a new flavour for your instance. 
+To *resize* an instance, navigate to the Instances page on your Nectar Dashboard, and select *Resize instance* from the Action Menu of the instance you would like to resize. This will take you to the *Resize Instance dialog* where you can select a new flavour for your instance. 
 
 ### 2-step process
 

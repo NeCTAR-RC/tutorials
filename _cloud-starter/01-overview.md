@@ -21,6 +21,8 @@ This series is technical in nature. You will learn *how* to use the cloud, not *
 - **Launching and connecting**<br/>
   Launching and connecting to your Virtual Machine (VM)
 - **Installing/updating software**<br/> Using the **command line** on your VM
+- **Data**<br/>
+  Move some data from your local machine to your instance. 
 - **Changing instances**<br/>
   Rebooting, Resizing, Rebuilding and Deleting
 - **Working with allocations**<br/>

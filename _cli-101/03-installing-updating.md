@@ -123,7 +123,7 @@ Try it:
 $ fortune
 ```
 
-I you would like to see the next few *random epigrams* from `fortune`, but you would not like to retype the command, you can use the up-arrow while at your command prompt. The up-arrow navigates to the previous commands in your command history. 
+If you would like to see the next few *random epigrams* from `fortune`, but you would not like to retype the command, you can use the up-arrow while at your command prompt. The up-arrow navigates to the previous commands in your command history. 
 
 **Installing software** The basic `apt` way of installing software is not the only way to install software. You'll find installation instructions for your software from your vendors and repositories. 
 {: .callout-warning}
