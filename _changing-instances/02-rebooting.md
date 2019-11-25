@@ -4,7 +4,7 @@ order: 2
 duration: 10
 ---
 
-From time to time you may find the need to reboot your instance. Whether a software install or upgrade as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
+From time to time you may find the need to reboot your instance. Whether due to a software install or upgrade, or as as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
 
 ### From the `ssh` command line
 
@@ -16,11 +16,11 @@ $ sudo shutdown -r now
 
 
 
-You will typically need `sudo`-elevation to use the `shutdown`-command. You ask for a reboot using the `-r` argument. And you can indicate when you want the shutdown/reboot to take place. We're using `now`.
+You will typically need `sudo`-elevation to use the `shutdown`-command. You ask for a reboot using the `-r` argument. And you can indicate when you want the shutdown/reboot to take place. We're using "`now`".
 
 It typically takes a minute or so for an instance to be accessible again. In this time you won't be able to connect.
 
-An example is show here
+An example is shown here:
 
 ```bash
 me@local:~$ ssh debian@144.6.226.175
