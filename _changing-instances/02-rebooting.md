@@ -4,7 +4,7 @@ order: 2
 duration: 10
 ---
 
-From time to time you may find the need to reboot your instance. Whether due to a software install or upgrade, or as as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
+From time to time you may find the need to reboot your instance. Whether due to a software install or upgrade, or as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
 
 ### From the `ssh` command line
 

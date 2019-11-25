@@ -26,7 +26,7 @@ If you use *Rebuild* and then reconnect to your instance using `ssh` you will ty
 
 When you receive the `REMOTE HOST IDENTIFICATION HAS CHANGED!`-warning ssh typically suggests how you can resolve this situation, but this depends on a combination of ssh-client, terminal software and operating system and possibly your computer's mood. `ssh` keeps track of computers that you have previously connected to using the `.ssh/known_hosts`-file. If a computer that `ssh` has previously connected to looks materially different now than  it did in the past, `ssh` will refuse to connect (or display a stern warning). If you have just rebuilt your VM, then your VM will look materially different, and ssh will throw this warning.
 
-To resolve this situation, and allow `ssh` to connect ot your rebuilt instance, you will have to use a  command to forget the old instnace' fingerprint. You can do this as below (remeber to fill in the ip-address of your instance):
+To resolve this situation, and allow `ssh` to connect to your rebuilt instance, you will have to use a command to forget the old instance' fingerprint. You can do this as below (remember to fill in the ip-address of your instance):
 
 ```bash
 $ ssh-keygen -R [your-ip-address]
