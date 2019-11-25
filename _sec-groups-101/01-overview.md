@@ -10,7 +10,7 @@ You need to specify any network traffic to be allowed to reach the VM via the Ru
 
 Security groups can be applied to VMs at launch and can be applied or removed at any other time in the VMs life. 
 
-**Cloud Starter**<br/>This tutorials is part of the Nectar Cloud Starter curriculum. Only the bare essentials of security groups are discussed here. For more in depth review see the Nectar [Security Group documentation](https://support.ehelp.edu.au/support/solutions/articles/6000055387).
+**Cloud Starter**<br/>This tutorial is part of the Nectar Cloud Starter curriculum. Only the *bare essentials* of security groups are discussed here. For more in depth review see the Nectar [Security Group documentation](https://support.ehelp.edu.au/support/solutions/articles/6000055387).
 {: .callout-warning}
 
 ### What you'll learn
