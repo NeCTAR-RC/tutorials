@@ -4,22 +4,20 @@ order: 1
 duration: 3
 ---
 
-### What is AARNet CloudStor
+CloudStor is an [AARNet](https://www.aarnet.edu.au/) service to sync, share and store files using the high-speed AARNet network. You can access CloudStor via the easy to use web-based [CloudStor Dashboard](https://cloudstor.aarnet.edu.au). For information about how to set up, get started and use the CloudStor dashboard, please refer to AARNet's [CloudStor Getting Started Guide](https://support.aarnet.edu.au/hc/en-us/articles/227469547-CloudStor-Getting-Started-Guide).
 
-CloudStor is an AARNet service that enables AARNet customers and the wider community to quickly and securely sync, share and store files using the high-speed AARNet network. AARnet CloudStor provides an easy to use web based dashboard and you can login the dashboard via [CloudStor Dashboard](https://cloudstor.aarnet.edu.au). The dashboard provides the user access to both CloudStor (storage) and FileSender (ideal for sharing large files). For information about how to use the dashboard, please refer to [CloudStor Getting Started Guide](https://support.aarnet.edu.au/hc/en-us/articles/227469547-CloudStor-Getting-Started-Guide).
- 
- Nectar offers a helper command called `cloudstor-setup` for users who wish to make their CloudStor storage available on their Nectar virtual machine.
- 
- In this tutorial, you will walk through the setup procedure, and mounts your CloudStor storage to /cluster within your virtual machine.
+### CloudStor and Nectar
 
-**Cloud Starter**
-This tutorial is part of the Nectar Cloud Starter curriculum. You should be familiar with the absolute basics of Security Groups. You should have a Keypair and terminal software installed on your machine. If you think you need help with any of that, you should complete Cloud Starter tutorials before you start here.
-{: .callout-warning}
+Nectar offers a helper command called `cloudstor-setup` for users to make their CloudStor storage available to their Nectar virtual machine.
+
+In this tutorial we will walk through the setup procedure and mount your CloudStor storage to `/cloudstor` within your virtual machine.
 
 
 ### What you'll learn
 
-- Mount CloudStor storage to /cloustor within your virtual machine
+- Set up an App Password in CloudStor
+- Mount CloudStor storage in your virtual machine
+- Security implications
 
 ### What you'll need
 
