@@ -4,13 +4,13 @@ order: 1
 duration: 3
 ---
 
-CloudStor is an [AARNet](https://www.aarnet.edu.au/) service to sync, share and store files using the high-speed AARNet network. You can access CloudStor via the easy to use web-based [CloudStor Dashboard](https://cloudstor.aarnet.edu.au). For information about how to set up, get started and use the CloudStor dashboard, please refer to AARNet's [CloudStor Getting Started Guide](https://support.aarnet.edu.au/hc/en-us/articles/227469547-CloudStor-Getting-Started-Guide).
+CloudStor is an [AARNet](https://www.aarnet.edu.au/) service to sync, share and store files using the high-speed AARNet network. You can view the data in your CloudStor account via its easy to use, web-based [CloudStor Dashboard](https://cloudstor.aarnet.edu.au). For information about how to set up, get started and use the CloudStor dashboard, we refer you to AARNet's [CloudStor Getting Started Guide](https://support.aarnet.edu.au/hc/en-us/articles/227469547-CloudStor-Getting-Started-Guide).
 
 ### CloudStor and Nectar
 
-Nectar offers a helper command called `cloudstor-setup` for users to make their CloudStor storage available to their Nectar virtual machine.
+You can mount your CloudStor account directly into your Nectar virtual machine. To help you do this, Nectar offers a helper command called `cloudstor-setup`.
 
-In this tutorial we will walk through the setup procedure and mount your CloudStor storage to `/cloudstor` within your virtual machine.
+In this tutorial we will walk you through the setup procedure and mount your CloudStor storage to `/cloudstor` within your virtual machine.
 
 
 ### What you'll learn

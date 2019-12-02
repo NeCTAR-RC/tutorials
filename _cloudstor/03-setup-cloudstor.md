@@ -14,9 +14,9 @@ You have a CloudStor account and you have generated an App Password to access it
    $ cloudstor-setup
    ```
 
-   The `cloudstor-setup` command will re-emphasize using App Passwords to you.
+   The `cloudstor-setup` command will re-emphasise using App Passwords to you.
 
-3. By default the `cloudstor-setup` command will prompt you for your CloudStor `username` and `password`. Follow the prompts and paste in the username and password you generated in the previous section. You should see some  output similar to this:
+3. By default the `cloudstor-setup` command will prompt you for your CloudStor `username` and `password`. Follow the prompts and paste in the username and password you generated in the previous section. You should see some output similar to this:
 
    ```bash
    $ cloudstor-setup
@@ -36,7 +36,7 @@ You have a CloudStor account and you have generated an App Password to access it
    
    Press [ENTER] to continue or Ctrl+C to exit.
    
-   Username: Just.Berkhout@utas.edu.au
+   Username: wile.c@acme.edu.au
    App password:
    Testing your CloudStor credentials... OK
    Mounting CloudStor storage... done
@@ -64,7 +64,7 @@ $ cloudstor-setup -h
 
 
 **Note** The command `cloudstor-setup` is available on Nectar official images, build after 10/10/2018.
-Under the hood the `cloudstor-setup` command uses software called davfs2 to connect to your AARNet CloudStor account.
+Under the hood the `cloudstor-setup` command uses software called `davfs2` to connect to your AARNet CloudStor account.
 {: .callout-warning}
 
 

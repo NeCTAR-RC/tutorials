@@ -10,7 +10,7 @@ Access to your CloudStor account on your instance is secured using a password. O
 
 ###  Sharing a Virtual Machine Snapshot
 
-The `cloudstor-setup` script will store your CloudStor password in plain text in a file called `/etc/davfs2/secrets`. If you create and share a snapshot of your virtual machine with another user, this password will also be shared with them. If you intend on sharing snapshots, you should make arrangements to remove your CloudStor credentials before you start the snapshot process.
+The `cloudstor-setup` script will store your CloudStor password in plain text in a file called `/etc/davfs2/secrets`. If you create and share a snapshot of your virtual machine with another user, this password will also be shared with them. If you intend to share a snapshot, you should make arrangements to remove your CloudStor credentials before you start the snapshot process.
 
 ### Sharing instances
 
