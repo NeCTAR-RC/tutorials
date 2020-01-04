@@ -275,3 +275,17 @@ collections:
     status: draft # draft or published
     published: 2019-11-13
     author: Ming Fu <xiao.fu@utas.edu.au>
+
+  kubernetes:
+    output: true
+    permalink: /:collection/:name
+    title: Kubernetes
+    summary: A tutorial for Kubernetes
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 30
+    status: draft
+    published: 2020-01-02
+    author: Jake Yip <jake.yip@unimelb.edu.au>
