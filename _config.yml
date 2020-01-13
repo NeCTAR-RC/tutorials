@@ -280,12 +280,12 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Kubernetes
-    summary: A tutorial for Kubernetes
-    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    summary: "Learn how to create and administer your own Kubernetes cluster using Magnum"
+    category: Advanced
     tags:
       - tutorial
     difficulty: 3
-    duration: 30
+    duration: 60
     status: draft
     published: 2020-01-02
     author: Jake Yip <jake.yip@unimelb.edu.au>

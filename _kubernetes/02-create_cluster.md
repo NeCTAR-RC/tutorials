@@ -4,6 +4,13 @@ order: 2
 duration: 2
 ---
 
+A Kubernetes Cluster consist of one or more _master_ nodes, and one or more
+_worker_ nodes. A client (you) communicates with _master_ nodes using the
+Kubernetes API to spin up containers. The _worker_ nodes runs these containers.
+
+In this tutorial we start by creating a cluster of one _master_ and one _worker_
+node.
+
 ## Cluster templates
 
 In Magnum, a COE Cluster is created via a Cluster Template. A Cluster Template
@@ -33,8 +40,8 @@ $ openstack coe cluster template list
 ```
 
 You can also create your own templates for custom options. Use `$ openstack coe
-cluster template show kubernetes-melbourne-v1.14.6` to see options for the
-template, and make sure you copy all the values accordingly.
+cluster template show f561d9ee-0893-46ec-b723-a918d3ca58ce` to see options for
+the template, and make sure you copy all the values accordingly.
 
 Note that options `cloud_provider_tag` and `kube_tag` are highly dependent on
 the current version of the COE driver in Magnum, and the latest versions might
