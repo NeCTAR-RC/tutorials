@@ -13,32 +13,32 @@ persistently.
 1. To use a volume, it must first be created in cinder. Replace
    `--availability-zone` in the following example.
 
-```
-$ openstack volume create --availability-zone melbourne-qh2 --size 1 mystorage
-+---------------------+--------------------------------------+
-| Field               | Value                                |
-+---------------------+--------------------------------------+
-| attachments         | []                                   |
-| availability_zone   | melbourne-qh2                        |
-| bootable            | false                                |
-| consistencygroup_id | None                                 |
-| created_at          | 2020-01-06T22:49:23.000000           |
-| description         | None                                 |
-| encrypted           | False                                |
-| id                  | 827fd40d-6a00-4faa-ab94-f5e7be92c5d1 |
-| multiattach         | False                                |
-| name                | mystorage                            |
-| properties          |                                      |
-| replication_status  | None                                 |
-| size                | 1                                    |
-| snapshot_id         | None                                 |
-| source_volid        | None                                 |
-| status              | creating                             |
-| type                | melbourne                            |
-| updated_at          | None                                 |
-| user_id             | 4aa047f1d39e462eb7493b1892cbd7aa     |
-+---------------------+--------------------------------------+
-```
+    ```
+    $ openstack volume create --availability-zone melbourne-qh2 --size 1 mystorage
+    +---------------------+--------------------------------------+
+    | Field               | Value                                |
+    +---------------------+--------------------------------------+
+    | attachments         | []                                   |
+    | availability_zone   | melbourne-qh2                        |
+    | bootable            | false                                |
+    | consistencygroup_id | None                                 |
+    | created_at          | 2020-01-06T22:49:23.000000           |
+    | description         | None                                 |
+    | encrypted           | False                                |
+    | id                  | 827fd40d-6a00-4faa-ab94-f5e7be92c5d1 |
+    | multiattach         | False                                |
+    | name                | mystorage                            |
+    | properties          |                                      |
+    | replication_status  | None                                 |
+    | size                | 1                                    |
+    | snapshot_id         | None                                 |
+    | source_volid        | None                                 |
+    | status              | creating                             |
+    | type                | melbourne                            |
+    | updated_at          | None                                 |
+    | user_id             | 4aa047f1d39e462eb7493b1892cbd7aa     |
+    +---------------------+--------------------------------------+
+    ```
 
 1. Create the following as `nginxcinder.yaml`. Replace `volumeID` with the
    volume ID from the previous command
