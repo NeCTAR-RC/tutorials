@@ -275,3 +275,17 @@ collections:
     status: draft # draft or published
     published: 2019-11-13
     author: Ming Fu <xiao.fu@utas.edu.au>
+
+  kubernetes:
+    output: true
+    permalink: /:collection/:name
+    title: Kubernetes
+    summary: "Learn how to create and administer your own Kubernetes cluster using Magnum"
+    category: Advanced
+    tags:
+      - tutorial
+    difficulty: 3
+    duration: 60
+    status: draft
+    published: 2020-01-02
+    author: Jake Yip <jake.yip@unimelb.edu.au>
