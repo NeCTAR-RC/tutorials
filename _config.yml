@@ -16,8 +16,6 @@ exclude:
   - Gemfile.lock
   - vendor
 
-permalink: pretty
-
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
@@ -29,6 +27,7 @@ defaults:
 collections:
   launching-virtual-machines:
     output: true
+    permalink: /:collection/:name
     title: Launching Virtual Machines
     summary: Launching a virtual machine using the Nectar dashboard and the launch dialog
     category: Beginner
@@ -44,6 +43,7 @@ collections:
 
   connecting:
     output: true
+    permalink: /:collection/:name
     title: Access using SSH and web-based VNC
     summary: Access your Virtual Machine's command line using your Terminal and ssh or the web-based vnc console.
     category: Beginner
@@ -59,6 +59,7 @@ collections:
 
   advanced-networking:
     output: true
+    permalink: /:collection/:name
     title: Advanced Networking
     summary: Learn to implement some advanced networking concepts in your Nectar Research Cloud project
     category: Advanced
@@ -75,6 +76,7 @@ collections:
 
   keypairs:
     output: true
+    permalink: /:collection/:name
     title: Creating a keypair for use in Nectar
     summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
     category: Beginner
@@ -90,6 +92,7 @@ collections:
 
   sec-groups-101:
     output: true
+    permalink: /:collection/:name
     title: Security groups, the absolute basics
     summary: Get ready to launch with the bare minimum ssh Security Group for your Nectar instance.
     category: Beginner
@@ -105,6 +108,7 @@ collections:
 
   allocation-management:
     output: true
+    permalink: /:collection/:name
     title: Allocation Management
     summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
     category: Non-technical
@@ -124,6 +128,7 @@ collections:
 
   changing-instances:
     output: true
+    permalink: /:collection/:name
     title: Rebooting, Deleting, Rebuilding, Resizing
     summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
     category: Beginner
@@ -137,6 +142,7 @@ collections:
 
   cli-101:
     output: true
+    permalink: /:collection/:name
     title: Command line, sudo and apt
     summary: Find your way around your instance from the command line. Learn to use admin privileges and install and maintain software
     category: Beginner
@@ -154,6 +160,7 @@ collections:
 
   cloud-starter:
     output: true
+    permalink: /:collection/:name
     title: Cloud Starter Series
     summary: Get started in the Nectar Research Cloud with this tutorial series. Learn how easy it is to launch VMs, to connect and to try something new.
     category: Series
@@ -173,6 +180,7 @@ collections:
 
   dns-with-designate:
     output: true
+    permalink: /:collection/:name
     title: DNS with Designate
     summary: Learn to manage your domain name records in Nectar
     category: Intermediate
@@ -190,6 +198,7 @@ collections:
 
   applications:
     output: true
+    permalink: /:collection/:name
     title: Applications
     summary: Learn to quick deploy an application environment from our catalog with this R-Studio example.
     category: Beginner
@@ -209,6 +218,7 @@ collections:
 
   moving-data:
     output: true
+    permalink: /:collection/:name
     title: Moving data
     summary: Learn some basic ways of copying data to and from your Nectar instance.
     category: Beginner
@@ -224,6 +234,7 @@ collections:
 
   volume-storage:
     output: true
+    permalink: /:collection/:name
     title: Volume Storage
     summary: "Learn to use Volume Storage: Nectar's virtual USB-sticks."
     category: Beginner
@@ -237,6 +248,7 @@ collections:
 
   snapshots:
     output: true
+    permalink: /:collection/:name
     title: Snapshots
     summary: "Learn to use Snapshot to make a copy or backup of a Nectar instance."
     category: Beginner
@@ -250,6 +262,7 @@ collections:
 
   cloudstor:
     output: true
+    permalink: /:collection/:name
     title: AARNet Cloudstor
     summary: "Learn to use AARNet Cloudstor in Nectar's Virtual Machine"
     category: Beginner
@@ -263,6 +276,7 @@ collections:
 
   kubernetes:
     output: true
+    permalink: /:collection/:name
     title: Kubernetes
     summary: "Learn how to create and administer your own Kubernetes cluster using Magnum"
     category: Advanced
