@@ -46,7 +46,7 @@ layout: default
           {% for item in pages -%}
             {% if item.title != null -%}
               {% if item.order != null -%}
-                <a href="{{ item.url }}" class="list-group-item list-group-item-action{% if item.url == page.url %} active{% endif %}">
+                <a href="{{ item.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action{% if item.url == page.url %} active{% endif %}">
                   <span>{{ item.order }}</span> {{ item.title }}
                 </a>
               {% endif -%}

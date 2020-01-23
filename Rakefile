@@ -15,6 +15,11 @@ task :setup do
   system "bundle install --path vendor/bundle"
 end # task :setup
 
+desc "Build site"
+task :build do
+  system "bundle exec jekyll build"
+end # task :serve
+
 desc "Launch preview environment"
 task :serve do
   system "bundle exec jekyll serve -H 0.0.0.0"
