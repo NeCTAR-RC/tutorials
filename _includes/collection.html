@@ -1,6 +1,6 @@
-{% for c in site.collections %}
-  {% assign page_collection = page.url | remove_first: '/' | split: '/' | first %}
-  {% if page_collection contains c.label %}
-    {% assign collection = c %}
-  {% endif %}
-{% endfor %}
+{%- for c in site.collections -%}
+  {%- assign page_collection = page.url | remove_first: '/' | split: '/' | first -%}
+  {%- if page_collection contains c.label -%}
+    {%- assign collection = c -%}
+  {%- endif -%}
+{%- endfor -%}
