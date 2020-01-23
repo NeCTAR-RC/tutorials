@@ -287,3 +287,17 @@ collections:
     status: draft
     published: 2020-01-02
     author: Jake Yip <jake.yip@unimelb.edu.au>
+  
+  x11forwarding:
+    output: true
+    permalink: /:collection/:name
+    title: X11 Forwarding
+    summary: "Learn to use X11 Forwarding to run graphical applications on virtual machine."
+    category: Intermediate
+    tags:
+      - tutorial
+    difficulty: 2 # number from 1 to 5
+    duration: 15 # number of minutes
+    status: draft # draft or published
+    published: 2019-11-28
+    author: Ming Fu <xiao.fu@utas.edu.au>
