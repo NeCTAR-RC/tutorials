@@ -47,10 +47,23 @@ task :tutorial do
   Dir.mkdir tutorial_images
 
   # index
-  open("_#{tutorial}/index.md", 'w') do |f|
+  open("_#{tutorial}/index.html", 'w') do |f|
     f.puts '---'
-    f.puts "redirect_to: /#{tutorial}/01-overview"
+    f.puts 'layout: none'
     f.puts '---'
+    f.puts '{%- include collection.html -%}'
+    f.puts '{%- assign first_page = site[collection.label] | where_exp: "item", "item.order != null" | sort: "order" | first -%}'
+    f.puts '<!DOCTYPE html>'
+    f.puts '<html lang="en-US">'
+    f.puts '  <meta charset="utf-8">'
+    f.puts '  <title>Redirecting&hellip;</title>'
+    f.puts '  <link rel="canonical" href="{{ first_page.url | prepend: site.baseurl }}">'
+    f.puts '  <script>location="{{ first_page.url | prepend: site.baseurl }}"</script>'
+    f.puts '  <meta http-equiv="refresh" content="0; url="{{ first_page.url | prepend: site.baseurl }}">'
+    f.puts '  <meta name="robots" content="noindex">'
+    f.puts '  <h1>Redirecting&hellip;</h1>'
+    f.puts '  <a href="{{ first_page.url | prepend: site.baseurl }}">Click here if you are not redirected.</a>'
+    f.puts '</html>'
   end
 
   puts "  ==> creating first page: _#{tutorial}/01-overview.md"

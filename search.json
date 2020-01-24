@@ -1,5 +1,5 @@
 ---
-layout:
+layout: none
 ---
 {% include tutorials.html -%}
 [{% for collection in tutorials %}
