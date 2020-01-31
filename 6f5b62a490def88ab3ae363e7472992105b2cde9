@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "343bf98f_02930b1a",
+        "filename": "CONTRIBUTING.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-01-31T00:54:16Z",
+      "side": 1,
+      "message": "this is not accessible to non-nectar people, will this be a problem?",
+      "range": {
+        "startLine": 28,
+        "startChar": 73,
+        "endLine": 28,
+        "endChar": 129
+      },
+      "revId": "6f5b62a490def88ab3ae363e7472992105b2cde9",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
