@@ -22,6 +22,30 @@
       "revId": "6f5b62a490def88ab3ae363e7472992105b2cde9",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b82c9246_9223a44d",
+        "filename": "CONTRIBUTING.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-01-31T01:12:46Z",
+      "side": 1,
+      "message": "Not at this stage. It\u0027ll be hard enough just getting Nectar people to update the docs!",
+      "parentUuid": "343bf98f_02930b1a",
+      "range": {
+        "startLine": 28,
+        "startChar": 73,
+        "endLine": 28,
+        "endChar": 129
+      },
+      "revId": "6f5b62a490def88ab3ae363e7472992105b2cde9",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
     }
   ]
 }
