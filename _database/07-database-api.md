@@ -1,0 +1,137 @@
+---
+title: Using Python Client
+order: 7
+duration: 15
+---
+
+In this section, we are going to use the python trove client to create and manage the database instances.
+
+### Installation
+
+```
+apt get install python-troveclient
+```
+
+### Setup Credential
+
+Before you can use the trove client, you need to setup credential. Please follow the instruction from this [article](https://support.ehelp.edu.au/support/solutions/articles/6000078065-api).
+
+### Lists all database instances
+ 
+```
+$ trove list
++--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| ID                                   | Name     | Datastore | Datastore Version | Status | Flavor ID                            | Size | Region    |
++--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial | MySQL     | 8.0-12            | ACTIVE | 325c919d-b523-4960-968c-f2baffafff94 |   10 | Melbourne |
++--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+```
+
+### Create a new database instance
+
+Execute the below command to create a MySQL database instance, with a 1GB volume:
+
+```
+$trove create my-database-instance db.small --datastore MySQL --datastore_version 8.0-12 --size 1
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| created           | 2020-03-27T00:58:13                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-12                               |
+| flavor            | 325c919d-b523-4960-968c-f2baffafff94 |
+| hostname          | kwnl2vj7lhc.db.cloud.edu.au          |
+| id                | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| name              | my-database-instance                 |
+| region            | Melbourne                            |
+| status            | BUILD                                |
+| updated           | 2020-03-27T00:58:13                  |
+| volume            | 1                                    |
++-------------------+--------------------------------------+
+$trove list
++--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| ID                                   | Name                 | Datastore | Datastore Version | Status | Flavor ID                            | Size | Region    |
++--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial             | MySQL     | 8.0-12            | ACTIVE | 325c919d-b523-4960-968c-f2baffafff94 |   10 | Melbourne |
+| 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | my-database-instance | MySQL     | 8.0-12            | BUILD  | 325c919d-b523-4960-968c-f2baffafff94 |    1 | Melbourne |
++--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+```
+ 
+### Show details of a database instance
+ 
+```
+$ trove show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| created           | 2020-03-27T00:58:13                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-12                               |
+| flavor            | 325c919d-b523-4960-968c-f2baffafff94 |
+| hostname          | kwnl2vj7lhc.db.cloud.edu.au          |
+| id                | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| name              | my-database-instance                 |
+| region            | Melbourne                            |
+| status            | ACTIVE                               |
+| updated           | 2020-03-27T00:58:27                  |
+| volume            | 1                                    |
+| volume_used       | 0.13                                 |
++-------------------+--------------------------------------+
+```
+   
+### Create and list backup
+
+```
+$trove backup-create 7f465a9e-92ec-48d7-81a2-85264e7b5c95 tutorial_backup2
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| created           | 2020-03-27T02:49:25                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-12                               |
+| description       | None                                 |
+| id                | 092e35ec-b034-473d-ba33-1676cf378bbe |
+| instance_id       | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| locationRef       | None                                 |
+| name              | tutorial_backup2                     |
+| parent_id         | None                                 |
+| size              | None                                 |
+| status            | NEW                                  |
+| updated           | 2020-03-27T02:49:25                  |
++-------------------+--------------------------------------+
+$trove backup-list
++--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
+| ID                                   | Instance ID                          | Name             | Status    | Parent ID | Updated             |
++--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
+| 3d9b2cdc-0182-4154-994d-35e48574cd41 | 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial_backup  | COMPLETED | None      | 2020-03-25T10:33:19 |
+| 092e35ec-b034-473d-ba33-1676cf378bbe | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | tutorial_backup2 | COMPLETED | None      | 2020-03-27T02:49:31 |
++--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
+``` 
+
+### Create and list database
+```
+trove database-create 5de589ae-195e-4859-ae6f-8bd014094bd3 tutorial_cli
+trove database-list 5de589ae-195e-4859-ae6f-8bd014094bd3
++--------------+
+| Name         |
++--------------+
+| tutorial     |
+| tutorial_cli |
+| tutorial_new |
++--------------+
+```
+
+### Create a database user
+In this exercise, we are going to create a new user `tutorial_cli` for the newly created database `tutorial_cli`.
+
+```
+trove user-create 5de589ae-195e-4859-ae6f-8bd014094bd3 tutorial_cli 123456 --databases tutorial_cli
+trove user-list 5de589ae-195e-4859-ae6f-8bd014094bd3
++------------------+------+--------------+
+| Name             | Host | Databases    |
++------------------+------+--------------+
+| admin            | %    | tutorial     |
+| tutorial_cli     | %    | tutorial_cli |
+| tutorial_renamed | %    | tutorial     |
++------------------+------+--------------+
+```
