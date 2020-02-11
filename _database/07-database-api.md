@@ -1,0 +1,151 @@
+---
+title: Using Python Client
+order: 7
+duration: 15
+---
+
+In this section, we are going to use the python openstack client to create and manage the database instances.
+
+## Installation
+
+```
+apt get install python3-openstackclient python3-troveclient
+```
+
+## Setup Credential
+
+Before you can use the trove client, you need to setup your credentials. Please follow the instruction from this [article](https://support.ehelp.edu.au/support/solutions/articles/6000078065-api).
+
+## Lists all database instances
+ 
+```
+$ openstack database instance list
++--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| ID                                   | Name     | Datastore | Datastore Version | Status | Flavor ID                            | Size | Region    |
++--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial | MySQL     | 8.0-12            | ACTIVE | 325c919d-b523-4960-968c-f2baffafff94 |   10 | Melbourne |
++--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+```
+
+## Get latest MySQL datastore versions
+
+```
+os datastore version list MySQL
++--------------------------------------+--------+
+| ID                                   | Name   |
++--------------------------------------+--------+
+| 058fdeaa-ac3b-4881-a2f5-56a3aba468ef | 8.0-17 |
+| 21551ca0-d09b-4f4f-a2c4-dc5c64c7c50c | 5.7-18 |
++--------------------------------------+--------+
+```
+note: older versions will not be displayed
+
+## Create a new database instance
+
+Execute the below command to create a MySQL database instance, with a 1GB volume:
+
+```
+$ openstack database instance create my-database-instance db.small --datastore MySQL --datastore_version 8.0-17 --size 1 --availability_zone melbourne-qh2
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| created           | 2020-03-27T00:58:13                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-17                               |
+| flavor            | 325c919d-b523-4960-968c-f2baffafff94 |
+| hostname          | kwnl2vj7lhc.db.cloud.edu.au          |
+| id                | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| name              | my-database-instance                 |
+| region            | Melbourne                            |
+| status            | BUILD                                |
+| updated           | 2020-03-27T00:58:13                  |
+| volume            | 1                                    |
++-------------------+--------------------------------------+
+
+$ openstack database instance list
++--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| ID                                   | Name                 | Datastore | Datastore Version | Status | Flavor ID                            | Size | Region    |
++--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+| 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial             | MySQL     | 8.0-12            | ACTIVE | 325c919d-b523-4960-968c-f2baffafff94 |   10 | Melbourne |
+| 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | my-database-instance | MySQL     | 8.0-17            | BUILD  | 325c919d-b523-4960-968c-f2baffafff94 |    1 | Melbourne |
++--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
+```
+ 
+## Show details of a database instance
+ 
+```
+$ openstack database instance show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| created           | 2020-03-27T00:58:13                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-17                               |
+| flavor            | 325c919d-b523-4960-968c-f2baffafff94 |
+| hostname          | kwnl2vj7lhc.db.cloud.edu.au          |
+| id                | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| name              | my-database-instance                 |
+| region            | Melbourne                            |
+| status            | ACTIVE                               |
+| updated           | 2020-03-27T00:58:27                  |
+| volume            | 1                                    |
+| volume_used       | 0.13                                 |
++-------------------+--------------------------------------+
+```
+   
+## Create and list backup
+
+```
+$ openstack database backup create 7f465a9e-92ec-48d7-81a2-85264e7b5c95 tutorial_backup2
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| created           | 2020-03-27T02:49:25                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-17                               |
+| description       | None                                 |
+| id                | 092e35ec-b034-473d-ba33-1676cf378bbe |
+| instance_id       | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| locationRef       | None                                 |
+| name              | tutorial_backup2                     |
+| parent_id         | None                                 |
+| size              | None                                 |
+| status            | NEW                                  |
+| updated           | 2020-03-27T02:49:25                  |
++-------------------+--------------------------------------+
+$ openstack database backup list
++--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
+| ID                                   | Instance ID                          | Name             | Status    | Parent ID | Updated             |
++--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
+| 3d9b2cdc-0182-4154-994d-35e48574cd41 | 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial_backup  | COMPLETED | None      | 2020-03-25T10:33:19 |
+| 092e35ec-b034-473d-ba33-1676cf378bbe | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | tutorial_backup2 | COMPLETED | None      | 2020-03-27T02:49:31 |
++--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
+``` 
+
+## Create and list database
+```
+$ openstack database db create 5de589ae-195e-4859-ae6f-8bd014094bd3 tutorial_cli
+$ openstack database db list 5de589ae-195e-4859-ae6f-8bd014094bd3
++--------------+
+| Name         |
++--------------+
+| tutorial     |
+| tutorial_cli |
+| tutorial_new |
++--------------+
+```
+
+## Create a database user
+In this exercise, we are going to create a new user `tutorial_cli_user` for the newly created database `tutorial_cli`.
+
+```
+$ openstack database user create 5de589ae-195e-4859-ae6f-8bd014094bd3 tutorial_cli_user 123456 --databases tutorial_cli
+$ openstack database user list 5de589ae-195e-4859-ae6f-8bd014094bd3
++-------------------+------+--------------+
+| Name              | Host | Databases    |
++-------------------+------+--------------+
+| admin             | %    | tutorial     |
+| tutorial_cli_user | %    | tutorial_cli |
+| tutorial_renamed  | %    | tutorial     |
++-------------------+------+--------------+
+```
