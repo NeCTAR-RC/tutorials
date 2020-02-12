@@ -1,21 +1,136 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="11px" width="146px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 146 11"><!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
- <title>Group 2</title>
- <desc>Created with Sketch.</desc>
- <g id="Symbols" fill-rule="evenodd" fill="none">
-  <g id="Pictogram-/-5">
-   <g id="Group-2">
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="60" fill="#FFC80B"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="45" fill="#FFC80B"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="30" fill="#FFC80B"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="15" fill="#FFC80B"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="0" fill="#FFC80B"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="135" fill="#CDCDCD"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="120" fill="#CDCDCD"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="105" fill="#CDCDCD"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="90" fill="#CDCDCD"/>
-    <rect id="Rectangle-3-Copy-4" rx="2" height="11" width="11" y="0" x="75" fill="#CDCDCD"/>
-   </g>
-  </g>
- </g>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="11px"
+   width="146px"
+   version="1.1"
+   viewBox="0 0 146 11"
+   id="svg28"
+   sodipodi:docname="level-of-difficulty.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata34">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Group 2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs32" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1676"
+     inkscape:window-height="1011"
+     id="namedview30"
+     showgrid="false"
+     inkscape:zoom="8"
+     inkscape:cx="23.004573"
+     inkscape:cy="4.5851551"
+     inkscape:window-x="2396"
+     inkscape:window-y="273"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg28" />
+  <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Group 2</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <rect
+     style="fill:#f8b20e;fill-rule:evenodd;fill-opacity:1"
+     x="60"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="Rectangle-3-Copy-4" />
+  <rect
+     style="fill:#f8b20e;fill-rule:evenodd;fill-opacity:1"
+     x="45"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect7" />
+  <rect
+     style="fill:#f8b20e;fill-rule:evenodd;fill-opacity:1"
+     x="30"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect9" />
+  <rect
+     style="fill:#f8b20e;fill-rule:evenodd;fill-opacity:1"
+     x="15"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect11" />
+  <rect
+     style="fill:#f8b20e;fill-rule:evenodd;fill-opacity:1"
+     x="0"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect13" />
+  <rect
+     style="fill:#cdcdcd;fill-rule:evenodd"
+     x="135"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect15" />
+  <rect
+     style="fill:#cdcdcd;fill-rule:evenodd"
+     x="120"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect17" />
+  <rect
+     style="fill:#cdcdcd;fill-rule:evenodd"
+     x="105"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect19" />
+  <rect
+     style="fill:#cdcdcd;fill-rule:evenodd"
+     x="90"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect21" />
+  <rect
+     style="fill:#cdcdcd;fill-rule:evenodd"
+     x="75"
+     y="0"
+     width="11"
+     height="11"
+     rx="2"
+     id="rect23" />
 </svg>
