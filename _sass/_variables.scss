@@ -1,7 +1,22 @@
 
 // Bootstrap overrides
+
+// Use ARDC fonts
+$font-family-sans-serif: "Proxima Nova", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-size-base: 1rem;
-//$font-family-base: Ubuntu;
+
+// ARDC colours
+$ardc-blue:   #00A2C4 !default;
+$ardc-pink:   #E51875 !default;
+$ardc-yellow: #F8B20E !default;
+$ardc-purple: #8E489B !default;
+$ardc-grey:   #969696 !default;
+
+// Override bootstrap colours
+$primary: $ardc-blue;
+$dark: #000000;
+$component-active-bg: $ardc-purple;
+$navbar-brand-padding-y: 0;
 
 // Bootstrap shadows
 $enable-shadows: true;
