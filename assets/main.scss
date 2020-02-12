@@ -14,56 +14,56 @@ $baseurl: "{{ site.baseurl }}";
 
 @import "bootstrap-callouts";
 
+/* Spectral heading font */
+@import url("https://fonts.googleapis.com/css?family=Spectral:400,700");
 
-code {
-  font-size: 80%;
+/* Proxima Nova body font */
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url("fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: "Spectral";
+  color: $black;
+  font-weight: 400;
 }
 
 /*
  * Footer
  */
-.footer .footer-text {
-  ul {
-    list-style: none;
-  }
+.footer {
+  .footer-text {
+    a {
+      color: $ardc-orange;
+      text-decoration: underline;
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.7;
-  }
-
-  a:hover {
-    opacity:1;
+      @include hover-focus {
+        color: $ardc-pink;
+        text-decoration: underline;
+      }
+    }
+    ul {
+      list-style: none;
+    }
   }
 }
 
 /*
  * Sidebar
  */
-
 .sidebar {
   padding-top: 1.5rem;
   font-size: 0.9em;
 }
 
-
-/*
- * Navbar
- */
-
-.navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  background-color: rgba(0, 0, 0, .25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-}
-
-.navbar .form-control {
-  padding: .75rem 1rem;
-  border-width: 0;
-  border-radius: 0;
-}
 
 /*
  * Utilities
@@ -77,10 +77,14 @@ code {
   border-bottom: 1px solid #e5e5e5;
 }
 
-
 pre {
   background-color: #404040;
   color: #ccc;
+}
+
+// No underline for list items or buttons
+code {
+  font-size: 80%;
 }
 
 /* Force consistent style for console code */
