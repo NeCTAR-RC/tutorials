@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b6054bf_f7958dc9",
+        "filename": "_x11forwarding/02-enable-x11-on-virtual-machine.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-02-12T06:50:06Z",
+      "side": 1,
+      "message": "why not a LTS release? saves us having to update as often.",
+      "range": {
+        "startLine": 7,
+        "startChar": 111,
+        "endLine": 7,
+        "endChar": 116
+      },
+      "revId": "bf7f145da11cd86d1bd0c62f7d1adee176130848",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
