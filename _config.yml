@@ -288,3 +288,27 @@ collections:
     status: draft
     published: 2020-01-02
     author: Jake Yip <jake.yip@unimelb.edu.au>
+
+  cloud-one:
+    output: true
+    permalink: /:collection/:name
+    title: Cloud One Series
+    summary: This is a beginner to intermediate level tutorial series for Nectar Research Cloud. Learn how to snapshot a virtual machine, launch applications, access remote desktop and connect virtual machine with X11 forwarding.
+    category: Series
+    tags:
+      - cloud one
+      - 201
+      - beginner and intermediate level
+      - beginner
+      - intermediate
+      - snapshot
+      - application
+      - remote desktop
+      - X11 forwarding
+      - volume
+      - serie
+    difficulty: 2
+    duration: 151
+    status: draft
+    published: 2020-02-13
+    author: Ming Fu <xiao.fu@utas.edu.au> 
