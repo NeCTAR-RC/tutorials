@@ -288,3 +288,17 @@ collections:
     status: draft
     published: 2020-01-02
     author: Jake Yip <jake.yip@unimelb.edu.au>
+
+  x2go:
+    output: true
+    permalink: /:collection/:name
+    title: Remote Desktop using X2Go
+    summary: "Learn to use X2Go to access Remote Desktop running in a Nectar instance."
+    category: Intermediate
+    tags:
+      - tutorial
+    difficulty: 2 # number from 1 to 5
+    duration: 60 # number of minutes
+    status: draft # draft or published
+    published: 2019-11-20
+    author: Ming Fu <xiao.fu@utas.edu.au>
