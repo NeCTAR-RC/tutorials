@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facdbb64_c72c9e85",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 290,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-02-13T21:20:25Z",
+      "side": 1,
+      "message": "Remove whitespace here",
+      "range": {
+        "startLine": 290,
+        "startChar": 0,
+        "endLine": 290,
+        "endChar": 1
+      },
+      "revId": "c7f1e885b011f8c3a41f5259ec11b967fc1e880c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
