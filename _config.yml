@@ -288,3 +288,17 @@ collections:
     status: draft
     published: 2020-01-02
     author: Jake Yip <jake.yip@unimelb.edu.au>
+
+  git-for-cloud:
+    output: true
+    permalink: /:collection/:name
+    title: Git For Cloud Computing
+    summary: "Learn to use Git to do version control in Nectar Research Cloud"
+    category: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3 # number from 1 to 5
+    duration: 62 # number of minutes
+    status: draft # draft or published
+    published: 2020-01-03
+    author: Ming Fu <xiao.fu@utas.edu.au> 
