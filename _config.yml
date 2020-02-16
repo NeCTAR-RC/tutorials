@@ -344,3 +344,17 @@ collections:
     status: draft # draft or published
     published: 2020-09-08
     author: Ming Fu  <xiao.fu@utas.edu.au>
+
+  object-storage:
+    output: true
+    permalink: /:collection/:name
+    title: Object Storage
+    summary: "Learn to use Nectar Object Storage."
+    category: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3 # number from 1 to 5
+    duration: 60 # number of minutes
+    status: draft # draft or published
+    published: 2019-12-18
+    author: Ming Fu <xiao.fu@utas.edu.au>
