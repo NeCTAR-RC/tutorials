@@ -1,0 +1,234 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "330a978f_bff68e7b",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 13,
+        "startChar": 275,
+        "endLine": 13,
+        "endChar": 276
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6d6b980_304d9cd2",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "You have a dataset comprised of 2GB files that",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 47
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40d815c3_abafcd49",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "Sounds like a duplicate of what is mentioned in the first paragraph",
+      "range": {
+        "startLine": 15,
+        "startChar": 201,
+        "endLine": 15,
+        "endChar": 280
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2cc63e7c_e682e477",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "should this be block level access?",
+      "range": {
+        "startLine": 19,
+        "startChar": 91,
+        "endLine": 19,
+        "endChar": 95
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ff5a426_6234ce10",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 27,
+        "startChar": 262,
+        "endLine": 27,
+        "endChar": 263
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3638e3f3_755446ef",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 40,
+        "startChar": 53,
+        "endLine": 40,
+        "endChar": 54
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52dee9cf_76abac91",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "Nectar Research Cloud",
+      "range": {
+        "startLine": 7,
+        "startChar": 33,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd6ec6cb_72ce5d71",
+        "filename": "_object-storage/03-object-storage-ftp-cloudfs.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "it would be easier to install the ubuntu package wouldn\u0027t it?\n\napt install sftpcloudfs",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 3
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8eaae9a6_26e4b43f",
+        "filename": "_object-storage/04-object-storage-cli.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "apt install python3-swiftclient?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 36
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe0591d9_08a48daf",
+        "filename": "_object-storage/04-object-storage-cli.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:47:36Z",
+      "side": 1,
+      "message": "I feel like this should be at the start as it is useful and not just applicable to swiftclient",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 97,
+        "endChar": 195
+      },
+      "revId": "a1498de1e8dcb1ca2c89440f3fefb615de300206",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
