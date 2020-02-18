@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "296c5ca5_476a0e19",
+        "filename": "_git-for-cloud/03-git-setting-repository.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:55:11Z",
+      "side": 1,
+      "message": "this sentence could be modified slightly, something I found on the Internet:\n\nA Git repository is the .git/ folder inside a project. This repository tracks all changes made to files in your project, building a history over time. Meaning, if you delete the .git/ folder, then you delete your project’s history.",
+      "range": {
+        "startLine": 7,
+        "startChar": 1,
+        "endLine": 7,
+        "endChar": 137
+      },
+      "revId": "088c67484c416d2db3cd1ed1158c102a848d65d3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a90f92e0_c95ce2f1",
+        "filename": "_git-for-cloud/04-git-inspecting-repository.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:55:11Z",
+      "side": 1,
+      "message": "remove comma, not needed",
+      "range": {
+        "startLine": 9,
+        "startChar": 156,
+        "endLine": 9,
+        "endChar": 157
+      },
+      "revId": "088c67484c416d2db3cd1ed1158c102a848d65d3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ab6e63a_d497f6a4",
+        "filename": "_git-for-cloud/04-git-inspecting-repository.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:55:11Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 4
+      },
+      "revId": "088c67484c416d2db3cd1ed1158c102a848d65d3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6216b99c_290c9235",
+        "filename": "_git-for-cloud/05-git-branch.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:55:11Z",
+      "side": 1,
+      "message": "branches",
+      "range": {
+        "startLine": 7,
+        "startChar": 303,
+        "endLine": 7,
+        "endChar": 309
+      },
+      "revId": "088c67484c416d2db3cd1ed1158c102a848d65d3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "342e8aba_7bf221f8",
+        "filename": "_git-for-cloud/05-git-branch.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-18T21:55:11Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 7,
+        "startChar": 361,
+        "endLine": 7,
+        "endChar": 363
+      },
+      "revId": "088c67484c416d2db3cd1ed1158c102a848d65d3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
