@@ -330,3 +330,17 @@ collections:
     status: draft # draft or published
     published: 2020-02-20
     author: Ming Fu <xiao.fu@utas.edu.au>
+
+  application-credentials:
+    output: true
+    permalink: /:collection/:name
+    title: Application Credentials
+    summary: "Learn to use Application Credentials to authenticate your application in Nectar Cloud."
+    category: Intermediate
+    tags:
+      - tutorial
+    difficulty: 3 # number from 1 to 5
+    duration: 15 # number of minutes
+    status: draft # draft or published
+    published: 2020-02-18
+    author: Ming Fu  <xiao.fu@utas.edu.au>
