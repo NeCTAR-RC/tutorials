@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "44dc7bb1_b706daee",
+        "filename": "_application-passwords/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "functional you will need",
+      "range": {
+        "startLine": 7,
+        "startChar": 162,
+        "endLine": 7,
+        "endChar": 183
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3fa3d1ad_7cbcec1a",
+        "filename": "_application-passwords/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "this",
+      "range": {
+        "startLine": 7,
+        "startChar": 265,
+        "endLine": 7,
+        "endChar": 267
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "458d8a8e_8a90da9e",
+        "filename": "_application-passwords/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "such as",
+      "range": {
+        "startLine": 7,
+        "startChar": 82,
+        "endLine": 7,
+        "endChar": 87
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "91eb8333_9862012d",
+        "filename": "_application-passwords/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "are",
+      "range": {
+        "startLine": 9,
+        "startChar": 26,
+        "endLine": 9,
+        "endChar": 28
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cd0ddad4_a84207c5",
+        "filename": "_application-passwords/02-create-app-credentials.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "python3-openstackclient",
+      "range": {
+        "startLine": 11,
+        "startChar": 17,
+        "endLine": 11,
+        "endChar": 39
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54473df0_eea6b32a",
+        "filename": "_application-passwords/02-create-app-credentials.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "this is pulled in by openstack client so no need to install as it will already be installed",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 38
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efb8da8c_b11337c1",
+        "filename": "_application-passwords/02-create-app-credentials.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "your credentials",
+      "range": {
+        "startLine": 17,
+        "startChar": 40,
+        "endLine": 17,
+        "endChar": 58
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c1a2f70_4cadf9ed",
+        "filename": "_application-passwords/04-cli-app-credentials.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-20T00:13:15Z",
+      "side": 1,
+      "message": "as",
+      "range": {
+        "startLine": 7,
+        "startChar": 85,
+        "endLine": 7,
+        "endChar": 90
+      },
+      "revId": "4a2888bba0a69b98d2ee71cbe6cf2c00ad0f9eef",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
