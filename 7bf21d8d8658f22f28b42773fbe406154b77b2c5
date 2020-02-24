@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff7f7c89_b54d9702",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-24T23:15:01Z",
+      "side": 1,
+      "message": "like databases",
+      "range": {
+        "startLine": 15,
+        "startChar": 117,
+        "endLine": 15,
+        "endChar": 130
+      },
+      "revId": "7bf21d8d8658f22f28b42773fbe406154b77b2c5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "faac118f_e452fecc",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-24T23:15:01Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 50,
+        "startChar": 10,
+        "endLine": 50,
+        "endChar": 11
+      },
+      "revId": "7bf21d8d8658f22f28b42773fbe406154b77b2c5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "997f9bc2_3c3924af",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-24T23:15:01Z",
+      "side": 1,
+      "message": "Only an empty",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 10
+      },
+      "revId": "7bf21d8d8658f22f28b42773fbe406154b77b2c5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "03c00a22_68aa3536",
+        "filename": "_object-storage/05-object-storage-next-steps.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-24T23:15:01Z",
+      "side": 1,
+      "message": "via the Dashboard",
+      "range": {
+        "startLine": 7,
+        "startChar": 54,
+        "endLine": 7,
+        "endChar": 67
+      },
+      "revId": "7bf21d8d8658f22f28b42773fbe406154b77b2c5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca1a3b4e_ebdbe4c8",
+        "filename": "_object-storage/05-object-storage-next-steps.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-24T23:15:01Z",
+      "side": 1,
+      "message": "and a python client",
+      "range": {
+        "startLine": 7,
+        "startChar": 83,
+        "endLine": 7,
+        "endChar": 99
+      },
+      "revId": "7bf21d8d8658f22f28b42773fbe406154b77b2c5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c57620c1_1852e88d",
+        "filename": "_object-storage/05-object-storage-next-steps.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-02-24T23:15:01Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 9,
+        "startChar": 13,
+        "endLine": 9,
+        "endChar": 14
+      },
+      "revId": "7bf21d8d8658f22f28b42773fbe406154b77b2c5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
