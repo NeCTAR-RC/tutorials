@@ -302,3 +302,29 @@ collections:
     status: draft # draft or published
     published: 2019-11-28
     author: Ming Fu <xiao.fu@utas.edu.au>
+
+  cloud-two:
+    output: true
+    permalink: /:collection/:name
+    title: Cloud Two Series
+    summary: This is a intermediate level tutorial series for Nectar Research Cloud. Learn how to use application passwords, DNS, Git, headless computing, object storage, open data, OpenStack CLI and intermediate security groups.
+    category: Series
+    tags:
+      - cloud two
+      - intermediate level
+      - intermediate
+      - application passwords
+      - DNS
+      - Git
+      - headless computing
+      - object storage
+      - open data
+      - OpenStack CLI
+      - intermediate security groups
+      - serie
+    difficulty: 3
+    duration: 213
+    status: draft
+    published: 2020-02-25
+    author: Ming Fu <xiao.fu@utas.edu.au>
+
