@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3ffdd34_070af02c",
+        "filename": "_headless-computing/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-02-25T00:54:25Z",
+      "side": 1,
+      "message": "\u0027A headless computer is a computer that does not have traditional monitor, keyboard and mouse devices connected to it.  Instead, it is typically operated via a local or remote console session (for example SSH), and typically doesn\u0027t have desktop software installed.  For the purposes of this lesson, we will use the term headless computing to mean the use of headless computers to perform computational tasks.\u0027",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 5
+      },
+      "revId": "0fc975a0d031e95e0d7ae62af7765a8eef8e48ec",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dda3f05a_7e4f0232",
+        "filename": "_headless-computing/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-02-25T00:54:25Z",
+      "side": 1,
+      "message": "... in the Nectar Cloud",
+      "range": {
+        "startLine": 9,
+        "startChar": 25,
+        "endLine": 9,
+        "endChar": 34
+      },
+      "revId": "0fc975a0d031e95e0d7ae62af7765a8eef8e48ec",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fd07fc2a_735bc22f",
+        "filename": "_headless-computing/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-02-25T00:54:25Z",
+      "side": 1,
+      "message": "- Lower cost.  A (physical) headless computer is cheaper than an equivalent computer with monitor and graphics card.\n\n- Less resources.  A virtual machine designed for headless operation needs less disk space and RAM, and uses less CPU cycles and power on things that are not relevant to your computational tasks.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 3
+      },
+      "revId": "0fc975a0d031e95e0d7ae62af7765a8eef8e48ec",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4e4e792c_8f9810c5",
+        "filename": "_headless-computing/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-02-25T00:54:25Z",
+      "side": 1,
+      "message": "This is compared with HPC ... or a laptop / PC that you might need to reboot.  But we should also mention that long running tasks have risks; i.e. the server or application might crash after running a long time, leaving you with no results.  Hence, you should try to do long computations in a way that can be checkpointed.",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 106
+      },
+      "revId": "0fc975a0d031e95e0d7ae62af7765a8eef8e48ec",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d7fd1ce_192f69d7",
+        "filename": "_headless-computing/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-02-25T00:54:25Z",
+      "side": 1,
+      "message": "Don\u0027t over-sell.   \" ... we are going to introduce \u003e\u003esome techniques\u003c\u003c for using a Nectar virtual machine to run long running computing tasks.\"  The point is that this tutorial is (so far) only really about using \"screen\".  There is a lot more to \"learning headless computing\" than this.  For example, file management, scripting, checkpointing, use of a batch scheduler.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 130
+      },
+      "revId": "0fc975a0d031e95e0d7ae62af7765a8eef8e48ec",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
