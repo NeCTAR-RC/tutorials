@@ -306,8 +306,8 @@ collections:
   openstack-cli:
     output: true
     permalink: /:collection/:name
-    title: OpenStack CLI
-    summary: "A basic introduction to Nectar Cloud OpenStack command line interface (Cli)"
+    title: OpenStack CLIs
+    summary: "A basic introduction to Nectar Cloud OpenStack command line interfaces (CLI)"
     category: Intermediate
     tags:
       - tutorial
@@ -317,3 +317,16 @@ collections:
     published: 2020-02-25
     author: Ming Fu <xiao.fu@utas.edu.au>
 
+  intermediate-security-groups:
+    output: true
+    permalink: /:collection/:name
+    title: Intermediate Security Groups
+    summary: "Learn to use advanced security groups in Nectar Research Cloud."
+    category: Intermediate
+    tags:
+      - tutorial
+    difficulty: 2 # number from 1 to 5
+    duration: 37 # number of minutes
+    status: draft # draft or published
+    published: 2020-02-20
+    author: Ming Fu <xiao.fu@utas.edu.au>
