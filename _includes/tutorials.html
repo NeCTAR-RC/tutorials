@@ -1,10 +1,26 @@
 {% comment -%}
 This file can be included into other files to make the tutorials list variable
 available. The output should be:
-  - 'Series' category first, ordered by difficulty
-  - All other categories, ordered by difficulty
+  - 'Series' level first, ordered by difficulty
+  - All other levels, ordered by difficulty
 {% endcomment -%}
 
-{% assign series = site.collections | where_exp:"item","item.category == 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
-{% assign nonseries = site.collections | where_exp:"item","item.category != 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
-{% assign tutorials = series | concat:nonseries -%}
+{% assign series = site.collections | where_exp:"item","item.level == 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
+{% assign tutorials = site.collections | where_exp:"item","item.level != 'Series'" | where_exp:"item","item.title != nil" | sort: "difficulty" -%}
+{% assign all_tutorials = series | concat:tutorials -%}
+
+{% comment %}
+To facilitate proper ordering of tutorials for cloud starter pages, we loop
+through our ordered list of categories and build the list of tutorials from
+there
+{% endcomment -%}
+{% assign sorttutorials = "" | split: "" %}
+{% for category in site.tutorial_categories -%}
+  {% for tutorial in nonseries -%}
+    {% if tutorial.category == category -%}
+      {% unless sorttutorials contains tutorial.category %}
+        {% assign sorttutorials = sorttutorials | push: category %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

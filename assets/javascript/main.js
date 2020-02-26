@@ -53,7 +53,7 @@ $(function() {
     var filteredResults = [];
     for (i in results) {
       var result = results[i];
-      if (result.category == filter || filter == 'All Topics') {
+      if (result.level == filter || filter == 'All Topics') {
         filteredResults.push(result);
       }
     }
@@ -70,8 +70,8 @@ $(function() {
       result += '    <div class="card shadow h-100">';
       result += '      <div class="card-header text-light bg-dark">';
       result += '        <div class="card-category">';
-      result += '          <small class="title text-uppercase">' + tutorial.category + '</small>';
-      if (tutorial.category == 'Series') {
+      result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
+      if (tutorial.level == 'Series') {
         result += '            <img src="' + baseurl + '/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">';
       }
       result += '        </div>';

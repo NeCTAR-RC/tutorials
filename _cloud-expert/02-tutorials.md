@@ -6,7 +6,7 @@ duration: 1
 
 {% include tutorials.html -%}
 
-{% assign curriculum = "Cloud Starter" %}
+{% assign curriculum = "Cloud Expert" %}
 
 {% comment %}
 To facilitate proper ordering of tutorials for cloud starter pages, we loop
