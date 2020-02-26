@@ -26,6 +26,16 @@ defaults:
     values:
       layout: tutorial
 
+# Ordered by how they should appear in the curriculum list
+tutorial_categories:
+  - Setting up prerequisites
+  - Launching and connecting
+  - The command line and software
+  - Data
+  - Networking
+  - Working with allocations
+  - Cloud-native services
+
 # New tutorials should be added by running:
 #   $ rake tutorial "My tutorial title"
 collections:
@@ -34,7 +44,9 @@ collections:
     permalink: /:collection/:name
     title: Launching Virtual Machines
     summary: Launching a virtual machine using the Nectar dashboard and the launch dialog
-    category: Beginner
+    category: Launching and connecting
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - cloud starter
       - launching
@@ -48,9 +60,11 @@ collections:
   connecting:
     output: true
     permalink: /:collection/:name
-    title: Access using SSH and web-based VNC
-    summary: Access your Virtual Machine's command line using your Terminal and ssh or the web-based vnc console.
-    category: Beginner
+    title: Access using SSH and VNC
+    summary: Access your Virtual Machine's command line using your Terminal and SSH and web-based VNC console.
+    category: Launching and connecting
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - cloud starter
       - connecting
@@ -66,7 +80,8 @@ collections:
     permalink: /:collection/:name
     title: Advanced Networking
     summary: Learn to implement some advanced networking concepts in your Nectar Research Cloud project
-    category: Advanced
+    category: Networking
+    level: Advanced
     tags:
       - advanced networking
       - private network
@@ -83,7 +98,9 @@ collections:
     permalink: /:collection/:name
     title: Creating a keypair for use in Nectar
     summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
-    category: Beginner
+    category: Setting up prerequisites
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - cloud starter
       - security
@@ -99,7 +116,9 @@ collections:
     permalink: /:collection/:name
     title: Security groups, the absolute basics
     summary: Get ready to launch with the bare minimum ssh Security Group for your Nectar instance.
-    category: Beginner
+    category: Setting up prerequisites
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - tutorial
       - networking
@@ -115,7 +134,9 @@ collections:
     permalink: /:collection/:name
     title: Allocation Management
     summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
-    category: Non-technical
+    category: Working with allocations
+    curriculum: Cloud Starter
+    level: Non-technical
     tags:
       - cloud starter
       - expiry bot
@@ -135,7 +156,9 @@ collections:
     permalink: /:collection/:name
     title: Rebooting, Deleting, Rebuilding, Resizing
     summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
-    category: Beginner
+    category: Launching and connecting
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - cloud starter
     difficulty: 1
@@ -148,8 +171,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Command line, sudo and apt
-    summary: Find your way around your instance from the command line. Learn to use admin privileges and install and maintain software
-    category: Beginner
+    summary: Find your way around your instance from the command line. Learn to use admin privileges and install and maintain software.
+    category: The command line and software
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - cloud starter
       - cli
@@ -167,7 +192,8 @@ collections:
     permalink: /:collection/:name
     title: Cloud Starter Series
     summary: Get started in the Nectar Research Cloud with this tutorial series. Learn how easy it is to launch VMs, to connect and to try something new.
-    category: Series
+    category: Cloud Starter
+    level: Series
     tags:
       - cloud starter
       - 101
@@ -176,18 +202,56 @@ collections:
       - launch
       - connect
       - series
-    difficulty: 0
+    difficulty: 1
     duration: 160
     status: draft
     published: 2019-09-17
     author: Just Berkhout <just.berkhout@utas.edu.au>
 
-  dns-with-designate:
+  cloud-two:
     output: true
     permalink: /:collection/:name
-    title: DNS with Designate
+    title: Cloud Two
+    summary: Take the next step to discover some of the more advanced Nectar Research Cloud topics.
+    category: Cloud Two
+    level: Series
+    tags:
+      - cloud two
+      - intermediate
+      - launch
+      - connect
+      - series
+    difficulty: 3
+    duration: 160
+    status: draft
+    published: 2020-12-16
+    author: Andy Botting <andy.botting@ardc.edu.au>
+
+  cloud-expert:
+    output: true
+    permalink: /:collection/:name
+    title: Cloud Expert
+    summary: Become a Cloud Expert and learn about the advanced topics and services available on the Nectar Research Cloud.
+    category: Cloud Expert
+    level: Series
+    tags:
+      - cloud expert
+      - advanced
+      - series
+    difficulty: 5
+    duration: 160
+    status: draft
+    published: 2020-12-16
+    author: Andy Botting <andy.botting@ardc.edu.au>
+
+  dns:
+    output: true
+    permalink: /:collection/:name
+    title: DNS with the Nectar DNS service
     summary: Learn to manage your domain name records in Nectar
-    category: Intermediate
+    curriculum: Cloud Two
+    category: Networking
+    level: Intermediate
     tags:
       - dashboard
       - dns
@@ -205,7 +269,8 @@ collections:
     permalink: /:collection/:name
     title: Applications
     summary: Learn to quick deploy an application environment from our catalog with this R-Studio example.
-    category: Beginner
+    category: Applications
+    level: Beginner
     tags:
       - application
       - dashboard
@@ -225,7 +290,9 @@ collections:
     permalink: /:collection/:name
     title: Moving data
     summary: Learn some basic ways of copying data to and from your Nectar instance.
-    category: Beginner
+    category: Data
+    curriculum: Cloud Starter
+    level: Beginner
     tags:
       - scp
       - cyberduck
@@ -241,7 +308,8 @@ collections:
     permalink: /:collection/:name
     title: Volume Storage
     summary: "Learn to use Volume Storage: Nectar's virtual USB-sticks."
-    category: Beginner
+    category: Data
+    level: Beginner
     tags:
       - tutorial
     difficulty: 1
@@ -254,8 +322,9 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Snapshots
-    summary: "Learn to use Snapshot to make a copy or backup of a Nectar instance."
-    category: Beginner
+    summary: Learn to use Snapshot to make a copy or backup of a Nectar instance.
+    category: Data
+    level: Beginner
     tags:
       - tutorial
     difficulty: 1
@@ -268,8 +337,9 @@ collections:
     output: true
     permalink: /:collection/:name
     title: AARNet Cloudstor
-    summary: "Learn to use AARNet Cloudstor in Nectar's Virtual Machine"
-    category: Beginner
+    summary: Learn to use AARNet Cloudstor in Nectar's Virtual Machine
+    category: Data
+    level: Beginner
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
@@ -282,8 +352,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Kubernetes
-    summary: "Learn how to create and administer your own Kubernetes cluster using Magnum"
-    category: Advanced
+    summary: Learn how to create and administer your own Kubernetes cluster using the Nectar Orchestration service.
+    curriculum: Cloud Expert
+    category: Cloud-native services
+    level: Advanced
     tags:
       - tutorial
     difficulty: 3
@@ -296,8 +368,9 @@ collections:
     output: true
     permalink: /:collection/:name
     title: X11 Forwarding
-    summary: "Learn to use X11 Forwarding to run graphical applications on virtual machine."
-    category: Intermediate
+    summary: Learn to use X11 Forwarding to run graphical applications on virtual machines.
+    category: The command line and software
+    level: Intermediate
     tags:
       - tutorial
     difficulty: 2 # number from 1 to 5
@@ -310,8 +383,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: OpenStack CLIs
-    summary: "A basic introduction to Nectar Cloud OpenStack command line interfaces (CLI)"
-    category: Intermediate
+    summary: A basic introduction to Nectar Cloud OpenStack command line interfaces (CLI).
+    curriculum: Cloud Two
+    category: The command line and software
+    level: Intermediate
     tags:
       - tutorial
     difficulty: 3 # number from 1 to 5
@@ -324,8 +399,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Intermediate Security Groups
-    summary: "Learn to use advanced security groups in Nectar Research Cloud."
-    category: Intermediate
+    summary: Learn to use advanced security groups in Nectar Research Cloud.
+    curriculum: Cloud Two
+    category: Launching and connecting
+    level: Intermediate
     tags:
       - tutorial
     difficulty: 2 # number from 1 to 5
@@ -338,8 +415,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Application Credentials
-    summary: "Learn to use Application Credentials to authenticate your application in Nectar Cloud."
-    category: Intermediate
+    summary: Learn to use Application Credentials to authenticate your application in Nectar Cloud.
+    curriculum: Cloud Two
+    category: The command line and software
+    level: Intermediate
     tags:
       - tutorial
     difficulty: 3 # number from 1 to 5
@@ -352,8 +431,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Object Storage
-    summary: "Learn to use Nectar Object Storage."
-    category: Intermediate
+    summary: Learn to use Nectar Object Storage.
+    curriculum: Cloud Two
+    category: Data
+    level: Intermediate
     tags:
       - tutorial
     difficulty: 3 # number from 1 to 5
@@ -365,8 +446,10 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Database
-    summary: "A basic tutorial to learn how to use the database as a service in Nectar Research Cloud."
-    category: Advanced
+    summary: A basic tutorial to learn how to use the database as a service in Nectar Research Cloud.
+    curriculum: Cloud Expert
+    category: Cloud-native services
+    level: Advanced
     tags:
       - tutorial
     difficulty: 4 # number from 1 to 5
@@ -380,11 +463,13 @@ collections:
     permalink: /:collection/:name
     title: Orchestration
     summary: Explore the power of the Orchestration service for creating template driven cloud architectures.
-    category: Advanced
+    curriculum: Cloud Expert
+    category: Cloud-native services
+    level: Advanced
     tags:
       - tutorial
     difficulty: 4 # number from 1 to 5
     duration: 50 # number of minutes
     status: draft # draft or published
     published: 2020-02-27
-    author: Ming Fu<xiao.fu@utas.edu.au>
+    author: Ming Fu <xiao.fu@utas.edu.au>
