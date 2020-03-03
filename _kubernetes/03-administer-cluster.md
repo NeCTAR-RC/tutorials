@@ -9,9 +9,7 @@ duration: 5
 If this is the first time you are connecting to the cluster, you need to create
 a security group to allow connections from your IP.
 
-1. Create a security group that allow connection to the cluster. You should
-   restrict access to your cluster to only trusted IPs.
-
+1. Create a security group that allow connection to the cluster.
 	```
 	openstack security group create kubernetes-api
 	openstack security group rule create --dst-port 6443 kubernetes-api
