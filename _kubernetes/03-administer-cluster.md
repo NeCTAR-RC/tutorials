@@ -12,7 +12,7 @@ a security group to allow connections from your IP.
 1. Create a security group that allow connection to the cluster.
 	```
 	openstack security group create kubernetes-api
-	openstack security group rule create --dst-port 6443 kubernetes-api
+	openstack security group rule create --protocol tcp --dst-port 6443 kubernetes-api
 	```
 
 1. Apply the security group to the cluster. Use the following code snippet to
