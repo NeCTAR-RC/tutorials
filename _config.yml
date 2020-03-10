@@ -291,7 +291,7 @@ collections:
     status: draft
     published: 2020-01-02
     author: Jake Yip <jake.yip@unimelb.edu.au>
- 
+
   x11forwarding:
     output: true
     permalink: /:collection/:name
@@ -361,3 +361,17 @@ collections:
     status: draft # draft or published
     published: 2019-12-18
     author: Ming Fu <xiao.fu@utas.edu.au>
+
+  orchestration:
+    output: true
+    permalink: /:collection/:name
+    title: Orchestration
+    summary: Explore the power of the Orchestration service for creating template driven cloud architectures.
+    category: Advanced
+    tags:
+      - tutorial
+    difficulty: 4 # number from 1 to 5
+    duration: 50 # number of minutes
+    status: draft # draft or published
+    published: 2020-02-27
+    author: Ming Fu<xiao.fu@utas.edu.au>
