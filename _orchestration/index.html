@@ -1,0 +1,16 @@
+---
+layout: none
+---
+{%- include collection.html -%}
+{%- assign first_page = site[collection.label] | where_exp: "item", "item.order != null" | sort: "order" | first -%}
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ first_page.url | prepend: site.baseurl }}">
+  <script>location="{{ first_page.url | prepend: site.baseurl }}"</script>
+  <meta http-equiv="refresh" content="0; url="{{ first_page.url | prepend: site.baseurl }}">
+  <meta name="robots" content="noindex">
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ first_page.url | prepend: site.baseurl }}">Click here if you are not redirected.</a>
+</html>
