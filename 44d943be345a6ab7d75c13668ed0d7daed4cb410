@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "953e4e5a_1eaf9e5e",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be \"object storage\" instead of \"object store\"?",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "53bd8e02_a0b4cbe5",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "I think \"What is a container?\" would be better, no?",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "56704d82_8cd6e0ca",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"Enter the container name ...\"\nalso\n\"After clicking the \u0027Submit\u0027 button...\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "505e022a_9673f310",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"To create a new folder under the newly created container, select your container from the list by clicking on it and then click the +Folder button\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f4cbc58_0f8f914c",
+        "filename": "_object-storage/03-object-storage-ftp-cloudfs.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"security\" instead of \"securty\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "821a8fc7_6f9aa5d9",
+        "filename": "_object-storage/03-object-storage-ftp-cloudfs.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"need\" instead of \"neeed\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b1ea4692_884e0840",
+        "filename": "_object-storage/03-object-storage-ftp-cloudfs.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"top right corner\" instead of \"top left cornor\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e88d3b77_e180ff74",
+        "filename": "_object-storage/03-object-storage-ftp-cloudfs.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "at least on the url I used to test, these options weren\u0027t displayed as a list with one item per line. They were all in one line:\n\nusername: project_name:email password: password server: ip address of your virtual machine\n\nit would be better if we could have them as a list.",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "70f86133_1e7ecf6a",
+        "filename": "_object-storage/04-object-storage-cli.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "Perhaps \"Installation\" would sound better?",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c8ab07a_80cc50be",
+        "filename": "_object-storage/04-object-storage-cli.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"python\" instead of \"pyhton\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55fcfd77_7aae2a62",
+        "filename": "_object-storage/04-object-storage-cli.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"top right corner\" instead of \"top left corner\"",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0170a3b_9efe0baa",
+        "filename": "_object-storage/04-object-storage-cli.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:07:29Z",
+      "side": 1,
+      "message": "\"...drop down menu to get into the...\" (missing the \"to\")",
+      "revId": "44d943be345a6ab7d75c13668ed0d7daed4cb410",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
