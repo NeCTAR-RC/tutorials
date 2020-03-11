@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5039b4dc_0d1cd344",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"...for the security group...\" instead of \"...where the security group...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2bf071a_7514c114",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... for the security group ...\" instead of \"where\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c33e7001_27029c37",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"Below is a list...\" instead of \"The below is a list...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "84e8d260_2d010db3",
+        "filename": "_intermediate-security-groups/03-intermedium-security-group-ip.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... for the security group ...\" instead of \"... where ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "64238279_4700ac3f",
+        "filename": "_intermediate-security-groups/03-intermedium-security-group-ip.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"following\" instead of \"followings\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8071502_3b26b9dc",
+        "filename": "_intermediate-security-groups/04-intermedium-security-group-self.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... Virtual Machines which have a specific security group ...\" instead of \"... Virtual Machines which has a required security group ...\"\n\nalso\n\n\"... you can setup a login ...\" instead of \"... you an setup a login ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19d1fcd3_7f0e86fd",
+        "filename": "_intermediate-security-groups/04-intermedium-security-group-self.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... for the security group ...\" instead of \"... where ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0237775a_552eaddc",
+        "filename": "_intermediate-security-groups/05-intermedium-security-group-cli.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "Isn\u0027t \"Openstack CLI Commands\" redundant? Perhaps just \"Openstack CLI\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "63b21f57_97da1175",
+        "filename": "_intermediate-security-groups/05-intermedium-security-group-cli.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... start using the openstack client...\" instead of \"... start to use the openstack client ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c99cefb1_ae76a815",
+        "filename": "_intermediate-security-groups/05-intermedium-security-group-cli.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... top right corner ...\" instead of \"... top left corner ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "62901e6c_4da2eea9",
+        "filename": "_intermediate-security-groups/05-intermedium-security-group-cli.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"Execute the command below ...\" instead of \"Execute the below command ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "74be78d8_1b6a30f1",
+        "filename": "_intermediate-security-groups/06-next-steps.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000240
+      },
+      "writtenOn": "2020-03-11T04:59:19Z",
+      "side": 1,
+      "message": "\"... you learnt more advanced topics ...\" instead of \"... you learnt how to more advanced topics ...\"\n\n\"You learnt how to allow traffic ...\" instead of \"You learnt to allow traffic ...\"\n\n\"... and use the Openstack CLI to manage ...\" instead of \"... and use the Openstack CLI commands to manage ...\"",
+      "revId": "45f304e6694a09ea379ce1f27969ebfe348e21e2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
