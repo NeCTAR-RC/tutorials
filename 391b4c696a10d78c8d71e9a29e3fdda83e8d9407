@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6286baa5_70b28e9b",
+        "filename": "_openstack-cli/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-22T23:04:29Z",
+      "side": 1,
+      "message": "interacting?",
+      "range": {
+        "startLine": 9,
+        "startChar": 73,
+        "endLine": 9,
+        "endChar": 87
+      },
+      "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07d5a714_10678c5f",
+        "filename": "_openstack-cli/02-openstack-client.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-22T23:04:29Z",
+      "side": 1,
+      "message": "maybe have this option first as it\u0027s the easiest?",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 27
+      },
+      "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "638456f9_bb59d14d",
+        "filename": "_openstack-cli/02-openstack-client.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-03-22T23:04:29Z",
+      "side": 1,
+      "message": "python3-openstackclient",
+      "range": {
+        "startLine": 55,
+        "startChar": 12,
+        "endLine": 55,
+        "endChar": 18
+      },
+      "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
