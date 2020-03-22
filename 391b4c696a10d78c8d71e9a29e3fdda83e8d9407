@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "65ce957f_8077940c",
+        "filename": "_openstack-cli/02-openstack-client.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000190
+      },
+      "writtenOn": "2020-03-22T23:11:42Z",
+      "side": 1,
+      "message": "may",
+      "range": {
+        "startLine": 17,
+        "startChar": 64,
+        "endLine": 17,
+        "endChar": 66
+      },
+      "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "07d5a714_10678c5f",
         "filename": "_openstack-cli/02-openstack-client.md",
         "patchSetId": 2
@@ -64,6 +87,52 @@
         "startChar": 12,
         "endLine": 55,
         "endChar": 18
+      },
+      "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "76b4c2d6_026b9ad9",
+        "filename": "_openstack-cli/04-credentials.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000190
+      },
+      "writtenOn": "2020-03-22T23:11:42Z",
+      "side": 1,
+      "message": "right?",
+      "range": {
+        "startLine": 14,
+        "startChar": 36,
+        "endLine": 14,
+        "endChar": 40
+      },
+      "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7343acba_b3df5873",
+        "filename": "_openstack-cli/04-credentials.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000190
+      },
+      "writtenOn": "2020-03-22T23:11:42Z",
+      "side": 1,
+      "message": "\"you may want\"?",
+      "range": {
+        "startLine": 24,
+        "startChar": 4,
+        "endLine": 24,
+        "endChar": 16
       },
       "revId": "391b4c696a10d78c8d71e9a29e3fdda83e8d9407",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
