@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "edfede32_cf4dee38",
+        "filename": "_intermediate-security-groups/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "needs baseurl in here. for reference, all links with the tutorials site need to prepended like this:\n\n{{ site.baseurl }}/sec-groups-101/",
+      "range": {
+        "startLine": 7,
+        "startChar": 68,
+        "endLine": 7,
+        "endChar": 83
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d3dead2_f113a508",
+        "filename": "_intermediate-security-groups/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "Heading should have either two empty spaces at the end, or a \u003cbr /\u003e tag to push the contents to the next line",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 13
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "373166ea_a9bd99d0",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "Rules here (and below) should be lowercase",
+      "range": {
+        "startLine": 35,
+        "startChar": 23,
+        "endLine": 35,
+        "endChar": 28
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4beb8261_3e48348b",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "For",
+      "range": {
+        "startLine": 36,
+        "startChar": 184,
+        "endLine": 36,
+        "endChar": 187
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "900edde1_4f972311",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "plural - connections",
+      "range": {
+        "startLine": 36,
+        "startChar": 215,
+        "endLine": 36,
+        "endChar": 225
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "037f6e1d_c7022ae0",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "lower case, rule",
+      "range": {
+        "startLine": 37,
+        "startChar": 92,
+        "endLine": 37,
+        "endChar": 96
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c5e26e76_a6cb0d88",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "UDP",
+      "range": {
+        "startLine": 37,
+        "startChar": 13,
+        "endLine": 37,
+        "endChar": 16
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f6c6c50_54816a32",
+        "filename": "_intermediate-security-groups/02-intermedium-security-group.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-23T10:03:50Z",
+      "side": 1,
+      "message": "lower case",
+      "range": {
+        "startLine": 38,
+        "startChar": 94,
+        "endLine": 38,
+        "endChar": 98
+      },
+      "revId": "b835f28ff14f5bc2fac01f47dd4ea86b6b7e3bea",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
