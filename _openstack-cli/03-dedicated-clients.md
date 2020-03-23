@@ -18,7 +18,6 @@ it is recommended to use the dedicated client instead:
 Services that require a dedicated client and are not supported by the
 unified OpenStack client are:
 
-- `sahara` for the Data Processing service
 - `gnocchi` for the Telemetry service
 - `murano` for the Application Catalog service
 
