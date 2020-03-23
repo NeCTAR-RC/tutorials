@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ccb9c864_fc0cdf84",
+        "filename": "_openstack-cli/04-credentials.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-03-23T06:31:44Z",
+      "side": 1,
+      "message": "I feel we should be trying to move to Application Creds for this as it is much easier for user. I know it doesn\u0027t work with legacy clients.\n\nHowever, is it time to push on ahead to use App Cred as general case and have legacy clients + OS password as a special case? If not newbie users will never be introduced to ease of App Creds.\n\nLet\u0027s discuss over standup?",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 20
+      },
+      "revId": "ef5a6d50057ff6a1a6fd9648cf3b11c617f26ade",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
