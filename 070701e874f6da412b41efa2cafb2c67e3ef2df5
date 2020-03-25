@@ -1,0 +1,533 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8de67be_79e3a693",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 332,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Remove white space",
+      "range": {
+        "startLine": 332,
+        "startChar": 41,
+        "endLine": 332,
+        "endChar": 42
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a0b1427_1d8e4024",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Remove white space",
+      "range": {
+        "startLine": 333,
+        "startChar": 0,
+        "endLine": 333,
+        "endChar": 2
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0de477e6_e0cdafc4",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "We can\u0027t have the same summary for all of these tutorials. This needs a more creative summary about the tutorial",
+      "range": {
+        "startLine": 338,
+        "startChar": 13,
+        "endLine": 338,
+        "endChar": 61
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6bc0a1ff_c5b08b5e",
+        "filename": "_database/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Maybe drop these first headings, as there\u0027s an \u0027Overview\u0027 provided one anyway.\n\nAlso all of these headings shouldn\u0027t be third level (###) they should be second (##)",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 39
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f154e5a_03cb9aae",
+        "filename": "_database/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "are you doing any spell checking? you should be",
+      "range": {
+        "startLine": 15,
+        "startChar": 38,
+        "endLine": 15,
+        "endChar": 45
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eeafb745_5c6a727c",
+        "filename": "_database/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Database quota. You will need to apply for some by......",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 36
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07faec73_10b029ae",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "For a basic tutorial, I\u0027d forget about a config group and just create an instance",
+      "range": {
+        "startLine": 8,
+        "startChar": 4,
+        "endLine": 8,
+        "endChar": 30
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9d5e01f0_0628c059",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "whenever you want to use numbers, make them all 1. and don\u0027t include any blank lines between them, and it\u0027ll enumerate them correctly",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 2
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2016910a_d1a321d6",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "ok, so remove all blank lines and remove the space in front of the !.\n\nAlso please have a more meaningful description of the image, and don\u0027t add 1, 2, 3 etc to the end",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 4
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "30de75d9_988195ad",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "So as this is a tutorial, maybe you could specifically walk the user through setting up and using mysql specifically. Tell use user to choose the latest mysql datastore so we don\u0027t have to amend this tutorial once we upgrade the datastore and the build numbers change",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 28
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b44fab54_4bea790d",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Don\u0027t keep repeating this! Please only once per tutorial",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 172
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "49298c2d_95d149fb",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "white space",
+      "range": {
+        "startLine": 39,
+        "startChar": 56,
+        "endLine": 39,
+        "endChar": 57
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9001bb20_638f0403",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "for a tutorial, you shouldn\u0027t leave this up to the user. tell the user what you use (e.g. 1GB)",
+      "range": {
+        "startLine": 41,
+        "startChar": 62,
+        "endLine": 41,
+        "endChar": 88
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a37fea11_6e1f0d89",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "too specific",
+      "range": {
+        "startLine": 41,
+        "startChar": 119,
+        "endLine": 41,
+        "endChar": 131
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6e5e3dc0_0f62da4f",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "you should be guiding the user through an opinionated scenario - so don\u0027t mention multiple databases - give them an example name, username, password etc to use.",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 334
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6b75e018_a255b858",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Once per tutorial or this becomes very repetitive. The user will already be at the dashboard from the previous section",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 173
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cdd13dfc_eae2d1c8",
+        "filename": "_database/03-database-instance-management.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "This is probably a sensible thing to have, but I want you to think about this from the perspective of a user who is following this. This isn\u0027t documentation, it\u0027s a process we want to guide users though.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 35
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce16c80e_54e7643f",
+        "filename": "_database/03-database-instance-management.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Of course they have an instance - they made one in the last step",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 87
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9afba8f9_033486a1",
+        "filename": "_database/03-database-instance-management.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "I would leave this out. The user doesn\u0027t really need to go through resizing at this stage.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 17
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "828ab7ae_5df0eccd",
+        "filename": "_database/03-database-instance-management.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "Forget about config groups",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 30
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02c7dc9a_a1ff9518",
+        "filename": "_database/03-database-instance-management.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "These are obvious from the actions list. Add these here doesn\u0027t provide any benefit to the user following the process",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 49
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "29cd024a_fa9e58bb",
+        "filename": "_database/07-database-api.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "We have this repeated way too many times already. I think we need to link to something else about setting up credentials. Maybe Freshdesk KB or another tutorial?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 65
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e29382a4_a39b3e59",
+        "filename": "_database/07-database-api.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-03-25T03:01:44Z",
+      "side": 1,
+      "message": "I want to you stop using bash for these. These are not bash scripts, they\u0027re just console commands. The syntax highlighting doesn\u0027t make sense for command line output.\n\nAlso please remove all leading spaces",
+      "range": {
+        "startLine": 29,
+        "startChar": 7,
+        "endLine": 29,
+        "endChar": 11
+      },
+      "revId": "070701e874f6da412b41efa2cafb2c67e3ef2df5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
