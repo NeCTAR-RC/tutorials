@@ -330,3 +330,18 @@ collections:
     status: draft # draft or published
     published: 2020-02-20
     author: Ming Fu <xiao.fu@utas.edu.au>
+
+  security-tutorial:
+    output: true
+    permalink: /:collection/:name
+    title: Security Tutorial
+    summary: "Learn how to tight your instance security by hands on exercies in Nectar Research Cloud"
+    category: Beginner
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 28 # number of minutes
+    status: draft # draft or published
+    published: 2020-03-25
+    author: Ming Fu <xiao.fu@utas.edu.au>
+
