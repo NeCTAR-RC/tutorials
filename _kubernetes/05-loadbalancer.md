@@ -11,23 +11,23 @@ load balancer.
 A load balancer has a public (floating) IP. Client accessing via this public IP
 are redirected to one or more private addresses within the cluster.
 
-1 Use the following yaml to create your load balancer. Save it as
+1. Use the following yaml to create your load balancer. Save it as
 `nginxservice.yaml`.
 
-    ```
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: nginxservice
-    spec:
-      ports:
-      - port: 80
-        targetPort: 80
-        protocol: TCP
-      selector:
-        run: nginx
-      type: LoadBalancer
-    ```
+   ```
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: nginxservice
+   spec:
+     ports:
+     - port: 80
+       targetPort: 80
+       protocol: TCP
+     selector:
+       run: nginx
+     type: LoadBalancer
+   ```
 
 1. Run it as
 
