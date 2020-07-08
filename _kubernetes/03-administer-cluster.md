@@ -4,29 +4,6 @@ order: 3
 duration: 5
 ---
 
-## Set up Security Group
-
-If this is the first time you are connecting to the cluster, you need to create
-a security group to allow connections from your IP.
-
-1. Create a security group that allow connection to the cluster.
-	```
-	openstack security group create kubernetes-api
-	openstack security group rule create --protocol tcp --dst-port 6443 kubernetes-api
-	```
-
-1. Apply the security group to the cluster. Use the following code snippet to
-   easily do this (replace `84091b19-fd32-4197-a92e-71838d0502c2` in the example
-with the ID of your cluster).
-
-	```
-	CLUSTER=84091b19-fd32-4197-a92e-71838d0502c2
-	STACK_ID=`openstack coe cluster show $CLUSTER -f value -c stack_id`
-	FLOATING_IP=`openstack stack output show $STACK_ID api_address -c output_value -f value`
-	PORT_ID=`openstack floating ip show $FLOATING_IP -c port_id -f value`
-	openstack port set --security-group kubernetes-api $PORT_ID
-	```
-
 ## Create kubectl config
 
 [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) is the command
