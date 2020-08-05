@@ -22,7 +22,7 @@ Complete the following fields then click **Submit**:
 To create a DNS record for your instance using the OpenStack command line:
 
 ```
-$ openstack recordset create <zone name> <instance name> --type A --record <ip addr>
+$ openstack recordset create <zone name> <hostname you choose> --type A --record <ip addr>
 
 ```
 
