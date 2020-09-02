@@ -1,34 +1,33 @@
 ---
-title: Administer Cluster
+title: Administering a Cluster
 order: 3
 duration: 5
 ---
 
-## Create kubectl config
+## Creating the kubectl config
 
 [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) is the command
-line client to control a kubernetes cluster. Kubernetes uses a separate
-authentication mechanism from OpenStack (Keystone). Since OpenStack already know
-who we are, we can use it to generate a kubectl config file, that will in turn
-authenticate us to Kubernetes.
+line client used to control a kubernetes cluster. Kubernetes uses a separate
+authentication mechanism from OpenStack (Keystone). Since OpenStack already
+knows who we are, we can use it to generate a kubectl config file that
+includes credentials to authenticate us to Kubernetes.
 
-1. Create a new directory and cd to it
+1. Create a new directory and `cd` to it;
 
     ```
     mkdir mycluster
     cd mycluster
     ```
 
-1. Use magnum to create the config file for kubectl
+1. Use the `openstack` tool to generate the config file for kubectl:
 
     ```
     $ openstack coe cluster config mycluster
     export KUBECONFIG=/home/jake/temp/coe/mycluster/config
     ```
 
-1. Copy and paste the string provided to set up the environment variable for
-   kubectl
-
+1. Set the KUBECONFIG environment variable used by copy-and-pasting
+   the `export KUBECONFIG=...` line output by the above to the shell prompt:
     ```
     $ export KUBECONFIG=/home/jake/temp/coe/mycluster/config
     $ echo $KUBECONFIG
@@ -81,7 +80,7 @@ authenticate us to Kubernetes.
 	kube-system   replicaset.apps/kubernetes-dashboard-dbc7c4fff   1         1         1       35m
     ```
 
-## Using web interface
+## Using the web interface
 
 Magnum also sets up the Kubernetes [Web
 UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
@@ -93,7 +92,8 @@ by default. Follow these steps to access it.
 	kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
 	```
 
-1. Get the dashboard token. Use the following code snippet. Copy the output to your clipboard
+1. Get the dashboard token.  Run the following code snippet, and copy the
+   resulting output to your clipboard
 
 	```
 	SECRET_NAME=$(kubectl -n kube-system get secret | grep kubernetes-dashboard-token | cut -f1 -d ' ')
