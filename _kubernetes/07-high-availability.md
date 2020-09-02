@@ -4,9 +4,14 @@ order: 7
 duration: 10
 ---
 
-One of the ways to have a highly available service is to use a ReplicaSet.
+High availability is about implementing your service in such a way that
+it will continue to work in the face of the failure of various components.
+It also helps you to perform upgrades while minimizing service interruption.
 
-## Create ReplicaSet
+One of the Kubernetes features that can be used in a highly available
+service is the ReplicaSet.
+
+## Creating ReplicaSet
 
 In the following example, we are going to create a ReplicaSet
 

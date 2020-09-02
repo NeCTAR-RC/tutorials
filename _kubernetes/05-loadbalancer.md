@@ -1,18 +1,22 @@
 ---
-title: Loadbalancer
+title: Creating a Loadbalancer
 order: 5
 duration: 10
 ---
 
 In the previous section we created a pod running nginx. Now we need a way of
-getting to it from the Internet. In Nectar Cloud, we can do this by creating a
-load balancer.
+to make it accessible from the Internet. In Nectar Cloud, we can do this by
+creating a load balancer.
 
 A load balancer has a public (floating) IP. Client accessing via this public IP
 are redirected to one or more private addresses within the cluster.
 
-1. Use the following yaml to create your load balancer. Save it as
-`nginxservice.yaml`.
+(Note that a Magnum cluster is configured with 2 loadbalancers for cluster
+management.  The loadbalancer we will be creating here is for a different
+purpose.)
+
+1. Create a yaml file to describe the configuration for your load
+balancer. Save the following as `nginxservice.yaml`.
 
    ```
    apiVersion: v1
@@ -29,28 +33,30 @@ are redirected to one or more private addresses within the cluster.
      type: LoadBalancer
    ```
 
-1. Run it as
+1. Create the loadbalancer using the yaml file:
 
    ```
    kubectl apply -f nginxservice.yaml
    ```
 
-1. See the details of the loadbalancer. Wait until `EXTERNAL-IP` is populated.
+1. Run the following to see the details of the loadbalancer, and wait until
+   the output shows `EXTERNAL-IP` as populated.
 
    ```
    kubectl get services
    ```
 
-1. Now we need to allow traffic to the loadbalancer. If you do not have a
-   security group allow HTTP traffic, do the following
+1. Now we need to allow network traffic to reach the loadbalancer.  If you
+   do not already have a security group in your Nectar project to allow
+   HTTP traffic, do the following:
 
    ```
    openstack security group create http
    openstack security group rule create --ingress --dst-port 80 http
    ```
 
-1. Apply the security group to the load balancer. Use the following code snippet
-   to do this easily
+1. Apply the security group to the load balancer.  The following code snippet
+   provides a simple way to do it.
 
    ```
    EXTERNAL_IP=`kubectl get service nginxservice -o jsonpath='{.status.loadBalancer.ingress[0].ip}'`
@@ -60,30 +66,25 @@ are redirected to one or more private addresses within the cluster.
 
 ### More information
 
-Here is what we just did:
-
-1. We created a pod in kubernetes with label `nginx`
+This is what we just did:
 
 1. We started an external `LoadBalancer` service in Kubernetes, and directed it
-   at the pod
+   at the `nginx` pod that we created previously.
 
 1. Kubernetes understands that it has to create this loadbalancer (externally)
-   by calling out to the OpenStack Neutron provider.
+   by calling out to the OpenStack Octavia loadbalancer provider.
 
-1. The `cloud-provider-openstack` plugin in Kubernetes then create the different
-   pieces that makes it all work, namely floating ip, load balancer, pool,
-listener and members. These are all OpenStack resources (not k8s). It mirrors
-these to the `LoadBalancer` service you see in Kubernetes when you do a `kubectl
-get services`.
+1. The `cloud-provider-openstack` plugin in Kubernetes requests Openstack
+   to create the Openstack resources to make it all work, namely: a Neutron
+   floating ip address, and an Octavia load balancer, pool listener and
+   members.
 
-1. The plugin configs all of them and get the floating IP to be displayed in
+1. You see the loadbalancer from the Kubernetes perspective by running
    `kubectl get services`
 
-1. This is an external load balancer (external to kubernetes), and is created in
-   Neutron. You can see the loadbalancer in Neutron by doing
-   ```
-   neutron lbaas-loadbalancer-list
-   ```
+1. You can see the resources from the Openstack perspective using the
+   `openstack` command line too; e.g. `openstack floating ip list`,
+   `openstack loadbalancer list` and so on.
 
 For more information, refer to:
 

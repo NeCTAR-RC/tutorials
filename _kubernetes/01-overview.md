@@ -19,9 +19,9 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 
 - A project with the following quotas:
 
-    - 1 x Network
     - 1 x Subnet
     - 1 x Floating IP
+    - 3 x Loadbalancer
     - 3 x m3.small Compute
 
 - [python-openstackclient](https://pypi.org/project/python-openstackclient/)
@@ -32,20 +32,21 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 ## Magnum
 
 Magnum is the project for the Container Orchestration Engine (COE) Service in
-OpenStack. It enables you to deploy different COE such as Kubernetes, Docker
-Swarm and Apache Mesos.
+OpenStack.  In the Nectar context, the only COE framework that is tested and
+supported is Kubernetes, so this tutorial will only cover topics that are
+related to Kubernetes.
 
-For the purpose of this tutorial, we will only be using Kubernetes, which is
-tested and supported by Nectar. There are no restriction on using other COEs,
-however they are unsupported at this point.
 
 ## Kubernetes Tutorial
 
-Kubernetes has a great [documentation
-site](https://kubernetes.io/docs/concepts/), which will cover many of the same
-concepts as what we have here.
+Kubernetes has an extensive [documentation
+site](https://kubernetes.io/docs/concepts/), which covers many of the 
+concepts that we will be covering, often in greater depth than we do here.
 
-The purpose of this tutorial is not to replicate what Kubernetes have, but to
-show how you can use Nectar Research Cloud to set up a Kubernetes cluster
-quickly, and how to integrate native OpenStack services like Cinder into
-Kubernetes.
+The purpose of this tutorial is not to replace Kubernetes documention.
+Rather we aim to show you how to quickly set up a Kubernetes cluster on
+the Nectar Research Cloud, and how to integrate Kubernetes with native
+OpenStack services like Cinder.
+
+This tutorial uses the Openstack command-line tools rather than the
+"Project > Container Infra" dashboard panels.
