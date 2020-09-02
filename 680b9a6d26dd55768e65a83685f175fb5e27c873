@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a138593_6049d816",
+        "filename": "_kubernetes/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 43,
+        "startChar": 69,
+        "endLine": 43,
+        "endChar": 70
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7bb80f91_5484e8a2",
+        "filename": "_kubernetes/02-create_cluster.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "sentence doesn\u0027t read right",
+      "range": {
+        "startLine": 17,
+        "startChar": 22,
+        "endLine": 17,
+        "endChar": 64
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d0c41d75_d0d738d7",
+        "filename": "_kubernetes/04-service.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "sentence doesn\u0027t read right",
+      "range": {
+        "startLine": 26,
+        "startChar": 43,
+        "endLine": 27,
+        "endChar": 23
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "33e4e33b_b830bced",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "sentence bad",
+      "range": {
+        "startLine": 7,
+        "startChar": 56,
+        "endLine": 8,
+        "endChar": 21
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "109b4cd8_7c5f61ef",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "this command won\u0027t work as written, as you need to specify protocol, also ingress is the default. Should be\n\nopenstack security group rule create --protocol tcp --dst-port 80 http\n\n(it could also show that this is allowing 0.0.0.0 to be more specific (this is the default if not set)",
+      "range": {
+        "startLine": 55,
+        "startChar": 3,
+        "endLine": 55,
+        "endChar": 68
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d55c979_690d74fc",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "remove project names here, normal users shouldn\u0027t need to know the openstack project name",
+      "range": {
+        "startLine": 78,
+        "startChar": 68,
+        "endLine": 78,
+        "endChar": 75
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "086c81f1_499f5e7a",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 79,
+        "startChar": 31,
+        "endLine": 79,
+        "endChar": 38
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "45fbe86c_1e39f77d",
+        "filename": "_kubernetes/07-high-availability.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-02T22:24:07Z",
+      "side": 1,
+      "message": "creating a replicaset",
+      "range": {
+        "startLine": 14,
+        "startChar": 3,
+        "endLine": 14,
+        "endChar": 22
+      },
+      "revId": "680b9a6d26dd55768e65a83685f175fb5e27c873",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
