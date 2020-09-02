@@ -20,8 +20,8 @@ them down.
    cluster
 
 - When you scale down, Magnum deletes a node in the cluster. Pods might be
-   deleted without draining, so it is a good idea to build your services that
-can automatically recover from the loss of a node
+   deleted without draining, so it is a good idea to build your services
+   to automatically recover from the loss of a node
 
 To scale up and down, update the `node_count` label in Magnum. For example, to
 scale `mycluster` from 1 to 2 nodes, do:
@@ -32,9 +32,10 @@ openstack coe cluster update mycluster replace node_count=2
 
 ## Scaling containers
 
-Scaling up and down the number of containers is a Kubernetes operation. This can
-be done via `kubectl`. An example is changing the number of pods in a
-replicaset. We will cover this in the High Availability chapter.
+Scaling up and down the number of containers is a Kubernetes operation that
+can be done using the `kubectl` command.  For example, you can change the
+number of pods in a replicaset. We will cover this in the High Availability
+section.
 
 ## More information
 

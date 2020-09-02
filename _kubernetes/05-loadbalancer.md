@@ -1,18 +1,22 @@
 ---
-title: Loadbalancer
+title: Creating a Loadbalancer
 order: 5
 duration: 10
 ---
 
-In the previous section we created a pod running nginx. Now we need a way of
-getting to it from the Internet. In Nectar Cloud, we can do this by creating a
-load balancer.
+In the previous section we created a pod running an nginx webserver. Now
+we need a way to make the webserver accessible from the Internet. In the
+Nectar Cloud, we can do this by creating a load balancer.
 
 A load balancer has a public (floating) IP. Client accessing via this public IP
 are redirected to one or more private addresses within the cluster.
 
-1. Use the following yaml to create your load balancer. Save it as
-`nginxservice.yaml`.
+(Note that a Magnum cluster is configured with 2 loadbalancers for cluster
+management.  The loadbalancer we will be creating here is for a different
+purpose.)
+
+1. Create a yaml file to describe the configuration for your load
+balancer. Save the following as `nginxservice.yaml`.
 
    ```
    apiVersion: v1
@@ -29,61 +33,46 @@ are redirected to one or more private addresses within the cluster.
      type: LoadBalancer
    ```
 
-1. Run it as
+1. Create the loadbalancer using the yaml file:
 
    ```
    kubectl apply -f nginxservice.yaml
    ```
 
-1. See the details of the loadbalancer. Wait until `EXTERNAL-IP` is populated.
+1. Run the following to see the details of the loadbalancer, and wait until
+   the output shows `EXTERNAL-IP` as populated.
 
    ```
    kubectl get services
    ```
 
-1. Now we need to allow traffic to the loadbalancer. If you do not have a
-   security group allow HTTP traffic, do the following
-
-   ```
-   openstack security group create http
-   openstack security group rule create --ingress --dst-port 80 http
-   ```
-
-1. Apply the security group to the load balancer. Use the following code snippet
-   to do this easily
-
-   ```
-   EXTERNAL_IP=`kubectl get service nginxservice -o jsonpath='{.status.loadBalancer.ingress[0].ip}'`
-   PORT_ID=`openstack floating ip list --floating-ip-address $EXTERNAL_IP -c Port -f value`
-   openstack port set --security-group http $PORT_ID
-   ```
+1. Verify that the webserver is accessible.  From your browser, visit the IP
+   in the `EXTERNAL-IP` field. You should see the default nginx page.
 
 ### More information
 
-Here is what we just did:
-
-1. We created a pod in kubernetes with label `nginx`
+This is what we just did:
 
 1. We started an external `LoadBalancer` service in Kubernetes, and directed it
-   at the pod
+   at the `nginx` pod that we created previously.
 
-1. Kubernetes understands that it has to create this loadbalancer (externally)
-   by calling out to the OpenStack Neutron provider.
+1. Kubernetes created the loadbalancer (externally) by calling out to the
+   OpenStack loadbalancer provider plugin.
 
-1. The `cloud-provider-openstack` plugin in Kubernetes then create the different
-   pieces that makes it all work, namely floating ip, load balancer, pool,
-listener and members. These are all OpenStack resources (not k8s). It mirrors
-these to the `LoadBalancer` service you see in Kubernetes when you do a `kubectl
-get services`.
+1. The plugin sent Openstack requests to create the resources to make it all
+   work, namely: a floating ip address, a security group, and a load balancer,
+   pool listener and members.
 
-1. The plugin configs all of them and get the floating IP to be displayed in
-   `kubectl get services`
+1. We observed what had been set up:
 
-1. This is an external load balancer (external to kubernetes), and is created in
-   Neutron. You can see the loadbalancer in Neutron by doing
-   ```
-   neutron lbaas-loadbalancer-list
-   ```
+   - You can see the loadbalancer from the Kubernetes perspective by running
+     `kubectl get services`
+
+   - You can also see the resources from the Openstack perspective using the
+     `openstack` command line; e.g. `openstack floating ip list`,
+     `openstack loadbalancer list` and so on.
+
+1. Finally, we checked that the loadbalancer was working using a web browser.
 
 For more information, refer to:
 
