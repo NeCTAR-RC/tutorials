@@ -25,6 +25,52 @@
     },
     {
       "key": {
+        "uuid": "0a594ddf_40ace12c",
+        "filename": "_kubernetes/04-service.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-03T00:49:51Z",
+      "side": 1,
+      "message": "still not quite right, We will explain what \"a\" pod is at the end of this section",
+      "range": {
+        "startLine": 26,
+        "startChar": 42,
+        "endLine": 27,
+        "endChar": 23
+      },
+      "revId": "1b66b4380cb4d21862ceb9b3706146432d0f3942",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "25b32797_32072f36",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-09-03T00:49:51Z",
+      "side": 1,
+      "message": "still not quite right",
+      "range": {
+        "startLine": 7,
+        "startChar": 69,
+        "endLine": 8,
+        "endChar": 38
+      },
+      "revId": "1b66b4380cb4d21862ceb9b3706146432d0f3942",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "581ab24e_32b264b7",
         "filename": "_kubernetes/05-loadbalancer.md",
         "patchSetId": 2
