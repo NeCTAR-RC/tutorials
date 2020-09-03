@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "deef3015_2e944ef5",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-09-03T03:25:53Z",
+      "side": 1,
+      "message": "I think I missed out the following (Please help correct my English)\n\n1. From your browser, visit the IP in the `EXTERNAL-IP` field. You should see the default nginx page.",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 6
+      },
+      "revId": "15ee93c206e061f6125eb351a2e05203d12d7f15",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
