@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "201761df_2342a5d2",
+        "filename": "_kubernetes/02-create_cluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-09-03T00:43:32Z",
+      "side": 1,
+      "message": "the uuid and name here doesn\u0027t match the previous command\u0027s output and so can be confusing for user. maybe update previous command to the current listing?",
+      "range": {
+        "startLine": 71,
+        "startChar": 26,
+        "endLine": 71,
+        "endChar": 47
+      },
+      "revId": "1b66b4380cb4d21862ceb9b3706146432d0f3942",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "581ab24e_32b264b7",
+        "filename": "_kubernetes/05-loadbalancer.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-09-03T00:43:32Z",
+      "side": 1,
+      "message": "we can remove this section because Octavia creates secgroups automatically now",
+      "range": {
+        "startLine": 47,
+        "startChar": 6,
+        "endLine": 68,
+        "endChar": 6
+      },
+      "revId": "1b66b4380cb4d21862ceb9b3706146432d0f3942",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
