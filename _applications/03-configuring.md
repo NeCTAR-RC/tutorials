@@ -44,4 +44,4 @@ In this step, you should provide your desired **Username** and **Password** for 
 **Passwords** Needless to say you should be sensible about passwords; see [here](https://support.ehelp.edu.au/support/solutions/articles/6000213823). 
 {: .callout-warning}
 
-The last step allows you to provide a name. You can keep the default, *R-Studio*, or supply your own. Click `Next` to continue.
+The last step allows you to provide a name. You can keep the default, *R-Studio*, or supply your own. Click `Create` to continue.
