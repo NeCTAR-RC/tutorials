@@ -4,7 +4,7 @@ order: 2
 duration: 2
 ---
 
-A Kubernetes Cluster consist of one or more _master_ nodes, and one or more
+A Kubernetes Cluster consists of one or more _master_ nodes, and one or more
 _worker_ nodes. A client (you) communicates with _master_ nodes using the
 Kubernetes API to spin up containers. The _worker_ nodes runs these containers.
 
