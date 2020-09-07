@@ -29,22 +29,28 @@ balancer. Save the following as `nginxservice.yaml`.
        targetPort: 80
        protocol: TCP
      selector:
-       run: nginx
+       run: webserver
      type: LoadBalancer
    ```
 
 1. Create the loadbalancer using the yaml file:
 
    ```
-   kubectl apply -f nginxservice.yaml
+   $ kubectl apply -f nginxservice.yaml
+   service/nginxservice created
    ```
 
 1. Run the following to see the details of the loadbalancer, and wait until
    the output shows `EXTERNAL-IP` as populated.
 
    ```
-   kubectl get services
+   $ kubectl get services
+   NAME           TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+   nginxservice   LoadBalancer   10.254.210.248   103.6.252.244   80:31086/TCP   5m
    ```
+
+   Tip: If you use the `-w` flag with any `kubectl get` command, it will watch for changes
+   from the server and print out status updates as they happen.
 
 1. Verify that the webserver is accessible.  From your browser, visit the IP
    in the `EXTERNAL-IP` field. You should see the default nginx page.
@@ -54,7 +60,7 @@ balancer. Save the following as `nginxservice.yaml`.
 This is what we just did:
 
 1. We started an external `LoadBalancer` service in Kubernetes, and directed it
-   at the `nginx` pod that we created previously.
+   at the `webserver` pod that we created previously.
 
 1. Kubernetes created the loadbalancer (externally) by calling out to the
    OpenStack loadbalancer provider plugin.
