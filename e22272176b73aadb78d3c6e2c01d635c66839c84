@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cd9babc3_069e7a7a",
+        "filename": "_application-credentials/01-overview.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-08T05:16:30Z",
+      "side": 1,
+      "message": "authorising (AU spelling)",
+      "range": {
+        "startLine": 16,
+        "startChar": 60,
+        "endLine": 16,
+        "endChar": 71
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "384579ff_a4f0c2a1",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-08T05:16:30Z",
+      "side": 1,
+      "message": "This alt text is junk. Maybe just \u0027Create Application Credential dialog\u0027?",
+      "range": {
+        "startLine": 11,
+        "startChar": 6,
+        "endLine": 11,
+        "endChar": 54
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "afd09135_52678a9d",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-08T05:16:30Z",
+      "side": 1,
+      "message": "*Optionally*",
+      "range": {
+        "startLine": 15,
+        "startChar": 3,
+        "endLine": 15,
+        "endChar": 10
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c625d3be_ae47f966",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-08T05:16:30Z",
+      "side": 1,
+      "message": "You can *Optionally select*",
+      "range": {
+        "startLine": 16,
+        "startChar": 3,
+        "endLine": 16,
+        "endChar": 9
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52a190f5_a89e8292",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-08T05:16:30Z",
+      "side": 1,
+      "message": "Junk alt text again",
+      "range": {
+        "startLine": 20,
+        "startChar": 6,
+        "endLine": 20,
+        "endChar": 54
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00343d0f_6075392e",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-08T05:16:30Z",
+      "side": 1,
+      "message": "Wonder if it would be useful here to link to the OpenStack CLIs tutorial for some nice crossover action",
+      "range": {
+        "startLine": 22,
+        "startChar": 3,
+        "endLine": 22,
+        "endChar": 99
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
