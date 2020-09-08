@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "b9c9121f_c8e8f2e9",
+        "filename": "_application-credentials/01-overview.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-08T06:22:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd9babc3_069e7a7a",
+      "range": {
+        "startLine": 16,
+        "startChar": 60,
+        "endLine": 16,
+        "endChar": 71
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "384579ff_a4f0c2a1",
         "filename": "_application-credentials/02-creating-an-app-credential.md",
         "patchSetId": 5
@@ -45,6 +69,30 @@
       "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bf15a2f_8001c615",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-08T06:22:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "384579ff_a4f0c2a1",
+      "range": {
+        "startLine": 11,
+        "startChar": 6,
+        "endLine": 11,
+        "endChar": 54
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "b0276efd_c0043565",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-08T06:22:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "afd09135_52678a9d",
+      "range": {
+        "startLine": 15,
+        "startChar": 3,
+        "endLine": 15,
+        "endChar": 10
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c625d3be_ae47f966",
         "filename": "_application-credentials/02-creating-an-app-credential.md",
         "patchSetId": 5
@@ -91,6 +163,30 @@
       "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7796fee5_16c439bb",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-08T06:22:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c625d3be_ae47f966",
+      "range": {
+        "startLine": 16,
+        "startChar": 3,
+        "endLine": 16,
+        "endChar": 9
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "bbbd3c4f_c94150e5",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-08T06:22:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "52a190f5_a89e8292",
+      "range": {
+        "startLine": 20,
+        "startChar": 6,
+        "endLine": 20,
+        "endChar": 54
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "00343d0f_6075392e",
         "filename": "_application-credentials/02-creating-an-app-credential.md",
         "patchSetId": 5
@@ -137,6 +257,30 @@
       "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2d83b572_455427c3",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-08T06:22:01Z",
+      "side": 1,
+      "message": "I\u0027ve added a preface to the next section with a link. Replaced the install steps there too since it\u0027s covered much better in the other tutorial.",
+      "parentUuid": "00343d0f_6075392e",
+      "range": {
+        "startLine": 22,
+        "startChar": 3,
+        "endLine": 22,
+        "endChar": 99
+      },
+      "revId": "e22272176b73aadb78d3c6e2c01d635c66839c84",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
