@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "afc999b0_1aa69642",
+        "filename": "_object-storage/04-object-storage-cyberduck.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:14:01Z",
+      "side": 1,
+      "message": "We should serve this from Swift or even FD maybe, but not directly here in the tutorial. Benefit would be that we can give the users a link which they can click and download directly. Also means we don\u0027t need to hunt to find X copies of this if we do need to modify it",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 63,
+        "endChar": 11
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24147ad7_76459ad7",
+        "filename": "_object-storage/04-object-storage-cyberduck.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:14:01Z",
+      "side": 1,
+      "message": "Maybe we should note that this will be different for our NZ friends",
+      "range": {
+        "startLine": 118,
+        "startChar": 21,
+        "endLine": 118,
+        "endChar": 28
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a4a5d1b_b16c4a76",
+        "filename": "_object-storage/04-object-storage-cyberduck.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:14:01Z",
+      "side": 1,
+      "message": "my-project rather than using a real project maybe, thats a minor nit though",
+      "range": {
+        "startLine": 122,
+        "startChar": 6,
+        "endLine": 122,
+        "endChar": 17
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c00e4a37_d4ed3a0b",
+        "filename": "_object-storage/05-object-storage-ftp-cloudfs.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:14:01Z",
+      "side": 1,
+      "message": "we going to remove this page?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 46
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21eafa63_762de50d",
+        "filename": "_object-storage/06-object-storage-next-steps.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:14:01Z",
+      "side": 1,
+      "message": "CyberDuck",
+      "range": {
+        "startLine": 8,
+        "startChar": 7,
+        "endLine": 8,
+        "endChar": 8
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
