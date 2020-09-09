@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "7e1d637f_a20c7959",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "said above about ?",
+      "range": {
+        "startLine": 77,
+        "startChar": 38,
+        "endLine": 77,
+        "endChar": 53
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bffc3ed_3dada99c",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "vanishingly\n\nThough maybe remove this sentence? It is really giving false hope since for updates it will be gone almost immediately and deletes within a half hour.",
+      "range": {
+        "startLine": 84,
+        "startChar": 24,
+        "endLine": 84,
+        "endChar": 32
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3b7278fd_a5805074",
         "filename": "_object-storage/02-object-storage-dashboard.md",
         "patchSetId": 11
@@ -25,6 +71,92 @@
     },
     {
       "key": {
+        "uuid": "7c1c9041_bd2549e5",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "hierarchy",
+      "range": {
+        "startLine": 41,
+        "startChar": 34,
+        "endLine": 41,
+        "endChar": 43
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d6d88ac_5ea8f1aa",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "Need more context here - it\u0027s not clear what this is referring to",
+      "range": {
+        "startLine": 138,
+        "startChar": 25,
+        "endLine": 138,
+        "endChar": 31
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43e8dd12_7c880a19",
+        "filename": "_object-storage/03-object-storage-cli.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "I\u0027m being pedantic, but Python should be capitalised throughout this page",
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "09cda917_cff76ac2",
+        "filename": "_object-storage/03-object-storage-cli.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "\"Swift python client\" is a bit awkward to me and we flip the order in the last sentence. python-swiftclient is the official name, so we should probably use that?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 118
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bc0f594a_d4c17b3a",
         "filename": "_object-storage/03-object-storage-cli.md",
         "patchSetId": 11
@@ -41,6 +173,29 @@
         "startChar": 3,
         "endLine": 17,
         "endChar": 7
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44b70578_41b5899d",
+        "filename": "_object-storage/03-object-storage-cli.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-09-09T06:07:01Z",
+      "side": 1,
+      "message": "Swift CLI",
+      "range": {
+        "startLine": 56,
+        "startChar": 42,
+        "endLine": 56,
+        "endChar": 51
       },
       "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
