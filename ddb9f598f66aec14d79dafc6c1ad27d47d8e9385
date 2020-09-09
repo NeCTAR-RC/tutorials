@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "3b7278fd_a5805074",
+        "filename": "_object-storage/02-object-storage-dashboard.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:27:16Z",
+      "side": 1,
+      "message": "ws",
+      "range": {
+        "startLine": 8,
+        "startChar": 56,
+        "endLine": 8,
+        "endChar": 57
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc0f594a_d4c17b3a",
+        "filename": "_object-storage/03-object-storage-cli.md",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-09-09T05:27:16Z",
+      "side": 1,
+      "message": "We\u0027re not really doing coding here, so I think using bash here results in bad syntax highlighting. Best to just leave it blank I think.",
+      "range": {
+        "startLine": 17,
+        "startChar": 3,
+        "endLine": 17,
+        "endChar": 7
+      },
+      "revId": "ddb9f598f66aec14d79dafc6c1ad27d47d8e9385",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "afc999b0_1aa69642",
         "filename": "_object-storage/04-object-storage-cyberduck.md",
         "patchSetId": 11
