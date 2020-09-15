@@ -19,8 +19,8 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 
 - A project with the following quotas:
 
-    - 1 x Subnet
-    - 1 x Floating IP
+    - 1 x Network
+    - 2 x Floating IP
     - 3 x Loadbalancer
     - 3 x m3.small Compute
 
