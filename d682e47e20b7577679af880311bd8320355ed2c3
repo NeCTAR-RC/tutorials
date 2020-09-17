@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a613686_0c6a881c",
+        "filename": "_application-credentials/02-creating-an-app-credential.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2020-09-17T06:08:25Z",
+      "side": 1,
+      "message": "should say start the create application credential dialog of launch the dialog ?",
+      "revId": "d682e47e20b7577679af880311bd8320355ed2c3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "404265a8_4617f8e2",
+        "filename": "_application-credentials/03-using-app-credentials.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2020-09-17T06:08:25Z",
+      "side": 1,
+      "message": "worth another reminder to clear other OS_vars ?\nmaybe mention --os-cloud option ?",
+      "revId": "d682e47e20b7577679af880311bd8320355ed2c3",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
