@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-order: 10
+order: 9
 ---
 
 ## Web UI not working
