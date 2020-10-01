@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "deea0403_e0826ff9",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-10-01T01:35:30Z",
+      "side": 1,
+      "message": "^ about",
+      "range": {
+        "startLine": 77,
+        "startChar": 42,
+        "endLine": 77,
+        "endChar": 60
+      },
+      "revId": "a7b19d53cc013922227ec3ff9096408f45461756",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11a3f8e8_f2a16152",
+        "filename": "_object-storage/01-overview.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-10-01T01:35:30Z",
+      "side": 1,
+      "message": "you gone done it now",
+      "range": {
+        "startLine": 82,
+        "startChar": 14,
+        "endLine": 82,
+        "endChar": 24
+      },
+      "revId": "a7b19d53cc013922227ec3ff9096408f45461756",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
