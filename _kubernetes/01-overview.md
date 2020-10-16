@@ -17,9 +17,11 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 
 ### What you'll need
 
-- A project with the following quotas:
+- A Nectar project with the following quotas:
 
+    - 1 x Cluster
     - 1 x Network
+    - 1 x Router
     - 2 x Floating IP
     - 3 x Loadbalancer
     - 3 x m3.small Compute
