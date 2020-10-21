@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82c28723_0f055ca9",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-10-21T00:14:38Z",
+      "side": 1,
+      "message": "syntax error!",
+      "range": {
+        "startLine": 13,
+        "startChar": 23,
+        "endLine": 13,
+        "endChar": 42
+      },
+      "revId": "d3b4659d7a3a57948ddddd90d91adac3d024b82d",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
