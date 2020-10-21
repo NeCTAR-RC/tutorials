@@ -11,6 +11,9 @@ plugins:
 
 repository: NeCTAR-RC/tutorials
 
+liquid:
+  error_mode: strict
+
 # Exclude from processing.
 exclude:
   - Gemfile
