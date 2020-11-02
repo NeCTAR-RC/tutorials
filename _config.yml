@@ -388,3 +388,18 @@ collections:
     status: draft # draft or published
     published: 2020-02-27
     author: Ming Fu<xiao.fu@utas.edu.au>
+
+  loadbalancing:
+    output: true
+    permalink: /:collection/:name
+    title: Loadbalancing
+    summary: Using loadbalancing for scalable, fault-tolerant cloud architectures.
+    category: Advanced
+    tags:
+      - tutorial
+    difficulty: 5
+    duration: 60
+    status: draft # draft or published
+    published: 2020-11-02
+    author: Andy Botting <andy.botting@ardc.edu.au>
+
