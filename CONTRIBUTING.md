@@ -83,7 +83,7 @@ To install Jekyll and all the required dependencies, run:
 Then to serve the site, you can use:
 
 ```sh
-# rake preview
+# rake serve
 ```
 
 ### Adding a new tutorial
