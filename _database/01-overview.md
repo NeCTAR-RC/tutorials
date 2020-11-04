@@ -3,7 +3,7 @@ title: Overview
 order: 1
 duration: 5
 ---
-
+Sean was here
  The Nectar database service is a Database-as-a-Service (DBaaS) system powered by the Trove OpenStack project. It provides a simple interface to manage databases whilst hiding the underlying infrastructure requirements of configuring and running them. The Nectar database service offers the benefit of API or web-based access for tasks like creating databases, creating and restoring backups, adding and removing database users, setting configuration parameters and more.
 
 
