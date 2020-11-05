@@ -23,7 +23,7 @@ configurations as set up in previous sections of this tutorial.
 1. Create a new Pod called `webserver` using a webserver container image. We are using nginx as an example here:
 
    ```
-   $ kubectl run --generator=run-pod/v1 --image=nginx webserver
+   $ kubectl run --image=nginx webserver
    pod/webserver created
    ```
 
@@ -68,7 +68,7 @@ configurations as set up in previous sections of this tutorial.
 1. Set up direct access to the Pod using the `port-forward` command:
 
    ```
-   $ kubectl port-forward pod/webserver 8000
+   $ kubectl port-forward pod/webserver 8000:80
    Forwarding from 127.0.0.1:8000 -> 80
    Forwarding from [::1]:8000 -> 80
    ```
@@ -82,14 +82,14 @@ configurations as set up in previous sections of this tutorial.
 In this section we requested Kubernetes to run an `nginx` image.  When
 we did this, Kubernetes performed the following (simplifed) steps:
 
-1. The Kubernetes master scheduled the pod to run on a free node in the cluster
+1. The Kubernetes master scheduled the Pod to run on a free Node in the cluster
 
-1. The node started a pod
+1. The node started a Pod
 
 1. The node fetched the image from Docker Hub, based on the given image name; i.e.
    [https://hub.docker.com/nginx](https://hub.docker.com/nginx)
 
-1. The node created a container with the image and started it inside the pod
+1. The node created a container with the image and started it inside the Pod
 
 
 ## Next steps

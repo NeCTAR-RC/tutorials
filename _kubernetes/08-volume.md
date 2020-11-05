@@ -43,32 +43,33 @@ persistently.
 1. Create the following as `nginxcinder.yaml`. Replace `volumeID` with the
    volume ID from the previous command
 
-	```
-	apiVersion: v1
-	kind: Pod
-	metadata:
-	  name: nginxcinder labels:
-		app: nginxcinder
-	spec:
-	  containers:
-		- name: nginxcinder
-		  image: nginx
-		  volumeMounts:
-			- name: html-volume
-			  mountPath: "/usr/share/nginx/html"
-	  volumes:
-		- name: html-volume
-		  cinder:
-			# Enter the volume ID below
-			volumeID: 827fd40d-6a00-4faa-ab94-f5e7be92c5d1
-			fsType: ext4
-	```
+    ```
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: nginxcinder
+      labels:
+        app: nginxcinder
+    spec:
+      containers:
+        - name: nginxcinder
+          image: nginx
+          volumeMounts:
+            - name: html-volume
+              mountPath: "/usr/share/nginx/html"
+      volumes:
+        - name: html-volume
+          cinder:
+            # Enter the volume ID below
+            volumeID: 827fd40d-6a00-4faa-ab94-f5e7be92c5d1
+            fsType: ext4
+    ```
 
 1. Apply the yaml
 
-	```
-	kubectl apply -f nginxcinder.yaml
-	```
+    ```
+    kubectl apply -f nginxcinder.yaml
+    ```
 
 ## Writing index page for nginx
 
@@ -78,15 +79,21 @@ Now, we want to write data to volume for nginx to service.
 
 1. Open up a shell to the pod
 
-	```
-	kubectl exec -it nginxcinder -- /bin/bash
-	```
+    ```
+    kubectl exec -it nginxcinder -- /bin/bash
+    ```
 
 1. Use the following command to create the default index page.
 
-	```
-	echo "THIS IS MY PAGE" > /usr/share/nginx/html/index.html
-	```
+    ```
+    root@nginxcinder:/# echo "THIS IS MY PAGE" > /usr/share/nginx/html/index.html
+    ```
+
+1. Exit the pod cli
+
+    ```
+    root@nginxcinder:/# exit
+    ```
 
 ## Redirect loadbalancer
 
@@ -94,21 +101,21 @@ Direct your loadbalancer our new pod. We can do this easily by updating the labe
 
 1. Edit `nginxservice.yaml` and make the following changes
 
-	```
-	apiVersion: v1
-	kind: Service
-	metadata:
-	  name: nginxservice
-	spec:
-	  ports:
-	  - port: 80
-		targetPort: 80
-		protocol: TCP
-	  selector:
-		#run: nginx
-		app: nginxcinder
-	  type: LoadBalancer
-	```
+    ```
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: nginxservice
+    spec:
+      ports:
+      - port: 80
+        targetPort: 80
+        protocol: TCP
+      selector:
+        #run: webserver
+        app: nginxcinder
+      type: LoadBalancer
+    ```
 
 1. Run `kubectl apply -f nginxservice.yaml`
 
@@ -116,10 +123,10 @@ Direct your loadbalancer our new pod. We can do this easily by updating the labe
 
 1. If you delete the pod and recreate it, the same content should still be available.
 
-	```
-	kubectl delete pod nginxcinder
-	kubectl apply -f nginxcinder.yaml
-```
+    ```
+    kubectl delete pod nginxcinder
+    kubectl apply -f nginxcinder.yaml
+    ```
 
 ## More information
 
