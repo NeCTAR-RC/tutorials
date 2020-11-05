@@ -105,21 +105,21 @@ Using the `openstack` command line client
 
 1. Create the Cluster
 
-    ```
-    $ openstack coe cluster create --cluster-template kubernetes-melbourne-v1.14.6 \
-    --keypair jake mycluster
-    Request to create cluster 84091b19-fd32-4197-a92e-71838d0502c2 accepted
-    ```
+   ```
+   $ openstack coe cluster create --cluster-template kubernetes-melbourne-v1.14.6 \
+   --keypair jake mycluster
+   Request to create cluster 84091b19-fd32-4197-a92e-71838d0502c2 accepted
+   ```
 
 1. List the clusters in your project, and wait for your cluster to reach the
    `CREATE_COMPLETE` status. This could take up to 15 minutes.
 
-    ```
-	$ openstack coe cluster list
-	+--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
-	| uuid                                 | name                 | keypair        | node_count | master_count | status          | health_status |
-	+--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
-    | 84091b19-fd32-4197-a92e-71838d0502c2 | mycluster            | jake           |          1 |            1 | CREATE_COMPLETE | None          |
-	+--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
-    ```
+   ```
+   $ openstack coe cluster list
+   +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
+   | uuid                                 | name                 | keypair        | node_count | master_count | status          | health_status |
+   +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
+   | 84091b19-fd32-4197-a92e-71838d0502c2 | mycluster            | jake           |          1 |            1 | CREATE_COMPLETE | None          |
+   +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
+   ```
 
