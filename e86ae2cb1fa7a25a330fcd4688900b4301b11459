@@ -16,6 +16,24 @@
       "revId": "e86ae2cb1fa7a25a330fcd4688900b4301b11459",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "32620e09_240ac09e",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000104
+      },
+      "writtenOn": "2020-11-05T07:25:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "221608fe_c6dd5155",
+      "revId": "e86ae2cb1fa7a25a330fcd4688900b4301b11459",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": false
     }
   ]
 }
