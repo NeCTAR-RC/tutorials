@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "221608fe_c6dd5155",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-11-05T06:35:34Z",
+      "side": 1,
+      "message": "This is a bit quirky, but these blocks should be aligned to 3 spaces from the margin, otherwise you\u0027ll get a space in front of the first character when it renders",
+      "revId": "e86ae2cb1fa7a25a330fcd4688900b4301b11459",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
