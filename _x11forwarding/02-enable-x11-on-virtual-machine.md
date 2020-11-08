@@ -21,8 +21,7 @@ There are a few changes needed on the virtual machine to enable X11 forwarding. 
     $ service sshd restart
     ```
 
-4. Install a graphical application `xeyes` for testing.
+4. Install the graphical application `xclock` for testing, which is included in the `x11-apps` package.
     ```bash
-    $ apt -y install xeyes
-    $ xeyes
+    $ apt -y install x11-apps
     ```
