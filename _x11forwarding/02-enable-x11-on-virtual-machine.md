@@ -21,7 +21,8 @@ There are a few changes needed on the virtual machine to enable X11 forwarding. 
     $ service sshd restart
     ```
 
-4. Install the graphical application `xclock` for testing, which is included in the `x11-apps` package.
+4. Install the graphical application `xclock` for testing.  For Ubuntu or Debian, `xclock` is included in the `x11-apps` package, and can be installed as follows:
     ```bash
     $ apt -y install x11-apps
     ```
+   For RHEL, CentOS and Fedora, the package name is `xorg-x11-apps` and you should install it using either `yum` or `dnf`, depending on the distro.
