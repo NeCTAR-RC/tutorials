@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "009aa2a5_da16a4e7",
+        "filename": "_x11forwarding/02-enable-x11-on-virtual-machine.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-11-08T23:07:49Z",
+      "side": 1,
+      "message": "This is Ubuntu-centric.  On RHEL / CentOS / Fedora the install command is different and the package name is \"xorg-x11-apps\" not \"x11-apps\"",
+      "revId": "5417f10cc3f0eaa05b17067b06b8dd50339d4b59",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
