@@ -7,7 +7,7 @@ duration: 15
 In this section, we are going to manage database users.
 
 ## Create a new database user
-1. Navigate to the `Project | Database | Instances` page.
+1. Navigate to the `Project` / `Database` / `Instances` page.
 ![Database instance list page]({{ site.baseurl }}/assets/images/database/create-database4.png)
 1. Click your `tutorial` instance and select the `Users` tab.
 ![Database users page]({{ site.baseurl }}/assets/images/database/edit-user-database1.png)
