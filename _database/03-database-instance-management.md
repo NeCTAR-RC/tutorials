@@ -12,7 +12,7 @@ You can manage your database instance by using its actions list. In this section
 
 A configuration group is used to apply database parameters. In this exercise, we are going to attach a configuration group to a database instance.
 
-1. Navigate to the `Project | Database | Configuration Groups` page
+1. Navigate to the `Project` / `Database` / `Configuration Groups` page
 1. Click the `Create Configuration Group` button to start the Create Configuration Group Dialog
 1. Enter `tutorial_mysql` in `Name` field. Select your MySQL datastore version in the the `Datastore` drop down list.
 ![Configuration group dialog]({{ site.baseurl }}/assets/images/database/create-config-group2.png)
@@ -25,7 +25,7 @@ A configuration group is used to apply database parameters. In this exercise, we
 ![Add parameter dialog]({{ site.baseurl }}/assets/images/database/create-config-group5.png)
 1. Click the 'Add Parameter' button and you should see `auto_increment_increment` is listed in the `Configuration Group Detail` page.
 ![Parameter list page]({{ site.baseurl }}/assets/images/database/create-config-group6.png)
-1. Navigate to the `Project | Database | Instances` page. Click the `Attach Configuration Group` from the actions list of your `tutorial` instance.
+1. Navigate to the `Project` / `Database` / `Instances` page. Click the `Attach Configuration Group` from the actions list of your `tutorial` instance.
 ![Instance list page with action list]({{ site.baseurl }}/assets/images/database/create-config-group7.png)
 1. In the `Attach Configuration Group` dialog, select `tutorial_mysql` from the `Configuration Group` drop down list. Note: it may be necessary to restart the database instance for this new configuration group to take effect.
 ![Attach Configuration Group Dialog]({{ site.baseurl }}/assets/images/database/create-config-group8.png)
@@ -34,7 +34,7 @@ A configuration group is used to apply database parameters. In this exercise, we
 
 By default, your database has no root access. In this exercise, we are going to enable root access.
 
-1. Navigate to the `Project | Database | Instances` page and click `Manage Root Access` from the actions list of your `tutorial` instance.
+1. Navigate to the `Project` / `Database` / `Instances` page and click `Manage Root Access` from the actions list of your `tutorial` instance.
 ![Instance list page with action list]({{ site.baseurl }}/assets/images/database/create-config-group7.png)
 1. Click the `Enable Root` button. A new root password will be generated.
 ![Enable Root Access Dialog]({{ site.baseurl }}/assets/images/database/enable-root-database.png)
