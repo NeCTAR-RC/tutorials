@@ -8,7 +8,7 @@ In this section, we are going to create a new database called `tutorial_new` on 
 
 ## Create a new database
 
-1. Navigate to the `Project | Database | Instances` page.
+1. Navigate to the `Project` / `Database` / `Instances` page.
 1. Click the database instance name `tutorial`.
 1. Click the `Databases` tab.
 ![Create database tab page]({{ site.baseurl }}/assets/images/database/new-database1.png)

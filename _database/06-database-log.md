@@ -9,7 +9,7 @@ In this section, we are going to do some exercises to manage the database logs.
 
 ## Enable Database Logs
 
-1. Navigate to the `Project | Database | Instances` page if you are not on the page.
+1. Navigate to the `Project` / `Database` / `Instances` page if you are not on the page.
 1. Click the `tutorial` instance name.
 1. Click `Logs` tab.
 1. Click `Enable Log` button from the actions list of `general` log. 
