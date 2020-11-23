@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca7ed945_f447f9c4",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-23T04:03:06Z",
+      "side": 1,
+      "message": "it is a database instance, that is how trove refers to it as opposed to a database which you create on a database instance. When backing up you backup the database instance, not the database.",
+      "revId": "2355ec59c6b81d5514938c4062fea7e3c34ad68e",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
