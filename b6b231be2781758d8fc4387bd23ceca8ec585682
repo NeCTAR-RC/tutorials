@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "41b10517_1338c20c",
+        "filename": "_loadbalancing/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-23T04:10:04Z",
+      "side": 1,
+      "message": "is",
+      "range": {
+        "startLine": 14,
+        "startChar": 57,
+        "endLine": 14,
+        "endChar": 60
+      },
+      "revId": "b6b231be2781758d8fc4387bd23ceca8ec585682",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "608aa94a_c2eb80ca",
+        "filename": "_loadbalancing/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-23T04:10:04Z",
+      "side": 1,
+      "message": "and?",
+      "range": {
+        "startLine": 15,
+        "startChar": 20,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "b6b231be2781758d8fc4387bd23ceca8ec585682",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4899c6c4_2438c998",
+        "filename": "_loadbalancing/02-concepts.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-23T04:10:04Z",
+      "side": 1,
+      "message": "how",
+      "range": {
+        "startLine": 17,
+        "startChar": 11,
+        "endLine": 17,
+        "endChar": 12
+      },
+      "revId": "b6b231be2781758d8fc4387bd23ceca8ec585682",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ae5cd84_7e84185b",
+        "filename": "_loadbalancing/02-concepts.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-23T04:10:04Z",
+      "side": 1,
+      "message": "specified above in load balancer and not really tied to the listener",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 31
+      },
+      "revId": "b6b231be2781758d8fc4387bd23ceca8ec585682",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
