@@ -3,7 +3,7 @@ $(function() {
     $('.md-content table').addClass('table');
     $('.md-content img').addClass('img-fluid');
     $('.md-content img').addClass('shadow');
-    
+    $('.md-content img').addClass('my-4');
     $('.md-content blockquote').addClass('blockquote');
 });
 
