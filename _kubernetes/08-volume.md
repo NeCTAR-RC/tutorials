@@ -63,6 +63,14 @@ On Nectar Cloud, this creates a volume backed by Cinder. Create the following as
    kubectl apply -f myvol.yaml
    ```
 
+1. You should be able to see the PersistentVolume created. (You might need to
+   wait a few minutes for it to be ready)
+
+   ```
+   kubectl get pvc
+   kubectl get pv
+   ```
+
 
 ## Create a Pod
 
@@ -120,7 +128,7 @@ Now, we want to write data to volume for nginx to service.
 
 ## Redirect loadbalancer
 
-Direct your loadbalancer our new pod. We can do this easily by updating the label.
+Direct your loadbalancer to your new pod. We can do this easily by updating the label.
 
 1. Edit `nginxservice.yaml` and make the following changes
 
@@ -153,6 +161,16 @@ Direct your loadbalancer our new pod. We can do this easily by updating the labe
    kubectl delete pod nginxcinder
    kubectl apply -f nginxcinder.yaml
    ```
+
+## Clean up
+
+1. Delete the pod and pv when you are done
+
+   ```
+   kubectl delete pod nginxcinder
+   kubectl delete pvc myvol
+   ```
+
 
 ## More information
 
