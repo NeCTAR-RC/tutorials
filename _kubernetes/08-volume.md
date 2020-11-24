@@ -8,47 +8,72 @@ Volumes are one of the ways you can store data. Magnum allows Kubernetes to
 use Cinder Volumes as Kubernetes Volumes, so that you can store data
 persistently.
 
-## Create Volume
+## Create a StorageClass
 
-1. To use a volume, it must first be created in cinder. Replace
-   `--availability-zone` in the following example.
+1. Create a default
+   [StorageClass](https://kubernetes.io/docs/concepts/storage/storage-classes/).
+You only need to do this once per cluster. This defines which availability zone
+you want to create volumes in. Remember to replace `<availability-zone>` with
+the availability zone where you have volume quota. Create the following as
+`storageclass.yaml`.
 
    ```
-   $ openstack volume create --availability-zone melbourne-qh2 --size 1 mystorage
-   +---------------------+--------------------------------------+
-   | Field               | Value                                |
-   +---------------------+--------------------------------------+
-   | attachments         | []                                   |
-   | availability_zone   | melbourne-qh2                        |
-   | bootable            | false                                |
-   | consistencygroup_id | None                                 |
-   | created_at          | 2020-01-06T22:49:23.000000           |
-   | description         | None                                 |
-   | encrypted           | False                                |
-   | id                  | 827fd40d-6a00-4faa-ab94-f5e7be92c5d1 |
-   | multiattach         | False                                |
-   | name                | mystorage                            |
-   | properties          |                                      |
-   | replication_status  | None                                 |
-   | size                | 1                                    |
-   | snapshot_id         | None                                 |
-   | source_volid        | None                                 |
-   | status              | creating                             |
-   | type                | melbourne                            |
-   | updated_at          | None                                 |
-   | user_id             | 4aa047f1d39e462eb7493b1892cbd7aa     |
-   +---------------------+--------------------------------------+
+   apiVersion: storage.k8s.io/v1
+   kind: StorageClass
+   metadata:
+     name: default
+     annotations:
+       storageclass.kubernetes.io/is-default-class: "true"
+   parameters:
+     availability: <availability-zone>
+   provisioner: cinder.csi.openstack.org
    ```
 
-1. Create the following as `nginxcinder.yaml`. Replace `volumeID` with the
-   volume ID from the previous command
+1. Apply the yaml
+
+   ```
+   kubectl apply -f storageclass.yaml
+   ```
+
+
+## Create a PersistentVolumeClaim
+
+1. Create a
+   [PersistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+On Nectar Cloud, this creates a volume backed by Cinder. Create the following as
+`myvol.yaml`.
+
+   ```
+   kind: PersistentVolumeClaim
+   apiVersion: v1
+   metadata:
+     name: myvol
+     namespace: default
+   spec:
+     accessModes:
+     - ReadWriteOnce
+     resources:
+       requests:
+         storage: 3Gi
+   ```
+
+1. Apply the yaml
+
+   ```
+   kubectl apply -f myvol.yaml
+   ```
+
+
+## Create a Pod
+
+1. Create a nginx Pod that uses the PVC as a persistent volume. Create the
+   following as `nginxcinder.yaml`.
 
    ```
    apiVersion: v1
    kind: Pod
    metadata:
-     name: nginxcinder
-     labels:
+     name: nginxcinder labels:
        app: nginxcinder
    spec:
      containers:
@@ -59,10 +84,8 @@ persistently.
              mountPath: "/usr/share/nginx/html"
      volumes:
        - name: html-volume
-         cinder:
-           # Enter the volume ID below
-           volumeID: 827fd40d-6a00-4faa-ab94-f5e7be92c5d1
-           fsType: ext4
+         persistentVolumeClaim:
+           claimName: myvol
    ```
 
 1. Apply the yaml
@@ -80,7 +103,7 @@ Now, we want to write data to volume for nginx to service.
 1. Open up a shell to the pod
 
    ```
-   kubectl exec -it nginxcinder -- /bin/bash
+   kubectl exec -it pod/nginxcinder -- /bin/bash
    ```
 
 1. Use the following command to create the default index page.
@@ -97,7 +120,7 @@ Now, we want to write data to volume for nginx to service.
 
 ## Redirect loadbalancer
 
-Direct your loadbalancer our new pod. We can do this easily by updating the label
+Direct your loadbalancer our new pod. We can do this easily by updating the label.
 
 1. Edit `nginxservice.yaml` and make the following changes
 
@@ -121,7 +144,10 @@ Direct your loadbalancer our new pod. We can do this easily by updating the labe
 
 1. Refresh the URL pointing to your loadbalancer. You should now see your custom page
 
-1. If you delete the pod and recreate it, the same content should still be available.
+## Checking for persistency
+
+1. If you delete the pod and recreate it, the same content should still be
+   available. This shows that the volume is not tied to the lifetime of the pod.
 
    ```
    kubectl delete pod nginxcinder
