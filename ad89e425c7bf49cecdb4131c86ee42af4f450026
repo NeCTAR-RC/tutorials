@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b329310c_73192a36",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-11-24T00:06:17Z",
+      "side": 1,
+      "message": "Did you test this in prod without a `type` arg? I seem to remember it failing.",
+      "revId": "ad89e425c7bf49cecdb4131c86ee42af4f450026",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "313742a6_13e83e47",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-11-24T00:06:17Z",
+      "side": 1,
+      "message": "After this step it might be helpful to show that a PV is created automatically `k get pv`.",
+      "revId": "ad89e425c7bf49cecdb4131c86ee42af4f450026",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8988c129_f2262264",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-11-24T00:06:17Z",
+      "side": 1,
+      "message": "\"to your\"?",
+      "range": {
+        "startLine": 123,
+        "startChar": 24,
+        "endLine": 123,
+        "endChar": 29
+      },
+      "revId": "ad89e425c7bf49cecdb4131c86ee42af4f450026",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e1696e4_82f4b518",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2020-11-24T00:06:17Z",
+      "side": 1,
+      "message": "Probably want to delete the pod + pvc at the end here.",
+      "revId": "ad89e425c7bf49cecdb4131c86ee42af4f450026",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
