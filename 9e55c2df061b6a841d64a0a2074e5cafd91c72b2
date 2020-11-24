@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f4bdfa8_cbd711f3",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-24T04:28:04Z",
+      "side": 1,
+      "message": "for",
+      "range": {
+        "startLine": 67,
+        "startChar": 21,
+        "endLine": 67,
+        "endChar": 22
+      },
+      "revId": "9e55c2df061b6a841d64a0a2074e5cafd91c72b2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e856f335_f237134c",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2020-11-24T04:28:04Z",
+      "side": 1,
+      "message": "to",
+      "range": {
+        "startLine": 131,
+        "startChar": 24,
+        "endLine": 131,
+        "endChar": 25
+      },
+      "revId": "9e55c2df061b6a841d64a0a2074e5cafd91c72b2",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
