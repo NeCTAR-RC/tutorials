@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "61bd5d14_320aef0c",
+        "filename": "_kubernetes/08-volume.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2020-11-25T22:21:48Z",
+      "side": 1,
+      "message": "Should be consistent and use the term \u0027PersistentVolume\u0027 instead",
+      "range": {
+        "startLine": 167,
+        "startChar": 22,
+        "endLine": 167,
+        "endChar": 24
+      },
+      "revId": "070e418a93c47d4085390a673a3b0ef842e2ffd8",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
