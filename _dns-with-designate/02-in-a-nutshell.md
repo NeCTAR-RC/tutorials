@@ -50,7 +50,8 @@ To use the service, we offer a few methods:
 You will require your Nectar OpenStack password for CLI, Python bindings, and
 direct API access.
 
-**Note** The Nectar DNS service supports Designate API v2 only.
+**Note**  
+The Nectar DNS service supports Designate API v2 only.
 {: .callout-warning}
 
 ### Nectar Dashboard and CLI

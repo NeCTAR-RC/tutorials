@@ -21,7 +21,7 @@ This tutorial is part of the Nectar Cloud Starter curriculum. You should be fami
 
 ### What you'll need
 
-- Security Group to allow `ssh`
+- Security Group to allow SSH
 - Keypair
 - [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software)
 - Access to a Nectar Project

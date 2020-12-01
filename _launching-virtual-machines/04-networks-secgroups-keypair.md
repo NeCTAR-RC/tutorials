@@ -14,7 +14,7 @@ You can learn more about making your own private networks and other networking t
 
 ### Security Groups
 
-Use the up-arrow button to select the `ssh` security group.
+Use the up-arrow button to select the SSH security group.
 
 If you're following the Cloud Starter Curriculum, you created this in the tutorial *Security groups, the absolute basics*
 {: .callout-warning} 

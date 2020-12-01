@@ -6,7 +6,7 @@ duration: 4
 
 ### Create a volume
 
-You can see your project's volume storage allocation on the `Project | Compute | Overview` page on your Nectar dashboard, e.g. 
+You can see your project's volume storage allocation on the `Project` / `Compute` / `Overview` page on your Nectar dashboard, e.g. 
 
 ![Volume allocation on Nectar Dashboard Overview]({{ site.baseurl }}/assets/images/volume-storage/volume-quota-overview.jpg)
 

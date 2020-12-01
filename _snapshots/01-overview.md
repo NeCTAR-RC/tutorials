@@ -10,7 +10,7 @@ It is easy to create a snapshot of the root disk of a instance or volume by usin
  
 In this tutorial, you are going to learn how to take snapshots of instances and volumes, and then go through the process of restoring from a snapshot.
 
-**Cloud One**
+**Cloud One**  
 This tutorial is part of the Nectar Cloud One curriculum. You should be familliar with the basics of launching virtual machines and volume storage.
 If you think you need hlep with any of that, you should complete relevant Cloud Start tutorials before you start here.
 {:callout-warning}

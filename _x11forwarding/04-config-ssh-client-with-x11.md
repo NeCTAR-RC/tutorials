@@ -9,24 +9,24 @@ After the X server is installed in your operating system, you can connect to vir
 ### Linux SSH Client
 
 1. In Linux, SSH terminal supports X11 forwarding by default, so you don't need to install anything. You can connect to your virtual machine by typing:
-    ```bash
+    ```
     $ ssh -i <your private key> -X username@ip address
     ```
 
 2. After you connected to your virtual machine, you can type the below command to test whether X11 forwarding is working:
-    ```bash
+    ```
     $ xclock
     ```
 
 ### macOS SSH Client
 
 1. Once X11 forwarding is setup, you can test it using the following command:
-    ```bash
+    ```
     ssh -i <your private key> -X username@ip address
     ```
 
 2. After you connected to your virtual machine, you can type the below command to test whether X11 forwarding is working:
-    ```bash
+    ```
     $ xclock
     ```
 
@@ -43,6 +43,6 @@ In Windows, you can use putty to connect to your virtual machine with X11 forwar
     ![Putty Page 2]({{ site.baseurl }}/assets/images/x11forwarding/x11-5.png)
 
 3. After you connected to your virtual machine, you can type the below command to test whether X11 forwarding is working:
-    ```bash
+    ```
     $ xclock
     ```

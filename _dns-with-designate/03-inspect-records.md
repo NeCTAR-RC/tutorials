@@ -39,7 +39,7 @@ you have created. Please email
 To list your DNS record sets using the OpenStack command line, first use the
 `openstack zone list` command to lookup the required `<zode id>`, then use:
 
-```bash
+```
 $ openstack recordset list <zone id>
 +-----------+---------------------------------+------+-----------------------------------------------------------------------------+--------+--------+
 | id        | name                            | type | records                                                                     | status | action |

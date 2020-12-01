@@ -47,7 +47,7 @@ For more information on folders, see [Pseudo-hierarchical folders and directorie
 1. Log on to on your [Nectar Dashboard](https://dashboard.rc.nectar.org.au)
    and ensure you're working in the right project.  (Use the project selector
    on the top left-hand side of the dashboard.)
-2. Navigate to the `Project | Object Store | Containers` page.  This page
+2. Navigate to the `Project` / `Object Store` / `Containers` page.  This page
    shows any existing containers in the project.
 3. Click on the `+ Container` button to start creating a new container.
     ![Object Storage Container page1]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard1.png)
@@ -62,7 +62,7 @@ For more information on folders, see [Pseudo-hierarchical folders and directorie
 
 To create a new folder in the newly created container:
 
-1. Login and navigate to the `Project | Object Store | Containers` page as
+1. Login and navigate to the `Project` / `Object Store` / `Containers` page as
    before.
 2. Find the container in the list and click on it to select it.
 3. Click on the container's the `+Folder` button.
@@ -76,7 +76,7 @@ navigate the folder hierarchy.
 
 ### Uploading a file
 
-1. Login and navigate to the `Project | Object Store | Containers` page as
+1. Login and navigate to the `Project` / `Object Store` / `Containers` page as
    before.
 2. Click to select the container to upload the file to.
 3. In the container page, click the `file upload` icon to start the file upload
@@ -89,7 +89,7 @@ navigate the folder hierarchy.
 
 ### Deleting a container and its contents
 
-1. Log on and navigate to the `Project | Object Store | Containers` page
+1. Log on and navigate to the `Project` / `Object Store` / `Containers` page
    as before.
 2. Click to select the container you want to delete to check its contents.
 3. You need to delete all objects in a container before you can delete
@@ -110,7 +110,7 @@ button next to `+Folder`.
 
 ### Other operations on objects
 
-1. Log on and navigate to the `Project | Object Store | Containers` page
+1. Log on and navigate to the `Project` / `Object Store` / `Containers` page
    as before.
 2. Select a container and navigate to the folder containing the object.
 3. To view the object's metadata, select `View Details` from the dropdown
@@ -125,7 +125,7 @@ button next to `+Folder`.
 
 ### Make a container public
 
-1. Log on and navigate to the `Project | Object Store | Containers` page
+1. Log on and navigate to the `Project` / `Object Store` / `Containers` page
    as before.
 2. Select the container that you want to make public.
 3. Tick the `Public Access` option to make the container public.

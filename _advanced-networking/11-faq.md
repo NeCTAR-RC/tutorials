@@ -32,18 +32,18 @@ A: There are two ways to approach this: a) one network, multiple subnets within 
 
 - create a port on the desired subnet
 
-```bash
+```
 $ neutron port-create --fixed-ip subnet_id=<subnet_id> <network_id>
 ```
 - attach the port to instance
 
-```bash
+```
 $ nova interface-attach --port-id <port_id> <instance_id>
 ```
 
 - or create a new instance with it
 
-```bash
+```
 $ openstack server create \
    --flavor <flavor> \
    --image <image> \

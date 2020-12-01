@@ -8,6 +8,6 @@ In this tutorial you learnt how to resize, rebuild, reboot and delete your insta
 
 In this tutorial we've mentioned *managing your data* a few times. If you haven't already done so, you should learn ways of doing this in our tutorials [*Volume Storage*](/volume-storage/) (Nectar's virtual USB drives) and [*Moving Data*](/moving-data/).
 
-**Cloud Starter** 
+**Cloud Starter**  
 Congratulations. You've completed another step on your Cloud Computing journey. Continue with the [Cloud Starter Series](/cloud-starter/02-tutorials)
 {: .callout-success}

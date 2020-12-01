@@ -15,7 +15,7 @@ Security groups can be applied to VMs at launch and can be applied or removed at
 
 ### What you'll learn
 
-- Create a basic security group and a rule, for `ssh`
+- Create a basic security group and a rule, for SSH
 - Apply a Security Group during Launch or on an already running instance
 
 ### What you'll need
