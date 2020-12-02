@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce8012eb_fe18bef8",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2020-12-02T04:08:02Z",
+      "side": 1,
+      "message": "1) \"under node discretion\" is bad English.  2) The user shouldn\u0027t be advised to specify an allocation home location.  That\u0027s not been possible for ... umm ... a long time.",
+      "range": {
+        "startLine": 11,
+        "startChar": 194,
+        "endLine": 11,
+        "endChar": 383
+      },
+      "revId": "b31bf3940bf9edc920631d6e7d04f5bdab758c14",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
