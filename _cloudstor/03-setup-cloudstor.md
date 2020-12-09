@@ -6,11 +6,11 @@ duration: 5
 
 You have a CloudStor account and you have generated an App Password to access it from your Nectar instance. The steps below show you how to use the `cloudstor-setup` command provided by Nectar. 
 
-1. `ssh` to your Nectar virtual machine via your preferred terminal software. If you're not familiar with this, we have some other [tutorials](/connecting/01-overview) for you.
+1. SSH to your Nectar virtual machine via your preferred terminal software. If you're not familiar with this, we have some other [tutorials](/connecting/01-overview) for you.
 
 2. Start the CloudStor setup by typing `cloudstor-setup` at the command prompt. 
 
-   ```bash
+   ```
    $ cloudstor-setup
    ```
 
@@ -18,7 +18,7 @@ You have a CloudStor account and you have generated an App Password to access it
 
 3. By default the `cloudstor-setup` command will prompt you for your CloudStor `username` and `password`. Follow the prompts and paste in the username and password you generated in the previous section. You should see some output similar to this:
 
-   ```bash
+   ```
    $ cloudstor-setup
    This command guides you through the process of mounting your AARNet CloudStor 
    storage to your Nectar instance.
@@ -46,7 +46,7 @@ You have a CloudStor account and you have generated an App Password to access it
    ```
 
 4. You should now be able to work with your CloudStor data at `/cloudstor` on your virtual machine. You can use the `df` command to verify, similar to.:
-   ```bash
+   ```
    $ df -h
 Filesystem                                  Size  Used Avail Use% Mounted on
 ...
@@ -57,15 +57,13 @@ https://cloudstor....us/remote.php/webdav/  1.1T   11G  1.0T   2% /cloudstor
 
 The `cloudstor-setup` command can uninstall your mounted connection for you too. Use the `-h` argument for more information, e.g.
 
-```bash
+```
 $ cloudstor-setup -h
 ```
 
 
 
-**Note** The command `cloudstor-setup` is available on Nectar official images, build after 10/10/2018.
+**Note**  
+The command `cloudstor-setup` is available on Nectar official images, build after 10/10/2018.
 Under the hood the `cloudstor-setup` command uses software called `davfs2` to connect to your AARNet CloudStor account.
 {: .callout-warning}
-
-
-

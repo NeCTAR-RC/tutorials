@@ -6,11 +6,11 @@ duration: 2
 
 Welcome to the Nectar Research Cloud **Cloud Starter series**. In this series we've put together all the tutorials that you need to get started using the Cloud, no prior cloud knowledge required. 
 
-**Tutorial Series**
+**Tutorial Series**  
 In this tutorial series we will point you to a number of our tutorials. We recommend you follow all these tutorials in order. 
 {: .callout-success}
 
-**Technical curriculum**
+**Technical curriculum**  
 This series is technical in nature. You will learn *how* to use the cloud, not *why*. It is also entry-level: you'll learn *one* (easy) way of doing some things, not *all*. 
 {: .callout-success}
 

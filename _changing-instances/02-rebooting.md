@@ -6,11 +6,11 @@ duration: 10
 
 From time to time you may find the need to reboot your instance. Whether due to a software install or upgrade, or as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
 
-### From the `ssh` command line
+### From the SSH command line
 
-You can use the Linux command `shutdown` from your `ssh` command line. During shutdown and reboot your `ssh`-connection will be broken, but after successful rebooting you can reconnect to your instance. The command for rebooting from the command line is given below:
+You can use the Linux command `shutdown` from your SSH command line. During shutdown and reboot your SSH-connection will be broken, but after successful rebooting you can reconnect to your instance. The command for rebooting from the command line is given below:
 
-```bash
+```
 $ sudo shutdown -r now
 ```
 
@@ -22,7 +22,7 @@ It typically takes a minute or so for an instance to be accessible again. In thi
 
 An example is shown here:
 
-```bash
+```
 me@local:~$ ssh debian@144.6.226.175
 debian@acme-analysis:~$ sudo shutdown -r now
 Connection to 144.6.226.175 closed by remote host.

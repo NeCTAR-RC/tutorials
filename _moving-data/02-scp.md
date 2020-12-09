@@ -4,9 +4,9 @@ order: 2
 duration: 10
 ---
 
-`scp` stands for "secure copy". It relies on `ssh`, which in practice means for us that we can use the same key pair access methods for both `scp` and `ssh`. `scp` copies files between hosts on a network. The command will take a variation of this form; we will explore some of the variations below.
+`scp` stands for "secure copy". It relies on SSH, which in practice means for us that we can use the same key pair access methods for both `scp` and SSH. `scp` copies files between hosts on a network. The command will take a variation of this form; we will explore some of the variations below.
 
-```bash
+```
 $ scp source-file destination-file
 ```
 
@@ -18,7 +18,7 @@ $ scp source-file destination-file
 
 To copy a file called `data.csv` from the local machine to our remote instance we could use this command.
 
-```bash
+```
 $ scp data.csv wile@144.6.123.234:~/data-dir/
 ```
 
@@ -28,7 +28,7 @@ The part after the colon (`:`) indicates the remote path. Here we are copying th
 
 Here's another example:
 
-```bash
+```
 $ scp /collections/geococcyx/data.csv wile@144.6.123.234:geococcyx-data.csv
 ```
 
@@ -40,7 +40,7 @@ Easy.
 
 The copy from remote to local is very similar, except we now need to specify our remote connection details for the *source-file*, and we can omit any connections details for the *destination-file*.
 
-```bash
+```
 $ scp wile@144.6.123.234:~/outputs/results.dat outputs/
 ```
 

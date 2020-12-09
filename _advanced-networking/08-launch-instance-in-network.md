@@ -18,7 +18,7 @@ Step 5b. In the Availability Zone tab, ensure you select the Availability Zone t
 
 If you use the OpenStack CLI, you can use the `--nic net-id=<NETWORK_ID>` flag when launching. For example:
 
-```bash
+```
 openstack network list #Find the network UUID which we want to use when launching new instance
 
 +--------------------------------------+-----------------------------------+----------------------------------------------------------------------------+

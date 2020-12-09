@@ -18,7 +18,7 @@ Please note that when you attach interfaces using the Dashboard, you are really 
 
 If you use the OpenStack CLI, you can use the nova attach-interface command as follows:   
 
-```bash
+```
 openstack network list #Find the network UUID which we want to attach to an instance
 
 +--------------------------------------+-----------------------------------+----------------------------------------------------------------------------+
@@ -79,7 +79,7 @@ If you use the OpenStack CLI, you can achieve identical results by using the fol
 
 **find UUID of the port (interface) "My First Network"**
 
-```bash
+```
 $ nova interface-list cd576d51-8a13-49b9-9c13-88a0d57270f3
 
 +------------+--------------------------------------+--------------------------------------+-----------------+-------------------+
@@ -91,7 +91,7 @@ $ nova interface-list cd576d51-8a13-49b9-9c13-88a0d57270f3
 +------------+--------------------------------------+--------------------------------------+-----------------+-------------------+
 ```
 **detach "My First Network" port (interface) from instance "My First Instance"**
-```bash
+```
 nova interface-detach cd576d51-8a13-49b9-9c13-88a0d57270f3 d8c0c3df-259c-480d-a995-8d27dbff9a42
 ```
 
@@ -109,7 +109,7 @@ If you are using the OpenStack CLI, you can use the following commands to achiev
 
 **get the UUID of the floating IP**
 
-```bash
+```
 $ neutron floatingip-list
 
 +--------------------------------------+------------------+---------------------+--------------------------------------+
@@ -122,7 +122,7 @@ $ neutron floatingip-list
 ```
 **remove floating IP from instance**
 
-```bash
+```
 $ neutron floatingip-disassociate 796ae38f-d292-4c5a-93b1-24bb4bbf2955
 Disassociated floating IP 796ae38f-d292-4c5a-93b1-24bb4bbf2955
 ```

@@ -8,7 +8,7 @@ In the section after this one we'll connect to our instance using the web-based 
 
 Nectar preconfigured images, such as the Ubuntu image we used to launch our instance, do not have a password preconfigured on the default user account. So we need to set one ourselves. We'll use our `sudo` privileges to change the password on the ubuntu account as below.
 
-```bash
+```
 $ sudo passwd ubuntu
 Enter new UNIX password:
 Retype new UNIX password:
@@ -17,11 +17,11 @@ passwd: password updated successfully
 
 We do have some [advice on passwords](https://support.ehelp.edu.au/support/solutions/articles/6000213823-passwords).
 
-**Important**
-Password authentication and `ssh` don't mix well these days on the Internet. Automated entry attempts on well-known user accounts with well-known or stolen passwords occur continuously. Virtual machines based on Nectar official images are preconfigured to disable `ssh` password authentication to prevent this type of unauthorised access. You should not change this. 
+**Important**  
+Password authentication and SSH don't mix well these days on the Internet. Automated entry attempts on well-known user accounts with well-known or stolen passwords occur continuously. Virtual machines based on Nectar official images are preconfigured to disable SSH password authentication to prevent this type of unauthorised access. You should not change this. 
 {: .callout-danger}
 
- **Leave `ssh` password authentication disabled**
+ **Leave SSH password authentication disabled**  
 We're serious.
 {: .callout-danger}
 

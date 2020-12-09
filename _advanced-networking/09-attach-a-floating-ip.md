@@ -18,7 +18,7 @@ Step 6b. Select a floating IP address from the list and ensure your instance por
 
 If you are using the OpenStack CLI, you can use the following commands to achieve identical results:
 
-```bash
+```
 neutron floatingip-list #get a list of floating IP's allocated
 
 +--------------------------------------+------------------+---------------------+--------------------------------------+

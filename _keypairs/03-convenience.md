@@ -13,22 +13,22 @@ To get your Nectar-generated key you follow these steps
 3. in the Create Key Pair dialog, insert a meaningful name for your key and select Key type "SSH Key"
 2. Click the "**+** Create Key Pair" button
    ![create-key-dialog]({{ site.baseurl }}/assets/images/keypairs/create-key-dialog.png)
-5. Your Public key is now registered in the list 
+5. Your Public key is now registered in the list
 2. and your Private key is now downloaded by your browser.
    ![registered and downloaded]({{ site.baseurl }}/assets/images/keypairs/registered-and-downloaded.png)
 
-Your browser's default download folder is not an appropriate place to store your Private key. You should store your Private key in a suitably permanent place that is only accessible to you. 
+Your browser's default download folder is not an appropriate place to store your Private key. You should store your Private key in a suitably permanent place that is only accessible to you.
 
 1. Create a folder for your Keys  in a suitably permanent place that is only accessible to you. In the remainder of this tutorial we will assume you have created a `.ssh/` directory in your home directory, e.g. (using your local terminal)
-   ```bash
+   ```
    $ cd ~
    $ mkdir .ssh
    $ chmod 700 .ssh/
    ```
-   
-2. Move your downloaded Private key file into your new key folder. The file access permissions on your private key file matter too. You can set the right permissions using the command 
-   ```bash
+
+2. Move your downloaded Private key file into your new key folder. The file access permissions on your private key file matter too. You can set the right permissions using the command
+   ```
    $ chmod 600 .ssh/<your downloaded private key>
    ```
-That's all there's to *the Nectar convenience method*. 
+That's all there's to *the Nectar convenience method*.
 
