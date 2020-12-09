@@ -19,14 +19,16 @@ MySQL can be automatically upgraded between major versions, but PostgreSQL canno
 {: .callout-warning}
 
 The flavors currently available are:
-- db.small (2 virtual CPU cores, 4GB RAM)
+- db.small (4GB RAM)
+- db.medium (8GB RAM)
+- db.large (16GB RAM)
 
 
 ## Database Service Quota
 
 Access to the Nectar database service is governed by its own type of quota, which you must apply for, through the allocation request form in the dashboard.
 
-The allocation form allows you to request quota for `database servers` and `database storage`.
+The allocation form allows you to request quota for `database ram` and `database storage`.
 
 ## What you'll learn
 
