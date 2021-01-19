@@ -9,7 +9,7 @@ You can update the description of your zone by navigating to **Project -> DNS
 to update other zone settings please email
 [support@nectar.org.au](mailto:support@nectar.org.au).
 
-![Update Zone]({{ site.baseurl }}/assets/images/dns-with-designate/dns-update-zone.png)
+![Update Zone]({{ site.baseurl }}/assets/images/dns/dns-update-zone.png)
 
 To show the current zone settings and update the zone description using the
 OpenStack command line:

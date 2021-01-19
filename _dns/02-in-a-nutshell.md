@@ -43,7 +43,7 @@ contact your institution IT services team for details.
 To use the service, we offer a few methods:
 
 - Your [Nectar dashboard](https://dashboard.rc.nectar.org.au)
-- OpenStack [Command Line Interface (CLI)](tutorial/openstack-cli)
+- OpenStack [Command Line Interface (CLI)]({{ site.baseurl }}/openstack-cli)
 - Python OpenStack bindings
 - Interacting with the OpenStack API directly
 

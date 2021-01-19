@@ -9,7 +9,7 @@ your project. Navigate to **Project -> DNS -> Zones**, then select **Create
 Record Set**. The Create Record Set form will open so you can configure the new
 record set.
 
-![Create Record Set]({{ site.baseurl }}/assets/images/dns-with-designate/dns-create-rs.png)
+![Create Record Set]({{ site.baseurl }}/assets/images/dns/dns-create-rs.png)
 
 Complete the following fields then click **Submit**:
 - **Type** is *A - Address record* for a new DNS name.

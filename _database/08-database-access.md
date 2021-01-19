@@ -9,7 +9,7 @@ In this section, we are going to do some exercises to use MySQL client to access
 ## Installation
 
 You should install the MySQL Client for your platform.
-MySQL provide a [getting started guide](https://dev.mysql.com/doc/mysql-getting-started) if you're unsure, but for those running on Ubuntu, it can be as simple as:
+MySQL provide a [getting started guide](https://dev.mysql.com/doc/mysql-getting-started/en/) if you're unsure, but for those running on Ubuntu, it can be as simple as:
 
 ```
 sudo apt update

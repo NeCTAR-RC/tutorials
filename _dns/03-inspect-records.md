@@ -10,7 +10,7 @@ project has the default zone using the Nectar dashboard, by navigating to
 **Project -> DNS -> Zones**. The default zone is in the form
 `<project-name>.cloud.edu.au.`.
 
-![Zones]({{ site.baseurl }}/assets/images/dns-with-designate/dns-zones.png)
+![Zones]({{ site.baseurl }}/assets/images/dns/dns-zones.png)
 
 To list your DNS zones using the OpenStack command line:
 ```
@@ -34,7 +34,7 @@ you have created. Please email
 [support@nectar.org.au](mailto:support@nectar.org.au) if you need to change the
 *Nameserver* records.
 
-![Record Sets]({{ site.baseurl }}/assets/images/dns-with-designate/dns-list-rs.png)
+![Record Sets]({{ site.baseurl }}/assets/images/dns/dns-list-rs.png)
 
 To list your DNS record sets using the OpenStack command line, first use the
 `openstack zone list` command to lookup the required `<zode id>`, then use:

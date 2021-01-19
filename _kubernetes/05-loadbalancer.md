@@ -79,7 +79,3 @@ This is what we just did:
      `openstack loadbalancer list` and so on.
 
 1. Finally, we checked that the loadbalancer was working using a web browser.
-
-For more information, refer to:
-
-- [OpenStack Cloud Provider](https://kubernetes.io/docs/concepts/cluster-administration/cloud-providers/#openstack)
