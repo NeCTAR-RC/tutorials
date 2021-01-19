@@ -12,23 +12,32 @@ CONFIG = {
 
 desc "Set up environment"
 task :setup do
-  system "bundle install --path vendor/bundle"
+  system("bundle install --path vendor/bundle") or raise
 end # task :setup
 
 desc "Build site"
 task :build do
-  system "bundle exec jekyll build"
+  system("bundle exec jekyll build") or raise
 end # task :serve
 
 desc "Launch preview environment"
 task :serve do
-  system "bundle exec jekyll serve -H 0.0.0.0"
+  system("bundle exec jekyll serve -H 0.0.0.0")
 end # task :serve
 
 desc "Launch preview environment"
 task :preview do
-  system "bundle exec jekyll serve"
+  system("bundle exec jekyll serve")
 end # task :preview
+
+desc "Run check"
+task :check do
+  system("bundle exec jekyll build") or raise
+  system("bundle exec htmlproofer --allow-hash-href
+          --assume_extension --url-ignore '/localhost/'
+          --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }'
+          ./_site") or raise
+end # task :check
 
 desc "Create a new tutorial"
 task :tutorial do
