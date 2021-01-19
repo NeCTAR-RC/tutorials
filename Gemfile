@@ -5,3 +5,5 @@ gem 'jekyll'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-redirect-from'
+
+gem 'html-proofer'

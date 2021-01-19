@@ -20,7 +20,7 @@ R-Studio is now available!
 
 This application also offers access to R-Studio through *Remote Desktop* via *X2Go*. This might be especially useful for workloads that require visualisations that can't be handled from within the browser environment.
 
-If you would like to use the Remote Desktop interface, you should install the *X2Go client*. It is available for Windows, Mac and Linux from [x2go.org](https://x2go.org).
+If you would like to use the Remote Desktop interface, you should install the *X2Go client*. It is available for Windows, Mac and Linux from [x2go.org](https://wiki.x2go.org/).
 
 Once installed and running, you should click the `Create Session` button and provide the **Host**, **Login** and **SSH keypair** details. Your **Session type** should be XFCE.
 

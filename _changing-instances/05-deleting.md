@@ -11,7 +11,7 @@ Deleting is irrevocable. Deleting erases all data on your instance primary and e
 {: .callout-danger}
 
 **Manage your data**  
-Before deleting your instance, you should manage your data. You should store your valuable data on persistent storage, e.g. [Nectar Volume Storage](https://support.ehelp.edu.au/support/solutions/articles/6000216075-persistent-volume-storage) or [File Shares](https://support.ehelp.edu.au/support/solutions/articles/6000183607-nectar-shared-filesystem-service), or [your institution storage](https://support.ehelp.edu.au/support/solutions/articles/6000136764-introduction-to-rds-participating-nodes) options or your local machine.
+Before *deleting* your instance, you should manage your data. You should store your valuable data on persistent storage, e.g. [Nectar Volume Storage](https://support.ehelp.edu.au/support/solutions/articles/6000216075-persistent-volume-storage), [Nectar Object Storage]({{ site.baseurl }}/object-storage) or to your local workstation.
 {: .callout-warning}
 
 ![Action Menu Delete]({{ site.baseurl }}/assets/images/changing-instances/action-menu-delete.png)

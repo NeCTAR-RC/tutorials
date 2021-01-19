@@ -30,6 +30,15 @@ task :preview do
   system "bundle exec jekyll serve"
 end # task :preview
 
+desc "Run check"
+task :check do
+  system "bundle exec jekyll build"
+  system "bundle exec htmlproofer --allow-hash-href \
+          --assume_extension --url-ignore '/localhost/' \
+          --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
+          ./_site"
+end # task :check
+
 desc "Create a new tutorial"
 task :tutorial do
   abort("Error: tutorial title not given, or too many arguments.") if ARGV.length != 2
