@@ -2,12 +2,13 @@
 layout: none
 ---
 {% include tutorials.html -%}
-[{% for collection in tutorials %}
+[{% for collection in all_tutorials %}
   {
     "title": "{{ collection.title }}",
     "url": "{{ site.baseurl }}/{{ collection.label }}",
     "summary": "{{ collection.summary }}",
     "category": "{{ collection.category }}",
+    "level": "{{ collection.level }}",
     "tags": {{ collection.tags | jsonify }},
     "difficulty": {{ collection.difficulty }},
     "duration": "{{ collection.duration }} minutes",
