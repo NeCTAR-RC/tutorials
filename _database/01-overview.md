@@ -40,3 +40,4 @@ The allocation form allows you to request quota for `database ram` and `database
 ## What you'll need
 
 -  You need to apply for database quota from the [Nectar Research Cloud Dashboard](https://dashboard.rc.nectar.org.au/)
+-  If you want to take database backups, you will also need object storage quota to hold the backups.
