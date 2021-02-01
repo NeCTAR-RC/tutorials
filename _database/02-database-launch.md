@@ -36,3 +36,7 @@ tutorial for more information.
 1. Click `Backup` button.
 1. Wait until the backup process is finished and you should see the database backup is listed under `Project` / `Database` / `Backups`.
 ![Database backup list page]({{ site.baseurl }}/assets/images/database/create-backup2.png)
+
+**Note**
+Database backups are stored in Nectar object storage.  Your Nectar project will need object storage quota sufficient to hold the backups.
+{: .callout-info}
