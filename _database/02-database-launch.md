@@ -28,6 +28,10 @@ tutorial for more information.
 
 ## Create a backup
 
+**Note**  
+Database backups are stored in Nectar object storage.  Your Nectar project will need object storage quota sufficient to hold your backups.
+{: .callout-warning}
+
 1. Navigate to the `Project` / `Database` / `Instances` page
 ![Database instance list page]({{ site.baseurl }}/assets/images/database/create-database4.png)
 1. Find the database instance `tutorial` and click the `Create Backup` button to start the `Backup Database` Dialog.
