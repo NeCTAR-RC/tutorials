@@ -47,7 +47,7 @@ Note: older versions will not be displayed
 Execute the below command to create a MySQL database instance, with a 1GB volume:
 
 ```
-$ openstack database instance create my-database-instance db.small --datastore MySQL --datastore_version 8.0-17 --size 1 --availability_zone melbourne-qh2
+$ openstack database instance create --flavor db.small --datastore MySQL --datastore_version 8.0-17 --size 1 --availability_zone melbourne-qh2 my-database-instance
 +-------------------+--------------------------------------+
 | Property          | Value                                |
 +-------------------+--------------------------------------+
