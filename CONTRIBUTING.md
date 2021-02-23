@@ -136,3 +136,4 @@ duration: <estimated page duration>
 
 You will need to restart the preview process for Jekyll to render your new
 tutorial, but once it's done, it will be available from the root of the site.
+
