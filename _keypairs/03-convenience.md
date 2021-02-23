@@ -7,14 +7,15 @@ Nectar can generate a keypair for you. It's easy and your Public key is automati
 
 To get your Nectar-generated key you follow these steps
 
-1. Logon to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and navigate to Key Pairs page
-2. Click the "**+** Create Key Pair" button
+1. Logon to the [Nectar Dashboard](https://dashboard.rc.nectar.org.au)
+2. Navigate to `Project` / `Key Pairs` page 
+3. Click the "**+** Create Key Pair" button
    ![key-pairs-page]({{ site.baseurl }}/assets/images/keypairs/key-pairs-page.png)
-3. in the Create Key Pair dialog, insert a meaningful name for your key and select Key type "SSH Key"
-2. Click the "**+** Create Key Pair" button
+4. in the Create Key Pair dialog, insert a meaningful name for your key and select Key type "SSH Key"
+5. Click the "**+** Create Key Pair" button
    ![create-key-dialog]({{ site.baseurl }}/assets/images/keypairs/create-key-dialog.png)
-5. Your Public key is now registered in the list
-2. and your Private key is now downloaded by your browser.
+6. Your Public key is now registered in the list
+7. and your Private key is now downloaded by your browser.
    ![registered and downloaded]({{ site.baseurl }}/assets/images/keypairs/registered-and-downloaded.png)
 
 Your browser's default download folder is not an appropriate place to store your Private key. You should store your Private key in a suitably permanent place that is only accessible to you.
