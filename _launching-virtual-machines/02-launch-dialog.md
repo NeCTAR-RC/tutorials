@@ -6,7 +6,7 @@ duration: 5
 
 In this tutorial we will use the *Launch Dialog* and configure the most basic Virtual Machine we could think of. 
 
-1. Log on to on your [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and ensure you're working in the right project (Use the project selector on the top left-hand side)
+1. Logon to your [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and ensure you're working in the right project (Use the project selector on the top left-hand side)
 2. Navigate to the `Project` / `Compute` / `Instances` page 
 3. Click the `Launch Instance` button to start the Launch Dialog
 

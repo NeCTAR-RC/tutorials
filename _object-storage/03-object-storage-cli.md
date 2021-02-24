@@ -23,7 +23,7 @@ sudo apt install python3-swiftclient
 
 Before you can start, you need to setup the login details.
 
-1. Log on to on your [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and ensure you're working in the right project (Use the project selector on the top left-hand side)
+1. Logon to your [Nectar Dashboard](https://dashboard.rc.nectar.org.au) and ensure you're working in the right project (Use the project selector on the top left-hand side)
 2. Click your email address on the top right corner and click `OpenStack RC File` to download the authentication file. Save the file into your computer.
 
     ![User Settings Page1]({{ site.baseurl }}/assets/images/object-storage/object-storage-swift-python-client1.png)

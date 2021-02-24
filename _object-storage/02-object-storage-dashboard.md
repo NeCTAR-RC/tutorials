@@ -44,7 +44,7 @@ For more information on folders, see [Pseudo-hierarchical folders and directorie
 
 ### Creating a container
 
-1. Log on to on your [Nectar Dashboard](https://dashboard.rc.nectar.org.au)
+1. Logon to your [Nectar Dashboard](https://dashboard.rc.nectar.org.au)
    and ensure you're working in the right project.  (Use the project selector
    on the top left-hand side of the dashboard.)
 2. Navigate to the `Project` / `Object Store` / `Containers` page.  This page
@@ -65,7 +65,7 @@ To create a new folder in the newly created container:
 1. Login and navigate to the `Project` / `Object Store` / `Containers` page as
    before.
 2. Find the container in the list and click on it to select it.
-3. Click on the container's the `+Folder` button.
+3. Click on the container's `+Folder` button.
     ![Object Storage Container page3]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard3.png)
 4. Enter a folder name in the `Folder Name` field.
 5. Click the `Create Folder` button.
@@ -130,7 +130,7 @@ button next to `+Folder`.
 2. Select the container that you want to make public.
 3. Tick the `Public Access` option to make the container public.
 4. The "disabled" text will be replaced with a hyperlink named "link".  You
-   can use your we browser's "copy link location" to capture the URL, send
+   can use your web browser's "copy link location" to capture the URL, send
    it to other people.
 
 **Note**  

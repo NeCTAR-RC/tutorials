@@ -4,7 +4,7 @@ order: 2
 duration: 5
 ---
 
-1. Log on to on your [Nectar Dashboard](https://dashboard.rc.nectar.org.au){:target="_blank"}
+1. Logon to your [Nectar Dashboard](https://dashboard.rc.nectar.org.au){:target="_blank"}
    and ensure you're working in the right project (Use the project selector on the top left-hand side).
 1. Navigate to the `Identity | Application Credentials` page using the navigation links on the left side of the page.
 1. Click the `Create Application Credential` button to open the Create Application Credential dialog.
