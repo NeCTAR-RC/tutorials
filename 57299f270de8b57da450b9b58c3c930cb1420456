@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e4c2aa3_8e48af49",
+        "filename": "_keypairs/03-convenience.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-03-01T01:36:12Z",
+      "side": 1,
+      "message": "capitalise",
+      "range": {
+        "startLine": 14,
+        "startChar": 3,
+        "endLine": 14,
+        "endChar": 4
+      },
+      "revId": "57299f270de8b57da450b9b58c3c930cb1420456",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "210f3796_fd92f101",
+        "filename": "_keypairs/03-convenience.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-03-01T01:36:12Z",
+      "side": 1,
+      "message": "This should just be joined to the previous step, it\u0027s the same sentence",
+      "range": {
+        "startLine": 18,
+        "startChar": 3,
+        "endLine": 18,
+        "endChar": 58
+      },
+      "revId": "57299f270de8b57da450b9b58c3c930cb1420456",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
