@@ -1,6 +1,6 @@
 ---
 title: High Availability
-order: 7
+order: 8
 duration: 10
 ---
 
