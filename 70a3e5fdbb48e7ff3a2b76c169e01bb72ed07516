@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e502c6f3_d1a5a25a",
+        "filename": "_kubernetes/06-ingress.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-03-18T00:57:46Z",
+      "side": 1,
+      "message": "Would be good to have a sentence between these two sentences that briefly explains what an Ingress is and why you would want to use it.",
+      "revId": "70a3e5fdbb48e7ff3a2b76c169e01bb72ed07516",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93480c6a_ba37b877",
+        "filename": "_kubernetes/06-ingress.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-03-18T00:57:46Z",
+      "side": 1,
+      "message": "we\u0027re giving the yaml here (and in the next step) but not showing how to apply it? i know it\u0027s kind of obvious but i can see this being linked to directly by DHD so it would be good if it\u0027s complete.",
+      "range": {
+        "startLine": 13,
+        "startChar": 3,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "70a3e5fdbb48e7ff3a2b76c169e01bb72ed07516",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "64cdcf44_276a9795",
+        "filename": "_kubernetes/06-ingress.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-03-18T00:57:46Z",
+      "side": 1,
+      "message": "what do these annotations mean and why are they needed? (asking for an explanation in the tutorial)",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 54
+      },
+      "revId": "70a3e5fdbb48e7ff3a2b76c169e01bb72ed07516",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a6ead859_5c3c7107",
+        "filename": "_kubernetes/06-ingress.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-03-18T00:57:46Z",
+      "side": 1,
+      "message": "brief explanation of what this is doing?",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 32
+      },
+      "revId": "70a3e5fdbb48e7ff3a2b76c169e01bb72ed07516",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
