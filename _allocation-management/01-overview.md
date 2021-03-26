@@ -16,7 +16,6 @@ Familiarise yourself with the expiry process, to prevent surprise deletions of y
 {: .callout-danger}
 
 
-
 ### What you'll learn
 
 - Understanding *accounts*, *allocations*, *projects*, *resources* and *quota*

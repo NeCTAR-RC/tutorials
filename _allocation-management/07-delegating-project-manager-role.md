@@ -4,7 +4,7 @@ order: 7
 duration: 4
 ---
 
-To help ensure that your project doesn't expire, you can also share the *project-manager* role with other users in your project. All users in the project that have the *project-manager* role will be notified of the stages of expiry by the Expiry Bot, and they have access to the `Amend/Extend allocation` button for the project via the My Requests page.
+To help you ensure that your project doesn't expire by accident, you can share the *project-manager* role with other users in your project. All users in the project that have the *project-manager* role will be notified of the stages of expiry by the Expiry Bot, and they have access to the `Amend/Extend allocation` button for the project via the My Requests page.
 
 To share/delegate the *project-manager*-role you need to take two steps:
 
@@ -18,9 +18,9 @@ To add members to your project, follow these steps:
 1. On you nectar dashboard ensure you have the correct project selected in the Project selector
 2. Navigate to the `Identity` / `Project Members` page
 3. Click the `Add` button to open the `Add User to Project` dialog
-4. Enter the user's Username (i.e. the email address) and click the `Add User to Project` button
+4. Enter the user's Nectar Username (i.e. the email address) and click the `Add User to Project` button
 
-Note the User's usename must be an existing account in Nectar. If you are unsure, ask the user to log in to Nectar and use the email address they have in the top right hand corner of the dashboard.
+Note that the user must have an existing account in Nectar, and you need to provide the Nectar Username for that account. If you are unsure what that user's Nectar Username is, ask them to log in to the Nectar Dashboard and tell you the email address that is shown in the top right hand corner of *their* dashboard.
 
 ![Adding a Project Member]({{ site.baseurl }}/assets/images/allocation-management/add-project-member.png)
 
