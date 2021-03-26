@@ -8,11 +8,11 @@ To get a full-fledged project allocated to you, you need to apply for an allocat
 
 ![Allocation request]({{ site.baseurl }}/assets/images/allocation-management/allocation-request.png)
 
-To be eligible for a Nectar national allocation you have to submit details of your nationally relevant grant or funding program; this is part of our *Research Cloud National Allocation Scheme*. If you don't have such a grant, then you may still be allocated cloud resources by the participating nodes under node discretion, by specifying a *Allocation home location* in your request.
+To be eligible for an allocation you need to include *on the request form* the details of a Nationally Competetive Research Grant, or evidence of NCRIS or ARDC support.  The criteria are set out in our *Research Cloud National Allocation Scheme* (RC-NAS) policy. If you don't have a suitable grant or support, then you may still be allocated cloud resources at the discretion of your local Nectar node.  (This applies to people at Universities and other organisations that have a formal arrangement with one of the Nectar Nodes.)
 
-In your request you need to specify the cloud resources that you intend to use. If you're not perfectly sure just yet, then that's all right. You will be able to request amendments to your project. We'll describe that below.
+In your request you need to specify the cloud resources (quotas) that you want to use. If you're not completely sure just yet, then that's all right. You will be able to request amendments to your project. We will describe the amendment process below.
 
-More info can be found in the section [Allocations](https://support.ehelp.edu.au/support/solutions/folders/6000230417) in our knowledge base, including our current [Research Cloud National Allocation Scheme (RC-NAS) Policy](https://support.ehelp.edu.au/support/solutions/articles/6000191233-research-cloud-national-allocation-scheme-rc-nas-policy-)
+More information can be found in the [Allocations](https://support.ehelp.edu.au/support/solutions/folders/6000230417) section of our knowledge base.  This includes the current [Research Cloud National Allocation Scheme (RC-NAS) Policy](https://support.ehelp.edu.au/support/solutions/articles/6000191233-research-cloud-national-allocation-scheme-rc-nas-policy-).
 {: .callout-danger}
 
 ### Allocation requester and project manager
@@ -25,5 +25,5 @@ Project managers have access to a few functions that ordinary project members do
 - Project listed in *My Requests*, *Amend/Extend* ability
 - Allocation and Expiry process communications
 
-Occasionally you might come across the term *tenancy* or *tenant-manager*. These are deprecated words meaning *project* and *project manager* respectively.
+Occasionally you will come across the terms *tenant* (or *tenancy*) and *tenant-manager*. These are alternative terms for *project* and *project manager* respectively.
 {: .callout-warning}
