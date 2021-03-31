@@ -27,7 +27,7 @@ To scale up and down, update the `node_count` label in Magnum. For example, to
 scale `mycluster` from 1 to 2 nodes, do:
 
 ```
-openstack coe cluster update mycluster replace node_count=2
+openstack coe cluster resize mycluster 2
 ```
 
 ## Scaling containers
