@@ -23,11 +23,11 @@ them down.
    deleted without draining, so it is a good idea to build your services
    to automatically recover from the loss of a node
 
-To scale up and down, update the `node_count` label in Magnum. For example, to
-scale `mycluster` from 1 to 2 nodes, do:
+To scale up and down, use the `resize` command in Magnum. For example, to scale
+`mycluster` from 1 to 2 nodes, do:
 
 ```
-openstack coe cluster update mycluster replace node_count=2
+openstack coe cluster resize mycluster 2
 ```
 
 ## Scaling containers
