@@ -26,9 +26,42 @@ them down.
 To scale up and down, update the `node_count` label in Magnum. For example, to
 scale `mycluster` from 1 to 2 nodes, do:
 
-```
+```sh
 openstack coe cluster update mycluster replace node_count=2
 ```
+
+
+When recovering from an error state, e.g. `UPDATE_FAILED`, the `openstack coe cluster update` may not work:
+
+```sh
+openstack coe cluster list
++--------------------------------------+---------------------------+---------+------------+--------------+-----------------+---------------+
+| uuid                                 | name                      | keypair | node_count | master_count | status          | health_status |
++--------------------------------------+---------------------------+---------+------------+--------------+-----------------+---------------+
+| 59b2f102-aeb4-418c-8caa-4dc5824354bb | mycluster                 | EcoKey  |         14 |            2 | UPDATE_FAILED   | HEALTHY       |
++--------------------------------------+---------------------------+---------+------------+--------------+-----------------+---------------+
+```
+
+This can be resolved by instead using the `openstack coe cluster resize` command. The nodegroups should be `default-master` and `default-worker`:
+
+```sh
+openstack coe nodegroup list mycluster
++--------------------------------------+----------------+-----------+------------------+------------+---------------+--------+
+| uuid                                 | name           | flavor_id | image_id         | node_count | status        | role   |
++--------------------------------------+----------------+-----------+------------------+------------+---------------+--------+
+| 5884f8c8-1975-4f7a-9fcd-9d765638d442 | default-master | r3.small  | fedora-coreos-32 |          2 | UPDATE_FAILED | master |
+| ce7dc214-6dd7-4ddf-b83b-c5f784ae346b | default-worker | r3.small  | fedora-coreos-32 |         14 | UPDATE_FAILED | worker |
++--------------------------------------+----------------+-----------+------------------+------------+---------------+--------+
+```
+
+These can be scaled as so:
+
+```sh
+openstack coe cluster resize mycluster --nodegroup default-worker 16
+```
+
+The error state should then be rectified on successful update.
+
 
 ## Scaling containers
 
