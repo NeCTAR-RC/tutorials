@@ -1,10 +1,10 @@
 ---
-title: Manage Database Logs
+title: Managing Database Logs
 order: 6
 duration: 5
 ---
 
-In this section, we are going to do some exercises to manage the database logs.
+In this section, we will explain how to manage the logs on a Database instance.
 
 
 ## Enable Database Logs
@@ -12,7 +12,7 @@ In this section, we are going to do some exercises to manage the database logs.
 1. Navigate to the `Project` / `Database` / `Instances` page if you are not on the page.
 1. Click the `tutorial` instance name.
 1. Click `Logs` tab.
-1. Click `Enable Log` button from the actions list of `general` log. 
+1. Click `Enable Log` button from the actions list of `general` log.
 ![Database log tab page]({{ site.baseurl }}/assets/images/database/log-database1.png)
 1. Click `Publish Log` from the actions list.
 ![Database log tab page with publish button]({{ site.baseurl }}/assets/images/database/log-database2.png)
