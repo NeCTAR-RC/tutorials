@@ -1,10 +1,10 @@
 ---
-title: Manage Database Logs
+title: Managing Database Logs
 order: 6
 duration: 5
 ---
 
-In this section, we are going to do some exercises to manage the database logs.
+In this section, we will explain how to manage the logs on a Database instance.
 
 
 ## Enable Database Logs

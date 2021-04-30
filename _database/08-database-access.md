@@ -1,10 +1,16 @@
 ---
-title: Accessing the Database
-order: 8
+title: Accessing a Database Instance
+order: 3
 duration: 10
 ---
 
-In this section, we are going to do some exercises to use MySQL client to access the databases we created from previous sections. The database name is `tutorial_cli` and hopefully you've remembered the password.
+In this section, we will learn to use MySQL client to access the database we created in the previous section.
+
+If you followed the instructions exactly the Database instance name and the (initial) database name should be "tutorial", and the MySQL user name for connecting should be "admin".  (Hopefully you can remember the password that you used.)
+
+**Note**
+Analogous procedures would be used for accessing a PostreSQL database, but the details will be different.
+{: .callout-warning}
 
 ## Installation
 
@@ -18,53 +24,48 @@ sudo apt install mysql-client
 
 ## Connect to database
 
-Before we can connect to the database, we need to find out the host name of the database instance. Use the command `openstack database instance list` and `openstack database instance show <id>`.
+Before we can connect to the database, we need to find out the host name of the database instance.  One way to do this is to look it up via the Dashboard:
 
-```
-$ openstack database instance list
-
-+--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
-| ID                                   | Name                 | Datastore | Datastore Version | Status | Flavor ID                            | Size | Region    |
-+--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
-| 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial             | MySQL     | 8.0-12            | ACTIVE | 325c919d-b523-4960-968c-f2baffafff94 |   10 | Melbourne |
-| 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | my-database-instance | MySQL     | 8.0-17            | ACTIVE | 325c919d-b523-4960-968c-f2baffafff94 |    1 | Melbourne |
-+--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
-
-$ openstack database instance show 5de589ae-195e-4859-ae6f-8bd014094bd3
-+-------------------+--------------------------------------+
-| Property          | Value                                |
-+-------------------+--------------------------------------+
-| configuration     | 013aec9f-2d9e-495e-98a1-36d9cdebf1be |
-| created           | 2020-03-25T05:41:46                  |
-| datastore         | MySQL                                |
-| datastore_version | 8.0-12                               |
-| flavor            | 325c919d-b523-4960-968c-f2baffafff94 |
-| hostname          | gk5sdnjwfry.db.cloud.edu.au          |
-| id                | 5de589ae-195e-4859-ae6f-8bd014094bd3 |
-| name              | tutorial                             |
-| region            | Melbourne                            |
-| status            | ACTIVE                               |
-| updated           | 2020-03-26T02:20:00                  |
-| volume            | 10                                   |
-| volume_used       | 0.14                                 |
-+-------------------+--------------------------------------+
-```
+1. Navigate to the `Project` / `Database` / `Instances` page
+1. Find the Database instance called "tutorial" in the list, and click on the link.
+1. In the `Overview` tab, look for the `Host` field in the `Connection Information` section.
 
 ## Login to the database
 
+Assuming that the hostname for your database is "gk5sdnjwfry.db.cloud.edu.au", the following command should give you an interactive MySQL connection.
+
 ```
-mysql -u tutorial_cli_user -p -h gk5sdnjwfry.db.cloud.edu.au
+mysql -u admin -p -h gk5sdnjwfry.db.cloud.edu.au
 ```
-After entering the password you are connected to the database instance.
+
+You will be prompted for the password.  After entering the correct password you will be connected to the database instance.
+
+**Note**
+The `Connection Information` that you saw above also gives example commands.
+{: .callout-warning}
 
 ## Show databases and use database
 
-Use the below commands to use `tutorial_cli` database.
+Just as an example, run the following commands against your `tutorial` Database instance.
 
 ```
 mysql>SHOW DATABASES;
-mysql>Use tutorial_cli;
+mysql>Use tutorial;
 mysql>SHOW TABLES;
 ```
 
+The first command will list all databases created so far.
+
+The second command selects the "tutorial" database.
+
+The third command lists any tables that have been created in the "tutorial".  (At this stage, we would expect there to be none.) 
+
 To find out more about the mysql client, you could try the [MySQL official tutorial](https://dev.mysql.com/doc/refman/8.0/en/tutorial.html).
+
+## Connecting to the database from an application
+
+If you intend to use a Database instance to hold an application's back-end database, you should refer to the application documentation for details on configuring the database connection.
+
+If you intend to use a Database instance in some application code that you are developing, you should find and read relevant documentation on the web.  Note that the details vary from one programming language to another.  Indeed, for some programming languages there are multiple libraries for database access.
+
+When configuring a connection, the details you need should be as above: the Database instance host, the database account name and password, and relevant the database name.  (If you need a port number, it will be listed in the `Connection Information`.)
