@@ -1,10 +1,10 @@
 ---
-title: Managing a database instance
-order: 3
+title: Advanced Database Instance Management
+order: 8
 duration: 20
 ---
 
-You can manage your database instance by using its actions list. In this section, we are going to do some exercises to manage your database instances.  We are going to use the instance named `tutorial` created from the last exercise.
+In this section, we will describe some advanced Database Instance management functions.  We will use the instance named `tutorial` that we created in the first exercise.
 
 ![Database instance action list]({{ site.baseurl }}/assets/images/database/manage-database1.png)
 

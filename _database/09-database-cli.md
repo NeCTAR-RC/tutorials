@@ -1,10 +1,10 @@
 ---
 title: Using the command line
-order: 7
+order: 9
 duration: 15
 ---
 
-In this section, we are going to use the command line tool to create and manage the database instances.
+In this section, we are going to use the Openstack command line tool to create and manage the database instances.
 
 ## Requirements
 
@@ -18,7 +18,7 @@ which will guide you through the process of setting up your credentials and inst
 {: .callout-warning}
 
 
-## Lists all database instances
+## List all database instances
  
 ```
 $ openstack database instance list
@@ -152,3 +152,12 @@ $ openstack database user list 5de589ae-195e-4859-ae6f-8bd014094bd3
 | tutorial_renamed  | %    | tutorial     |
 +-------------------+------+--------------+
 ```
+
+## More information
+
+You can get a list of the available `datastore` and `database` commands by runnin `openstack help datastore` or `openstack help database`.
+
+To get help on a specific command, give the full command to `database help`; e.g. `openstack help database user create`.  This will give a synopsis of the command along with the documentation of the options and arguments.
+
+It is also possible to interact with the Database service programatically; e.g. using the `python-troveclient` libraries or by sending requests to the web APIs.
+
