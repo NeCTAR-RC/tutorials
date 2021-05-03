@@ -1,0 +1,510 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e59de878_1cbe15e8",
+        "filename": "_database/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "This is great",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 36
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6a4fc4b8_2b2ebc58",
+        "filename": "_database/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "OpenStack, but I wouldn\u0027t -1 you for it",
+      "range": {
+        "startLine": 13,
+        "startChar": 44,
+        "endLine": 13,
+        "endChar": 53
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d65443a_d4e27366",
+        "filename": "_database/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Might as well promote this to be a proper \"note\"",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 82
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df0090d8_59514c59",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "I think the convention has been not to put these in quotes like this, but use the backticks, or make it bold.",
+      "range": {
+        "startLine": 14,
+        "startChar": 47,
+        "endLine": 14,
+        "endChar": 57
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "48be247b_c1f7f0c2",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "quotes",
+      "range": {
+        "startLine": 14,
+        "startChar": 98,
+        "endLine": 14,
+        "endChar": 105
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d734dbcb_d8f12574",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "I know Sam has done some ACL stuff with Trove. While you\u0027re working on this, did you want to catch up with him and make sure we cover his changes here?",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 19
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7f929211_ee791d48",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "lol troppo. \n\nmaybe we can have a more professional word here?",
+      "range": {
+        "startLine": 7,
+        "startChar": 251,
+        "endLine": 7,
+        "endChar": 257
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d94a8e06_28778787",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Should add two spaces at the end of the line to add a break between this and the next line",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 8
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b2d28bc8_81685d43",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "remove this space",
+      "range": {
+        "startLine": 54,
+        "startChar": 84,
+        "endLine": 54,
+        "endChar": 85
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fda255c1_64d565bb",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Add two spaces",
+      "range": {
+        "startLine": 56,
+        "startChar": 0,
+        "endLine": 56,
+        "endChar": 8
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5880b4cd_2151a9fd",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Two spaces",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 11
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c13afe5_c6f41e34",
+        "filename": "_database/05-database-management.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Use a convention for these, as discussed earlier",
+      "range": {
+        "startLine": 31,
+        "startChar": 24,
+        "endLine": 31,
+        "endChar": 38
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6ea487b8_cdc1b97b",
+        "filename": "_database/06-database-log.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "clean up this space",
+      "range": {
+        "startLine": 15,
+        "startChar": 68,
+        "endLine": 15,
+        "endChar": 69
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "717eb6b6_e6246821",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "quotes",
+      "range": {
+        "startLine": 9,
+        "startChar": 110,
+        "endLine": 9,
+        "endChar": 120
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e21a618_ed88a02f",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "quotes",
+      "range": {
+        "startLine": 9,
+        "startChar": 171,
+        "endLine": 9,
+        "endChar": 178
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd3cc06c_82d1b194",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Add two spaces",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 8
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6aa0554e_caee22e1",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "so do you need to make it clear that this is the user we created earlier?",
+      "range": {
+        "startLine": 38,
+        "startChar": 9,
+        "endLine": 38,
+        "endChar": 14
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "770b92d4_af81c6e8",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Add two spaces",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 8
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b64be540_b357bf51",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "quotes",
+      "range": {
+        "startLine": 59,
+        "startChar": 31,
+        "endLine": 59,
+        "endChar": 41
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1a6d42d4_9288b0f7",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "quotes",
+      "range": {
+        "startLine": 61,
+        "startChar": 65,
+        "endLine": 61,
+        "endChar": 75
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8ed699b_66419000",
+        "filename": "_database/08-database-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Space",
+      "range": {
+        "startLine": 61,
+        "startChar": 128,
+        "endLine": 61,
+        "endChar": 129
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "517c005f_d3bbe4b9",
+        "filename": "_database/10-database-backups.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-03T00:09:16Z",
+      "side": 1,
+      "message": "Add two spaces and remove empty newline",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 3
+      },
+      "revId": "1bf80167f695b622582be1d0d0a3fa69e6771174",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    }
+  ]
+}
