@@ -22,6 +22,52 @@
       "revId": "2b71282c0dbf3609b92f0077a3d5e742d132227d",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b70b73d0_45671d01",
+        "filename": "_database/02-database-launch.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-04T03:43:08Z",
+      "side": 1,
+      "message": "2 spaces",
+      "range": {
+        "startLine": 20,
+        "startChar": 12,
+        "endLine": 20,
+        "endChar": 13
+      },
+      "revId": "2b71282c0dbf3609b92f0077a3d5e742d132227d",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ece40b94_aa00d382",
+        "filename": "_database/04-database-user.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-05-04T03:43:08Z",
+      "side": 1,
+      "message": "There\u0027s a few instances of double-quotes in this file. I think we were using the backtick convention?",
+      "range": {
+        "startLine": 14,
+        "startChar": 14,
+        "endLine": 14,
+        "endChar": 24
+      },
+      "revId": "2b71282c0dbf3609b92f0077a3d5e742d132227d",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5",
+      "unresolved": true
     }
   ]
 }
