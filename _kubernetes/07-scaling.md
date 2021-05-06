@@ -23,11 +23,23 @@ them down.
    deleted without draining, so it is a good idea to build your services
    to automatically recover from the loss of a node
 
-To scale up and down, update the `node_count` label in Magnum. For example, to
-scale `mycluster` from 1 to 2 nodes, do:
+To scale up and down, use the `openstack coe cluster resize` command. The
+default nodegroup should be `default-worker`:
 
+```sh
+openstack coe nodegroup list mycluster
++--------------------------------------+----------------+-----------+------------------+------------+---------------+--------+
+| uuid                                 | name           | flavor_id | image_id         | node_count | status        | role   |
++--------------------------------------+----------------+-----------+------------------+------------+---------------+--------+
+| 5884f8c8-1975-4f7a-9fcd-9d765638d442 | default-master | r3.small  | fedora-coreos-32 |          2 | UPDATE_FAILED | master |
+| ce7dc214-6dd7-4ddf-b83b-c5f784ae346b | default-worker | r3.small  | fedora-coreos-32 |         14 | UPDATE_FAILED | worker |
++--------------------------------------+----------------+-----------+------------------+------------+---------------+--------+
 ```
-openstack coe cluster update mycluster replace node_count=2
+
+These can be scaled as so:
+
+```sh
+openstack coe cluster resize mycluster --nodegroup default-worker 16
 ```
 
 ## Scaling containers
