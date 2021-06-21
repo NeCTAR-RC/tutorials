@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ffe8d5f_10170711",
+        "filename": "_loadbalancing/03-using-the-dashboard.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-06-21T08:12:11Z",
+      "side": 1,
+      "message": "in a future",
+      "range": {
+        "startLine": 11,
+        "startChar": 68,
+        "endLine": 11,
+        "endChar": 71
+      },
+      "revId": "8973cf4033034e703009aa8c2964256fb9ca42df",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
