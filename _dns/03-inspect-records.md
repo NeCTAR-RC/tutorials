@@ -5,10 +5,11 @@ duration: 3
 ---
 
 A default DNS zone based on the allocation project name is provisioned for all
-new Nectar allocations (and amended allocations). You can check that your
+new Nectar allocations and for amended allocations. You can check that your
 project has the default zone using the Nectar dashboard, by navigating to
-**Project -> DNS -> Zones**. The default zone is in the form
-`<project-name>.cloud.edu.au.`.
+**Project -> DNS -> Zones**.
+# The default zone for a project is in the form `<project-name>.cloud.edu.au.`.
+# As a matter of policy, project trials (PT's) do not have default zone.  You need an allocation in order to use Nectar DNS.
 
 ![Zones]({{ site.baseurl }}/assets/images/dns/dns-zones.png)
 
