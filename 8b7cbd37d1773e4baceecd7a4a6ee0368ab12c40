@@ -50,6 +50,29 @@
       "message": "Changes look good - thanks for adding Stephen! ",
       "revId": "8b7cbd37d1773e4baceecd7a4a6ee0368ab12c40",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c239eef1_38182f98",
+        "filename": "_dns/03-inspect-records.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-07-15T03:21:00Z",
+      "side": 1,
+      "message": "Why the # at the start? It makes these lines into headings.\n\nI think this is perfectly suited for a Note instead.\n\nI\u0027d probably drop the bit about policy too. That level of detail is probably not necessary.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 1
+      },
+      "revId": "8b7cbd37d1773e4baceecd7a4a6ee0368ab12c40",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     }
   ]
 }
