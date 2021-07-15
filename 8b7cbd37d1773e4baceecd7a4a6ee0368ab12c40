@@ -73,6 +73,30 @@
       },
       "revId": "8b7cbd37d1773e4baceecd7a4a6ee0368ab12c40",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8e98f86_43900c20",
+        "filename": "_dns/03-inspect-records.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-07-15T03:51:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c239eef1_38182f98",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 1
+      },
+      "revId": "8b7cbd37d1773e4baceecd7a4a6ee0368ab12c40",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     }
   ]
 }
