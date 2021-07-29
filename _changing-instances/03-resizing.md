@@ -6,9 +6,11 @@ duration: 5
 
 One benefit of Virtual Machines over physical ones is that the virtual ones you can actually make bigger. Increasing the number of CPUs, the RAM and the hard drive in your computer was never this easy.
 
-To *resize* an instance, navigate to the Instances page on your Nectar Dashboard, and select *Resize instance* from the Action Menu of the instance you would like to resize. This will take you to the *Resize Instance dialog* where you can select a new flavour for your instance. 
+You can resize your instance in 2 ways, via the **Nectar Dashboard**, or using the **Command Line**. 
 
-### 2-step process
+### 2-step process using the Dashboard.
+
+To *resize* an instance, navigate to the Instances page on your Nectar Dashboard, and select *Resize instance* from the Action Menu of the instance you would like to resize. This will take you to the *Resize Instance dialog* where you can select a new flavour for your instance. 
 
 The resize action is a 2-step process. When you click the Resize button on the *Resize Instance Dialog* a request for *Migrate/Resize* will be submitted. Your instance page will appear, and will show relevant Status and an Action button asking you to `Confirm Resize/Migrate`. This process typically takes less than a minute. 
 
@@ -25,4 +27,34 @@ You won't be able to resize your instances beyond your allocated resource quota.
 
 
 ![Confirm Resize]({{ site.baseurl }}/assets/images/changing-instances/confirm-resize-status.png)
+
+### 2 step process using Command Line
+
+You can also use the OpenStack command line tools to resize your instances. If you're not familiar with the OpenStack command line you can get started using our documentation [here.]( https://support.ehelp.edu.au/support/solutions/articles/6000075747-api)
+
+
+Use the following command to perform a resize:
+
+{% highlight python %}
+nova resize --poll <instance> <new-flavor>
+{% endhighlight %}
+
+You can use either the **instance name** or **instance ID** for `<instance>`.
+
+
+The same rules apply as for resizing through the dashboard; you may refer to the [support site page](https://support.ehelp.edu.au/a/solutions/articles/6000212271) to seek valid entries for `<new-flavor>`.
+
+Resizing from the command line also requires confirmation, like in the dashboard approach above. In fact, you can use the dashboard to confirm a resize that was started from the command line; conversely, you can use the command line to confirm a resize initiated from the dashboard.
+
+To proceed with confirmation:
+
+{% highlight terminal %}
+nova resize-confirm <instance>
+{% endhighlight %}
+
+On the other hand, if you have changed your mind, you can discard the resize and retain the instance in its current flavor like so:
+
+{% highlight python %}
+nova resize-revert <instance>
+{% endhighlight %}
 
