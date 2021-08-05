@@ -489,3 +489,19 @@ collections:
     status: draft # draft or published
     published: 2020-11-02
     author: Andy Botting <andy.botting@ardc.edu.au>
+  migration:
+    output: true
+    permalink: /:collection/:name
+    title: Migration
+    summary: How to migrate various cloud resources, including volume, normal instance, legacy instance, databases & more.
+    category: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
+    tags:
+      - tutorial
+      - migration
+    difficulty: 4 # number from 1 to 5
+    duration: 120 # number of minutes
+    status: draft # draft or published
+    published: 2021-08-02
+    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
+
