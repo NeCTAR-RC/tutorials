@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "acb451c3_3b237e47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2021-08-09T07:09:30Z",
+      "side": 1,
+      "message": "Volume Backup appears to be available at QCIF now:\nhttps://researchcloud.slack.com/archives/C07JA7FRS/p1625627860493900\nhttps://jenkins.rc.nectar.org.au/view/Monitoring/job/tempest-nagios-services-qld-volume_backup/",
+      "revId": "2f6e40364f55aa733b33bc6ebdf8ff321b7531b5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c71e5187_f3042d0e",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2021-08-09T07:09:30Z",
+      "side": 1,
+      "message": "Volume Backup appears to be available at QCIF now:\nhttps://researchcloud.slack.com/archives/C07JA7FRS/p1625627860493900",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 178
+      },
+      "revId": "2f6e40364f55aa733b33bc6ebdf8ff321b7531b5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
