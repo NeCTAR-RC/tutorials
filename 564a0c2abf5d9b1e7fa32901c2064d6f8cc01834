@@ -1,0 +1,320 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17ff02b0_c55a1fb6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Content is great. Just a few style things we can work on. Also missing the entry in _config.yml so the pages get rendered on the site",
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e517c8a7_a998c81c",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Maybe instead of bold, would a header be more appropriate? E.g.\n\n# h1\n## h2\n### h3?",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 9
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "632b4be2_c6bfaa78",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "So numbering is kinda interesting with markdown. I think you\u0027d be best to set them all as 1. (the renderer is smart enough to increment for you) and don\u0027t include any empty line breaks as they break the ordering. This should end up being a proper html \u003col\u003e then",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 3
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a0ac7e9_db08d276",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Looks like these might be \"smart quotes\", which are not ideal for HTML. \n\nWe tend to use the backticks for these, or make them italic if you want to keep the consistency, or at least replace them with regular quotes.",
+      "range": {
+        "startLine": 25,
+        "startChar": 103,
+        "endLine": 25,
+        "endChar": 108
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "64c10041_0d8bdf4f",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Do you really intend on this being a h5?",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 14
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63635e60_0bef6f9b",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "For notes like this, we usually make them callouts. I can give you an example for this if you like",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 74
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6a75376_bf8c847c",
+        "filename": "_migration/migrating-database.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "See previous comment about notes",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 85
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b96791e_4bbf71c5",
+        "filename": "_migration/migrating-database.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "We need to avoid using full URLs for referring to ourselves as it breaks the test site (and potentially the link checker).\n\nYou should use replace https://tutorials.rc.nectar.org.au with the \n\n {{ site.baseurl }}\n\ntemplate tag",
+      "range": {
+        "startLine": 16,
+        "startChar": 52,
+        "endLine": 16,
+        "endChar": 115
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6fde7fed_3e476c23",
+        "filename": "_migration/migrating-instance-legacy.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Wonder if it might be useful to link this to either the support site, or if we should have a kb doc specifically about raising tickets.\n\nOr better yet, maybe we add the freshdesk widget to the tutorials site so it could pop up the form for putting a ticket in",
+      "range": {
+        "startLine": 22,
+        "startChar": 403,
+        "endLine": 22,
+        "endChar": 417
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23871419_e0d995e1",
+        "filename": "_migration/migrating-instance-legacy.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "There will be some sort of convention for doing these properly in markdown",
+      "range": {
+        "startLine": 26,
+        "startChar": 3,
+        "endLine": 26,
+        "endChar": 5
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe66c269_b544d745",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Header instead?",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 15
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b25bbe4_36ad900d",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Should make these proper markdown bullets (which probably involves removing the newlines between then",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 1
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a46295da_396611de",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "This is begging to be a callout. Might be tricky to put one in the middle of a \u003col\u003e though",
+      "range": {
+        "startLine": 47,
+        "startChar": 112,
+        "endLine": 47,
+        "endChar": 224
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "647a7d6e_60f2318b",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-10T23:21:49Z",
+      "side": 1,
+      "message": "Callout",
+      "range": {
+        "startLine": 76,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 183
+      },
+      "revId": "564a0c2abf5d9b1e7fa32901c2064d6f8cc01834",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
