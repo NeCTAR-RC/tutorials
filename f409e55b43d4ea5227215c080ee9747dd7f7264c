@@ -1,0 +1,504 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "484bb9e9_9a419f57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Just some minor whitespace fixes and some {{ site.baseurl }} template tags needed",
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a33d0b6_2d1659de",
+        "filename": "_config.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 496,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Sneaky whitespace",
+      "range": {
+        "startLine": 496,
+        "startChar": 122,
+        "endLine": 496,
+        "endChar": 123
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c59a4d23_075bca59",
+        "filename": "_config.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 501,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Sneaky whitespace",
+      "range": {
+        "startLine": 501,
+        "startChar": 17,
+        "endLine": 501,
+        "endChar": 18
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e067dd43_99c1543a",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "whitespace (few in this file)",
+      "range": {
+        "startLine": 11,
+        "startChar": 197,
+        "endLine": 11,
+        "endChar": 198
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5532a44_ebbc801d",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "I\u0027d make this header consistent with the Steps one above",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 12
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f464c7e_c88c9fcd",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Whitespace",
+      "range": {
+        "startLine": 46,
+        "startChar": 73,
+        "endLine": 46,
+        "endChar": 74
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "687cf046_cde3e411",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Make this a heading?",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 4
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e71459c_23a53c3d",
+        "filename": "_migration/migrating-database.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "I\u0027d remove the Note that and maybe go with\n\n*Note*\nThe following...",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 87
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6060196f_8b6c2f2d",
+        "filename": "_migration/migrating-database.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Want this note to be a callout too?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 209
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c2b6ac3f_0c3fe235",
+        "filename": "_migration/migrating-instance-legacy.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 26,
+        "startChar": 68,
+        "endLine": 26,
+        "endChar": 102
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c264f571_78959a82",
+        "filename": "_migration/migrating-instance-legacy.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 44,
+        "startChar": 29,
+        "endLine": 44,
+        "endChar": 64
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7fe02442_ab15c2a2",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Drop this last bit from the URL",
+      "range": {
+        "startLine": 12,
+        "startChar": 92,
+        "endLine": 12,
+        "endChar": 104
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dad4a574_9fab7bbb",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 12,
+        "startChar": 43,
+        "endLine": 12,
+        "endChar": 77
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07b5fc9d_7eae651a",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 27,
+        "startChar": 35,
+        "endLine": 27,
+        "endChar": 70
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "753ec0b1_10659f86",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 31,
+        "startChar": 31,
+        "endLine": 31,
+        "endChar": 65
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f2d1995_5ce09bf2",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 45,
+        "startChar": 35,
+        "endLine": 45,
+        "endChar": 69
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "33aa778f_75b4df07",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "The callout text is wrapped in unnecessary brackets",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 23
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c75207a3_40509ea9",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 52,
+        "startChar": 25,
+        "endLine": 52,
+        "endChar": 59
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02a6d3d0_4a038bd7",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 54,
+        "startChar": 27,
+        "endLine": 54,
+        "endChar": 61
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e76eaa0_0cd06357",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 60,
+        "startChar": 47,
+        "endLine": 60,
+        "endChar": 48
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50313b3f_a5fcb6ab",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "Rather than *NB...*, maybe just add the proper header like\n\n*Note*  (two trailing spaces)You need to be careful when running “rsync”\n\nAlso, rsync has fancy quotes",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 79,
+        "endChar": 187
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c031d75f_f55349b4",
+        "filename": "_migration/migrating-volume.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-16T01:40:30Z",
+      "side": 1,
+      "message": "{{ site.baseurl }}",
+      "range": {
+        "startLine": 82,
+        "startChar": 27,
+        "endLine": 82,
+        "endChar": 61
+      },
+      "revId": "f409e55b43d4ea5227215c080ee9747dd7f7264c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
