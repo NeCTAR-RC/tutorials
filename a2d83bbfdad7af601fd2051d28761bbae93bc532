@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "113fb5a8_460ba2dc",
+        "filename": "_migration/migrate-instance.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-17T05:34:20Z",
+      "side": 1,
+      "message": "**Note**  [two spaces]\nOnce an old instance is deleted (Step #11), it cannot be recovered.",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 68
+      },
+      "revId": "a2d83bbfdad7af601fd2051d28761bbae93bc532",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9a2c3b2_7735311a",
+        "filename": "_migration/migrating-database.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-08-17T05:34:20Z",
+      "side": 1,
+      "message": "Whitespace",
+      "range": {
+        "startLine": 2,
+        "startChar": 43,
+        "endLine": 2,
+        "endChar": 44
+      },
+      "revId": "a2d83bbfdad7af601fd2051d28761bbae93bc532",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
