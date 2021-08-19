@@ -482,6 +482,7 @@ collections:
     title: Loadbalancing
     summary: Using loadbalancing for scalable, fault-tolerant cloud architectures.
     category: Advanced
+    level: Advanced
     tags:
       - tutorial
     difficulty: 5
