@@ -481,7 +481,8 @@ collections:
     permalink: /:collection/:name
     title: Loadbalancing
     summary: Using loadbalancing for scalable, fault-tolerant cloud architectures.
-    category: Advanced
+    category: Networking
+    level: Advanced
     tags:
       - tutorial
     difficulty: 5
