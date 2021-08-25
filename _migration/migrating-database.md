@@ -10,6 +10,7 @@ For more information regarding migrating databases, [visit our support site](htt
 
 **Steps:**
 1. Disable any application services that access or update the old Database instance.
+
 *(Note that there isn’t a way for you to "shut down" a Database instance.  Even blocking access via the database security groups will only block new connections, not connections that are already established.)*
  {: .callout-warning}
 
