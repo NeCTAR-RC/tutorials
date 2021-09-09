@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "860202a1_3973a443",
+        "filename": "_prereading/how-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-09T03:09:48Z",
+      "side": 1,
+      "message": "Move full stop outside link",
+      "range": {
+        "startLine": 16,
+        "startChar": 219,
+        "endLine": 16,
+        "endChar": 226
+      },
+      "revId": "05e72fbc7215d01d57be73f5a17a66e08e3fa17c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "987df8f5_d8054e42",
+        "filename": "_prereading/how-access.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-09T03:09:48Z",
+      "side": 1,
+      "message": "Probably should be lower case",
+      "range": {
+        "startLine": 20,
+        "startChar": 149,
+        "endLine": 20,
+        "endChar": 153
+      },
+      "revId": "05e72fbc7215d01d57be73f5a17a66e08e3fa17c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7efb987_8077840a",
+        "filename": "_prereading/key-terms.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-09T03:09:48Z",
+      "side": 1,
+      "message": "This is short for Secure Shell. It is a way ... (etc)",
+      "range": {
+        "startLine": 17,
+        "startChar": 9,
+        "endLine": 17,
+        "endChar": 32
+      },
+      "revId": "05e72fbc7215d01d57be73f5a17a66e08e3fa17c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37c5dcc2_88876920",
+        "filename": "_prereading/operating-system.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-09T03:09:48Z",
+      "side": 1,
+      "message": ", of which",
+      "range": {
+        "startLine": 9,
+        "startChar": 49,
+        "endLine": 9,
+        "endChar": 56
+      },
+      "revId": "05e72fbc7215d01d57be73f5a17a66e08e3fa17c",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
