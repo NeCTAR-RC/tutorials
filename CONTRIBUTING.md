@@ -136,3 +136,55 @@ duration: <estimated page duration>
 
 You will need to restart the preview process for Jekyll to render your new
 tutorial, but once it's done, it will be available from the root of the site.
+
+### Markdown style guide principles
+
+*On the tutorial site, there are a few styling basics to be aware of in Markdown/Liquid.*
+
+**Numbering lists**
+
+To enter a numbered list for a series of steps, use 1. (number one) for each of your numbered steps, and markdown will convert these into the number order:
+
+1.
+1.
+1.
+1.
+
+
+**Highlighting important information**
+
+There a certain things we need to highlight to users, such as "Warnings" or a "Note" of sorts. This can be done using callouts, which have different types producing slightly different formatting (colours etc) for each, depending on the type of message you want to highlight.
+
+<code>
+{: .callout-success}
+
+{: .callout-danger}
+
+{: .callout-default}
+
+{: .callout-warning }
+
+{: .callout-info}
+
+{: .callout-primary}
+
+</code>
+
+<br>
+
+**Beware of the hidden spaces**
+
+It's good practice to not leave random extra spaces in the files.
+In gerrit, these will appear as little pink spaces.
+
+<br>
+
+**Preventing broken home page links**
+
+When adding any links for the tutorial site, which contain tutorials.nectar.rc.org.au, use  {{ site.baseurl }} in its place instead.
+
+For example https://tutorials.rc.nectar.org.au/cloud-starter/02-tutorials will be:
+
+{{ site.baseurl }}/cloud-starter/02-tutorials
+
+This helps prevent any broken links in the future, if the central URL of the site changes.
