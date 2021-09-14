@@ -12,7 +12,7 @@ Your instance must have a **name**; a **description** is optional. In certain ci
 
 ### Source
 
-Choose a **Boot Source** (most common is *Image*)
+Let's choose a **Boot Source**, for this tutorial, we are are going to select `NeCTAR Ubuntu 20.04 LTS (Focal) amd64`.
 
 Use the Filter widget to help you find the image you need; Use the up-arrow button beside the image you need to select it for launch
 
@@ -28,7 +28,9 @@ A quick word on Filters: Throughout the Nectar Dashboard you’ll find filters t
 
 ### Flavor
 
-Use the Filter widget to help you find the Flavor you need
+Use the Filter widget to help you find the Flavor you need.
+
+For this tutorial, we are going to select `t3.small`.
 
 Use the up-arrow button beside the flavor you need to select it for launch
 
