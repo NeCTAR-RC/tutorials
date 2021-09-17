@@ -18,6 +18,23 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f83303a_0b89befa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-17T01:25:00Z",
+      "side": 1,
+      "message": "I concur with all of your suggested remedies.",
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e8d758b8_1c7e38ad",
