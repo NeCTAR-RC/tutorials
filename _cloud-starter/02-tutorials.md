@@ -43,7 +43,7 @@ Add any missing categories to the end of the list
 
 {% for category in sortcategories -%}
 ### {{ category }}
-{% for tutorial in tutorials -%}
+{% for tutorial in tutorials reversed-%}
 {% if tutorial.curriculum == curriculum and tutorial.category == category -%}
 * [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
 {% endif -%}
