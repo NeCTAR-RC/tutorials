@@ -506,3 +506,18 @@ collections:
     published: 2021-08-02
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
+  prereading:
+    output: true
+    permalink: /:collection/:name
+    title: Prereading for beginners
+    summary: A tutorial for absolute beginners who haven't used or interacted with the Cloud before
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    level: Beginner
+    difficulty: 1 # number from 1 to 5
+    duration: 10 # number of minutes
+    status: draft # draft or published
+    published: 2021-09-08
+    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
+
