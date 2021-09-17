@@ -4,13 +4,13 @@ order: 4
 duration: 5
 ---
 
-To get a full-fledged project allocated to you, you need to apply for an allocation using the `Allocations | New Request`-form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project.
+To get a standard project allocated to you, you need to apply for an allocation using the `Allocations | New Request`-form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project.
 
 ![Allocation request]({{ site.baseurl }}/assets/images/allocation-management/allocation-request.png)
 
-To be eligible for an allocation you need to include *on the request form* the details of a Nationally Competitive Research Grant, or evidence of NCRIS or ARDC support.  The criteria are set out in our *Research Cloud National Allocation Scheme* (RC-NAS) policy. If you don't have a suitable grant or support, then you may still be allocated cloud resources at the discretion of your local Nectar node.  (This applies to people at Universities and other organisations that have a formal arrangement with one of the Nectar Nodes.)
+To be eligible for an allocation you need to include *on the request form* the details of a current Nationally Competitive Research Grant, or evidence of NCRIS or ARDC support.  The criteria are set out in our *Research Cloud National Allocation Scheme* (RC-NAS) policy. If you don't have a suitable grant or support, then you may still be allocated cloud resources at the discretion of your local Nectar node.  (This applies to people at Universities and other organisations that have a formal arrangement with one of the Nectar Nodes.)
 
-In your request you need to specify the cloud resources (quotas) that you want to use. If you're not completely sure just yet, then that's all right. You will be able to request amendments to your project. We will describe the amendment process below.
+You need to specify the amount of cloud resources (quotas) you propose to use, in your allocation request form. For large requests or requests for advanced or scarce resources, you will be expected to provide a technical justification. If you're not completely sure just yet, then that's okay. You will be able to request amendments to your project. We will describe the amendment process below.
 
 More information can be found in the [Allocations](https://support.ehelp.edu.au/support/solutions/folders/6000230417) section of our knowledge base.  This includes the current [Research Cloud National Allocation Scheme (RC-NAS) Policy](https://support.ehelp.edu.au/support/solutions/articles/6000191233-research-cloud-national-allocation-scheme-rc-nas-policy-).
 {: .callout-danger}

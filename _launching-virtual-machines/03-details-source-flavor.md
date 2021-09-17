@@ -6,7 +6,7 @@ duration: 5
 
 ### Details
 
-Your instance must have a **name**; a **description** is optional. In certain circumstances you deliberately choose the **Availability Zone**, but you can also let Nectar decide by choosing *Any Availability Zone*. You can launch multiple instances at a time by setting the **Count**
+Your instance must have a **name**; a **description** is optional. In certain circumstances you deliberately choose the **Availability Zone**, but you can also let Nectar decide by choosing *Any Availability Zone*. You can launch multiple instances at a time by setting the **Count** (e.g. 2 will launch 2 VM's).
 
 ![Launch details]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-details.png)
 
@@ -22,7 +22,7 @@ If you started the Launch dialog from the *Images* page, instead of the *Instanc
 
 ### Filters
 
-A quick word on Filters: Throughout the Nectar Dashboard you’ll find filters to help you find images, flavors, security groups, networks etc. You can type free text into filters, or build specific filters as shown in the example here
+A quick word on Filters: Throughout the Nectar Dashboard you’ll find filters to help you find images, flavors, security groups, networks etc. You can type free text into filters, or build specific filters as shown in the example here.
 
 ![dashboard-filters]({{ site.baseurl }}/assets/images/launching-virtual-machines/filters.png)
 

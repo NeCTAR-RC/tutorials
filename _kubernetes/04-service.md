@@ -87,7 +87,7 @@ we did this, Kubernetes performed the following (simplifed) steps:
 1. The node started a Pod
 
 1. The node fetched the image from Docker Hub, based on the given image name; i.e.
-   [https://hub.docker.com/nginx](https://hub.docker.com/nginx)
+   [https://hub.docker.com/nginx](https://hub.docker.com/_/nginx)
 
 1. The node created a container with the image and started it inside the Pod
 
