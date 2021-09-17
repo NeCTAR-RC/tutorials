@@ -8,7 +8,7 @@ duration: 2
 
 Nectar Cloud resources are granted to you in periods of up to a year. An automated expiry process will recover unused and unclaimed resources and the recovered resources can then be granted out to researchers just like yourself.
 
-**Warning**  
+**Warning**
 Familiarise yourself with the expiry process, to prevent surprise deletions of your hard work and data.
 {: .callout-danger}
 

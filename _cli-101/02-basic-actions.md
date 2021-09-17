@@ -6,9 +6,9 @@ duration: 12
 
 ### `home` directory
 
-When you connect to an instance using SSH you typically enter into the *home*-directory of the user account you are connecting with. Your *command prompt* usually reflects your location in the file system. In this context the tilde (`~`) is used to indicate your *home*-directory, and you can make the full directory that you are currently in visible using the `pwd`-command (**p**rint **w**orking **d**irectory).
+When you connect to an instance using SSH you typically enter into the *home*-directory. Your *command prompt* usually reflects your location in the file system. In this context, the tilde (`~`) is used to indicate your *home*-directory, and you can make the full directory that you are currently in visible using the `pwd`-command (**p**rint **w**orking **d**irectory).
 
-See if you can recognise the above four statements in the session transcript below:
+See if you can recognise the steps below:
 
 ```
 me@localmachine:~$ ssh ubuntu@myinstance
@@ -16,7 +16,7 @@ ubuntu@myinstance:~$ pwd
 /home/ubuntu
 ```
 
-To show the files and subdirectories that you may have in your home directory you can use the `ls` command.
+To list the files and subdirectories that you may have in your home directory you can use the `ls` command.
 
 ```
 ubuntu@myinstance:~$ ls
@@ -41,8 +41,8 @@ Much better `ls` result!
 
 ### Move directories and files
 
-You can move files and directories using the `mv` command. Just specify the file and the new name you want it to have like in this example. Not the expert use of the`cd` and  `ls` commands again. And two more things: `.` is used to indicate *the current directory*
-and `..` to indicate _the relative parent directory_ otherwise known as *one directory up*. See it in action in the transcript below. Note the comments (after the `#` characters) describing each action.
+You can move files and directories using the `mv` command. Just specify the file and the new name you want it to have like in this example. Note the use of the `cd` and  `ls` commands again. And two more things: `.` is used to indicate *the current directory*
+and `..` to indicate *one directory up*. See it in action below. Note the comments (after the `#` characters) describing each action.
 
 ```
 ubuntu@myinstance:~/mydata$ cd ..  # move one directory up
@@ -60,7 +60,7 @@ datafile1.txt  datafile2.dat
 
 ### Removing files
 
-At the end of any whirlwind demonstration, it is a good idea to tidy up after ourselves. So we will remove the files and directories we created. We can use the `rm`-command to remove files, and the `rmdir` command to remove empty directories. We can use the `*` wildcard character to indicate multiple files.
+Let's now remove those files. We can use the `rm`-command to remove files, and the `rmdir` command to remove empty directories (folders). We can use the `*` wildcard character to indicate multiple files.
 
 ```
 ubuntu@myinstance:~$ ls  # list files and dirs
@@ -77,7 +77,7 @@ ubuntu@myinstance:~$
 
 ### man and --help
 
-There are many ways to interact with the file system on your instance. The examples above are merely a very brief introduction.  if you're uncertain about the exact working of a command, you can call on help straight from your command line. Try these two commands:
+There are many ways to interact with the file system on your instance. The examples above are merely a very brief introduction. If you're uncertain about a command, there is help within the Command Line. Try these two commands:
 
 ```
 $ man ls

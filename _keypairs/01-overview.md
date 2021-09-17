@@ -4,7 +4,7 @@ order: 1
 duration: 2
 ---
 
-In this tutorial you will learn how to create a Public-Private keypair for use with the Nectar Research Cloud. You will learn one or more methods of creating the keypairs and how to import your public key into your Nectar account.
+In this tutorial you will learn how to create a Public-Private keypair for use with the Nectar Research Cloud.
 
 **Cloud Starter**<br/>
 This tutorial is part of the Nectar Cloud Starter curriculum. Only the bare essentials of keys are discussed here for Launching a Nectar VM from the Nectar Dashboard.

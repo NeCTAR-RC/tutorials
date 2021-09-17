@@ -4,7 +4,7 @@ order: 4
 duration: 5
 ---
 
-To get a full-fledged project allocated to you, you need to apply for an allocation using the `Allocations | New Request`-form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project.
+To get a project allocated to you, you need to apply for an allocation using the `Allocations | New Request`-form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project.
 
 ![Allocation request]({{ site.baseurl }}/assets/images/allocation-management/allocation-request.png)
 
