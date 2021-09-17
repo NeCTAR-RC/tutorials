@@ -66,6 +66,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d3d8adca_0fc69b34",
+        "filename": "_prereading/how-access.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-17T01:20:47Z",
+      "side": 1,
+      "message": "Ok, for the sake of simplicity I\u0027ll write University/Institutional email. Just trying to keep this prereading as light as possible.",
+      "parentUuid": "6bc67f54_7a13d755",
+      "range": {
+        "startLine": 10,
+        "startChar": 3,
+        "endLine": 10,
+        "endChar": 22
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a3e34a7f_5517e82c",
         "filename": "_prereading/operating-system.md",
         "patchSetId": 6
@@ -83,6 +107,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cbe454c3_377dbae1",
+        "filename": "_prereading/operating-system.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-17T01:20:47Z",
+      "side": 1,
+      "message": "I think that detail should be in the KBA article, I\u0027ll add a sentence and link to an appropriate KBA.",
+      "parentUuid": "a3e34a7f_5517e82c",
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "13a74b36_a7c98037",
         "filename": "_prereading/what-is-cloud.md",
         "patchSetId": 6
@@ -94,6 +136,30 @@
       "writtenOn": "2021-09-17T00:28:25Z",
       "side": 1,
       "message": "Do we want to mention that 1) there are PTs which are \u003eintended\u003c for try out, and 2) there is a procedure for applying for a Nectar allocations with qualification criteria and that approval is not automatic?  (Or maybe link to somewhere else that explains this?)  \n\nI worry that someone would read this page as meaning that \u003eany\u003c researcher will be able to get \u003eas much\u003c as they want \u003efor free\u003c ... without any vetting.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 120
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9cb9940d_7cbf9a1f",
+        "filename": "_prereading/what-is-cloud.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-17T01:20:47Z",
+      "side": 1,
+      "message": "Good call, I can add a line re eligibility",
+      "parentUuid": "13a74b36_a7c98037",
       "range": {
         "startLine": 9,
         "startChar": 0,
