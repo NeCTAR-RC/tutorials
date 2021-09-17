@@ -105,6 +105,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3160bf0_f6dfd094",
+        "filename": "_prereading/how-access.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-17T02:55:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3d8adca_0fc69b34",
+      "range": {
+        "startLine": 10,
+        "startChar": 3,
+        "endLine": 10,
+        "endChar": 22
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3e34a7f_5517e82c",
@@ -136,6 +160,24 @@
       "side": 1,
       "message": "I think that detail should be in the KBA article, I\u0027ll add a sentence and link to an appropriate KBA.",
       "parentUuid": "a3e34a7f_5517e82c",
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "09a09df5_275f688c",
+        "filename": "_prereading/operating-system.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-17T02:55:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cbe454c3_377dbae1",
       "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
@@ -177,6 +219,30 @@
       "side": 1,
       "message": "Good call, I can add a line re eligibility",
       "parentUuid": "13a74b36_a7c98037",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 120
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24d6c887_788c23a9",
+        "filename": "_prereading/what-is-cloud.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-17T02:55:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9cb9940d_7cbf9a1f",
       "range": {
         "startLine": 9,
         "startChar": 0,
