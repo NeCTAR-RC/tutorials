@@ -4,10 +4,12 @@ order: 8
 duration: 1
 ---
 
-In this tutorial you've learnt about Allocation Management. You've learnt what sets *pt-projects* apart from *projects*. You've learnt how to avoid *data-loss-by-expiry* by Amending/Extending your project and you've learnt how to share/delegate your project-manager role with other members of your project.
+In this tutorial you've learnt:
+- Allocation Management.
+- Differences between *pt-projects* and *projects*.
+- How to avoid *data-loss-by-expiry* by Amending/Extending your project
+- How to share/delegate your project-manager role with other members of your project
 
-All we hope for in return is that you remember us fondly, when you're attending any [banquets in Sweden](https://www.nobelprize.org/ceremonies/the-nobel-prize-award-ceremonies-and-banquets/).
-
-**Cloud Starter**  
+**Cloud Starter**
 Congratulations. You've completed another step on your Cloud Computing journey. You're probably mostly done with it now. Jump back to the [Cloud Starter Series](/cloud-starter/02-tutorials) to check.
 {: .callout-success}

@@ -4,16 +4,19 @@ order: 4
 duration: 5
 ---
 
-A more generic way to generate a keypair is to use the `ssh-keygen` command from the command line in your terminal. You then need to import your Public Key into Nectar for Nectar use.
+Another way to generate a keypair is to use the `ssh-keygen` command using the Command Line. You then need to import your Public Key into Nectar for Nectar use.
+
+Note: For Windows users, you can use Powershell, for Mac users Terminal.
+{: .callout-success}
 
 ### Generating your keypair
 
-1. You can generate the key with the command. This will run the `keygen` command with the default options which is good for us.
+1. You can generate the key with the command below. This will run the `keygen` command with the default options.
 
    ```
    $ ssh-keygen
    ```
-   `ssh-keygen` will ask you these questions. Use the default filename (i.e. `/home/<user>/.ssh/id_rsa`) and for the purpose of this tutorial you can enter an empty passphrase.
+   `ssh-keygen` will ask you these questions. Use the default filename, which is `id_rsa` (i.e. `/home/<user>/.ssh/id_rsa`). Accept the default options by pressing the enter key, and for the purpose of this tutorial you can enter an empty passphrase.
 
    ```
    Enter file in which to save the key (/home/<user>/.ssh/id_rsa):
@@ -22,7 +25,7 @@ A more generic way to generate a keypair is to use the `ssh-keygen` command from
    ```
    For the purpose of this tutorial you can enter an empty passphrase. `ssh-keygen` generates a pair of keys in the directory `.ssh`.
 
-   **overwrite? (y/n)**  
+   **overwrite? (y/n)**
    If a file with the default key name already exists, `ssh-keygen` will warn you before overwriting. You should not overwrite any existing keys, unless you are absolutely certain it is not in use. Better to choose a different name.
    {: .callout-danger}
 
@@ -31,6 +34,7 @@ A more generic way to generate a keypair is to use the `ssh-keygen` command from
    $ ls ~/.ssh/
    id_rsa  id_rsa.pub
    ```
+   *The first command `ls`, is used to list the contents of a particular location. In this case we have asked for the .ssh folder contents, which includes our keys.*
 
 A key pair is just a pair of text files. You can view the contents of your key files with any text editor.
 
@@ -38,9 +42,9 @@ A key pair is just a pair of text files. You can view the contents of your key f
 
 ### Importing your Public Key into Nectar
 
-To use your key pair with Nectar you need to *Import* your public key (`id_rsa.pub` in the example above) into Nectar.
+To use your key pair with Nectar you need to *Import* your public key (`id_rsa.pub` in the example above) into Nectar. `.pub` is the file extension for your public key.
 
-**Important**  
+**Important**
 Make sure you import your *public* key here, *not the private one*
 {: .callout-warning}
 

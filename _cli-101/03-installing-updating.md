@@ -6,7 +6,10 @@ duration: 20
 
 ### Elevating privileges using `sudo`
 
-For some actions on your instance, including installing and updating software, you need system administrator privileges, also known as *root*, *root*-privileges, *superuser*-privileges or *sudo*-privileges. The default user accounts on Nectar images are all configured to have *sudo*-privileges. To demonstrate, run the following command:
+
+For some actions on your instance, including installing and updating software, you need system administrator privileges, also known as *sudo*-privileges. Nectar Virtual machines contain an administrative account called root. Rather than logging into the root account directly, we use sudo as a safer way to elevate the privileges of one command at a time. The default user accounts on Nectar images are all configured to have *sudo*-privileges.
+
+To demonstrate, run the following command:
 
 ```
 ubuntu@myinstance:~$ apt update #attempt to check for software updates
@@ -21,13 +24,9 @@ W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Pe
 W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
 ```
 
-To perform the `apt update` action we need to *elevate* to *sudo*-privileges. We can do this using the `sudo` utility command. From `man sudo`:
-```
-DESCRIPTION
-	sudo allows a permitted user to execute a command as the superuser
-```
+To perform the `apt update` action, we grant it one-off root privileges by prefixing it with `sudo`.
 
-The correct way then to execute the `apt update`, using the `sudo` elevation command is (output truncated below):
+The correct way then to execute the `apt update`, using the `sudo` command is:
 ```
 ubuntu@myinstance:~$ sudo apt update
 
@@ -47,7 +46,7 @@ In summary: the default accounts on Nectar images have administrator privileges 
 
 In the section above you learnt about admin-privileges and `sudo`. You are now ready to update the software installed on your machine.
 
-Ubuntu and debian machines come with the `apt` (**a**dvanced **p**ackage **t**ool) package manager software. The command you used above check whether any of the packages you have installed need updating. The command to apply any of those updates is separate and very similar. You will see them side by side often, so here they are side-by-side. Note that the upgrade command as shown is interactive: you need to answer the question/s it asks. (Output truncated below).
+Ubuntu and Debian machines come with the `apt` (**a**dvanced **p**ackage **t**ool) package manager software. The command you used above check whether any of the packages you have installed need updating. The command to apply any of those updates is separate. You will see them side by side often, so here they are side-by-side. Note that the upgrade command as shown is interactive: you need to answer the question/s it asks.
 ```
 $ sudo apt update
 ...
@@ -65,11 +64,14 @@ Do you want to continue? [Y/n] y
 ...
 ```
 
-Your instance will now show you a lot of logging information about the software it is downloading and upgrading. These upgrades often include security-related upgrades to your software and operating system. You should run an `apt update` and `apt upgrade` regularly.
+Your instance will now show you a lot of logging information about the software it is downloading and upgrading. These upgrades often include security-related upgrades to your software and operating system.
+
+You should run an `apt update` and `apt upgrade` regularly.
+{: .callout-warning}
 
 ### Installing new software
 
-Installing new software, much like updating existing software, uses both `sudo` and `apt`.Try this example (output truncated below):
+Installing new software, much like updating existing software, uses both `sudo` and `apt`.Try this example:
 ```
 $ sudo apt install fortune-mod
 Reading package lists... Done
@@ -102,7 +104,7 @@ Try it:
 $ fortune
 ```
 
-If you would like to see the next few *random epigrams* from `fortune`, but you would not like to retype the command, you can use the up-arrow while at your command prompt. The up-arrow navigates to the previous commands in your command history.
+If you would like to see the next few *random epigrams* from `fortune`, but you would not like to retype the command, you can use the up-arrow while at your command prompt. **The up-arrow navigates to the previous commands in your command history**.
 
 **Installing software**
 The basic `apt` way of installing software is not the only way to install software. You'll find installation instructions for your software from your vendors and repositories.
