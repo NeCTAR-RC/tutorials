@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "203c5782_b1385a06",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-17T00:28:25Z",
+      "side": 1,
+      "message": "Some suggestions ... not a -1.",
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8d758b8_1c7e38ad",
+        "filename": "_prereading/finding-help.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-17T00:28:25Z",
+      "side": 1,
+      "message": "Maybe \"talk\" to.  Since the sentence talks about tickets or chat.",
+      "range": {
+        "startLine": 13,
+        "startChar": 139,
+        "endLine": 13,
+        "endChar": 143
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bc67f54_7a13d755",
+        "filename": "_prereading/how-access.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-17T00:28:25Z",
+      "side": 1,
+      "message": "1) What is AAF?  Some users won\u0027t know (or won\u0027t remember).  2) Technically it is not an AAF email address.  It is an AAF identity that is tied to a University/Institution account that is denoted by an email address.",
+      "range": {
+        "startLine": 10,
+        "startChar": 3,
+        "endLine": 10,
+        "endChar": 22
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3e34a7f_5517e82c",
+        "filename": "_prereading/operating-system.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-17T00:28:25Z",
+      "side": 1,
+      "message": "Should we mention that Windows is NOT a Nectar offering, but that it may be available via a Node specific arrangement?  (Ideally, include a link to a page that explains how and who to ask for a Windows VM.)",
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "13a74b36_a7c98037",
+        "filename": "_prereading/what-is-cloud.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-17T00:28:25Z",
+      "side": 1,
+      "message": "Do we want to mention that 1) there are PTs which are \u003eintended\u003c for try out, and 2) there is a procedure for applying for a Nectar allocations with qualification criteria and that approval is not automatic?  (Or maybe link to somewhere else that explains this?)  \n\nI worry that someone would read this page as meaning that \u003eany\u003c researcher will be able to get \u003eas much\u003c as they want \u003efor free\u003c ... without any vetting.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 120
+      },
+      "revId": "cf5a6f3b92efe24540dc18ca598b2d578c986f43",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
