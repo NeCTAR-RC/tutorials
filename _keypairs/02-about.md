@@ -4,20 +4,17 @@ order: 2
 duration: 4
 ---
 
-A Public-Private keypair is used in the Nectar instead of a password, to log on to any Virtual Machine (VM) you launch in Nectar. You will learn more about Launching and SSH-connecting in other tutorials.
+A Public-Private keypair is used in the Nectar instead of a password, to log on to any Virtual Machine (VM) you launch in Nectar.
 
-Before you get to that, you need to have a keypair and register your Public key in your Nectar account.
+A Public-Private keypair is a pair of files, your **Private key** and your **Public key**. They uniquely belong to each other (just like a lock and key). Your Private key file is yours, and yours alone (just like your car or house keys!). You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise and authenticate you in a remote computer account.
 
-A Public-Private keypair is a pair of files, your Private key and your Public key. They uniquely belong to each other. Your Private key file is yours, and yours alone. You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise and authenticate you in a remote computer account.
-
-**Important**  
+**Important**
 Keep your Private key *private and secure*
 {: .callout-danger}
 
-When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account. This way you can use SSH to connect to your VM using the three essential connection elements: the computer's IP address, the user account, and the private key that is securely stored on your computer.
+When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you. This way you can use SSH to connect to your VM using the three essential connection elements:
+1. Computer's IP address
+1. The user account,
+1. The private key that is securely stored on your computer.
 
-**Theorising v. Hands dirty**  
-We can theorise until the *bovi eunt domus* but for the purpose of this tutorial we should just get our hands dirty, so...
-{: .callout-warning}
-
-Let's get a keypair and register it in Nectar. On the next pages you will learn two ways of obtaining a keypair for use with Nectar.
+On the next pages you will learn two ways of obtaining a keypair for use with Nectar.

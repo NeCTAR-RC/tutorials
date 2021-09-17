@@ -4,9 +4,9 @@ order: 3
 duration: 6
 ---
 
-Command line applications are great, and can easily be automated and scheduled using standard interfaces. Some people prefer graphical tools however to help visualise the scenarios and options for their data moving tasks. 
+Command line applications are great, and can easily be automated and scheduled using standard interfaces. Some people prefer graphical tools (aka standard software).
 
-[Cyberduck](https://cyberduck.io) is a graphical tool for moving data. It supports a host of storage protocols We'll be using SFTP to create a connection to our instance and move copy some data there and back.
+[Cyberduck](https://cyberduck.io) is a graphical tool for moving data. It supports a host of storage protocols. We'll be using SFTP to create a connection to our instance and move copy some data there and back.
 
 Cyberduck is one of many options for graphical data moving tools. Other popular options include FileZilla (cross platform) and WinSCP
 {: .callout-warning}
@@ -17,5 +17,5 @@ When you open Cyberduck you just click the Open Connection button. In the Open C
 
 
 
-We'll let you work out how to *Double click*, or *Drag-and-drop* files, *Create remote directories*, *Upload files*, *Save/Reuse session data* and *Disconnect* for yourself on your particular platform. 
+We'll let you work out how to *Double click*, or *Drag-and-drop* files, *Create remote directories*, *Upload files*, *Save/Reuse session data* and *Disconnect* for yourself on your particular platform.
 

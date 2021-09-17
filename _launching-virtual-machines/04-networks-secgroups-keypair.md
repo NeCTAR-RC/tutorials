@@ -6,11 +6,11 @@ duration: 5
 
 ### Networks
 
-Basic usage: choose *Classic Provider*
+For basic usage, we are going to choose *Classic Provider*.
 
 ![Launch networks]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-networks.png)
 
-You can learn more about making your own private networks and other networking topics in our Advanced Networking tutorial
+You can learn more about making your own private networks and other networking topics in our [Advanced Networking tutorial]({{sitebase.url}}/advanced-networking/01-overview).
 
 ### Security Groups
 

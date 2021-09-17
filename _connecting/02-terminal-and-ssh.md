@@ -4,7 +4,11 @@ order: 2
 duration: 6
 ---
 
-To connect to your instance you need the ssh software, accessible from your terminal using the `ssh` command. You need to pass three pieces of information to the `ssh` command: firstly the remote computer's address, secondly the user account name and thirdly your private key.
+To connect to your instance you need the ssh software, accessible from your terminal using the `ssh` command. You need to pass three pieces of information to the `ssh` command:
+- THe remote computer's address
+- User account name
+- Private key
+
 
 #### Address
 

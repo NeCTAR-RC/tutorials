@@ -12,7 +12,7 @@ You log on to [Nectar dashboard](https://dashboard.rc.nectar.org.au/) using [AAF
 
 Your account is created upon your first logon. Your account is associated with your email address and will contain some account-related information, such as your public-private key pairs (when you register them), your Nectar OpenStack password or any Application Credentials you might create.
 
-**Your password**  
+**Your password**
 Your Nectar OpenStack password is not the same thing as your AAF/Tuakiri password. Read more about the Nectar OpenStack password in our [knowledge base article](https://support.ehelp.edu.au/support/solutions/articles/6000145832-the-nectar-openstack-password). Note also that [Nectar OpenStack Application Credentials](https://support.ehelp.edu.au/support/solutions/articles/6000212274-application-credentials) are a more sophisticated solution than the Nectar OpenStack password for similar use.
 {: .callout-warning}
 
