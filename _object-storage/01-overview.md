@@ -96,7 +96,6 @@ before you continue here.
 - How to use Object Storage via the Nectar Cloud Dashboard
 - How to use the Swift command line client to access Object Storage
 - How to use Cyberduck to access Object Storage
-- How to setup sftp-cloudfs proxy server for accessing Object Storage
 
 ### What you'll need
 
