@@ -18,6 +18,23 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e09a2c31_8ea71862",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "Some suggestions added.  ",
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f878d17a_fa4b0212",
@@ -36,6 +53,29 @@
         "startChar": 0,
         "endLine": 13,
         "endChar": 240
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfc8b4e4_0824ea7d",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "Change \"approx\" to \"approximately\" or \"about\".  Also, there are problems with \"a very limited quota of 2vCPU of resources for a maximum of 6 vCPU-month of running time\".  1) \"2vCPU of resources\" is clunky.  2) Will the reader understand what a vCPU or vCPU month mean at this stage?  3) Should we mention that a PT has 30GB of object storage quota?",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 188
       },
       "revId": "d69494eb18225d326920700265e488869b201023",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
@@ -66,6 +106,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2a7ae187_4419038c",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "change \"submit a request for\" to \"apply for\" ?",
+      "range": {
+        "startLine": 29,
+        "startChar": 235,
+        "endLine": 29,
+        "endChar": 251
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "46aa440c_ee703339",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "change \"If successful\" to \"If your application is approved\" ?",
+      "range": {
+        "startLine": 29,
+        "startChar": 281,
+        "endLine": 29,
+        "endChar": 291
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e1343732_26e377f0",
         "filename": "_allocation-management/04-allocation-and-projects.md",
         "patchSetId": 2
@@ -82,6 +168,52 @@
         "startChar": 0,
         "endLine": 7,
         "endChar": 33
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1650e58b_6f6b784d",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "insert \"current\".",
+      "range": {
+        "startLine": 11,
+        "startChar": 90,
+        "endLine": 11,
+        "endChar": 128
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4ee76ea_49e1b099",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "change \"that you want to use\" to \"that you are requesting\".  Also insert \"For large requests or requests for advanced or scarce resources, you will be expected to provide a technical justification.\"",
+      "range": {
+        "startLine": 13,
+        "startChar": 70,
+        "endLine": 13,
+        "endChar": 85
       },
       "revId": "d69494eb18225d326920700265e488869b201023",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
@@ -151,6 +283,99 @@
         "startChar": 0,
         "endLine": 6,
         "endChar": 146
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "66f0d153_2bfb8c03",
+        "filename": "_cli-101/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "Agreed.  And it is a poor analogy.  Unlike \"texting\", the computer will insist on you using the correct syntax ... and won\u0027t act intelligently if you \"ask\" it to do something incorrect or dangerous.",
+      "parentUuid": "5ee659fc_a674ae73",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 146
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f45f915d_d3b0b0bd",
+        "filename": "_cli-101/02-basic-actions.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "\"enter into\" -\u003e \"start in\" ?  Should we explicitly say what the \"working directory\" is?",
+      "range": {
+        "startLine": 9,
+        "startChar": 56,
+        "endLine": 9,
+        "endChar": 66
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9f073f1_635b7c7c",
+        "filename": "_cli-101/02-basic-actions.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "Maybe this would be the place to mention the \"working directory\"?",
+      "range": {
+        "startLine": 30,
+        "startChar": 143,
+        "endLine": 30,
+        "endChar": 180
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41076410_7499860c",
+        "filename": "_cli-101/02-basic-actions.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T04:01:32Z",
+      "side": 1,
+      "message": "Add a sentence to say that you can often find more information and examples vi a web search?",
+      "range": {
+        "startLine": 92,
+        "startChar": 0,
+        "endLine": 92,
+        "endChar": 3
       },
       "revId": "d69494eb18225d326920700265e488869b201023",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
