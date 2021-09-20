@@ -430,6 +430,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ff296deb_06a7a519",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T06:34:06Z",
+      "side": 1,
+      "message": "The inserted sentence is (if anything) more important.  The user\u0027s allocation request \u003eshould\u003c be rejected if they don\u0027t make an adequate case to justify the requested quotas.  We will soon be making the relevant form field mandatory, at least in some cases.",
+      "parentUuid": "4049dad8_39e01ddf",
+      "range": {
+        "startLine": 13,
+        "startChar": 70,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a705444f_ad4a396c",
         "filename": "_allocation-management/08-next-steps.md",
         "patchSetId": 2
