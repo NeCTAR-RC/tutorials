@@ -1,0 +1,458 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92eb69d4_0e9b953a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Just a few comments, hope this helps",
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f878d17a_fa4b0212",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "\"Your account ... will contain account-related information ...\"\nSeems a bit redundant. Maybe something like \"Your account, associated with your email address, will contain information such as ...\"",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 240
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4a8be75_89cbe20f",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "The wording here is quite awkward. How about:\n\"Like other projects, your pt project can house resources such as virtual machine instances and security groups.\"\n(Maybe then merge it into the next paragraph.)",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 212
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1343732_26e377f0",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "We need to disambiguate full projects from pts, so something like \"full-fledged\" is still needed. Maybe just change it to \"full project\"? If you later want to refer to full projects just with the word \"project\" alone, maybe explain that convention here. \"For the rest of this document, when we refer to a \u0027project\u0027, we will always be referring to a *full* project, unless stated otherwise.\"",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a705444f_ad4a396c",
+        "filename": "_allocation-management/08-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Use \"and\" instead of \"\u0026\"",
+      "range": {
+        "startLine": 9,
+        "startChar": 36,
+        "endLine": 9,
+        "endChar": 37
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4987cd52_6f6dd78a",
+        "filename": "_allocation-management/08-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Don\u0027t forget to fill out this todo item before publishing",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 40
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5ee659fc_a674ae73",
+        "filename": "_cli-101/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "I have mixed feelings about this analogy! Cute, but cringe? :) It might be better to \"sell\" the command line on the basis that it is more robust, lightweight and automatable than GUIs?",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 146
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc485fb6_db3e17dd",
+        "filename": "_cli-101/03-installing-updating.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Rather than completely discard the root stuff, it may be better to lead in by saying that all our virtual machines contain an administrative account called root. Rather than logging into the root account directly, we use sudo as a safer way to elevate the privileges of one command at a time.\n\nNote that \"sudo\" is just one program, and it is independent of Linux. It has competitors such as \"doas\": https://en.wikipedia.org/wiki/Doas. So it\u0027s better to treat root as the first-class citizen and sudo as the default way to access root.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 285
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a9a0ea4_955b3e5d",
+        "filename": "_cli-101/03-installing-updating.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Given what I said in the previous comment, it would be better to word this as something like:\n\"To perform the `apt update` action, we grant it one-off root privileges by prefixing it with `sudo`. (The section of man page which follows can probably be elided.)",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 143
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8702ca0_f11f848c",
+        "filename": "_cli-101/03-installing-updating.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Please capitalize it as Debian.",
+      "range": {
+        "startLine": 50,
+        "startChar": 11,
+        "endLine": 50,
+        "endChar": 17
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2f77182_e6ebe9fb",
+        "filename": "_cli-101/04-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "How `sudo` will grant one-off administrative powers to commands that need to affect the entire system.",
+      "range": {
+        "startLine": 11,
+        "startChar": 18,
+        "endLine": 11,
+        "endChar": 88
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7921a780_7d8dc982",
+        "filename": "_connecting/02-terminal-and-ssh.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "\"an ssh client\" would be a better way to word this, since there is more than one option, and we want to hint at the server vs client relationship in ssh. (Kind of like how you would say \"web browser\" instead of \"www software\".)",
+      "range": {
+        "startLine": 7,
+        "startChar": 37,
+        "endLine": 7,
+        "endChar": 53
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05b163cd_e6a02d9f",
+        "filename": "_connecting/03-setting-a-password-vnc.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "You\u0027ll be wanting a space here",
+      "range": {
+        "startLine": 9,
+        "startChar": 135,
+        "endLine": 9,
+        "endChar": 137
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4646cbfa_80dc355a",
+        "filename": "_connecting/03-setting-a-password-vnc.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "\"privileges) to\"",
+      "range": {
+        "startLine": 11,
+        "startChar": 248,
+        "endLine": 11,
+        "endChar": 262
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "910078c0_13146a89",
+        "filename": "_connecting/03-setting-a-password-vnc.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Key Pair",
+      "range": {
+        "startLine": 23,
+        "startChar": 407,
+        "endLine": 23,
+        "endChar": 410
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b34f24ce_94310018",
+        "filename": "_connecting/04-web-based-vnc-console.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Use \"and\" instead of \"\u0026\"",
+      "range": {
+        "startLine": 29,
+        "startChar": 180,
+        "endLine": 29,
+        "endChar": 181
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25c8bb82_065457b6",
+        "filename": "_keypairs/04-ssh-keygen.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Accept the default options by pressing ...",
+      "range": {
+        "startLine": 19,
+        "startChar": 123,
+        "endLine": 19,
+        "endChar": 139
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8804ba61_2517242a",
+        "filename": "_keypairs/04-ssh-keygen.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Best to surround this with backticks: `id_rsa`",
+      "range": {
+        "startLine": 19,
+        "startChar": 81,
+        "endLine": 19,
+        "endChar": 87
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25de0c3a_36cf6be3",
+        "filename": "_moving-data/04-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "Remember, you changed from cyberduck to filezilla",
+      "range": {
+        "startLine": 8,
+        "startChar": 97,
+        "endLine": 8,
+        "endChar": 107
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20c6b0a6_9d8eb9ec",
+        "filename": "_sec-groups-101/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2021-09-20T01:33:01Z",
+      "side": 1,
+      "message": "I\u0027m not sure whether this analogy will make sense to everyone. A list of what? Ideally, we would like the tutorials to be clear to people with English as a second language, so we need to be careful about the analogies we choose. It would probably be clearer just to talk about the security groups adding a traffic filter, which allows exposing certain services (such as ssh vs http) or only permitting traffic from an allow-list.\n\nMany researchers will already be familiar with allow-lists because of their experience with accessing databases run at other institutions.",
+      "range": {
+        "startLine": 7,
+        "startChar": 121,
+        "endLine": 7,
+        "endChar": 162
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
