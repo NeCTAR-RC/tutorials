@@ -454,6 +454,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "81aae1e7_02a6fdd3",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T07:15:21Z",
+      "side": 1,
+      "message": "ok noted - I understand the importance of this sentence. but just need to make sure it all connects properly, otherwise, with the additions, the sentence in its current state doesn\u0027t make sense.\nProposed change, what do you think?\nYou need to specify the amount of cloud resources (quotas) you propose to use, in your allocation request form. For large requests or requests for advanced or scarce resources, you will be expected to provide a technical justification.",
+      "parentUuid": "ff296deb_06a7a519",
+      "range": {
+        "startLine": 13,
+        "startChar": 70,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a705444f_ad4a396c",
         "filename": "_allocation-management/08-next-steps.md",
         "patchSetId": 2
