@@ -60,6 +60,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "aa5827a2_a8f5926b",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "Good call. I felt the same about this one just wasn\u0027t sure how to best word it.",
+      "parentUuid": "f878d17a_fa4b0212",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 240
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cfc8b4e4_0824ea7d",
         "filename": "_allocation-management/03-account-and-trial.md",
         "patchSetId": 2
@@ -94,6 +118,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "The wording here is quite awkward. How about:\n\"Like other projects, your pt project can house resources such as virtual machine instances and security groups.\"\n(Maybe then merge it into the next paragraph.)",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 212
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bcff37e_b9fbc32e",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "Agree! Another one you found the wording I was looking for! thanks !!",
+      "parentUuid": "a4a8be75_89cbe20f",
       "range": {
         "startLine": 23,
         "startChar": 0,
@@ -175,6 +223,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "52f3cead_0d394728",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "A good pick up, I\u0027m aiming to use the word - \u0027standard\u0027 here.",
+      "parentUuid": "e1343732_26e377f0",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1650e58b_6f6b784d",
         "filename": "_allocation-management/04-allocation-and-projects.md",
         "patchSetId": 2
@@ -244,6 +316,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "09dada79_d785a2d0",
+        "filename": "_allocation-management/08-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "good one!",
+      "parentUuid": "a705444f_ad4a396c",
+      "range": {
+        "startLine": 9,
+        "startChar": 36,
+        "endLine": 9,
+        "endChar": 37
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4987cd52_6f6dd78a",
         "filename": "_allocation-management/08-next-steps.md",
         "patchSetId": 2
@@ -255,6 +351,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "Don\u0027t forget to fill out this todo item before publishing",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 40
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ffed7904_02d27e32",
+        "filename": "_allocation-management/08-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "oooopsies! good pick up thanks!",
+      "parentUuid": "4987cd52_6f6dd78a",
       "range": {
         "startLine": 13,
         "startChar": 0,
@@ -301,6 +421,30 @@
       "writtenOn": "2021-09-20T04:01:32Z",
       "side": 1,
       "message": "Agreed.  And it is a poor analogy.  Unlike \"texting\", the computer will insist on you using the correct syntax ... and won\u0027t act intelligently if you \"ask\" it to do something incorrect or dangerous.",
+      "parentUuid": "5ee659fc_a674ae73",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 146
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81cc028f_14e8c978",
+        "filename": "_cli-101/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "loool I know its cheesy, but I just wanted something really simple to explain the concept, and alleviate the \"fear\" of non technical folks about the command line, as opposed to being seen as this super technical thing - its actually simple if you know how to work with it. I can add the extra bits too. standing by my cringe lol",
       "parentUuid": "5ee659fc_a674ae73",
       "range": {
         "startLine": 6,
@@ -406,6 +550,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5f157292_492cb741",
+        "filename": "_cli-101/03-installing-updating.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "ahh thats great, I wanted to make this shorter and give the briefest version of the information, you\u0027ve found the great middle ground!",
+      "parentUuid": "fc485fb6_db3e17dd",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 285
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0a9a0ea4_955b3e5d",
         "filename": "_cli-101/03-installing-updating.md",
         "patchSetId": 2
@@ -417,6 +585,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "Given what I said in the previous comment, it would be better to word this as something like:\n\"To perform the `apt update` action, we grant it one-off root privileges by prefixing it with `sudo`. (The section of man page which follows can probably be elided.)",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 143
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2df46d1e_057695b7",
+        "filename": "_cli-101/03-installing-updating.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "fixed!",
+      "parentUuid": "0a9a0ea4_955b3e5d",
       "range": {
         "startLine": 24,
         "startChar": 0,
@@ -452,6 +644,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "59ca2f11_51a97d40",
+        "filename": "_cli-101/03-installing-updating.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "fixed",
+      "parentUuid": "c8702ca0_f11f848c",
+      "range": {
+        "startLine": 50,
+        "startChar": 11,
+        "endLine": 50,
+        "endChar": 17
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b2f77182_e6ebe9fb",
         "filename": "_cli-101/04-next-steps.md",
         "patchSetId": 2
@@ -463,6 +679,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "How `sudo` will grant one-off administrative powers to commands that need to affect the entire system.",
+      "range": {
+        "startLine": 11,
+        "startChar": 18,
+        "endLine": 11,
+        "endChar": 88
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8058baf5_56f0b01b",
+        "filename": "_cli-101/04-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "I see where you\u0027re going here, but I want to leave this one as is. try to keep it as simple as possible.",
+      "parentUuid": "b2f77182_e6ebe9fb",
       "range": {
         "startLine": 11,
         "startChar": 18,
@@ -498,6 +738,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8cf53d23_04627fa0",
+        "filename": "_connecting/02-terminal-and-ssh.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "added!",
+      "parentUuid": "7921a780_7d8dc982",
+      "range": {
+        "startLine": 7,
+        "startChar": 37,
+        "endLine": 7,
+        "endChar": 53
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "05b163cd_e6a02d9f",
         "filename": "_connecting/03-setting-a-password-vnc.md",
         "patchSetId": 2
@@ -509,6 +773,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "You\u0027ll be wanting a space here",
+      "range": {
+        "startLine": 9,
+        "startChar": 135,
+        "endLine": 9,
+        "endChar": 137
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2dce85a8_63294562",
+        "filename": "_connecting/03-setting-a-password-vnc.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "tick!",
+      "parentUuid": "05b163cd_e6a02d9f",
       "range": {
         "startLine": 9,
         "startChar": 135,
@@ -544,6 +832,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e3051166_02697d0f",
+        "filename": "_connecting/03-setting-a-password-vnc.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "Tick!",
+      "parentUuid": "4646cbfa_80dc355a",
+      "range": {
+        "startLine": 11,
+        "startChar": 248,
+        "endLine": 11,
+        "endChar": 262
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "910078c0_13146a89",
         "filename": "_connecting/03-setting-a-password-vnc.md",
         "patchSetId": 2
@@ -567,6 +879,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "612118c6_3d31f700",
+        "filename": "_connecting/03-setting-a-password-vnc.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "good catch! done!",
+      "parentUuid": "910078c0_13146a89",
+      "range": {
+        "startLine": 23,
+        "startChar": 407,
+        "endLine": 23,
+        "endChar": 410
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b34f24ce_94310018",
         "filename": "_connecting/04-web-based-vnc-console.md",
         "patchSetId": 2
@@ -578,6 +914,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "Use \"and\" instead of \"\u0026\"",
+      "range": {
+        "startLine": 29,
+        "startChar": 180,
+        "endLine": 29,
+        "endChar": 181
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae5f260b_740ba7ed",
+        "filename": "_connecting/04-web-based-vnc-console.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "done!",
+      "parentUuid": "b34f24ce_94310018",
       "range": {
         "startLine": 29,
         "startChar": 180,
@@ -636,6 +996,54 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d8141e50_d3a6d596",
+        "filename": "_keypairs/04-ssh-keygen.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "done!",
+      "parentUuid": "8804ba61_2517242a",
+      "range": {
+        "startLine": 19,
+        "startChar": 81,
+        "endLine": 19,
+        "endChar": 87
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "35304dbf_f74cf484",
+        "filename": "_keypairs/04-ssh-keygen.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "tick!",
+      "parentUuid": "25c8bb82_065457b6",
+      "range": {
+        "startLine": 19,
+        "startChar": 123,
+        "endLine": 19,
+        "endChar": 139
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "25de0c3a_36cf6be3",
         "filename": "_moving-data/04-next-steps.md",
         "patchSetId": 2
@@ -659,6 +1067,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2dba8cbd_adfe7153",
+        "filename": "_moving-data/04-next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "and I thought I caught everything lol. ty!",
+      "parentUuid": "25de0c3a_36cf6be3",
+      "range": {
+        "startLine": 8,
+        "startChar": 97,
+        "endLine": 8,
+        "endChar": 107
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "20c6b0a6_9d8eb9ec",
         "filename": "_sec-groups-101/01-overview.md",
         "patchSetId": 2
@@ -670,6 +1102,30 @@
       "writtenOn": "2021-09-20T01:33:01Z",
       "side": 1,
       "message": "I\u0027m not sure whether this analogy will make sense to everyone. A list of what? Ideally, we would like the tutorials to be clear to people with English as a second language, so we need to be careful about the analogies we choose. It would probably be clearer just to talk about the security groups adding a traffic filter, which allows exposing certain services (such as ssh vs http) or only permitting traffic from an allow-list.\n\nMany researchers will already be familiar with allow-lists because of their experience with accessing databases run at other institutions.",
+      "range": {
+        "startLine": 7,
+        "startChar": 121,
+        "endLine": 7,
+        "endChar": 162
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75f927ba_ce906d43",
+        "filename": "_sec-groups-101/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T05:59:02Z",
+      "side": 1,
+      "message": "excellent pick up there. I\u0027ll remove this\n\npost note - I do remember putting this in, but for some reason my local version doesn\u0027t have it...not sure what happened there! I\u0027ll leave it out.",
+      "parentUuid": "20c6b0a6_9d8eb9ec",
       "range": {
         "startLine": 7,
         "startChar": 121,
