@@ -476,6 +476,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "100cfb2e_5cdbecb3",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000157
+      },
+      "writtenOn": "2021-09-20T07:26:49Z",
+      "side": 1,
+      "message": "That looks good.",
+      "parentUuid": "81aae1e7_02a6fdd3",
+      "range": {
+        "startLine": 13,
+        "startChar": 70,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a705444f_ad4a396c",
