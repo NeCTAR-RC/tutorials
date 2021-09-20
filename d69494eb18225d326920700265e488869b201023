@@ -1087,6 +1087,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "50ef467e_a6babeb8",
+        "filename": "_connecting/04-web-based-vnc-console.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:27:57Z",
+      "side": 1,
+      "message": "good pick up!",
+      "parentUuid": "fe3e9a8f_290e7b24",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 45
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b34f24ce_94310018",
         "filename": "_connecting/04-web-based-vnc-console.md",
         "patchSetId": 2
@@ -1145,6 +1169,30 @@
       "writtenOn": "2021-09-20T06:13:25Z",
       "side": 1,
       "message": "needs rewording. e.g. drop \u0027to\u0027",
+      "range": {
+        "startLine": 29,
+        "startChar": 57,
+        "endLine": 29,
+        "endChar": 61
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0b186f2_d7ae4f41",
+        "filename": "_connecting/04-web-based-vnc-console.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:27:57Z",
+      "side": 1,
+      "message": "fixed!",
+      "parentUuid": "43e6342e_03b12cd1",
       "range": {
         "startLine": 29,
         "startChar": 57,
@@ -1274,6 +1322,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fa2e8b3e_e9c95606",
+        "filename": "_moving-data/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:27:57Z",
+      "side": 1,
+      "message": "nice one! thanks!",
+      "parentUuid": "3ee2477f_3cf26560",
+      "range": {
+        "startLine": 7,
+        "startChar": 107,
+        "endLine": 7,
+        "endChar": 109
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1b81148c_43b03629",
         "filename": "_moving-data/01-overview.md",
         "patchSetId": 2
@@ -1297,6 +1369,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e37a94f0_8fccc0df",
+        "filename": "_moving-data/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:27:57Z",
+      "side": 1,
+      "message": "gahh thats a bad one. thanks! fixed!",
+      "parentUuid": "1b81148c_43b03629",
+      "range": {
+        "startLine": 17,
+        "startChar": 17,
+        "endLine": 17,
+        "endChar": 29
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "35985a0d_95de72f5",
         "filename": "_moving-data/03-Filezilla.md",
         "patchSetId": 2
@@ -1308,6 +1404,30 @@
       "writtenOn": "2021-09-20T06:13:25Z",
       "side": 1,
       "message": "move/copy?",
+      "range": {
+        "startLine": 9,
+        "startChar": 185,
+        "endLine": 9,
+        "endChar": 194
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab507c60_6c73f3d4",
+        "filename": "_moving-data/03-Filezilla.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:27:57Z",
+      "side": 1,
+      "message": "yup! changed :)",
+      "parentUuid": "35985a0d_95de72f5",
       "range": {
         "startLine": 9,
         "startChar": 185,
