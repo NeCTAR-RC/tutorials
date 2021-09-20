@@ -124,6 +124,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "74671b35_97297e68",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:23:33Z",
+      "side": 1,
+      "message": "Very good call - they wouldn\u0027t know what that means. I can attempt to make this simpler saying instead: In this project you are allocated a very limited quota of resources for a maximum 6 month running period. More information about the specific resources here. (and then I\u0027d link to an appropriate KBA)",
+      "parentUuid": "cfc8b4e4_0824ea7d",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 188
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a4a8be75_89cbe20f",
         "filename": "_allocation-management/03-account-and-trial.md",
         "patchSetId": 2
@@ -217,6 +241,54 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c199c82b_48ae7b77",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:23:33Z",
+      "side": 1,
+      "message": "fixed!",
+      "parentUuid": "46aa440c_ee703339",
+      "range": {
+        "startLine": 29,
+        "startChar": 281,
+        "endLine": 29,
+        "endChar": 291
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da07281d_c9ecaacc",
+        "filename": "_allocation-management/03-account-and-trial.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:23:33Z",
+      "side": 1,
+      "message": "added.",
+      "parentUuid": "2a7ae187_4419038c",
+      "range": {
+        "startLine": 29,
+        "startChar": 235,
+        "endLine": 29,
+        "endChar": 251
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e1343732_26e377f0",
         "filename": "_allocation-management/04-allocation-and-projects.md",
         "patchSetId": 2
@@ -287,6 +359,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d6707576_0a8d2c46",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:23:33Z",
+      "side": 1,
+      "message": "added!",
+      "parentUuid": "1650e58b_6f6b784d",
+      "range": {
+        "startLine": 11,
+        "startChar": 90,
+        "endLine": 11,
+        "endChar": 128
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f4ee76ea_49e1b099",
         "filename": "_allocation-management/04-allocation-and-projects.md",
         "patchSetId": 2
@@ -298,6 +394,30 @@
       "writtenOn": "2021-09-20T04:01:32Z",
       "side": 1,
       "message": "change \"that you want to use\" to \"that you are requesting\".  Also insert \"For large requests or requests for advanced or scarce resources, you will be expected to provide a technical justification.\"",
+      "range": {
+        "startLine": 13,
+        "startChar": 70,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "d69494eb18225d326920700265e488869b201023",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4049dad8_39e01ddf",
+        "filename": "_allocation-management/04-allocation-and-projects.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-20T06:23:33Z",
+      "side": 1,
+      "message": "I can see where you\u0027re going with this (ie insinuating the nature of request !\u003d  receive. ) Just it doesn\u0027t make sense with the way it starts (In your request, you need to specify the cloud resources that you are requesting). Instead I can change to that to: \u0027you hope to use\u0027.",
+      "parentUuid": "f4ee76ea_49e1b099",
       "range": {
         "startLine": 13,
         "startChar": 70,
