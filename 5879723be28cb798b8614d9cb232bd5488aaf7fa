@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d16b186_52035e70",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "Looks good with just minor things, but you\u0027ll want to fix up the proper capitalisation of ElastiCluster throughout the pages.",
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "971e5991_8460ed5c",
+        "filename": "_deploying-a-hadoopspark-cluster/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "wrong choice of possessive adjective. Also, this is for a cluster, so potentially \u003e1 instance?",
+      "range": {
+        "startLine": 7,
+        "startChar": 71,
+        "endLine": 7,
+        "endChar": 76
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "335a500c_d2dfba09",
+        "filename": "_deploying-a-hadoopspark-cluster/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "inconsistent use of capitalisation.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 13
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8438456_51ff4f37",
+        "filename": "_deploying-a-hadoopspark-cluster/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "However, the Nectar Research Cloud team maintains a fork of [ElastiCluster](https://github.com/NeCTAR-RC/elasticluster) which has been tailored to work optimally on the Nectar Research Cloud.",
+      "range": {
+        "startLine": 9,
+        "startChar": 285,
+        "endLine": 9,
+        "endChar": 466
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "abda8aff_163fb752",
+        "filename": "_deploying-a-hadoopspark-cluster/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "ElastiCluster",
+      "range": {
+        "startLine": 12,
+        "startChar": 67,
+        "endLine": 12,
+        "endChar": 80
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47078dfa_4cc2cddc",
+        "filename": "_deploying-a-hadoopspark-cluster/configuring-elasticluster.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "Is this a nectar thing?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 92
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e53482bb_bb4bb6d1",
+        "filename": "_deploying-a-hadoopspark-cluster/prerequisites.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-21T23:06:21Z",
+      "side": 1,
+      "message": "Capital first letter for Ubuntu and Debian",
+      "range": {
+        "startLine": 9,
+        "startChar": 5,
+        "endLine": 9,
+        "endChar": 11
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
