@@ -521,3 +521,18 @@ collections:
     published: 2021-09-08
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
+  deploying_slurm:
+    output: true
+    permalink: /:collection/:name
+    title: Deploying a slurm cluster
+    summary: learn how to deploy a slurm cluster using Elasticluster.
+    category: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
+    tags:
+      - tutorial
+    level: Advanced
+    difficulty: 3 # number from 1 to 5
+    duration: 30 # number of minutes
+    status: draft # draft or published
+    published: 2021-09-21
+    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
+
