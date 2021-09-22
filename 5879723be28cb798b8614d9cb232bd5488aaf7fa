@@ -18,6 +18,24 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "51a89422_ff2b6a13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-22T07:18:54Z",
+      "side": 1,
+      "message": "thanks for going over this so quickly!",
+      "parentUuid": "5d16b186_52035e70",
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "971e5991_8460ed5c",
@@ -31,6 +49,30 @@
       "writtenOn": "2021-09-21T23:06:21Z",
       "side": 1,
       "message": "wrong choice of possessive adjective. Also, this is for a cluster, so potentially \u003e1 instance?",
+      "range": {
+        "startLine": 7,
+        "startChar": 71,
+        "endLine": 7,
+        "endChar": 76
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7650dd8_389ebb54",
+        "filename": "_deploying-a-hadoopspark-cluster/01-overview.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-22T07:18:54Z",
+      "side": 1,
+      "message": "Good point!",
+      "parentUuid": "971e5991_8460ed5c",
       "range": {
         "startLine": 7,
         "startChar": 71,
@@ -123,6 +165,30 @@
       "writtenOn": "2021-09-21T23:06:21Z",
       "side": 1,
       "message": "Is this a nectar thing?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 92
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00e61df7_7a2615a7",
+        "filename": "_deploying-a-hadoopspark-cluster/configuring-elasticluster.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-22T07:18:54Z",
+      "side": 1,
+      "message": "To be honest, I\u0027m not sure, Rocky wrote this one, so I\u0027ll circle back with him",
+      "parentUuid": "47078dfa_4cc2cddc",
       "range": {
         "startLine": 18,
         "startChar": 0,
