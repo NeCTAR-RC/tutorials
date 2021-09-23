@@ -199,6 +199,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0433871_054bc303",
+        "filename": "_deploying-a-hadoopspark-cluster/configuring-elasticluster.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000190
+      },
+      "writtenOn": "2021-09-23T03:02:45Z",
+      "side": 1,
+      "message": "It is not a nectar limitation just the one we verified and our code supports. Actually, the \u0027official\u0027 ElasticCluster technically only supports spark cluster on Xenial. However, it is not working anymore without some patches and xenial is too old for us. We made some changes in our EC repo like to use the correct package repo and version, to make it work on Bionic. Focal will be a problematic one, since some upstream packages are not fully supported on Focal (this probably changes in the future). And we did not also verify Redhat, as the repo and package name should not be same as Ubuntu, it may require more work on it. I think whether doing that will depends on user requirements?",
+      "parentUuid": "00e61df7_7a2615a7",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 92
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e53482bb_bb4bb6d1",
