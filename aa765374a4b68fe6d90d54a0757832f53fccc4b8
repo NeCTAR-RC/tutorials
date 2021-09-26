@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7358e4e4_0623f3eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-26T23:46:33Z",
+      "side": 1,
+      "message": "Looks good. Just one comment about how we should handle the hardcoded image id in the elasticluster yaml",
+      "revId": "aa765374a4b68fe6d90d54a0757832f53fccc4b8",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}

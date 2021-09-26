@@ -223,6 +223,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f5767ac_912b1d85",
+        "filename": "_deploying-a-hadoopspark-cluster/configuring-elasticluster.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-26T23:46:33Z",
+      "side": 1,
+      "message": "In the YAML config, we have a hardcoded image ID in there.\n\nI\u0027m certain that image ID will get out of date very quickly. I\u0027m wondering if we should add a step in here to look up the latest Bionic Image ID?",
+      "parentUuid": "c0433871_054bc303",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 92
+      },
+      "revId": "5879723be28cb798b8614d9cb232bd5488aaf7fa",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e53482bb_bb4bb6d1",
