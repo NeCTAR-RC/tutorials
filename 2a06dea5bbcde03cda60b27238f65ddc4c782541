@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d054dda8_111e1664",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 527,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-27T01:27:51Z",
+      "side": 1,
+      "message": "Deploying a Slurm Workload Manager cluster",
+      "range": {
+        "startLine": 527,
+        "startChar": 11,
+        "endLine": 527,
+        "endChar": 36
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3451ef22_68f49fa1",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 528,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-27T01:27:51Z",
+      "side": 1,
+      "message": "Learn how to deploy the Slurm Workload Manager with ElastiCluster.",
+      "range": {
+        "startLine": 528,
+        "startChar": 13,
+        "endLine": 528,
+        "endChar": 69
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "788b5171_fa8d9295",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-27T01:27:51Z",
+      "side": 1,
+      "message": "Let\u0027s go with \"Slurm Workload Manager\" at least here. From their website, it seems to be the proper name. We can then probably stick with just \"Slurm\" throughout the rest of the tutorial",
+      "range": {
+        "startLine": 7,
+        "startChar": 57,
+        "endLine": 7,
+        "endChar": 62
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b16b397_f049f718",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-27T01:27:51Z",
+      "side": 1,
+      "message": "We\u0027ll want to copy across the updated version of this from the Hadoop/Spark tutorial",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 305
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cee8492c_da02f03e",
+        "filename": "_deploying_slurm/configuring_elasticluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-27T01:27:51Z",
+      "side": 1,
+      "message": "Might be appropriate to the Hadoop/Spark tutorial as well, but I think we should add some notes to specifically highlight some of these values as the variables that users should consider updating.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 15
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f2447a6_5a2df934",
+        "filename": "_deploying_slurm/next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000077
+      },
+      "writtenOn": "2021-09-27T01:27:51Z",
+      "side": 1,
+      "message": "Slurm",
+      "range": {
+        "startLine": 10,
+        "startChar": 39,
+        "endLine": 10,
+        "endChar": 52
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
