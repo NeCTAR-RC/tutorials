@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4745efd_de6db48f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-09-27T01:36:25Z",
+      "side": 1,
+      "message": "just a minor nit in addition to Andys\u0027 review",
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d054dda8_111e1664",
@@ -89,6 +106,23 @@
         "endLine": 10,
         "endChar": 305
       },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11ef8e65_d1857988",
+        "filename": "_deploying_slurm/configuring_elasticluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-09-27T01:36:25Z",
+      "side": 1,
+      "message": "we only verify and support deployment of the slurm cluster...",
       "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
