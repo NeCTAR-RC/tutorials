@@ -18,6 +18,23 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6cd64d1e_20042419",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-09-28T23:19:35Z",
+      "side": 1,
+      "message": "Hi Sonia, sorry I meant that sentence reads better as \"we only verify and support deployment of the slurm cluster on an ubuntu 18.04 image.\"",
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d054dda8_111e1664",
