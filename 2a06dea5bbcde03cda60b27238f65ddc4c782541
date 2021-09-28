@@ -129,6 +129,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "12a85e02_f332f3e2",
+        "filename": "_deploying_slurm/configuring_elasticluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-28T07:22:16Z",
+      "side": 1,
+      "message": "hey adrian, sorry I\u0027m lost here, what should I change? make it that specific sentence above or?",
+      "parentUuid": "11ef8e65_d1857988",
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cee8492c_da02f03e",
         "filename": "_deploying_slurm/configuring_elasticluster.md",
         "patchSetId": 2
@@ -140,6 +158,30 @@
       "writtenOn": "2021-09-27T01:27:51Z",
       "side": 1,
       "message": "Might be appropriate to the Hadoop/Spark tutorial as well, but I think we should add some notes to specifically highlight some of these values as the variables that users should consider updating.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 15
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43030112_f622d77b",
+        "filename": "_deploying_slurm/configuring_elasticluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-09-28T07:22:16Z",
+      "side": 1,
+      "message": "ok, i\u0027ll give it a go with the notes and wait for your feedback.",
+      "parentUuid": "cee8492c_da02f03e",
       "range": {
         "startLine": 44,
         "startChar": 0,
