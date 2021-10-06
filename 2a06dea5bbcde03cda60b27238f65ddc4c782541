@@ -35,6 +35,24 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "220515d3_14fb03a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-06T00:41:30Z",
+      "side": 1,
+      "message": "ahh thank you for clarifying!!",
+      "parentUuid": "6cd64d1e_20042419",
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d054dda8_111e1664",
@@ -83,6 +101,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6ac6bc32_369a21ba",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 528,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-06T00:41:30Z",
+      "side": 1,
+      "message": "tick",
+      "parentUuid": "3451ef22_68f49fa1",
+      "range": {
+        "startLine": 528,
+        "startChar": 13,
+        "endLine": 528,
+        "endChar": 69
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "788b5171_fa8d9295",
         "filename": "_deploying_slurm/01-overview.md",
         "patchSetId": 2
@@ -106,6 +148,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "68f1e3d9_caf64839",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-06T00:41:30Z",
+      "side": 1,
+      "message": "make sense, let\u0027s keep thing proper ;)",
+      "parentUuid": "788b5171_fa8d9295",
+      "range": {
+        "startLine": 7,
+        "startChar": 57,
+        "endLine": 7,
+        "endChar": 62
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4b16b397_f049f718",
         "filename": "_deploying_slurm/01-overview.md",
         "patchSetId": 2
@@ -117,6 +183,30 @@
       "writtenOn": "2021-09-27T01:27:51Z",
       "side": 1,
       "message": "We\u0027ll want to copy across the updated version of this from the Hadoop/Spark tutorial",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 305
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a49af186_72a4f96b",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-06T00:41:30Z",
+      "side": 1,
+      "message": "good call. thanks",
+      "parentUuid": "4b16b397_f049f718",
       "range": {
         "startLine": 9,
         "startChar": 0,
@@ -158,6 +248,24 @@
       "side": 1,
       "message": "hey adrian, sorry I\u0027m lost here, what should I change? make it that specific sentence above or?",
       "parentUuid": "11ef8e65_d1857988",
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25fa9a6c_bde49eea",
+        "filename": "_deploying_slurm/configuring_elasticluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-06T00:41:30Z",
+      "side": 1,
+      "message": "got your response below - thank you!",
+      "parentUuid": "12a85e02_f332f3e2",
       "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
@@ -222,6 +330,30 @@
       "writtenOn": "2021-09-27T01:27:51Z",
       "side": 1,
       "message": "Slurm",
+      "range": {
+        "startLine": 10,
+        "startChar": 39,
+        "endLine": 10,
+        "endChar": 52
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deab33f5_a86bf4d4",
+        "filename": "_deploying_slurm/next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-06T00:41:30Z",
+      "side": 1,
+      "message": "tick",
+      "parentUuid": "7f2447a6_5a2df934",
       "range": {
         "startLine": 10,
         "startChar": 39,
