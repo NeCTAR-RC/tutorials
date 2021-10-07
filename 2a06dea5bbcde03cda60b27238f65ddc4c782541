@@ -123,6 +123,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a75374b_9903f36e",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 528,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-07T01:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6ac6bc32_369a21ba",
+      "range": {
+        "startLine": 528,
+        "startChar": 13,
+        "endLine": 528,
+        "endChar": 69
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "788b5171_fa8d9295",
@@ -170,6 +194,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f832964a_56092d8a",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-07T01:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68f1e3d9_caf64839",
+      "range": {
+        "startLine": 7,
+        "startChar": 57,
+        "endLine": 7,
+        "endChar": 62
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4b16b397_f049f718",
@@ -207,6 +255,30 @@
       "side": 1,
       "message": "good call. thanks",
       "parentUuid": "4b16b397_f049f718",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 305
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e3f01e8_8fe59476",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-07T01:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a49af186_72a4f96b",
       "range": {
         "startLine": 9,
         "startChar": 0,
@@ -266,6 +338,24 @@
       "side": 1,
       "message": "got your response below - thank you!",
       "parentUuid": "12a85e02_f332f3e2",
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40c1294d_b3f94d58",
+        "filename": "_deploying_slurm/configuring_elasticluster.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-07T01:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "25fa9a6c_bde49eea",
       "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
@@ -354,6 +444,30 @@
       "side": 1,
       "message": "tick",
       "parentUuid": "7f2447a6_5a2df934",
+      "range": {
+        "startLine": 10,
+        "startChar": 39,
+        "endLine": 10,
+        "endChar": 52
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e5d7956_d7dc99f1",
+        "filename": "_deploying_slurm/next-steps.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-07T01:14:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "deab33f5_a86bf4d4",
       "range": {
         "startLine": 10,
         "startChar": 39,
