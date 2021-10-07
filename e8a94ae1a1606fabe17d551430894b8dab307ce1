@@ -16,6 +16,142 @@
       "message": "all resolved. ",
       "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d2cac0b_01227bd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "looks good, just a few language nits",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "595502ac_c15a0047",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "Capital S slurm",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5747956_87589cfa",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "How to install Python development tools and how to create and use a python virtual environment.",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b3ef366_dbafac2e",
+        "filename": "_deploying_slurm/01-overview.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "end with full-stop",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee4a126e_e0647ab8",
+        "filename": "_deploying_slurm/next-steps.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "just \"How to configure Elasticluster\"",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f68f8008_7cf8e30a",
+        "filename": "_deploying_slurm/using-elasticluster.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "Capital S Slurm",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e86e274_0ee8c34d",
+        "filename": "_deploying_slurm/using-elasticluster.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "Capital S Slurm",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61fe100e_6dd2b4dd",
+        "filename": "_deploying_slurm/using-elasticluster.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2021-10-07T23:22:59Z",
+      "side": 1,
+      "message": "Capital S slurm",
+      "revId": "e8a94ae1a1606fabe17d551430894b8dab307ce1",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     }
   ]
 }
