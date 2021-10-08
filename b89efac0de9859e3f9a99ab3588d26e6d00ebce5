@@ -22,6 +22,30 @@
       },
       "revId": "b89efac0de9859e3f9a99ab3588d26e6d00ebce5",
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2407d9d_805aa355",
+        "filename": "_deploying-a-hadoopspark-cluster/configuring-elasticluster.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-08T02:30:55Z",
+      "side": 1,
+      "message": "oh no!! sorry I assumed when I added extra changes they would be on top of what you submitted?? what have I done wrong?",
+      "parentUuid": "559c8bfa_0497e448",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 37
+      },
+      "revId": "b89efac0de9859e3f9a99ab3588d26e6d00ebce5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     }
   ]
 }
