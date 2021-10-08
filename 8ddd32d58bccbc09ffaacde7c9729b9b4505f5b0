@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b52adcd_7c2f239f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000190
+      },
+      "writtenOn": "2021-10-08T02:29:12Z",
+      "side": 1,
+      "message": "I\u0027d updated a bit in patchset 3 but looks like it is gone. So maybe need confirm on this?",
+      "revId": "8ddd32d58bccbc09ffaacde7c9729b9b4505f5b0",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}

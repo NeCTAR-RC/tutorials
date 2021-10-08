@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "559c8bfa_0497e448",
+        "filename": "_deploying-a-hadoopspark-cluster/configuring-elasticluster.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000190
+      },
+      "writtenOn": "2021-10-08T02:29:12Z",
+      "side": 1,
+      "message": "looks this part is removed from patchset 3. which is for Andy\u0027s previous comment.",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 37
+      },
+      "revId": "b89efac0de9859e3f9a99ab3588d26e6d00ebce5",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    }
+  ]
+}
