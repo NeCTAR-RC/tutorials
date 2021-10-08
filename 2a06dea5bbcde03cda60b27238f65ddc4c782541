@@ -76,6 +76,30 @@
       "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a93a3822_85bd25c8",
+        "filename": "_config.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 527,
+      "author": {
+        "id": 1000283
+      },
+      "writtenOn": "2021-10-08T00:51:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d054dda8_111e1664",
+      "range": {
+        "startLine": 527,
+        "startChar": 11,
+        "endLine": 527,
+        "endChar": 36
+      },
+      "revId": "2a06dea5bbcde03cda60b27238f65ddc4c782541",
+      "serverId": "f182a8af-62ca-4ceb-ab81-14f8fec9c6c5"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3451ef22_68f49fa1",
