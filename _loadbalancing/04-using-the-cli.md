@@ -369,7 +369,7 @@ $ openstack floating ip create melbourne
 
 Attach the floating IP to the load balancer.
 ```
-$ openstack floating ip set --port <loadbalancer_vip_network_id> <floating ip>
+$ openstack floating ip set --port <loadbalancer_vip_port_id> <floating ip>
 ```
 
 Now you should be able to put that floating IP address into your web browser, or use something like cURL to test.
