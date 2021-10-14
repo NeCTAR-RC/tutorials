@@ -33,10 +33,16 @@ end # task :preview
 desc "Run check"
 task :check do
   system("bundle exec jekyll build") or raise
-  system("bundle exec htmlproofer --allow-hash-href \
-          --assume_extension --url-ignore '/localhost/' \
-          --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
-          ./_site") or raise
+  system("bundle exec htmlproofer \
+            --checks-to-ignore LinkCheck \
+            --log-level debug ./_site") or raise
+  system("bundle exec htmlproofer \
+            --checks-to-ignore ScriptCheck,ImageCheck \
+            --allow-hash-href \
+            --url-ignore '/localhost/' \
+            --assume_extension \
+            --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
+            --log-level debug ./_site")
 end # task :check
 
 desc "Create a new tutorial"
