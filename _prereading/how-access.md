@@ -17,7 +17,7 @@ Everyone with an AAF email address receives a free project trial. When you log i
 
 - *Fill out an Allocation Request form*
 
-If you decide to use the Nectar Cloud for your research, you would then fill in an allocation request form, and your request would be assessed. Read more information about submitting a request [here]({{ site.baseurl }}/allocation-management/04-allocation-and-projects).
+If you decide to use the Nectar Cloud for your research, you would then fill in an allocation request form, and your request would be assessed. Read more information about submitting a request [here]({{ site.baseurl }}/allocation-management/04-allocation-and-projects). To learn more about the process regarding Nectar Project allocations, including expiry, amending and extending, read this [important tutorial here]({{ site.baseurl }}/allocation-management/01-overview).
 
 **Technical aspect**
 
