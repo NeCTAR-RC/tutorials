@@ -18,7 +18,7 @@ Use the Filter widget to help you find the image you need; Use the up-arrow butt
 
 If you started the Launch dialog from the *Images* page, instead of the *Instances* page, the Source tab is already configured right. If you need to, you can make changes.
 
-![Launch Source]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-source.png)
+![Launch Source]({{ site.baseurl }}/assets/images/launching-virtual-machines/boot-source.png)
 
 ### Filters
 
@@ -34,4 +34,4 @@ For this tutorial, we are going to select `t3.small`.
 
 Use the up-arrow button beside the flavor you need to select it for launch
 
-![launch flavor]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-flavor.png)
+![launch flavor]({{ site.baseurl }}/assets/images/launching-virtual-machines/flavour-source.PNG)
