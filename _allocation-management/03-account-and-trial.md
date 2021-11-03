@@ -4,7 +4,7 @@ order: 3
 duration: 5
 ---
 
-The first time you log on to the dashboard, Nectar creates two things: your *Account* and a *Personal Trial (pt)* project. Your personal trial is a *project* named pt-*xyz* (where *xyz* is a number); it is tied to your account.
+The first time you log on to the dashboard, Nectar creates two things: your *Account* and a *Project Trial (pt)* project. Your project trial is a *project* named pt-*xyz* (where *xyz* is a number); it is tied to your account.
 
 ### Your Nectar Account
 

@@ -6,7 +6,7 @@ duration: 1
 
 In this tutorial you've learnt:
 - Allocation Management.
-- Differences between *pt-projects* and *projects*.
+- Differences between *project-trials* and *projects*.
 - How to avoid *data-loss-by-expiry* by Amending/Extending your project
 - How to share/delegate your project-manager role with other members of your project
 
