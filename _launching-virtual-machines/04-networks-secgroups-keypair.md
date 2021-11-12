@@ -19,7 +19,7 @@ Use the up-arrow button to select the SSH security group.
 If you're following the Cloud Starter Curriculum, you created this in the tutorial *Security groups, the absolute basics*
 {: .callout-warning} 
 
-![Launch Security groups]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch-secgroups.png)
+![Launch Security groups]({{ site.baseurl }}/assets/images/launching-virtual-machines/security_group_ssh.PNG)
 
 ### Key Pair
 
@@ -35,8 +35,4 @@ For connecting to your instance using SSH you must select a key pair.
 
 ### Optional tabs
 
-The tabs **Configuration**, **Server Groups** and **Metadata** are optional and are not part of this tutorial
-
-### Launch
-
-You are now ready to Launch your instance. 
+The tabs **Configuration**, **Server Groups** and **Metadata** are optional and are not part of this tutorial.

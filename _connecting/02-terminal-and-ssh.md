@@ -12,9 +12,14 @@ To connect to your instance you need an ssh client, accessible from your termina
 
 #### Address
 
-When you launched your instance, Nectar gave you an IP address. In the example below the IP Address of the instance named *acme_analysis_large* is 144.6.227.37. You should find and note the IP Address of your instance now.
+When you launched your instance, Nectar gave you an IP address. In the example below the IP Address of the instance named *acme_analysis_large* is 144.6.227.37. You should find and note the IP Address of your instance now. 
+
+**Note:**  
+If using the QCIF Availability Zone, you will have two I.P addresses, one that says `QLD` and the other `QLD data`. The `QLD data` network is to allow an instance to access QRIScloud's RDS collections or UQ RDM storage. Only instances which are permitted to access these collections need to configure and use the QLD data I.P Address. A typical Virtual Machine setup does not need to use this, only the `QLD` I.P address is required.
+{: .callout-warning}
 
 ![Instance details IP Address]({{ site.baseurl }}/assets/images/connecting/connecting-ip.png)
+
 
 #### User account
 

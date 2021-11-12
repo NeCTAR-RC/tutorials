@@ -4,7 +4,7 @@ order: 4
 duration: 8
 ---
 
-You can *rebuild* an instance. This means that your instance will retain its flavour, volume attachments and IP address, but it will have a new image applied to it. The astute observer will start to recognise a bit of a pattern; something to do with the Instances page on your Nectar Dashboard and performing some sort of action on your instance from the `Action Menu`.
+You can *rebuild* an instance. This means that your instance will retain its flavour, volume attachments and IP address, but it will have a new image applied to it.
 
 **Warning**  
 The *Rebuild* action erases all data on your instance primary and ephemeral drive (if it has one), including installed software, configuration settings and user data. 
