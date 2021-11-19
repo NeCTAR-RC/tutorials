@@ -36,7 +36,7 @@ as this is access is managed by your insitution.
 
 ![User Settings Page2]({{ site.baseurl }}/assets/images/openstack-cli/openstack-cli-2.png)
 
-Execute the below command with your authentication file and type in the password when it prompts.
+Execute the below command with your specific authentication file name (it should have the name of the project you were working in when logged into the dashboard, in the file name). Lastly, type in the password when it prompts.
 
 
 ```
