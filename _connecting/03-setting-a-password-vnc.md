@@ -10,6 +10,10 @@ The `vnc`-console cannot use keypairs, so Nectar only provides the `vnc`-console
 
 Nectar preconfigured images, such as the Ubuntu image we used to launch our instance, do not have a password preconfigured on the default user account. So we need to set one ourselves. We'll use our `sudo` privileges (this allows for administrator priviledges) to change the password on the ubuntu account as below.
 
+**Note:**  
+You must be logged into your instance via SSH to first set the password.
+{: .callout-warning}
+
 ```
 $ sudo passwd ubuntu
 Enter new UNIX password:

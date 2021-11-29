@@ -6,15 +6,15 @@ duration: 5
 
 You can access the instance command line via the web-based vnc-console on your [Nectar Dashboard](https://dashboard.rc.nectar.org.au/).
 
-1. On your [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) select your project and navigate to the Instances page
+1. On your [Nectar Dashboard](https://dashboard.rc.nectar.org.au/) select your project and navigate to the Instances page.
 
-2. On the instances page click the name of your instance and then select the Console tab
+2. On the instances page click the name of your instance and then select the Console tab.
 
    ![Instance console]({{ site.baseurl }}/assets/images/connecting/instance-console.png)
 
 3. If necessary, activate the keyboard input by clicking the grey area surrounding the black console
 
-4. log into your instance using the default user account (`ubuntu` in our example) and password you set in the previous section.
+4. log into your instance using the default user account (`ubuntu` in our example) and password you set in the previous section. If you are using a different Linux distribution, the corresponding usernames can be [found here](https://support.ehelp.edu.au/support/solutions/articles/6000106269-image-catalog#username).
 
 You can now type commands into your console in just the same way you would in the SSH terminal we've seen earlier. Try the command below!
 
