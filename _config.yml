@@ -551,3 +551,18 @@ collections:
     published: 2021-09-21
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
+  virtual-desktop-service:
+    output: true
+    permalink: /:collection/:name
+    title: Virtual Desktop Service
+    summary: Learn how to use the Nectar Virtual Desktop service
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Beginner
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 20 # number of minutes
+    status: draft # draft or published
+    published: 2021-11-18
+    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
+
