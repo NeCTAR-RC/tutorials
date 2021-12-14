@@ -26,3 +26,7 @@ This tutorial is part of the Nectar [Cloud Two]({{ site.baseurl }}/cloud-two/) c
 - Install the OpenStack CLI tool and some dedicated clients
 - Obtain your OpenStack user credentials
 - Use the CLI tools
+
+### Prerequsites
+
+- For Windows users, install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)

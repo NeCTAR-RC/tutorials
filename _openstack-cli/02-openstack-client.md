@@ -18,12 +18,12 @@ Depending on your distrubution, the package installation method will vary.
 
 For `Ubuntu` or `Debian`, the pip package could be installed by:
 ```
-apt install python-dev python-pip
+sudo apt install python-dev python3-pip
 ```
 
 For `Red Hat Enterprise Linux`, `CentOS` or `Fedora`:
 ```
-yum install python-devel python-pip
+yum install python-devel python3-pip
 ```
 
 ### Mac OS
@@ -34,13 +34,19 @@ easy_install pip
 ```
 
 ### Microsoft Windows
-Ensure that the `C:\Python27\Scripts` directory is defined in the `PATH` environment variable, and use the `easy_install` command from the setuptools package:
+Ensure that you have enabled Windows Subsystem for Linux by typing `bash` in your Windows Terminal or Powershell first.
+
+**Pre-req check**  
+If you have not installed Windows Subsystem for Linux yet, go back to the [Overview page]({{sitebase.url}}/openstack-cli/01-overview) and do that now.
+{: .callout-warning}
+
+Now you can simply run the linux based command, and it will complete the install:
 
 ```
-C:\>easy_install pip
+sudo apt install python-dev python3-pip
 ```
 
-### Finally, install the OpenStack client package
+### Finally, install the OpenStack client package:
 Once `pip` is set up, you can install the client package with:
 ```
 pip install python-openstackclient

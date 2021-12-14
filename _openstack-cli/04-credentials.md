@@ -38,6 +38,9 @@ as this is access is managed by your insitution.
 
 Execute the below command with your specific authentication file name (it should have the name of the project you were working in when logged into the dashboard, in the file name). Lastly, type in the password when it prompts.
 
+**Windows users alert!**  
+If you are using Windows, before running the Command below in the Windows Terminal or Powershell, type in the command `bash` first, this will get the Windows Subsystem for Linux (WSL) running. If you didn't install WSL before starting this tutorial, head back to the [Overview page]({{site.baseurl}}/openstack-cli/01-overview) and do that now. Then you can come back and run the Command below.
+{: .callout-danger}
 
 ```
 source project-openrc.sh
