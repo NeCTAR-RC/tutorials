@@ -1,24 +1,51 @@
-
 // Bootstrap overrides
 
-// Use ARDC Proxima Nova
 // $font-family-sans-serif: "Proxima Nova", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-base: proxima-nova, sans-serif;
 $font-size-base: 1rem;
+$form-label-font-weight: 600;
 
 // ARDC colours
-$ardc-blue:   #00A2C4 !default;
-$ardc-pink:   #E51875 !default;
-$ardc-orange: #F8B20E !default;
-$ardc-purple: #8E489B !default;
-$ardc-grey:   #969696 !default;
+$ardc-blue:   #00A2C4;
+$ardc-pink:   #E51875;
+$ardc-orange: #F8B20E;
+$ardc-purple: #8E489B;
+$ardc-grey:   #969696;
 
 // Override bootstrap colours
 $dark: #000000;
-$component-active-bg: $ardc-purple;
-$navbar-brand-padding-y: 0;
+$blue: $ardc-blue;
+$pink: $ardc-pink;
+$orange: $ardc-orange;
+$purple: $ardc-purple;
+$gray: $ardc-grey;
 
+$gray-100: #fcfcfc;
+$gray-200: #EEEEEE;
+$gray-300: #dddddd;
+$gray-400: #c6c6c6;
+$gray-500: #999999;
+$gray-600: #666666;
+$gray-700: #333333;
+$gray-800: #222222;
+$gray-900: #111111;
+
+$primary:       $orange;
+$secondary:     $gray;
+$success:       #62C400;
+$info:          $blue;
+$warning:       $orange;
+$danger:        $pink;
+
+$body-bg:                   $gray-100;
+$body-color:                $gray-900;
+
+$min-contrast-ratio: 1.5;
+//$component-active-bg: $ardc-purple;
+$navbar-brand-padding-y: 0;
+$input-btn-padding-y-lg: .75rem;
+$input-btn-padding-x-lg: 1.25rem;
 // Bootstrap shadows
 $enable-shadows: true;
 
-// Font awesome path
-$fa-font-path: $baseurl + /assets/fa;
+$spacer: 1.25rem;

@@ -3,28 +3,27 @@ layout: default
 title: Home
 order: 0
 ---
-
-  <div class="container py-4">
-
-    <header class="py-3">
-      <h1 class="display-3">Nectar Research Cloud tutorials</h1>
+  <header class="pt-5">
+    <!-- <img id="cloud-elements-bg" class="img-fluid position-absolute top-0" src="{{ '/assets/images/cloud-elements-bg.svg' | relative_url }}"> -->
+    <div class="container-fluid">
       <div class="row">
-          <div class="col-md-12">
-          <p class="lead">Build your practical cloud skills with Nectar Research Cloud self-paced online tutorials. Whether you are getting started, increasing your efficiency or looking to hone your cloud skills and make your solutions more sophisticated.</p> 
-
-          <p class="lead">Our technical tutorials are for <i>beginner</i>, <i>intermediate</i> and <i>advanced</i> users and we also explain some of our <i>non-technical</i> topics; browse or search our catalog below.</p> 
-
-          <p class="lead">We're bundling together tutorials in <i>series</i> of related topics, the first of which, <b>Cloud Starter Series</b>, is now published. We will be publishing more tutorials and series soon, be sure to check back.</p>
+        <div class="col-md-12 col-lg-8 offset-lg-1 col-xl-5 offset-xl-1">
+          <h2 class="display-4">Build your practical cloud skills with Nectar Research Cloud <span class="d-inline-block">self-paced</span> online tutorials.</h2>
+          <p class="lead">Whether you are getting started, increasing your efficiency or looking to hone your cloud skills and make your solutions more sophisticated.</p> 
+          <p>Our technical tutorials are for <i>beginner</i>, <i>intermediate</i> and <i>advanced</i> users and we also explain some of our <i>non-technical</i> topics.</p> 
+        </div>
+        <div class="d-none d-lg-flex col-lg-3 col-xl-4">
+          <img id="cloud-learning-img" src="{{ '/assets/images/cloud-learning-img.svg' | relative_url }}" alt="Nectar Research Cloud self paced learning.">
         </div>
       </div>
-    </header>
-
+    </div>
+  </header>
+  <div class="container py-5">
     <div class="row">
-      <div class="col-md-6">
-
-      <div class="input-group">
+      <div class="col-md-6 offset-md-3">
+      <div class="input-group shadow">
         <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn dropdown-toggle border" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Topics</button>
+          <button id="search-filter-button" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Topics</button>
           <div class="dropdown-menu search-filter-menu">
             <a class="dropdown-item" href="#">All Topics</a>
             <a class="dropdown-item" href="#">Beginner</a>
@@ -36,12 +35,12 @@ order: 0
         </div>
         <input id="search-input" type="search" class="form-control" placeholder="Search tutorials" aria-label="Search tutorials">
         <div class="input-group-append">
-          <span id="search-clear" class="input-group-text bg-transparent border border-left-0" style="display:none">
+          <span id="search-clear" class="input-group-text bg-white border border-left-0" style="display:none">
             <i id="search-clear" class="fa fa-times"></i>
           </span>
-          <span class="input-group-text border">
+          <button type="submit" class="btn btn-primary">
             <i class="fa fa-search"></i>
-          </span>
+          </button>
         </div>
       </div>
       </div>
@@ -91,3 +90,19 @@ order: 0
     </div>
 
   </div>
+
+  <section class="footer-callout bg-primary py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-10 offset-lg-1">
+          <div class="card text-center shadow">
+            <div class="card-body px-lg-5">
+              <h2 class="my-3">Interested in Nectar Research Cloud training?</h2>
+              <h4 class="mb-4">Register for a Live Online Training workshop!</h4>
+              <a class="btn btn-outline-primary btn-lg mb-3" href="https://support.ehelp.edu.au/support/solutions/articles/6000156761-learning-and-training-resources">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
