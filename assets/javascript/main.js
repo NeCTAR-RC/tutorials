@@ -9,7 +9,7 @@ $(function() {
 
 $(function() {
   var tutorials = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title', 'summary'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: baseurl + '/search.json?q=' + Date.now(), /* remove Date for production caching */
   });
@@ -62,43 +62,53 @@ $(function() {
 
   function showResults(results) {
     var tutorialList = $('#tutorial-list');
-    tutorialList.html('');
-    var result = '';
-    $.each(results, function(i, tutorial) {
-      result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
-      result += '  <a href="' + tutorial.url + '">';
-      result += '    <div class="card shadow h-100">';
-      result += '      <div class="card-header text-light bg-dark">';
-      result += '        <div class="card-category">';
-      result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
-      if (tutorial.level == 'Series') {
-        result += '            <img src="' + baseurl + '/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">';
-      }
-      result += '        </div>';
-      result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
-      result += '      </div>';
-      result += '      <div class="card-body">';
-      result += '        <small class="text-muted">' + tutorial.published + '</small>';
-      result += '        <p class="card-text py-2">' + tutorial.summary + '</p>';
-      result += '      </div>';
-      result += '      <div class="card-footer">';
-      result += '        <div class="row no-gutters">';
-      result += '          <div class="col-xs-auto">';
-      result += '            <small class="text-muted">Difficulty: </small>';
-      result += '            <span class="difficulty-indicator difficulty-indicator-' + tutorial.difficulty + '">';
-      result += '              ' + tutorial.difficulty + ' out of 5';
-      result += '            </span>';
-      result += '          </div>';
-      result += '          <div class="col text-right">';
-      result += '            <small class="text-muted">Duration: ' + tutorial.duration + '</small>';
-      result += '          </div>';
-      result += '        </div>';
-      result += '      </div>';
-      result += '    </div>';
-      result += '  </a>';
-      result += '</div>';
-    });
-    tutorialList.html(result);
+    if(results.length) {
+      var result = '';
+      $.each(results, function(i, tutorial) {
+        result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
+        result += '  <a href="' + tutorial.url + '">';
+        result += '    <div class="card shadow h-100">';
+        result += '      <div class="card-header text-light bg-dark">';
+        result += '        <div class="card-category">';
+        result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
+        if (tutorial.level == 'Series') {
+          result += '            <img src="' + baseurl + '/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">';
+        }
+        result += '        </div>';
+        result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
+        result += '      </div>';
+        result += '      <div class="card-body">';
+        result += '        <small class="text-muted">' + tutorial.published + '</small>';
+        result += '        <p class="card-text py-2">' + tutorial.summary + '</p>';
+        result += '      </div>';
+        result += '      <div class="card-footer">';
+        result += '        <div class="row no-gutters">';
+        result += '          <div class="col-xs-auto">';
+        result += '            <small class="text-muted">Difficulty: </small>';
+        result += '            <span class="difficulty-indicator difficulty-indicator-' + tutorial.difficulty + '">';
+        result += '              ' + tutorial.difficulty + ' out of 5';
+        result += '            </span>';
+        result += '          </div>';
+        result += '          <div class="col text-right">';
+        result += '            <small class="text-muted">Duration: ' + tutorial.duration + '</small>';
+        result += '          </div>';
+        result += '        </div>';
+        result += '      </div>';
+        result += '    </div>';
+        result += '  </a>';
+        result += '</div>';
+      });
+      tutorialList.html(result);
+    }
+    else {
+      var noResults = '<div class="card-container col-sm-12 col-md-8 offset-md-2 mb-5">';
+          noResults += '  <div class="card shadow p-5 text-center">';
+          noResults += '    <h3>No Results</h3>';
+          noResults += '    <p class="lead">The are no tutorials matching these search terms. Please try another search.</p>';
+          noResults += '  </div>';
+          noResults += '</div>';
+      tutorialList.html(noResults);
+    }
   }
 
 });

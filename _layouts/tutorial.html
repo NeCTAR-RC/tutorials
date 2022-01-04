@@ -29,14 +29,14 @@ layout: default
           <div class="btn-group mr-2">
             {% if prev -%}
               <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Previous</a>
-			{% else -%}
-              <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
-			{% endif -%}
+            {% else -%}
+                    <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
+            {% endif -%}
             {% if next -%}
-              <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
-			{% else -%}
-              <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
-			{% endif -%}
+                    <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
+            {% else -%}
+                    <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
+            {% endif -%}
           </div>
         </div>
       </div>
@@ -63,5 +63,20 @@ layout: default
         </div>
       </div> <!-- row -->
     </div>
-
 </div>
+<section id="up-next" class="p-5 bg-info text-white text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 offset-md-2">
+        {% if next -%}
+        <h3>Up Next:</h3>
+        <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-white">{{ next.order }}. {{ next.title }} <i class="fa fa-arrow-right"></i></a></p>
+        {% else -%}
+        <h3>Tutorial Complete!</h3>
+        <p>You have completed this tutorial. Continue with the other tutorials in the series by clicking the link in the green section above, or return to the tutorials home page.</p>
+        <a href="{{ site.baseurl }}" class="btn btn-sm btn-primary" role="button">Return Home</a>
+        {% endif -%}
+      </div>
+    </div>
+  </div>
+</section>

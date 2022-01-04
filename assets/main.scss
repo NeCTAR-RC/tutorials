@@ -181,9 +181,18 @@ code {
  * Search
  */
 #search-clear {
-  cursor: pointer;
+  display: none;
+  color: $danger;
+  border-color: #c6c6c6 !important; // Same as form-control default state
 }
 
+#search-input.form-control {
+  &:focus {
+    outline: 0 !important;
+    border-color: #c6c6c6; // Same as form-control default state
+    box-shadow: none;
+  }
+}
 
 /*
  * Diffculty indicator
@@ -219,3 +228,11 @@ code {
  * Sidebar items
  */ 
 /* https://stackoverflow.com/questions/40463542/how-to-make-vertical-lines-between-list-items-using-css */
+
+#up-next {
+  a {
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
