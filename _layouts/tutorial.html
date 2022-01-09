@@ -20,61 +20,99 @@ layout: default
 
 <div class="container py-3">
 
-    <div class="py-3 px-4 w-100">
-      <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
-
+    <div class="d-block d-md-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
 	    <h1 class="display-4">{{ collection.title }}</h1>
-
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group mr-2">
-            {% if prev -%}
-              <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Previous</a>
-            {% else -%}
-                    <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
-            {% endif -%}
-            {% if next -%}
-                    <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
-            {% else -%}
-                    <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
-            {% endif -%}
-          </div>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+          {% if prev -%}
+            <a href="{{ prev.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Previous</a>
+          {% else -%}
+                  <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Previous</a>
+          {% endif -%}
+          {% if next -%}
+                  <a href="{{ next.url | prepend: site.baseurl }}" class="btn btn-sm btn-outline-primary" role="button">Next</a>
+          {% else -%}
+                  <a href="#" class="btn btn-sm btn-outline-primary disabled" role="button">Next</a>
+          {% endif -%}
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="list-group col-md-3 sidebar d-none d-md-block px-2">
-          {% for item in pages -%}
-            {% if item.title != null -%}
-              {% if item.order != null -%}
-                <a href="{{ item.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action{% if item.url == page.url %} active{% endif %}">
-                  <span>{{ item.order }}</span> {{ item.title }}
-                </a>
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="sidebar py-3 sticky-top">
+          {% if collection.curriculum %}
+            <div class="p-2 text-center">
+              <!-- <p>This tutorial is part of the {{ collection.curriculum }} Series.</p> -->
+              {% if collection.curriculum == "Cloud Starter" %}
+                <a class="btn btn-link btn-sm" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Starter</a>
+              {% elsif collection.curriculum == "Cloud Two" %}
+                <a class="btn btn-link btn-sm" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Two</a>
+              {% elsif collection.curriculum == "Cloud Expert" %}
+                <a class="btn btn-link btn-sm" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Expert</a>
+              {% endif %}
+            </div>
+          {% endif %}
+          <div class="card mb-3 bg-dark shadow">
+            <div class="card-body text-white">
+              <p class="d-block d-lg-flex align-items-end"><small class="mr-auto text-uppercase">Category: </small>{{ collection.level }}</p>
+              <p class="d-block d-lg-flex align-items-end"><small class="mr-auto text-uppercase">Difficulty: </small>
+                <span class="difficulty-indicator difficulty-indicator-{{ collection.difficulty }}">
+                  {{ collection.difficulty }} out of 5
+                </span>
+              </p>
+              <p class="d-block d-lg-flex align-items-end mb-0"><small class="mr-auto text-uppercase">Duration: </small>{{ collection.duration }} minutes</p>
+            </div>
+          </div>
+          <div class="list-group shadow">
+            {% for item in pages -%}
+              {% if item.title != null -%}
+                {% if item.order != null -%}
+                  <a href="{{ item.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action{% if item.url == page.url %} active{% endif %}">
+                    <span>{{ item.order }}.</span> {{ item.title }}
+                  </a>
+                {% endif -%}
               {% endif -%}
-            {% endif -%}
-          {% endfor -%}
+            {% endfor -%}
+          </div>
           <div class="p-2">
             <p>Find a mistake? Let us know <a href="https://github.com/NeCTAR-RC/tutorials/issues/new">the issue here</a>.</p>
           </div>	
         </div>
+      </div>
 
-        <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
-          <h1>{{ page.title }}</h1>
-          {{ content }}
-        </div>
-      </div> <!-- row -->
-    </div>
+      <div class="md-content col-md-9 ml-sm-auto py-3 px-4">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    </div> <!-- row -->
 </div>
 <section id="up-next" class="p-5 bg-info text-white text-center">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-8 offset-md-2">
         {% if next -%}
-        <h3>Up Next:</h3>
-        <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-white">{{ next.order }}. {{ next.title }} <i class="fa fa-arrow-right"></i></a></p>
+          <h3>Up Next:</h3>
+          <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-white">{{ next.order }}. {{ next.title }} <i class="fa fa-arrow-right"></i></a></p>
         {% else -%}
-        <h3>Tutorial Complete!</h3>
-        <p>You have completed this tutorial. Continue with the other tutorials in the series by clicking the link in the green section above, or return to the tutorials home page.</p>
-        <a href="{{ site.baseurl }}" class="btn btn-sm btn-primary" role="button">Return Home</a>
+          {% if collection.level == 'Series' %}
+            <h3>Series Complete!</h3>
+            <p>You have completed this Series of Tutorials. Return to the tutorials home page to explore other tutorials.</p>
+            <a href="{{ site.baseurl }}" class="btn btn-sm btn-primary" role="button">Return Home</a>
+          {% else %}
+            <h3>Tutorial Complete!</h3>
+            <p>You have completed this tutorial. Continue with the other tutorials in the {{ page.category }} Series or return to the tutorials home page.</p>
+            {% if collection.curriculum %}
+              {% if collection.curriculum == "Cloud Starter" %}
+                <a class="btn btn-sm btn-success" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
+              {% elsif collection.curriculum == "Cloud Two" %}
+                <a class="btn btn-sm btn-success" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
+              {% elsif collection.curriculum == "Cloud Expert" %}
+                <a class="btn btn-sm btn-success" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
+              {% endif %}
+            {% endif %}
+            <a href="{{ site.baseurl }}" class="btn btn-sm btn-primary" role="button">Return Home</a>
+          {% endif -%}
         {% endif -%}
       </div>
     </div>

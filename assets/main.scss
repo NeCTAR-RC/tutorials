@@ -19,7 +19,7 @@ $baseurl: "{{ site.baseurl }}";
 
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  // overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 main {
   min-height: 65vh;
@@ -39,8 +39,20 @@ h1, h2, h3, h4, h5, h6 {
   border-width: 2px;
 }
 
+.btn-primary {
+  background-color: darken($primary, 5%);
+  color: #ffffff;
+}
+
 .btn-link {
   text-decoration: none;
+  color: darken($primary, 5%);
+  &:hover, 
+  &:focus, 
+  &:active {
+    text-decoration: none;
+    color: darken($primary, 15%);
+  }
 }
 
 .nav-link {
@@ -152,7 +164,7 @@ code {
  * Cards
  */
 .card {
-  min-width: 280px;
+  // min-width: 280px;
 }
 
 .card-container {
@@ -161,16 +173,13 @@ code {
   .card-footer {
     padding: 0.75em;
   }
-
   a { 
     color: inherit;
     text-decoration: none;
   }
-
 }
 
 .card-category {
-
   .series {
     width: 2rem;
     height: 2rem;
@@ -204,6 +213,7 @@ code {
   background-repeat: no-repeat;
   display: inline-block;
   margin-left: 3px;
+  margin-right: -3px;
   text-indent: -99999px;
   width: 75px;
 }
@@ -233,6 +243,45 @@ code {
   a {
     &:hover {
       color: #ffffff;
+    }
+  }
+}
+
+.series-tutorial {
+  position: relative;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid $info;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  p {
+    margin-bottom: 0;
+    small {
+      font-weight: bold;
+      color: $secondary;
+    }
+  }
+  &.completed {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  span.tut-complete {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    color: #fff;
+    background: $success;
+    border-radius: 12px;
+    &:after {
+      font-family: 'Font Awesome 5 Free';
+      content: "\f00c";
     }
   }
 }

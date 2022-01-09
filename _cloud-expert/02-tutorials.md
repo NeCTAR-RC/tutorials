@@ -41,11 +41,19 @@ Add any missing categories to the end of the list
   {% endif %}
 {% endfor %}
 
-{% for category in sortcategories -%}
+The Cloud Expert Series consists of the following tutorials, which you can work through at your own pace.
+
+A green tick <span class="green-tick"></span> indicates the tutorials you have completed.
+
+{% for category in sortcategories %}
 ### {{ category }}
-{% for tutorial in tutorials -%}
-{% if tutorial.curriculum == curriculum and tutorial.category == category -%}
-* [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
-{% endif -%}
+{% for tutorial in tutorials reversed %}
+{% if tutorial.curriculum == curriculum and tutorial.category == category %}
+<div id="{{ tutorial.label }}" class="series-tutorial" markdown="1">
+##### [{{ tutorial.title }}]({{ tutorial.label | relative_url }})
+{{ tutorial.summary }}  
+<small>Duration: {{ tutorial.duration }} minutes</small>
+</div>
+{% endif %}
 {% endfor %}
 {% endfor %}
