@@ -18,7 +18,7 @@ layout: default
   {% assign tmpprev = link %}
 {% endfor %}
 
-<div class="container py-3">
+<div id="tutorial-page" class="container py-3 {% unless next %}last-page{% endunless %}" data-tut-name="{{ collection.label }}">
 
     <div class="d-block d-md-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
 	    <h1 class="display-4">{{ collection.title }}</h1>

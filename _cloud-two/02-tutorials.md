@@ -43,8 +43,6 @@ Add any missing categories to the end of the list
 
 The Cloud Two Series consists of the following tutorials, which you can work through at your own pace.
 
-A green tick <span class="green-tick"></span> indicates the tutorials you have completed.
-
 {% for category in sortcategories %}
 ### {{ category }}
 {% for tutorial in tutorials reversed %}

@@ -46,8 +46,6 @@ Page content starts here
 {% endcomment %}
 The Cloud Starter Series consists of the following tutorials, which you can work through at your own pace.
 
-A green tick <span class="green-tick"></span> indicates the tutorials you have completed.
-
 {% for category in sortcategories %}
 ### {{ category }}
 {% for tutorial in tutorials reversed %}

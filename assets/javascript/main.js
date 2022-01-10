@@ -66,7 +66,7 @@ $(function() {
       var result = '';
       $.each(results, function(i, tutorial) {
         result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
-        result += '  <a href="' + tutorial.url + '">';
+        result += '  <a class="card-tut-link" href="' + tutorial.url + '">';
         result += '    <div class="card shadow h-100">';
         result += '      <div class="card-header text-light bg-dark">';
         result += '        <div class="card-category">';
@@ -104,7 +104,7 @@ $(function() {
       var noResults = '<div class="card-container col-sm-12 col-md-8 offset-md-2 mb-5">';
           noResults += '  <div class="card shadow p-5 text-center">';
           noResults += '    <h3>No Matches</h3>';
-          noResults += '    <p class="lead">Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://support.ehelp.edu.au/support/tickets/new">support ticket</a>.</p>';
+          noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://support.ehelp.edu.au/support/tickets/new">support ticket</a>.</p>';
           noResults += '  </div>';
           noResults += '</div>';
       tutorialList.html(noResults);
@@ -115,37 +115,51 @@ $(function() {
 
 $(function() {
   // Check if user has reached the final page of a tutorial
-  if(window.location.href.indexOf("next-steps") > -1) {
-    var completedTutorial = window.location.href.split("/")[3];
-    console.log(completedTutorial);
-    if(localStorage.completedTutorials) {
-      //console.log("Has local storage object");
-      var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
-      
-      // Is the completed tutorial label in stored list of completed tutorials?
-      if($.inArray(completedTutorial, completedTutorialsArr) == -1) {
-        // It's not found so let's update the stored list
-        completedTutorialsArr.push(completedTutorial);
-        localStorage.completedTutorials = JSON.stringify(completedTutorialsArr);
-      }
-    } else {
-      //console.log("No local storage object");
-      var completedTutorialsArr = [completedTutorial];
-      localStorage.setItem("completedTutorials", JSON.stringify(completedTutorialsArr));
+  if($("#tutorial-page").hasClass("last-page")) {
+    var completedTutorial;
+    if($("#tutorial-page").attr("data-tut-name")) {
+      const tutNameAttr = "data-tut-name";
+      tutorialLabel = $("#tutorial-page").attr(tutNameAttr);
+      storeCompleted(tutorialLabel);
     }
   }
   
-  if(localStorage.completedTutorials) {
-    // If page has the .series-tutorial elements, show completed status
-    $(".series-tutorial").each(function() {
-      var tutorialLabel = $(this).attr('id');
-      
-      var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
-      if($.inArray(tutorialLabel, completedTutorialsArr) != -1) {
-        console.log("Completed " + tutorialLabel);
-        $(this).addClass("completed");
-        $(this).append("<span class='tut-complete'></span>")
-      }
-    });
+  if($(".series-tutorial").length && localStorage.completedTutorials) {
+    // If the current page has the .series-tutorial elements 
+    // and localStorage.completedTutorials exists, 
+    // show completed status
+    showCompletedStatus();
   }
 });
+
+function storeCompleted(completedTutorial) {
+  //console.log(completedTutorial);
+  if(localStorage.completedTutorials) {
+    //console.log("Has local storage object");
+    var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
+    
+    // Is the completed tutorial label in stored list of completed tutorials?
+    if($.inArray(completedTutorial, completedTutorialsArr) == -1) {
+      // It's not found so let's update the stored list
+      completedTutorialsArr.push(completedTutorial);
+      localStorage.completedTutorials = JSON.stringify(completedTutorialsArr);
+    }
+  } else {
+    //console.log("No local storage object");
+    var completedTutorialsArr = [completedTutorial];
+    localStorage.setItem("completedTutorials", JSON.stringify(completedTutorialsArr));
+  }
+}
+
+function showCompletedStatus() {
+  $(".series-tutorial").each(function() {
+    var tutorialLabel = $(this).attr('id');
+    
+    var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
+    if($.inArray(tutorialLabel, completedTutorialsArr) != -1) {
+      console.log("Completed " + tutorialLabel);
+      $(this).addClass("completed");
+      $(this).append("<span class='tut-complete'></span>")
+    }
+  });
+}
