@@ -42,14 +42,14 @@ layout: default
       <div class="col-md-3 d-none d-md-block">
         <div class="sidebar py-3 sticky-top">
           {% if collection.curriculum %}
-            <div class="p-2 text-center">
-              <!-- <p>This tutorial is part of the {{ collection.curriculum }} Series.</p> -->
+            <div class="p-2">
+              <p class="mb-1"><i class="fa fa-info-circle"></i> This tutorial is part of the {{ collection.curriculum }} Series.</p>
               {% if collection.curriculum == "Cloud Starter" %}
-                <a class="btn btn-link btn-sm" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Starter</a>
+                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Starter</a>
               {% elsif collection.curriculum == "Cloud Two" %}
-                <a class="btn btn-link btn-sm" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Two</a>
+                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Two</a>
               {% elsif collection.curriculum == "Cloud Expert" %}
-                <a class="btn btn-link btn-sm" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Expert</a>
+                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Expert</a>
               {% endif %}
             </div>
           {% endif %}
@@ -91,14 +91,14 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-8 offset-md-2">
-        {% if next -%}
+        {% if next %}
           <h3>Up Next:</h3>
           <p class="lead"><a href="{{ next.url | prepend: site.baseurl }}" class="text-white">{{ next.order }}. {{ next.title }} <i class="fa fa-arrow-right"></i></a></p>
-        {% else -%}
+        {% else %}
           {% if collection.level == 'Series' %}
             <h3>Series Complete!</h3>
             <p>You have completed this Series of Tutorials. Return to the tutorials home page to explore other tutorials.</p>
-            <a href="{{ site.baseurl }}" class="btn btn-sm btn-primary" role="button">Return Home</a>
+            <a href="{{ site.baseurl }}/" class="btn btn-sm btn-primary" role="button">Return Home</a>
           {% else %}
             <h3>Tutorial Complete!</h3>
             <p>You have completed this tutorial. Continue with the other tutorials in the {{ page.category }} Series or return to the tutorials home page.</p>
@@ -111,9 +111,9 @@ layout: default
                 <a class="btn btn-sm btn-success" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}">Continue Series</a>
               {% endif %}
             {% endif %}
-            <a href="{{ site.baseurl }}" class="btn btn-sm btn-primary" role="button">Return Home</a>
-          {% endif -%}
-        {% endif -%}
+            <a href="{{ site.baseurl }}/" class="btn btn-sm btn-primary" role="button">Return Home</a>
+          {% endif %}
+        {% endif %}
       </div>
     </div>
   </div>

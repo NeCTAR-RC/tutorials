@@ -53,7 +53,7 @@ $(function() {
     var filteredResults = [];
     for (i in results) {
       var result = results[i];
-      if (result.level == filter || filter == 'All Topics') {
+      if (result.level == filter || filter == 'All Categories') {
         filteredResults.push(result);
       }
     }
