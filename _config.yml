@@ -562,7 +562,22 @@ collections:
       - tutorial
     difficulty: 1 # number from 1 to 5
     duration: 20 # number of minutes
-    status: draft # draft or published
+    status: published # draft or published
     published: 2021-11-18
+    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
+
+  simple-container-service:
+    output: true
+    permalink: /:collection/:name
+    title: Simple container service
+    summary: Learn how to deploy a Docker Container using our application service!
+    category: Beginner # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 1 # number from 1 to 5
+    duration: 30 # number of minutes
+    status: pushed # draft or published
+    published: 2021-12-20
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
