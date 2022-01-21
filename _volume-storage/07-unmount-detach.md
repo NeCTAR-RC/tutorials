@@ -1,6 +1,6 @@
 ---
 title: Unmount and Detach
-order: 5
+order: 7
 duration: 3
 ---
 
