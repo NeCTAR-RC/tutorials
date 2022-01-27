@@ -11,3 +11,7 @@ Now, you can begin our [Cloud Starter series]({{ site.baseurl }}/cloud-starter/0
 **Keep the fort secure!**  
 Be sure to also read and apply our [Security Guides and Checklists](https://support.ehelp.edu.au/support/solutions/folders/6000203455) while using the Nectar Cloud.
 {: .callout-warning}
+
+**Writing Software?**  
+While using the Nectar Cloud, you may write software for your research. Consider making it more visible, reusable and citable, thanks to our resource list [here](https://support.ehelp.edu.au/support/solutions/articles/6000255477-software-citation-in-the-nectar-cloud).
+ {: .callout-primary}
