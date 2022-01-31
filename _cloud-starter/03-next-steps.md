@@ -8,3 +8,6 @@ In this Tutorial Series you have learnt the basics of cloud computing in the Nec
 
 From here you can make things *easier* (check out our tutorial on Applications for instance), or *better* (e.g. add Volume Storage and Move your data around) or much *more sophisticated* (e.g. implementing Advanced Networking).
 
+**Writing Software?**  
+While using the Nectar Cloud, you may write software for your research. Consider making it more visible, reusable and citable, thanks to our resource list [here](https://support.ehelp.edu.au/support/solutions/articles/6000255477-software-citation-in-the-nectar-cloud).
+ {: .callout-primary}
