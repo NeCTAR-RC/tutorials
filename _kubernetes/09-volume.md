@@ -81,7 +81,8 @@ On Nectar Cloud, this creates a volume backed by Cinder. Create the following as
    apiVersion: v1
    kind: Pod
    metadata:
-     name: nginxcinder labels:
+     name: nginxcinder
+     labels:
        app: nginxcinder
    spec:
      containers:
