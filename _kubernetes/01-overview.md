@@ -31,6 +31,12 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 - [python-magnumclient](https://pypi.org/project/python-magnumclient/)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
+**kubectl version skew policy**  
+kubectl is officially supported within one minor version (older or newer)
+of kube-apiserver. If your cluster is running 1.21.1 you should use a kubectl
+between 1.20 and 1.22. See the k8s version skew policy [here.](https://kubernetes.io/releases/version-skew-policy/)
+{: .callout-warning}
+
 ## Magnum
 
 Magnum is the project for the Container Orchestration Engine (COE) Service in
