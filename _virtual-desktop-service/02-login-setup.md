@@ -5,14 +5,14 @@ duration: 1
 ---
 Go to the Virtual Desktop Service [home page](https://desktop.rc.nectar.org.au/).
 
-Let's log in for the first time. You can do this using your AAF/Tuakiri log in details (your institutional email address and password).
+Let's log in for the first time. You can do this using your AAF log in details (your institutional email address and password).
 
 1. Click the sign in button.
     ![homepage]({{ site.baseurl }}/assets/images/virtual-desktop-service/homepage_vd.PNG)
 
-1. Depending your login type, select which applies (AAF or NZ), then follow the prompts.
+1. Select the AAF Identity Provider, then follow the prompts.
 
-    ![login-choice]({{ site.baseurl }}/assets/images/virtual-desktop-service/AAF_login.PNG)
+    ![login-choice]({{ site.baseurl }}/assets/images/virtual-desktop-service/AAF_only.PNG)
 
 1. Once you've successfully logged in, you will need to read and accept the terms of service.
 
@@ -50,7 +50,7 @@ Before diving into your new Desktop, let's set the timezone.
 
 1. Now, to get the Desktop started, you can select the `Create Desktop` button.
 
-    ![Create Desktop]({{ site.baseurl }}/assets/images/virtual-desktop-service/create_desktop_ubuntu.PNG)
+    ![Create Desktop]({{ site.baseurl }}/assets/images/virtual-desktop-service/new_sizes_added.PNG)
 
 1. It will ask you what availability zone you wish to use. That is the physical data centre where the data would reside. For this tutorial, you can leave it as `Default Zone`. Then click `Create`.
 
@@ -60,9 +60,9 @@ Before diving into your new Desktop, let's set the timezone.
 
     ![Progress]({{ site.baseurl }}/assets/images/virtual-desktop-service/VDI_progress.PNG)
 
-1. Once it's complete, you should see a screen stating `Your Virtual Desktop is` with the Operating System chosen, with user options like `Open Desktop`, `Reboot`, `Shelve`, `Delete` and `Boost`.
+1. Once it's complete, you should see a screen stating `Your Virtual Desktop is` with the Operating System chosen, with user options like `Open Desktop`, `Reboot`, `Shelve`, `Extend`, `Delete` and `Boost`.
 
-    ![Progress]({{ site.baseurl }}/assets/images/virtual-desktop-service/ubuntu_success.PNG)
+    ![Progress]({{ site.baseurl }}/assets/images/virtual-desktop-service/update_desktop_button.PNG)
 
 **Desktop is ready to go!**  
 Well done. You've got your Virtual Desktop switched on, in the next [tutorial]({{ site.baseurl }}/virtual-desktop-service/03-general-tasks) we will open and navigate the desktop itself as well as do some basic tasks.

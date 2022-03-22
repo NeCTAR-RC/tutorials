@@ -5,7 +5,7 @@ duration: 1
 ---
 Once you have created one Desktop, you will see four options on your screen to manage it.
 
-![image of computer options]({{ site.baseurl }}/assets/images/virtual-desktop-service/manage-option.PNG)
+![image of computer options]({{ site.baseurl }}/assets/images/virtual-desktop-service/button_option.PNG)
 
 Here are what each of these options means:
 
@@ -13,8 +13,9 @@ Here are what each of these options means:
 | ----------- | ----------- |
 | Reboot      |Restart your Virtual Desktop.|
 | Shelve   |This put your Cloud Computer on hold, but doesn't delete it and frees up the resources it would usually use.|
+| Extend   |When you are close to expriy, you can extend your Virtual Desktop for another 14 days of use.|
 | Delete   |This deletes your Virtual Desktop.|
-| Boost   |While using the Virtual Desktop, if you feel you need more speed and resources, you can increase them, to 4CPU Cores and 8GB Ram.|
+| Boost   |While using the Virtual Desktop, if you feel you need more speed and resources, you can increase them, to 8CPU Cores and 16GB Ram.|
 
 
 These are simple, all you need to do is click the particular button to make it happen.
@@ -24,7 +25,7 @@ When you click the delete button, be *absolutely sure* you want to delete your d
 {: .callout-danger}
 
 **Keep an eye on the time**  ⏰  
-Once you have launched a Virtual Desktop, this desktop will be available for *14 days*. After 14 days, the desktop will initiate an expiry process, with the instance shelved for 3 months, and then *deleted*. You will receive email reminders at each stage of the expiry process.
+Once you have launched a Virtual Desktop, this desktop will be available for *14 days*. After 14 days, the desktop will initiate an expiry process, with the instance shelved for 3 months, and then *deleted*. You will receive email reminders at each stage of the expiry process. However, remember, you are able to extend your desktop for another 14 days, using the extend button as well.
 {: .callout-warning}
 
 **You can manage it all now!**  

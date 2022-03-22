@@ -6,7 +6,7 @@ duration: 1
 
 Let's open your Desktop for the first time! Click the green `Open Desktop` button.
 
-![Open Desktop button]({{ site.baseurl }}/assets/images/virtual-desktop-service/ubuntu_success.PNG)
+![Open Desktop button]({{ site.baseurl }}/assets/images/virtual-desktop-service/update_desktop_button.PNG)
 
 Now you will see a desktop environment, with some similarities to what you know with your standard computer. You have a taskbar at the top, a menu button to access applications, and folders on your desktop itself.
 

@@ -16,3 +16,4 @@ The Virtual Desktop Service is an easy way for researchers to access the Nectar 
 
 - View the Cloud Prereading [tutorial]({{ site.baseurl }}/prereading) sections 1-4.
 - Standard web browser & internet connection on your computer
+- Your AAF login credentials
