@@ -577,7 +577,7 @@ collections:
       - tutorial
     difficulty: 1 # number from 1 to 5
     duration: 30 # number of minutes
-    status: pushed # draft or published
+    status: published # draft or published
     published: 2021-12-20
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
@@ -587,11 +587,27 @@ collections:
     title: Security practices on the Nectar Cloud
     summary: Learn about some of the essential practices for being secure on Nectar
     category: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
     tags:
       - tutorial
     difficulty: 1 # number from 1 to 5
     duration: 45 # number of minutes
-    status: draft # draft or published
+    status: published # draft or published
     published: 2022-02-21
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
+
+  share_instance:
+    output: true
+    permalink: /:collection/:name
+    title: Sharing your Virtual Machine
+    summary: How to share your VM securely with colleagues
+    category: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
+    level: Intermediate
+    tags:
+      - tutorial
+    difficulty: 2 # number from 1 to 5
+    duration: 30 # number of minutes
+    status: published # draft or published
+    published: 2022-04-06
+    author: Sonia Ramza <sonia.ramza@ardc.edu>
 
