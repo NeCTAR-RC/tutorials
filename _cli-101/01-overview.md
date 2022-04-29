@@ -19,3 +19,4 @@ You'll learn the bare essentials, that will help you get started & complete our 
 - Navigation of your instance file system
 - Elevating to use system administrator privileges
 - Installing and maintaining software
+- The basics of opening and editing files
