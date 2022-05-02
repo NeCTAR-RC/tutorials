@@ -57,10 +57,23 @@ To send a review:
 - Using `git commit` add your changes. If you're amending a review, don't forget to add the `--amend` argument.
 - Run the `git review` command to send your changes. The command should return the URL for your review if it was successful.
 
-Once this is done, it will alert our technical writer team.
+Our review team will then be alerted.
 Please be prepared to answer questions about your edits and make additional commits.
 
+**Note:**
+Before executing the `git review` command for the first time, you may need to install it first. You can do this using:
+```
+sudo apt-get install git-review
+```
+Then, you need to initiate the setup procedure, using:
+```
+git review -s 
+```
+Ensure your public key has also been added to your Gerrit profile (in settings), and the corresponding private key is also in your .ssh folder.
+
 ### Setting up a local development environment
+
+Note for windows users, this process will be much easier if you set up [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install), then the commands below will work within the WSL environment.
 
 Install the Ruby packages:
 
@@ -74,12 +87,11 @@ For Ubuntu, this can be done with:
 # apt install ruby-dev ruby-bundler rake zlib1g-dev make gcc g++
 ```
 
-To install Jekyll and all the required dependencies, run:
+To install Jekyll and all the required dependencies, run the below command. **But make sure you are in the folder which contains the repository first (ie the `Tutorials` folder)**.
 
 ```sh
 # rake setup
 ```
-
 Then to serve the site, you can use:
 
 ```sh
