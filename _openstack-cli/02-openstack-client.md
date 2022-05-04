@@ -43,7 +43,7 @@ If you have not installed Windows Subsystem for Linux yet, go back to the [Overv
 Now you can simply run the linux based command, and it will complete the install:
 
 ```
-sudo apt install python-dev python3-pip
+ sudo apt install python-dev-is-python3 python3-pip
 ```
 
 ### Finally, install the OpenStack client package:
