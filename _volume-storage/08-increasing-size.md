@@ -7,9 +7,20 @@ duration: 3
 The process requires some system administration skills and there is a risk that you can lose your data, so make sure you have a backup. It is also recommended that you try it out on a small test volume first. If unsure you can always contact the Help Desk as well.
 {: .callout-danger}
 
+### Pre ride safety checks
+
+Our instructions below will only work for Volumes that are not partitioned, and of a particular format type. Thus, it is best first check what state your volume is in, using commands below. 
+```
+lsblk -o NAME,FSTYPE,TYPE
+```
+
+**Can I proceed?**  
+If the results don't show your volume as a `disk` for `TYPE` and `ext4` for `FSTYPE` in the output, these instructions will not work. Best to call in the experts to help. You can contact the Nectar Help Desk or your local IT team.
+{: .callout-warning}
+
 ### Checking volume quota
 
-Let's first check if you have **Volume quota available**. To check your available quota in the Dashboard, click the `Compute` tab, then the `Overview` sub-tab. The pie chart for Volume Storage shown will show your quota.
+Now, we can check if you have **Volume quota available**. To check your available quota in the Dashboard, click the `Compute` tab, then the `Overview` sub-tab. The pie chart for Volume Storage shown will show your quota.
 
 If you need more quota for this, you can view our [Manage your Allocation](https://support.ehelp.edu.au/a/solutions/articles/6000068044) article.
 
