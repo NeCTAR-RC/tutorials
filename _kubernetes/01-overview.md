@@ -25,11 +25,13 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
     - 2 x Floating IP
     - 3 x Loadbalancer
     - 3 x m3.small Compute
-
+- [Set up the OpenStack Command Line Tool - Tutorial]({{ site.baseurl }}/openstack-cli/01-overview)
 - [python-openstackclient](https://pypi.org/project/python-openstackclient/)
 - [python-heatclient](https://pypi.org/project/python-heatclient/)
 - [python-magnumclient](https://pypi.org/project/python-magnumclient/)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+
 
 **kubectl version skew policy**  
 kubectl is officially supported within one minor version (older or newer)
