@@ -17,10 +17,6 @@ In many cases, you can use both the OpenStack client or a dedicated client.
 If you want to get more information please visit the latest [OpenStack CLI documentation](https://docs.openstack.org/python-openstackclient/latest/)
 or you can search for documentation about each of the dedicated clients.
 
-**Cloud Two**  
-This tutorial is part of the Nectar [Cloud Two]({{ site.baseurl }}/cloud-two/) curriculum. If you haven’t already, you should complete the [Cloud Starter]({{ site.baseurl }}/cloud-starter/) tutorials before you start here.
-{: .callout-warning}
-
 ### What you'll learn
 
 - Install the OpenStack CLI tool and some dedicated clients
