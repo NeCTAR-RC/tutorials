@@ -29,21 +29,25 @@ running:
 
 ```
 $ openstack coe cluster template list
-+--------------------------------------+------------------------------+
-| uuid                                 | name                         |
-+--------------------------------------+------------------------------+
-...
-| 2a43e6a7-7df3-4b74-b4f7-2b6991f356bc | kubernetes-tasmania-v1.14.6  |
-| 15d21331-df0f-4440-acfa-50567ec7ac2e | kubernetes-auckland-v1.14.6  |
-| a8580ef7-9202-4392-b911-b4e3dc4047c6 | kubernetes-QRIScloud-v1.14.6 |
-| 270612dc-59be-4de0-a722-9afdd61b815e | kubernetes-melbourne-v1.14.6 |
-| b1bf5e12-0d69-46c0-87f5-4f6d878c773a | kubernetes-monash-01-v1.14.6 |
-| 2c80ce78-8077-42ca-8b07-e45d9c4063d4 | kubernetes-monash-02-v1.14.6 |
-...
-+--------------------------------------+------------------------------+
++--------------------------------------+--------------------------------------+------+
+| uuid                                 | name                                 | tags |
++--------------------------------------+--------------------------------------+------+
+| 34539368-9cd4-4978-900f-86065c74d104 | kubernetes-melbourne-v1.17.11        | None |
+| c03db765-181a-4faa-b27b-680dff776afa | kubernetes-auckland-v1.17.11         | None |
+| 7af8258c-83ab-4753-8b5e-42a9a378ddc7 | kubernetes-swinburne-v1.17.11        | None |
+| 08498a89-71f8-4cfa-b0f1-d039b2ed7b36 | kubernetes-melbourne-v1.21.1         | None |
+| 360151fc-34d9-46fc-b383-ebecce787060 | kubernetes-melbourne-qh2-uom-v1.21.1 | None |
+| 0bb3dc9a-cb0e-45c3-b8db-9f07d4b921aa | kubernetes-monash-01-v1.21.1         | None |
+| 9825fae6-509f-4012-bb25-5fb9f55bec8b | kubernetes-monash-02-v1.21.1         | None |
+| d0f7dc3e-0ca2-4d17-85c5-5d264cc81333 | kubernetes-intersect-v1.21.1         | None |
+| 3b359e20-8256-4769-a9a3-8982b28c0509 | kubernetes-tasmania-v1.21.1          | None |
+| 11a3e615-68e5-4e89-b11a-d1974ea89613 | kubernetes-auckland-v1.21.1          | None |
+| a732bc27-0fa0-44f8-a5b0-53134074947f | kubernetes-QRIScloud-v1.21.1         | None |
+| efae014a-3190-4411-b28b-7e10512c6741 | kubernetes-swinburne-01-v1.21.1      | None |
++--------------------------------------+--------------------------------------+------+
 ```
 
-Note that the version numbers change, and it is advisable to use the latest
+Version numbers change, and it is advisable to use the latest
 version (unless you hear otherwise).  You can examine any of these
 templates by running `openstack coe cluster template show <id>`.
 
@@ -103,10 +107,10 @@ Using the `openstack` command line client
 
 1. Choose a Cluster Template to create your Cluster from.
 
-1. Create the Cluster
+1. Create the Cluster. Note, we are using the `uuid` from our cluster list as the value for our template, and you need to input the name of your own `keypair`.
 
    ```
-   $ openstack coe cluster create --cluster-template kubernetes-melbourne-v1.14.6 \
+   $ openstack coe cluster create --cluster-template 2c80ce78-8077-42ca-8b07-e45d9c4063d4 \
    --keypair jake mycluster
    Request to create cluster 84091b19-fd32-4197-a92e-71838d0502c2 accepted
    ```
@@ -122,4 +126,3 @@ Using the `openstack` command line client
    | 84091b19-fd32-4197-a92e-71838d0502c2 | mycluster            | jake           |          1 |            1 | CREATE_COMPLETE | None          |
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
    ```
-
