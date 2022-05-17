@@ -1,6 +1,6 @@
 ---
 title: Updating your application
-order: 7
+order: 6
 duration: 10
 ---
 
