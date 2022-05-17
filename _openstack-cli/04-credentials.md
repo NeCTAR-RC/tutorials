@@ -38,12 +38,16 @@ as this is access is managed by your insitution.
 
 Execute the below command with your specific authentication file name (it should have the name of the project you were working in when logged into the dashboard, in the file name). Lastly, type in the password when it prompts.
 
-**Windows users alert!**  
-If you are using Windows, before running the Command below in the Windows Terminal or Powershell, type in the command `bash` first, this will get the Windows Subsystem for Linux (WSL) running. If you didn't install WSL before starting this tutorial, head back to the [Overview page]({{site.baseurl}}/openstack-cli/01-overview) and do that now. Then you can come back and run the Command below.
-{: .callout-danger}
-
 ```
 source project-openrc.sh
 ```
+
+**Windows users alert!**  
+If you are using Windows, before running the Command above in the Windows Terminal or Powershell, type in the command `bash` first, this will get the Windows Subsystem for Linux (WSL) running. If you didn't install WSL before starting this tutorial, head back to the [Overview page]({{site.baseurl}}/openstack-cli/01-overview) and do that now. Then you can come back and run the Command above.
+{: .callout-danger}
+
+**Location, location, location**  
+Before entering the source command above, make sure you navigate to the location of the file first, or move it to a preferred location you would like to work from. Note: Windows users, you need to move it to the Windows Subsystem for Linux area. While in your ~ (home) directory, you can enter the command `explorer.exe .`, and this will open a window, which you can then drag and drop the file from your Downloads folder.
+{: .callout-info}
 
 Now you can proceed to the next section to see how to use the OpenStack client.
