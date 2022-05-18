@@ -42,13 +42,13 @@ Before diving into your new Desktop, let's set the timezone.
 
 1. To get back to our Desktop home page, click the `Virtual Desktop Service` text in the top left corner.
 
-1. Now, we choose our Operating System. Currently, we have four available, which you will see by scrolling down on your page.
+1. Now, we choose our Operating System.
 
-    ![Desktops-available]({{ site.baseurl }}/assets/images/virtual-desktop-service/desktop_options.png)
+    ![Desktops-available]({{ site.baseurl }}/assets/images/virtual-desktop-service/operatingsystems.png)
 
 1. Let's choose one, for this tutorial, we will use `Ubuntu`. Click `view details`, this will lead to a page with further information about the Operating system, including resources required and what it is useful for.
 
-1. Now, to get the Desktop started, you can select the `Create Desktop` button.
+1. To get the Desktop started, you can select the `Create Desktop` button.
 
     ![Create Desktop]({{ site.baseurl }}/assets/images/virtual-desktop-service/new_sizes_added.PNG)
 
