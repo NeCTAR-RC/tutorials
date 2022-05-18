@@ -36,4 +36,5 @@ This series is technical in nature. You will learn *how* to use the cloud, not *
 - Basic computer skills
 - [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software)
 - [Install OpenSSH - required for Windows users only](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+- [Install the Filezilla Client](https://filezilla-project.org/)
 

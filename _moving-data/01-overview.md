@@ -14,4 +14,4 @@ While working with your instance you may need to move data to or from it. There 
 
 - a running Nectar instance, accessible using your OpenSSH keypair
 - Terminal software
-- FileZilla from [filezilla-project.org](https://filezilla-project.org/)
+- FileZilla Client from [filezilla-project.org](https://filezilla-project.org/)
