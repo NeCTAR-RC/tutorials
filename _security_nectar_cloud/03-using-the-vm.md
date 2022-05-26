@@ -31,8 +31,8 @@ Root user priviledges give someone all the super administrative power on the com
 Updates are important, as they can provide patches to security issues that have been discovered.
 *Ubuntu/Debian:*
 ```
-sudo apt dist-upgrade
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 *Centos/Fedora:*
