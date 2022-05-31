@@ -17,6 +17,7 @@ With the steps below you'll inspect your existing Security Groups and Rules.
 
    ![Project Selector]({{ site.baseurl }}/assets/images/sec-groups-101/project-selector.png)
 3. Navigate to `Project` / `Network` / `Security Groups` in the navigation panel on the left hand side.
+   ![menu-selector]({{ site.baseurl }}/assets/images/sec-groups-101/sec-groups-menu.png)
 
 You will now see a list of the Security Groups that are available in your project.
 
@@ -27,6 +28,8 @@ By the end of this tutorial you need to have a Security Group that will allow yo
 If you see a group that is named `ssh` or similar, then
 
 1. Click the `Manage Rules` option in the Action Menu button beside this group
+
+![menu-selector]({{ site.baseurl }}/assets/images/sec-groups-101/manage-rules-ssh.png)
 
 A list of `Rules` is displayed that are part of this Security Group.
 
