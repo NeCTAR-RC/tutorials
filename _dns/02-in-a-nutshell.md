@@ -4,9 +4,9 @@ order: 2
 duration: 3
 ---
 
-You can use the Nectar DNS Service to add Domain Name System (DNS) services to
-your Nectar Research Cloud projects. The Nectar DNS Service is based on the
-OpenStack DNS as a Service project, *Designate*.
+The Nectar DNS Service provides Domain Name System (DNS) services to
+your Nectar Research Cloud projects, either by creating records manually or
+through automation by the API.
 
 ### Nectar Provided Zone
 
@@ -17,20 +17,14 @@ create records in right away. The zone name will end with *.cloud.edu.au*
 
 ### Bring Your Own Zone
 
-The Nectar DNS service can also host a domain name you currently own. If you
-would like to host your domain on the Nectar DNS service, please send an email
-request to [support@nectar.org.au](mailto:support@nectar.org.au) and we will
-create the zone for you.
-
-Once you have a zone created for your project, you are free to create and
-delete any records you wish within this zone.
+The Nectar DNS service can also host a domain name you currently own.
 
 If you do choose to host your domain with us, for the entries to resolve
 properly you will need to set the *Nameserver* records of your domain to:
 
 ```
 ns1.rc.nectar.org.au (115.146.81.148)
-ns2.rc.nectar.org.au (115.146.83.183)
+ns2.rc.nectar.org.au (115.146.83.81)
 ```
 
 Many institutions have service agreements in place with domain name service

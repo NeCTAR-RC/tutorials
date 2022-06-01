@@ -25,7 +25,7 @@ $ openstack zone list
 +-----------+-------------------------+---------+----------+--------+--------+
 | id        | name                    | type    |   serial | status | action |
 +-----------+-------------------------+---------+----------+--------+--------+
-| <zone id> | qcif-test.cloud.edu.au. | PRIMARY | <serial> | ACTIVE | NONE   |
+| <zone id> | myproject.cloud.edu.au. | PRIMARY | <serial> | ACTIVE | NONE   |
 +-----------+-------------------------+---------+----------+--------+--------+
 ```
 
@@ -37,9 +37,7 @@ default zone be added to your project.
 To view the DNS record sets defined for a zone, click the zone name then the
 **Record Sets** tab. Each zone has two *Nameserver* records that are
 provisioned with the zone. You can add can update or delete record sets that
-you have created. Please email
-[support@nectar.org.au](mailto:support@nectar.org.au) if you need to change the
-*Nameserver* records.
+you have created.
 
 ![Record Sets]({{ site.baseurl }}/assets/images/dns/dns-list-rs.png)
 
@@ -51,9 +49,9 @@ $ openstack recordset list <zone id>
 +-----------+---------------------------------+------+-----------------------------------------------------------------------------+--------+--------+
 | id        | name                            | type | records                                                                     | status | action |
 +-----------+---------------------------------+------+-----------------------------------------------------------------------------+--------+--------+
-| <rec id1> | qcif-test.cloud.edu.au.         | SOA  | ns1.rc.nectar.org.au. support.nectar.org.au. 1566546364 3590 600 86400 3600 | ACTIVE | NONE   |
-| <rec id2> | qcif-test.cloud.edu.au.         | NS   | ns2.rc.nectar.org.au.                                                       | ACTIVE | NONE   |
+| <rec id1> | myproject.cloud.edu.au.         | SOA  | ns1.rc.nectar.org.au. support.nectar.org.au. 1566546364 3590 600 86400 3600 | ACTIVE | NONE   |
+| <rec id2> | myproject.cloud.edu.au.         | NS   | ns2.rc.nectar.org.au.                                                       | ACTIVE | NONE   |
 |           |                                 |      | ns1.rc.nectar.org.au.                                                       |        |        |
-| <rec id3> | my-name.qcif-test.cloud.edu.au. | A    | 203.101.225.247                                                             | ACTIVE | NONE   |
+| <rec id3> | my-name.myproject.cloud.edu.au. | A    | 203.101.225.247                                                             | ACTIVE | NONE   |
 +-----------+---------------------------------+------+-----------------------------------------------------------------------------+--------+--------+
 ```

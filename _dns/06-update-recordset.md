@@ -23,12 +23,12 @@ To update an existing DNS record using the OpenStack command line, get the id
 of the required record set:
 
 ```
-$ openstack recordset list qcif-test.cloud.edu.au.
+$ openstack recordset list myproject.cloud.edu.au.
 +----------+---------------------------------+------+-----------------+--------+--------+
 | id       | name                            | type | records         | status | action |
 +----------+---------------------------------+------+-----------------+--------+--------+
 | ...      |                                 |      |                 |        |        |
-| <rec id> | my-name.qcif-test.cloud.edu.au. | A    | 203.101.225.247 | ACTIVE | NONE   |
+| <rec id> | my-name.myproject.cloud.edu.au. | A    | 203.101.225.247 | ACTIVE | NONE   |
 | ...      |                                 |      |                 |        |        |
 +----------+---------------------------------+------+-----------------+--------+--------+
 ```
@@ -44,7 +44,7 @@ $ openstack recordset set --records 203.101.225.248 <zone id> <rec id>
 | created_at  | 2019-08-23T05:34:59.000000      |
 | description | None                            |
 | id          | <rec id>                        |
-| name        | my-name.qcif-test.cloud.edu.au. |
+| name        | my-name.myproject.cloud.edu.au. |
 | project_id  | <project id>                    |
 | records     | 203.101.225.248                 |
 | status      | PENDING                         |
@@ -53,7 +53,7 @@ $ openstack recordset set --records 203.101.225.248 <zone id> <rec id>
 | updated_at  | 2019-08-23T07:46:04.000000      |
 | version     | 2                               |
 | zone_id     | <zone id>                       |
-| zone_name   | qcif-test.cloud.edu.au.         |
+| zone_name   | myproject.cloud.edu.au.         |
 +-------------+---------------------------------+
 ```
 
