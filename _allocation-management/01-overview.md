@@ -20,6 +20,7 @@ Familiarise yourself with the expiry process, to prevent surprise deletions of y
 
 - Understanding *accounts*, *allocations*, *projects*, *resources* and *quota*
 - Requesting and Amending allocations
+- Understanding Service Units and calculating a Service Unit Budget
 - *Allocation expiry*
 - Delegating the *Project Manager* role to another user
 
