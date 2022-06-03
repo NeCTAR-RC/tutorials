@@ -66,8 +66,14 @@ Do you want to continue? [Y/n] y
 
 Your instance will now show you a lot of logging information about the software it is downloading and upgrading. These upgrades often include security-related upgrades to your software and operating system.
 
+**Keep it regular!**  
 You should run an `apt update` and `apt upgrade` regularly.
 {: .callout-warning}
+
+**Reboot required?**  
+You only need to reboot if the Kernel itself is upgraded. Simply look for the word `linux` in the 'following packages will be upgraded' list.
+To reboot your instance, check out the tutorial [here]({{sitebase.url}}/changing-instances/02-rebooting).
+{: .callout-info}
 
 ### Installing new software
 
