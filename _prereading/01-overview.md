@@ -14,4 +14,5 @@ By understanding this information, it will make the tutorials in Cloud Basics ea
 - Key terminology
 - How to access the Nectar Cloud
 - What operating system is used on Nectar?
+- Where is my data stored and hardware located?
 - Where to find help and support
