@@ -27,11 +27,22 @@ yum install python-devel python3-pip
 ```
 
 ### Mac OS
-Mac OS users can use the `easy_install` tool:
+Mac OS users can use the `easy_install` tool to install pip, and then a virtual environment:
 
 ```
-easy_install pip
+sudo easy_install pip
 ```
+```
+sudo pip install virtualenv
+```
+Then create a virtual environment (first command), then activate it (second command).
+```
+virtualenv venv
+```
+```
+source venv/bin/activate
+```
+Once you are finished using the OpenStack CLI and the virtual environment, you can exit by typing `deactivate` in the terminal.
 
 ### Microsoft Windows
 Ensure that you have enabled Windows Subsystem for Linux by typing `bash` in your Windows Terminal or Powershell first.
@@ -46,7 +57,7 @@ Now you can simply run the linux based command, and it will complete the install
  sudo apt install python-dev-is-python3 python3-pip
 ```
 
-### Finally, install the OpenStack client package:
+### Finally, (all operating systems) install the OpenStack client package:
 Once `pip` is set up, you can install the client package with:
 ```
 pip install python-openstackclient
