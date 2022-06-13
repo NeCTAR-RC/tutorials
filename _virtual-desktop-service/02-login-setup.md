@@ -56,7 +56,7 @@ Before diving into your new Desktop, let's set the timezone.
 
     ![Create Desktop]({{ site.baseurl }}/assets/images/virtual-desktop-service/create_desktop.PNG)
 
-1. You should now see the magic happening, with a prorgress bar showing your Desktop being built.
+1. You should now see the magic happening, with a progress bar showing your Desktop being built.
 
     ![Progress]({{ site.baseurl }}/assets/images/virtual-desktop-service/VDI_progress.PNG)
 
