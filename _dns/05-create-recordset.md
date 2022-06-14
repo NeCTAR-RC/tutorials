@@ -29,18 +29,18 @@ $ openstack recordset create <zone name> <hostname you choose> --type A --record
 For example:
 
 ```
-$ openstack recordset create qcif-test.cloud.edu.au. my-name --type A --record 203.101.225.247
+$ openstack recordset create myproject.cloud.edu.au. my-name --type A --record 203.101.225.247
 ```
 
 Check that the record was created correctly using:
 
 ```
-$ openstack recordset list qcif-test.cloud.edu.au.
+$ openstack recordset list myproject.cloud.edu.au.
 +------+---------------------------------+------+-----------------+--------+--------+
 | id   | name                            | type | records         | status | action |
 +------+---------------------------------+------+-----------------+--------+--------+
 | ...  |                                 |      |                 |        |        |
-| <id> | my-name.qcif-test.cloud.edu.au. | A    | 203.101.225.247 | ACTIVE | NONE   |
+| <id> | my-name.myproject.cloud.edu.au. | A    | 203.101.225.247 | ACTIVE | NONE   |
 | ...  |                                 |      |                 |        |        |
 +------+---------------------------------+------+-----------------+--------+--------+
 ```

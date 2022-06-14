@@ -13,9 +13,7 @@ For new projects and projects with allocations being renewed, a *Nectar provided
 will be based on your given project name, typically *[yourproject].cloud.edu.au*, and 
 will be available for you to create records in right away.
 
-The Nectar DNS service can also host a domain name you currently own. If you
-would like *Bring Your Own Zone* to the Nectar DNS service, please send an email
-request to [support@nectar.org.au](mailto:support@nectar.org.au) and we will create the zone for you.
+The Nectar DNS service can also host a domain name you currently own.
 
 Once you have a zone created for your project, you are free to create and
 delete any records you wish within this zone.
