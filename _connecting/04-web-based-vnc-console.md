@@ -10,7 +10,7 @@ You can access the instance command line via the web-based vnc-console on your [
 
 2. On the instances page click the name of your instance and then select the Console tab.
 
-   ![Instance console]({{ site.baseurl }}/assets/images/connecting/instance-console.png)
+   ![Instance console]({{ site.baseurl }}/assets/images/connecting/vnc-screenshot.png)
 
 3. If necessary, activate the keyboard input by clicking the grey area surrounding the black console
 
