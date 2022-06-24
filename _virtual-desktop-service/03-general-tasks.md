@@ -59,6 +59,13 @@ But, you may be wondering where the actual file went! Doesn't matter where you d
 
 Now, you can move this to where ever you want to store this, for example, your `Documents` folder. You can do this any way you normally would on your computer, whether its drag and drop or copy and paste etc.
 
+**To download a file to your local desktop:**
+
+1. Navigate to `Devices`, `thinclient_drives`, then open the `GUACFS` folder.
+
+1. Drag and drop your file onto the `Download` folder. This will immediately begin the download
+   process within the browser.
+
 **You're up and running!**  
 Well done. You've accessed your Desktop for the first time, opened applications, and learnt how to move files back and forth. In the next [tutorial]({{ site.baseurl }}/virtual-desktop-service/04-managing-desktop) we will learn about how to manage your desktop.
 {: .callout-success}
