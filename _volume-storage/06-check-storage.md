@@ -28,7 +28,7 @@ Don't forget you can access the `man`-pages for these commands like this:
 
 ```
 $ man lsblk
-$ man df 
+$ man df
 $ man du
 ```
 

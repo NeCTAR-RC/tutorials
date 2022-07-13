@@ -9,7 +9,7 @@ The process requires some system administration skills and there is a risk that 
 
 ### Pre ride safety checks
 
-Our instructions below will only work for Volumes that are not partitioned, and of a particular format type. Thus, it is best first check what state your volume is in, using commands below. 
+Our instructions below will only work for Volumes that are not partitioned, and of a particular format type. Thus, it is best first check what state your volume is in, using commands below.
 ```
 lsblk -o NAME,FSTYPE,TYPE
 ```
