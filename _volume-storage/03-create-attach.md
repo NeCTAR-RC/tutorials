@@ -6,13 +6,13 @@ duration: 4
 
 ### Create a volume
 
-You can see your project's volume storage allocation on the `Project` / `Compute` / `Overview` page on your Nectar dashboard, e.g. 
+You can see your project's volume storage allocation on the `Project` / `Compute` / `Overview` page on your Nectar dashboard, e.g.
 
 ![Volume allocation on Nectar Dashboard Overview]({{ site.baseurl }}/assets/images/volume-storage/volume-quota-overview.jpg)
 
 
 
-To create a volume 
+To create a volume
 
 - On your Nectar [Dashboard](https://dashboard.rc.nectar.org.au/);
 - navigate to `Volumes | Volumes`;
@@ -25,7 +25,7 @@ To create a volume
 
 When selecting Image for Volume Source, you will be able to select an image from the image catalog. This is useful for creating bootable volumes.
 
-When selecting Volume for Volume Source, you will be able to select from the existing volumes in your project. 
+When selecting Volume for Volume Source, you will be able to select from the existing volumes in your project.
 
 ### Attach a volume
 
