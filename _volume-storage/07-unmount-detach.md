@@ -12,7 +12,7 @@ $ sudo umount /pvol
 
 You can use the Nectar dashboard to detach a Volume from an instance. Navigate to the Volumes page, and use the action menu for the particular Volume to show the `Manage Attachments` dialog. (Alternatively you can use the action menu of the instance on the Compute / Instances page)
 
-![Manage Volume Attachements]({{ site.baseurl }}/assets/images/volume-storage/manage-volume-attachments-detach.jpg)
+![Manage Volume Attachements]({{ site.baseurl }}/assets/images/volume-storage/management_attach_final.jpg)
 
 **Detach then Delete!**  
 Volumes must be detached before deletion.

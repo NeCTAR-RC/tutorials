@@ -8,7 +8,7 @@ duration: 4
 
 You can see your project's volume storage allocation on the `Project` / `Compute` / `Overview` page on your Nectar dashboard, e.g.
 
-![Volume allocation on Nectar Dashboard Overview]({{ site.baseurl }}/assets/images/volume-storage/volume-quota-overview.jpg)
+![Volume allocation on Nectar Dashboard Overview]({{ site.baseurl }}/assets/images/volume-storage/pie-chart.png)
 
 
 
@@ -39,5 +39,5 @@ You can attach the volume created earlier to a running virtual machine. See the 
 
 Nectar will now attach your volume to the selected instance. When this is complete your volume (on the `Volumes | Volumes` page) will show a value in the Attached To column similar to `/dev/vdc on acme_vm` in the example screenshot below.
 
-![Volume attached to instance]({{ site.baseurl }}/assets/images/volume-storage/volumes-page-attached.jpg)
+![Volume attached to instance]({{ site.baseurl }}/assets/images/volume-storage/volume-attached.png)
 
