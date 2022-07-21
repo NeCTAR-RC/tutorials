@@ -19,7 +19,7 @@ From this page, you can add or delete rules using the buttons provided.
 ## Adding a new Security Group rule
 To add a new rule, click the `Add Rule` button
 
-![Add security group rule]({{ site.baseurl }}/assets/images/intermediate-security-groups/security-group-add-rule.png)
+![Add security group rule]({{ site.baseurl }}/assets/images/intermediate-security-groups/security-group-create.png)
 
 There are a number of fields presented that are significant here. Depending on
 your choices, the required fields will change.
