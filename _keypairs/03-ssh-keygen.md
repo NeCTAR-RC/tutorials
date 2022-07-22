@@ -16,7 +16,7 @@ Note: For Windows users, you can use Powershell, for Mac users Terminal.
    ```
    $ ssh-keygen
    ```
-   `ssh-keygen` will ask you these questions. Use the default filename, which is `id_rsa` (i.e. `/home/<user>/.ssh/id_rsa`). Accept the default options by pressing the enter key, and for the purpose of this tutorial you can enter an empty passphrase.
+   `ssh-keygen` will ask you these questions. You can use the default filename, which is `id_rsa` (i.e. `/home/<user>/.ssh/id_rsa`) or type your own. Accept the default options by pressing the enter key, and for the purpose of this tutorial you can enter an empty passphrase.
 
    ```
    Enter file in which to save the key (/home/<user>/.ssh/id_rsa):
@@ -53,10 +53,10 @@ Make sure you import your *public* key here, *not the private one*
 3. In the `Import Public Key` dialog,
    1. give your public key a **Key Pair Name** (this name doesn't need to match your key's filename or the label. You should choose a name that helps you stay meaningfully organised.)
    2. Select *SSH Key* for **Key Type**
-   3. Load your public key from your public key file (`id_rsa.pub` in our example), using the Choose File button and dialog **or**
+   3. Load your public key from your public key file (`sonia_training.pub` in the screenshot), using the Choose File button and dialog **or**
    4. Paste the text of your public key in the **Public Key** field.
       The completed Import Public Key Dialog should look something like this
-      ![import-key-completed-dialog]({{ site.baseurl }}/assets/images/keypairs/import-key-completed-dialog.png)
+      ![import-key-completed-dialog]({{ site.baseurl }}/assets/images/keypairs/key-pair-window.png)
 
 5. Click the `Import Public Key` button
 
