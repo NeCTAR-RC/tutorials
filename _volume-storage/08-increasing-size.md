@@ -45,17 +45,15 @@ sudo umount /dev/vdb
 ```
 
 Now, you can go to the Dashboard, to the Volumes page (`Overview, Volume, Volumes`), select `Manage Attachments`, and then `Detach`.
-![manage volume]({{ site.baseurl }}/assets/images/volume-storage/volume-manage.png)
-
-![detach volume]({{ site.baseurl }}/assets/images/volume-storage/detach-volume.PNG)
+![manage volume]({{ site.baseurl }}/assets/images/volume-storage/management_attach_final.jpg)
 
 Now we can increase the size of the volume, by finding the `Extend volume` button on the dashboard.
 
-![extend option]({{ site.baseurl }}/assets/images/volume-storage/extend-volume-navigate.png)
+![extend option]({{ site.baseurl }}/assets/images/volume-storage/extend-box.png)
 
 In the window that pops up, enter what size you would like to make the Volume, and click `Extend Volume`.
 
-![extend screen]({{ site.baseurl }}/assets/images/volume-storage/extend-volume-screen.PNG)
+![extend screen]({{ site.baseurl }}/assets/images/volume-storage/extend-volume.png)
 
 Return to your instance ssh login session and re-mount the volume.
 ```
