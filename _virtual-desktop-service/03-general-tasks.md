@@ -34,6 +34,12 @@ If there are updates available, you will be asked if you want to install them, a
 It is good security practice to check for updates. You should do this each day you log into the Desktop for the first time. This ensures you have the latest Security patches. There is further information on our Security Guidelines [here](https://support.ehelp.edu.au/a/solutions/articles/6000253768).
 {: .callout-warning}
 
+#### Copy and Pasting
+
+Copy and pasting should work as normal, between your local computer and the Virtual Desktop. However, we are aware of a few minor anomalies: 
+- If you are using a Mac, you would use your `Commmand` key as normal when copying from your local computer, but use `Ctrl` instead when pasting to the Virtual Desktop.
+- When using Firefox browser and the NeuroDesktop, there are extra steps required to ensure the copy/paste function works. Instructions can be found [here.](https://www.neurodesk.org/docs/neurodesktop/troubleshooting/)
+
 #### Moving files
 
 Moving files back and forth is easy! All you have to do, is drag and drop between you local computer and the Virtual Desktop window.
