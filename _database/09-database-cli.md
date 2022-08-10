@@ -19,7 +19,7 @@ which will guide you through the process of setting up your credentials and inst
 
 
 ## List all database instances
- 
+
 ```
 $ openstack database instance list
 +--------------------------------------+----------+-----------+-------------------+--------+--------------------------------------+------+-----------+
@@ -72,9 +72,9 @@ $ openstack database instance list
 | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | my-database-instance | MySQL     | 8.0-17            | BUILD  | 325c919d-b523-4960-968c-f2baffafff94 |    1 | Melbourne |
 +--------------------------------------+----------------------+-----------+-------------------+--------+--------------------------------------+------+-----------+
 ```
- 
+
 ## Show details of a database instance
- 
+
 ```
 $ openstack database instance show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
 +-------------------+--------------------------------------+
@@ -94,7 +94,7 @@ $ openstack database instance show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
 | volume_used       | 0.13                                 |
 +-------------------+--------------------------------------+
 ```
-   
+
 ## Create and list a backup
 
 ```
@@ -123,7 +123,7 @@ $ openstack database backup list
 | 3d9b2cdc-0182-4154-994d-35e48574cd41 | 5de589ae-195e-4859-ae6f-8bd014094bd3 | tutorial_backup  | COMPLETED | None      | 2020-03-25T10:33:19 |
 | 092e35ec-b034-473d-ba33-1676cf378bbe | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 | tutorial_backup2 | COMPLETED | None      | 2020-03-27T02:49:31 |
 +--------------------------------------+--------------------------------------+------------------+-----------+-----------+---------------------+
-``` 
+```
 
 ## Create and list a database
 ```

@@ -13,13 +13,13 @@ The Database backups are saved to Nectar's Object Storage Service, so you will n
 ## Create a Database Backup
 
 1. Navigate to the `Project` / `Database` / `Instances` page
-![Database instance list page]({{ site.baseurl }}/assets/images/database/create-database4.png)
+![instance page]({{ site.baseurl }}/assets/images/database/backup.png)
 1. Find the database instance `tutorial` and click the `Create Backup` button to start the `Backup Database` Dialog.
 1. Enter tutorial_backup in `Name` field and select tutorial in `Database Instance` dropdown list.
-![Database backup dialog]({{ site.baseurl }}/assets/images/database/create-backup1.png)
-1. Click `Backup` button.
+![Database backup dialog]({{ site.baseurl }}/assets/images/database/backup2.png)
+1. Click `Create Backup` button.
 1. Wait until the backup process is finished and you should see the database backup is listed under `Project` / `Database` / `Backups`.
-![Database backup list page]({{ site.baseurl }}/assets/images/database/create-backup2.png)
+![Database backup list page]({{ site.baseurl }}/assets/images/database/backup_complete.png)
 
 ## Restore a Database Backup
 

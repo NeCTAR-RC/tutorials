@@ -10,15 +10,16 @@ In this section, we are going to learn how to add, modify and remove the users f
 
 ## Create a new Database User
 1. Navigate to the `Project` / `Database` / `Instances` page.
-![Database instance list page]({{ site.baseurl }}/assets/images/database/create-database4.png)
-1. Click your `tutorial` instance and select the `Users` tab.
-![Database users page]({{ site.baseurl }}/assets/images/database/edit-user-database1.png)
+![Database instance list page]({{ site.baseurl }}/assets/images/database/backup.png)
+1. Click your `tutorial` instance name and select the `Users` tab.
+![Database users page]({{ site.baseurl }}/assets/images/database/users.png)
 1. Click the `Create User` button.
-1. In the `Create User` dialog, enter `tutorial` in the `Name` field and a strong password in the `Password` field.  Enter `tutorial` in the `Initial Database` field.
-![Create user dialog]({{ site.baseurl }}/assets/images/database/create-user-database1.png)
+![button]({{ site.baseurl }}/assets/images/database/button_new_user.png)
+1. In the `Create User` dialog, enter `johnny` in the `Name` field and a strong password in the `Password` field.  Enter `tutorial` in the `Initial Database` field, or the name of the database you created earlier.
+![Create user dialog]({{ site.baseurl }}/assets/images/database/create_user.png)
 1. Click the `Create User` button.
-1. You should see the `tutorial` user listed.
-![User tab list page]({{ site.baseurl }}/assets/images/database/create-user-database2.png)
+1. You should see the `johnny` user listed.
+![User tab list page]({{ site.baseurl }}/assets/images/database/second_new_user.png)
 
 **Note**  
 The `tutorial` user we just created has credentials that permit login from any IP address (assuming that this is permitted by the Database instance).  If you provide a value in the `Host` field, you can restrict the user so that they can only login from a specific machine.
@@ -31,11 +32,11 @@ In this exercise, we are going to rename the user to `tutorial_renamed` and chan
 
 1. Navigate to the `Project` / `Database` / `Instances` page.
 1. Click on the `tutorial` instance name and select the `Users` tab.
-1. Click the `Edit User` from the actions list of user `tutorial`.
-1. In the `Edit User` dialog, enter tutorial_renamed in the `New Name` field and a new strong password in the `New Password` field.
-![Edit  user dialog]({{ site.baseurl }}/assets/images/database/edit-user-database1.png)
-1. Click `Apply Changes` button. The password has been updated and you will see that the username has been changed to `tutorial_renamed`.
-![User tab list page with renamed user]({{ site.baseurl }}/assets/images/database/edit-user-database1.png)
+1. Click the `Edit User` from the actions list of one of the users.
+![Edit  user dialog]({{ site.baseurl }}/assets/images/database/edit_user_action_button.png)
+1. In the `Edit User` dialog, enter the new preferred name in the `New Name` field and a new strong password in the `New Password` field.
+![Edit  user dialog]({{ site.baseurl }}/assets/images/database/edit_user_name.png)
+1. Click `Apply Changes` button. The password has been updated and you will see that the username has been changed to what you entered.
 
 You can also modify the `Host` field this way.
 
