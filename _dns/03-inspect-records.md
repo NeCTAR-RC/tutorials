@@ -9,15 +9,15 @@ new Nectar allocations and for amended allocations. You can check that your
 project has the default zone using the Nectar dashboard, by navigating to
 **Project -> DNS -> Zones**.
 
-**Note**  
+**What is the Default Zone?**  
 The default zone for a project is in the form `<project-name>.cloud.edu.au.`.
 {: .callout-info}
 
-**Note**  
+**No DNS for PT's**  
 Project trials (PT's) do not have a DNS zone.  You need an allocation in order to use Nectar DNS.
 {: .callout-info}
 
-![Zones]({{ site.baseurl }}/assets/images/dns/dns-zones.png)
+![Zones]({{ site.baseurl }}/assets/images/dns/dns-zone-tab.png)
 
 To list your DNS zones using the OpenStack command line:
 ```
@@ -39,7 +39,7 @@ To view the DNS record sets defined for a zone, click the zone name then the
 provisioned with the zone. You can add can update or delete record sets that
 you have created.
 
-![Record Sets]({{ site.baseurl }}/assets/images/dns/dns-list-rs.png)
+![Record Sets]({{ site.baseurl }}/assets/images/dns/dns-record-set-tab.png)
 
 To list your DNS record sets using the OpenStack command line, first use the
 `openstack zone list` command to lookup the required `<zode id>`, then use:

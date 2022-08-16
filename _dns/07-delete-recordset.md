@@ -8,7 +8,7 @@ To delete a DNS record that is no longer needed, navigate to **Project -> DNS
 -> Zones**. Click the required zone from the list of zones, select the **Record
 Sets** tab, then the **Delete** action for the required record set.
 
-![Delete Record Set]({{ site.baseurl }}/assets/images/dns/dns-delete-rs.png)
+![Delete Record Set]({{ site.baseurl }}/assets/images/dns/delete-record.png)
 
 Click the **Delete Record Set** button when prompted to confirm.
 

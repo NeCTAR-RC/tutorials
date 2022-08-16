@@ -12,7 +12,7 @@ Click the required zone from the list of zones, select the **Record Sets** tab,
 then the **Update** action for the required record set. The Update Record Set
 form will open so your can change the record set.
 
-![Update Record Set]({{ site.baseurl }}/assets/images/dns/dns-update-rs.png)
+![Update Record Set]({{ site.baseurl }}/assets/images/dns/update-record-set.png)
 
 You can change the IP address of the DNS record in the **Records** field. In
 this example we set the new IP address to 203.101.225.248. If you want to
