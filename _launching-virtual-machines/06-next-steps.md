@@ -19,6 +19,6 @@ Now you've got your first VM running, it's a good time to also be aware of Secur
 
 
 
-**Cloud Starter**
+**Cloud Starter**  
 Congratulations!! You've completed a Launch. Your first? Now what? Our next tutorial will show you how to connect to your instance using SSH and terminal software. <br/>Continue with the [Cloud Starter Series](/cloud-starter/02-tutorials)
 {: .callout-success}
