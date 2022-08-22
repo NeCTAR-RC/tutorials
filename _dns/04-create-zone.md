@@ -39,7 +39,7 @@ openstack zone create --email <your email> <your domain>.
 After a moment, your zone status should become `ACTIVE`. At this point
 you can start to create records.
 
-**NOTE:** 
+**Don't forget the dot:**  
 Ensure you add a trailing dot (.) to the end of your zone when using the
 Dashboard or CLI, otherwise you'll receive a ValueError.
 {: .callout-warning}

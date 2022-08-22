@@ -9,7 +9,7 @@ your project. Navigate to **Project -> DNS -> Zones**, then select **Create
 Record Set**. The Create Record Set form will open so you can configure the new
 record set.
 
-![Create Record Set]({{ site.baseurl }}/assets/images/dns/dns-create-rs.png)
+![Create Record Set]({{ site.baseurl }}/assets/images/dns/create-record.png)
 
 Complete the following fields then click **Submit**:
 - **Type** is *A - Address record* for a new DNS name.
@@ -18,6 +18,10 @@ Complete the following fields then click **Submit**:
 - **Records** is a list of the instance IP addresses. You typically only need
   to add one record using the primary IP address of the instance (from
   **Project -> Compute -> Instances** on the dashboard).
+
+Once complete, if you click the domain you set the record for, you should see it in the list.
+
+![Create Record Set]({{ site.baseurl }}/assets/images/dns/record-created.png)
 
 To create a DNS record for your instance using the OpenStack command line:
 
