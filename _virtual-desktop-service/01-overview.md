@@ -11,6 +11,7 @@ The Virtual Desktop Service is an easy way for researchers to access the Nectar 
 - How to log in to the Virtual Desktop
 - How to manage your Desktop (reboot, shelve, delete, boost)
 - How to complete general tasks and maintenence
+- How to connect your CloudStor storage to your Virtual Desktop
 
 ### What you'll need
 
