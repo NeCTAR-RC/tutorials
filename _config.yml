@@ -338,8 +338,8 @@ collections:
   cloudstor:
     output: true
     permalink: /:collection/:name
-    title: AARNet Cloudstor
-    summary: Learn to use AARNet Cloudstor in Nectar's Virtual Machine
+    title: AARNet CloudStor
+    summary: Learn how to connect your AARNet CloudStor storage to your Virtual Machine
     category: Data
     level: Beginner
     tags:
