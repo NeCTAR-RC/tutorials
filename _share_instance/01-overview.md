@@ -3,8 +3,10 @@ title: Overview
 order: 1
 duration: 1
 ---
+You *may* think the answer is to share your own private key, so a colleague can access your Virtual Machine. **Absolutely not!!! Do not do this.**
+This will leave any services or machines reliant on your private key, (including your instance) vulnerable!
 
-This tutorial will describe how to safely and securely share access to an existing Virtual Machine (instance).
+This tutorial will show you how to **safely and securely** share access to an existing Virtual Machine/Instance.
 
 ### What you'll learn
 
