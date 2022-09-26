@@ -84,11 +84,10 @@ original data will be gone forever.
 Hence, it is not wise to store the *only* copy of your valuable data in
 Nectar Object Storage.
 
-**Cloud Two**  
+**Pre flight safety check**  
 This tutorial is part of the Nectar Cloud Two curriculum.  We assume that
-you are familiar with the Nectar Cloud Starter and Cloud One curriculum.
-If not, you should complete the Cloud Starter and Cloud One tutorials
-before you continue here.
+you are familiar with the Nectar Cloud Starter curriculum.
+If not, you should complete the Cloud Starter section first before you continue here.
 {: .callout-warning}
 
 ### What you'll learn
@@ -102,3 +101,4 @@ before you continue here.
 - A Nectar project with some Object Storage quota
 - A Nectar virtual machine with Ubuntu 18.04 or above installed
 - [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software)
+- Cyberduck software installed
