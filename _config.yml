@@ -600,14 +600,14 @@ collections:
     output: true
     permalink: /:collection/:name
     title: Sharing your Virtual Machine
-    summary: How to share your VM securely with colleagues
+    summary: Share your VM securely by adding keys and/or adding a new user account
     category: Intermediate # Beginner|Intermediate|Advanced|Series|Non-technical
     level: Intermediate
     tags:
       - tutorial
-    difficulty: 2 # number from 1 to 5
-    duration: 30 # number of minutes
+    difficulty: 3 # number from 1 to 5
+    duration: 40 # number of minutes
     status: published # draft or published
     published: 2022-04-06
-    author: Sonia Ramza <sonia.ramza@ardc.edu>
+    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
