@@ -9,7 +9,7 @@ duration: 5
 1. Navigate to the `Identity | Application Credentials` page using the navigation links on the left side of the page.
 1. Click the `Create Application Credential` button to open the Create Application Credential dialog.
 
-    ![Create Application Credential dialog]({{ site.baseurl }}/assets/images/application-credentials/app-credential-dashboard1.png)
+    ![Create Application Credential dialog]({{ site.baseurl }}/assets/images/application-credentials/app_credential.png)
 
 1. Provide a credential name in the `Name` field.
 1. You can leave the `Secret` field blank, and a secure secret will be generated for you.
@@ -21,6 +21,6 @@ duration: 5
 1. Click the `Create Application Credential` button.
 1. Click the `Download openrc file` button and the `Download clouds.yaml` button.
 
-    ![Application Credential download dialog]({{ site.baseurl }}/assets/images/application-credentials/app-credential-dashboard2.png)
+    ![Application Credential download dialog]({{ site.baseurl }}/assets/images/application-credentials/secret.png)
 
 1. You can use the downloaded openrc file or clouds.yaml for authentication with your client tools.
