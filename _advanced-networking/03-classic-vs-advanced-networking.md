@@ -1,6 +1,6 @@
 ---
 title: Classic vs. Advanced Networking
-order: 4
+order: 3
 duration: 3
 ---
 

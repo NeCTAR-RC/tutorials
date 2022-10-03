@@ -1,6 +1,6 @@
 ---
 title: Attaching a floating IP
-order: 9
+order: 8
 duration: 4
 ---
 

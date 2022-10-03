@@ -1,6 +1,6 @@
 ---
 title: Making changes
-order: 10
+order: 9
 duration: 5
 ---
 

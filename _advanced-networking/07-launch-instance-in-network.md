@@ -1,6 +1,6 @@
 ---
 title: Launch instance in your new network
-order: 8
+order: 7
 duration: 6
 ---
 

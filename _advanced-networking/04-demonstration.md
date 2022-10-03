@@ -1,6 +1,6 @@
 ---
 title: Demonstration
-order: 5
+order: 4
 duration: 8
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Create a network
-order: 6
+order: 5
 duration: 6
 ---
 

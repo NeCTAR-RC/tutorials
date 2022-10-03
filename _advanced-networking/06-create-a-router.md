@@ -1,6 +1,6 @@
 ---
 title: Create a Router
-order: 7
+order: 6
 duration: 6
 ---
 

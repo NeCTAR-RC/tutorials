@@ -6,6 +6,7 @@ duration: 3
 
 
 Advanced Networking is available in a number of Nectar Availability Zones. Before you can use private networking you'll need to have quota in place for *Private Networks*, *Routers* and *floating IP Addresses*
+
 ### Availability
 
 Advanced networking is available at the following sites:
