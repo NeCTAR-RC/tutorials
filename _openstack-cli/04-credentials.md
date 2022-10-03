@@ -15,7 +15,7 @@ Click your email address from the top right corner and click `OpenStack RC File`
 download the authentication file. Save the file to your computer, where you
 want to run the OpenStack client.
 
-![User Settings Page1]({{ site.baseurl }}/assets/images/openstack-cli/openstack-cli-1.png)
+![openstackrc-dropdown]({{ site.baseurl }}/assets/images/openstack-cli/openstack-rc-settings.png)
 
 The authentication file contains all the settings required for authentication,
 except for your password.
@@ -28,13 +28,15 @@ you may want to skip this next step and use your existing password.
 Click `Settings` in the same drop down menu to get to the `Settings` page.
 Then click `Reset Password` to generate a new password.
 
+![settings-dropdown]({{ site.baseurl }}/assets/images/openstack-cli/settings.png)
+
 **CLI password**  
 Note that this password is used only when working with the CLIs and APIs.
 This password does not replace the password you use to log into the Dashboard,
 as this is access is managed by your insitution.
 {: .callout-warning}
 
-![User Settings Page2]({{ site.baseurl }}/assets/images/openstack-cli/openstack-cli-2.png)
+![password-reset]({{ site.baseurl }}/assets/images/openstack-cli/password_reset.png)
 
 Execute the below command with your specific authentication file name (it should have the name of the project you were working in when logged into the dashboard, in the file name). Lastly, type in the password when it prompts.
 
