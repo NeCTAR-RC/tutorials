@@ -1,6 +1,6 @@
 ---
 title: Create a Router
-order: 6
+order: 5
 duration: 6
 ---
 
@@ -16,17 +16,17 @@ Please note that creating a router and attaching it to an external network does 
 
 Step 3a. Select the desired project from the Nectar dashboard and navigate to the **Network** -> **Routers** tab:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/1ZYFvH06okixaxI74rDJLaUzATV_V6w-SQ.jpg)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/router-page.png)
 
 Step 3b. Click the **Create Router** button.
 
 Step 3c. From the Create Router window enter the name of your router. Select an external network local to your instance Availability Zone to achieve the best network performance. This will attach a publicly routed IP (not to be confused with Floating IP) to your router and allow outbound communication from any instance that joins your gateway-enabled private subnets. Once completed, click **Create Router**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/dGgu4rLsVCpF06Db17iQDXp2I-1bSpwU_Q.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/create-router-screen.png)
 
 You can refer to the **Network -> Network Topology** tab for a visual representation:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/2JJaU93kjKnSs2lR8gD14DM83WtZOty9Tg.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/network-topo-router.png)
 
 Once the router has been created you must attach it to the private network of choice.
 
@@ -36,14 +36,14 @@ Step 4a. From the Routers menu, click the name of your router, then select the I
 
 Step 4b. From within the Interfaces tab click **Add interface****:**
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/VIUi9ccMCR_fu0xmAZxpxf7kHdMxkPSmA.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/interface1.png)
 
 Step 4c. From the Add Interface window, select the Subnet you created earlier from the drop down box. Ensure you set the IP Address (optional) to the IP address you specified in Creating a Private Network, Step 4, Gateway IP. Once completed, click **Add interface**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/SQvwNozgrYFxCAvH-ncWtcSHLWnh0Q8VqQ.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/add_interface2.png)
 
 You can refer to the **Network -> Network Topology** tab for a visual representation:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/d1cwwadKTfoyLLvquQ_UaMpyzGnCz5_Snw.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/network-topology-router.png)
 
 Once the interface has been successfully created you can begin to attach a compute instance to the network.
