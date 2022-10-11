@@ -13,7 +13,7 @@ The recommended method of installation is by using `pip`, but you can also insta
 
 Begin by installing the `pip` package for your operating system.
 
-### Linux
+##### *Linux*
 Depending on your distrubution, the package installation method will vary.
 
 For `Ubuntu` or `Debian`, the pip package could be installed by:
@@ -26,7 +26,7 @@ For `Red Hat Enterprise Linux`, `CentOS` or `Fedora`:
 yum install python-devel python3-pip
 ```
 
-### Mac OS
+###### *Mac OS*
 Mac OS users can use the `easy_install` tool to install pip, and then a virtual environment:
 
 ```
@@ -44,7 +44,7 @@ source venv/bin/activate
 ```
 Once you are finished using the OpenStack CLI and the virtual environment, you can exit by typing `deactivate` in the terminal.
 
-### Microsoft Windows
+##### *Microsoft Windows*
 Ensure that you have enabled Windows Subsystem for Linux by typing `bash` in your Windows Terminal or Powershell first.
 
 **Pre-req check**  
