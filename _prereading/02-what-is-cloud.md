@@ -6,7 +6,7 @@ duration: 1
 
 The Cloud is a way of accessing more powerful computing resources via the internet, where you use your own computer as the controls & access point.
 
-Nectar is Australia's purpose built cloud for Research, providing computing services and tools for researchers for free. There are eligibility factors, [learn more here](https://support.ehelp.edu.au/support/solutions/articles/6000068044-managing-an-allocation).
+The Nectar Cloud is Australia's purpose built cloud for Research, providing computing services and tools for researchers for free. There are eligibility factors, [learn more here](https://support.ehelp.edu.au/support/solutions/articles/6000191233-research-cloud-national-allocation-scheme-rc-nas-policy-).
 
 ### Do I need it?
 - I need more computing power (processors, ram, storage)  ✅

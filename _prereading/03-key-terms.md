@@ -4,7 +4,7 @@ order: 3
 duration: 1
 ---
 
-There are some key words you should know, which will help make your learning experience in our Cloud Basics tutorial much easier.
+Here are some key words you should know:
 
 **Virtual Machine/Instance:** a term used to describe your cloud computer.
 
@@ -15,3 +15,7 @@ There are some key words you should know, which will help make your learning exp
 **Image:** a file that contains an operating system, which is added to a blank instance.
 
 **SSH:** This is short for Secure Shell. It is a way to setup an encrypted (secure) connection between your computer and the cloud computer, usually via the command line.
+
+**Volume:** This is like having an external Hard Drive, but for your Cloud Computer, expanding the storage available for your files and data.
+
+**Allocation:** This is the portion of Cloud resources given (or allocated) to you to use on the Nectar Cloud, as per your allocation form request.

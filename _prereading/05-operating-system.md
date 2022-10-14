@@ -1,10 +1,10 @@
 ---
 title: Operating System
-order: 4
+order: 5
 duration: 1
 ---
 
-Just like your standard computer, your Cloud computer has an Operating System, this being Linux, with a number of distributions (a.k.a versions) available: Debian, Ubuntu, Fedora, openSUSE and CentOS.
+Just like your local computer, your Cloud computer has an Operating System, this being Linux, with a number of distributions (a.k.a versions) available: Debian, Ubuntu, Fedora, openSUSE and CentOS.
 
 The Operating Systems are contained within Images,of which there are a number available for use. Find out more information [via our Image catalogue here](https://support.ehelp.edu.au/support/solutions/articles/6000106269-image-catalog).
 
