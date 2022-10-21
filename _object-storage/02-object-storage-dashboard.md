@@ -50,13 +50,13 @@ For more information on folders, see [Pseudo-hierarchical folders and directorie
 2. Navigate to the `Project` / `Object Store` / `Containers` page.  This page
    shows any existing containers in the project.
 3. Click on the `+ Container` button to start creating a new container.
-    ![Object Storage Container page1]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard1.png)
+    ![Object Storage Container page1]({{ site.baseurl }}/assets/images/object-storage/container_list.png)
 4. Enter the container name in the `Container Name` field.
 5. You can alter the default access for the container by
    choosing `public` or `private` in `Container Access`.
 6. Click the `Submit` button.  You should shortly see that a new container
    has been created.
-    ![Object Storage Container page2]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard2.png)
+    ![Object Storage Container page2]({{ site.baseurl }}/assets/images/object-storage/create-container.png)
 
 ### Creating a folder
 
@@ -66,10 +66,10 @@ To create a new folder in the newly created container:
    before.
 2. Find the container in the list and click on it to select it.
 3. Click on the container's `+Folder` button.
-    ![Object Storage Container page3]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard3.png)
+    ![Object Storage Container page3]({{ site.baseurl }}/assets/images/object-storage/create_folder_button.png)
 4. Enter a folder name in the `Folder Name` field.
 5. Click the `Create Folder` button.
-    ![Object Storage Container page4]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard4.png)
+    ![Object Storage Container page4]({{ site.baseurl }}/assets/images/object-storage/create_folder.png)
 
 You can create folders within folders, and use the container browser to
 navigate the folder hierarchy.
@@ -81,11 +81,12 @@ navigate the folder hierarchy.
 2. Click to select the container to upload the file to.
 3. In the container page, click the `file upload` icon to start the file upload
    dialog.
-    ![Object Storage Container page5]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard5.png)
+    ![Object Storage Container page5]({{ site.baseurl }}/assets/images/object-storage/upload_button.png)
 4. Click the `Choose file` button, select a file on your local machine
    and click the `Upload File` button.
-    ![Object Storage Container page6]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard6.png)
+    ![Object Storage Container page6]({{ site.baseurl }}/assets/images/object-storage/upload_file.png)
 5. You should shortly see that the selected file uploaded to the container.
+   ![Object Storage Container page6]({{ site.baseurl }}/assets/images/object-storage/upload_file_success.png)
 
 ### Deleting a container and its contents
 
@@ -98,7 +99,7 @@ navigate the folder hierarchy.
    - or use the checkboxes to select all objects to be deleted and click
      "trash can" button next to `+Folder`.
    You will then be asked to confirm the operation.
-    ![Object Storage Container page7]({{ site.baseurl }}/assets/images/object-storage/object_storage_dashboard7.png)
+    ![Object Storage Container page7]({{ site.baseurl }}/assets/images/object-storage/delete_options.png)
 4. To delete the emptied container, click the trash can button on the
    container's entry in the container list.
 
@@ -122,6 +123,7 @@ button next to `+Folder`.
 5. To copy an object to another container, select `Copy` from the dropdown
    menu.  You will be prompted for the destination container name and (full)
    object name in the destination container.
+   ![Object Storage Container page6]({{ site.baseurl }}/assets/images/object-storage/file_options.png)
 
 ### Make a container public
 
@@ -132,8 +134,9 @@ button next to `+Folder`.
 4. The "disabled" text will be replaced with a hyperlink named "link".  You
    can use your web browser's "copy link location" to capture the URL, send
    it to other people.
+   ![Object Storage Container page6]({{ site.baseurl }}/assets/images/object-storage/public_link.png)
 
-**Note**  
+**Expiry and Deletion**  
 When a Nectar project expires, all resources left behind are deleted after
 a grace period.
 If a container in the project is marked as "public", it will not be

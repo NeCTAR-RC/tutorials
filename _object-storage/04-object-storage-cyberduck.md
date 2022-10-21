@@ -54,13 +54,15 @@ previous version will stop working.
 
 4. In the `Settings` menu, click the `Reset Password` menu item.
 
+![settings]({{ site.baseurl }}/assets/images/object-storage/settings.png)
+
 5. In the `Reset Menu Form` page, click the `Reset Password` button.
 
 6. Copy and paste the password, and save it in a safe place.  (If you have
    a "key ring" or "password safe" application on your desktop, that would
    be place to save the password.
 
-    ![User Settings Page2]({{ site.baseurl }}/assets/images/object-storage/object-storage-swift-python-client2.png)
+    ![password-reset]({{ site.baseurl }}/assets/images/object-storage/password_reset.png)
 
 Note that your Openstack password applies to all of your Nectar projects,
 including your "project trial" (if it is still active).  If you have
