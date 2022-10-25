@@ -1,25 +1,26 @@
 ---
 title: How do I access it?
-order: 5
+order: 4
 duration: 1
 ---
 
-There are two aspects to accessing the Nectar Cloud, the Administrative aspect, and the Technical aspect.
+There are two aspects to accessing the Nectar Cloud, an Administrative aspect, and the Technical aspect.
 
-**Administrative Checklist**
-- *Having an University/Institutional email*
+#### Administrative Checklist
 
-This is what you will use to log in.
+**Having an University/Institutional email**
 
-- *Access your trial project*
+- This is what you will use to log in.
 
-Everyone with an AAF email address receives a free project trial. When you log in to the dashboard for the first time, this activates it. More information about the length and size of your trial resources, can be found [here](https://support.ehelp.edu.au/support/solutions/articles/6000068044-managing-an-allocation).
+**Access your trial project**
 
-- *Fill out an Allocation Request form*
+- Everyone with an AAF email address receives a free project trial. When you log in to the dashboard for the first time, this activates it. You will have a small amount of resources to use in the Cloud to help decide if it's for you. More information about the length and size of your trial resources, can be found [here](https://support.ehelp.edu.au/support/solutions/articles/6000068044-managing-an-allocation).
 
-If you decide to use the Nectar Cloud for your research, you would then fill in an allocation request form, and your request would be assessed. Read more information about submitting a request [here]({{ site.baseurl }}/allocation-management/04-allocation-and-projects). To learn more about the process regarding Nectar Project allocations, including expiry, amending and extending, read this [important tutorial here]({{ site.baseurl }}/allocation-management/01-overview).
+**Fill out an Allocation Request form**
 
-**Technical aspect**
+- If you decide to use the Nectar Cloud for your research, you would then fill in an allocation request form, and your request would be assessed. Read more information about submitting a request [here]({{ site.baseurl }}/allocation-management/04-allocation-and-projects). To learn more about the process regarding Nectar Project allocations, including expiry, amending and extending, read this [important tutorial here]({{ site.baseurl }}/allocation-management/01-overview).
+
+#### Technical aspect
 
 There are some new things you'll need to learn:
 

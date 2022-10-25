@@ -1,6 +1,6 @@
 ---
 title: Where to find help
-order: 6
+order: 7
 duration: 1
 ---
 
