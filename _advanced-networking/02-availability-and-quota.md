@@ -1,20 +1,10 @@
 ---
-title: Availability and quota
+title: Quota
 order: 2
 duration: 3
 ---
 
-
-Advanced Networking is available in a number of Nectar Availability Zones. Before you can use private networking you'll need to have quota in place for *Private Networks*, *Routers* and *floating IP Addresses*
-
-### Availability
-
-Advanced networking is available at the following sites:
-
-- Melbourne
-- QRIScloud
-- Tasmania
-- Auckland
+Before you can use Advanced Networking you'll need to have quota in place for *Private Networks*, *Routers* and *floating IP Addresses*.
 
 ### Requesting Quota
 
@@ -27,7 +17,7 @@ Note:
 
 You can confirm your floating IP quota in the Project -> Overview section of the Dashboard:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/floating-ips-quota-dashboard.png) 
+![available-quota]({{ site.baseurl }}/assets/images/advanced-networking/quota.png)
 
 You can confirm your current network quotas by running the following command using the Python Neutron CLI:
 

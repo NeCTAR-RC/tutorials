@@ -1,20 +1,22 @@
 ---
 title: Launch instance in your new network
-order: 7
+order: 6
 duration: 6
 ---
 
 Step 5. Attach a private network to a new instance:
 
-In order for a compute instance to communicate on a private network it must be attached to an interface on that network. This section describes attaching a private network to an instance at instance launch time. If you already have a running instance, please see Section: Making Changes, Heading: Attaching network interface to existing compute instance.
+In order for a compute instance to communicate on a private network it must be attached to an interface on that network. This section describes attaching a private network to an instance at instance launch time. If you already have a running instance, click [here.]({{sitebase.url}}/advanced-networking/09-making-changes)
 
-Step 5a. From within the Launch Instance window in the dashboard select the Networking tab. Add your Private Network to Selected Networks using the + or - buttons or by dragging and dropping. We will remove the Classic Provider network in this example as we intend to use floating IP's for inbound communications and we do not require the qld-data network for communicating with RDS storage:
+Step 5a) On the details tab, ensure you select the Availability Zone that is local to the external network to which you connected your router:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/HNsna0V3jdhxAnJetmhAYcK1nmstpzcz7g.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/availability-zone-select.png)
 
-Step 5b. In the Availability Zone tab, ensure you select the Availability Zone that is local to the external network to which you connected your router:
+Step 5b). On the Networking tab, you will add your Private Network to selected networks. Do this by using the + or - buttons or by dragging and dropping. We will remove the Classic Provider network in this example as we intend to use floating IP's for inbound communications and we do not require the qld-data network for communicating with RDS storage:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/df1pXR227TyS5afj7bq3EyJw2Eranc3QDw.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/network_select_instance.png)
+
+
 
 If you use the OpenStack CLI, you can use the `--nic net-id=<NETWORK_ID>` flag when launching. For example:
 
@@ -61,6 +63,4 @@ f2d2d688bb48 \
 test-instance-classic-and-private-net
 ```
 
-You can refer to the **Network -> Network Topology** tab for a visual representation:
-
-![img]({{ site.baseurl }}/assets/images/advanced-networking/kfxghe6tFQg2OxjPDwH6Zl-SxOfx0HClRA.png)
+You can also refer to the **Network -> Network Topology** tab for a visual representation.

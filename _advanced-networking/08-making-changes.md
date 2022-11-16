@@ -1,6 +1,6 @@
 ---
 title: Making changes
-order: 9
+order: 8
 duration: 5
 ---
 
@@ -8,15 +8,15 @@ duration: 5
 
 Step 1. From the Instance Actions menu click **Attach Interface**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/vZb7YEenbdqOLrNDsT39ONIE37oEQlXkow.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/attach-interface-edit.png)
 
 Step 2. Select the interface you want to attach from the dropdown list and click **Attach Interface**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/-ocdds8E9_rwjxKDQ6yOoeyehV_tfunfXw.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/attach-existing.png)
 
-Please note that when you attach interfaces using the Dashboard, you are really attaching "Networks" which may come with 1 or more interfaces.   
+Please note that when you attach interfaces using the Dashboard, you are really attaching "Networks" which may come with 1 or more interfaces.
 
-If you use the OpenStack CLI, you can use the nova attach-interface command as follows:   
+If you use the OpenStack CLI, you can use the nova attach-interface command as follows:
 
 ```
 openstack network list #Find the network UUID which we want to attach to an instance
@@ -67,11 +67,11 @@ nova interface-attach --net-id=09ff5a87-2d4a-4e57-a474-f2d2d688bb48 cd576d51-8a1
 
 Step 1. From the Instance Actions menu click **Detach** **Interface**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/pe5hoav5oWZxnrzFSnDmSzkjzPsyA9r53Q.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/detach-interface.png)
 
 Step 2. Select the interface you want to detach from the dropdown list and click **Detach** **Interface**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/CnC-HClZJpN1qKOIEwhljSdxeMjUnsjkSQ.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/detach-interface-box.png)
 
 Please note that when you attach interfaces using the Dashboard, you are really attaching "Networks" which may come with 1 or more interfaces. Detaching interfaces allows actual removing of unwanted interfaces. Ie if you add the "Classic Provider" network in QRIScloud Availability Zone, you will get two interfaces: qld and qld-data. You are able to detach one interface, and keep the other.
 
@@ -99,11 +99,11 @@ nova interface-detach cd576d51-8a13-49b9-9c13-88a0d57270f3 d8c0c3df-259c-480d-a9
 
 Step 1. From the Instance Actions menu click **Disassociate Floating IP**:
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/P_MpTDB8RvrSBgGr8tjJw-ZqZzDkaTxQIg.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/diassociate-floating-ip.png)
 
 Step 2. Click **Disassociate Floating IP** to confirm
 
-![img]({{ site.baseurl }}/assets/images/advanced-networking/5o8g4QJ99AaKk-m3PspnccFNORGwSB43BQ.png)
+![img]({{ site.baseurl }}/assets/images/advanced-networking/diassociate-floating-ip-box.png)
 
 If you are using the OpenStack CLI, you can use the following commands to achieve identical results:
 
