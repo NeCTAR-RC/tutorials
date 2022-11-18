@@ -25,7 +25,7 @@ When you click the delete button, be *absolutely sure* you want to delete your d
 {: .callout-danger}
 
 **Keep an eye on the time**  ⏰  
-Once you have launched a Virtual Desktop, this desktop will be available for *14 days*. After 14 days, the desktop will initiate an expiry process, with the instance shelved for 3 months, and then *deleted*. You will receive email reminders at each stage of the expiry process. However, remember, you are able to extend your desktop for another 14 days, using the extend button as well.
+Once you have launched a Virtual Desktop, this desktop will be available for *14 days*. After 14 days, the desktop will initiate an expiry process, with the instance shelved for 1 month, and then *deleted*. You will receive email reminders at each stage of the expiry process. However, remember, you are able to extend your desktop for another 14 days, using the extend button as well.
 {: .callout-warning}
 
 **Keeping up to date**  
