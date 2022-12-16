@@ -14,7 +14,7 @@ There are two aspects to accessing the Nectar Cloud, an Administrative aspect, a
 
 **Access your trial project**
 
-- Everyone with an AAF email address receives a free project trial. When you log in to the dashboard for the first time, this activates it. You will have a small amount of resources to use in the Cloud to help decide if it's for you. More information about the length and size of your trial resources, can be found [here](https://support.ehelp.edu.au/support/solutions/articles/6000068044-managing-an-allocation).
+- Everyone with an AAF email address receives a free project trial. When you log in to the dashboard for the first time, your Nectar Cloud account is created, and your project trial starts. You will have a small amount of resources to use in the Cloud to help decide if it's for you. More information about the length and size of your trial resources, can be found [here](https://support.ehelp.edu.au/support/solutions/articles/6000068044-managing-an-allocation).
 
 **Fill out an Allocation Request form**
 
