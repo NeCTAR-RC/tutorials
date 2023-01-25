@@ -37,13 +37,13 @@ openstack server show test01
 Create a new image:
 
 ```
-openstack image create --disk-format=qcow2 --container-format=bare --public --copy-from http://somewhere.com/text.image test
+openstack image create --disk-format=qcow2 --container-format=bare --public --file your-disk-image.img test
 ```
- 
- List available volumes:
- 
- ```
- openstack volume list
- ```
+
+List available volumes:
+
+```
+openstack volume list
+```
 
 To get a complete list of all available options, please visit the [OpenStack Client website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
