@@ -14,8 +14,8 @@ To connect to your instance you need an ssh client, accessible from your termina
 
 When you launched your instance, Nectar gave you an IP address. In the example below the IP Address of the instance named *acme_analysis_large* is 144.6.227.37. You should find and note the IP Address of your instance now. 
 
-**Note:**  
-If using the QCIF Availability Zone, you will have two I.P addresses, one that says `QLD` and the other `QLD data`. The `QLD data` network is to allow an instance to access QRIScloud's RDS collections or UQ RDM storage. Only instances which are permitted to access these collections need to configure and use the QLD data I.P Address. A typical Virtual Machine setup does not need to use this, only the `QLD` I.P address is required.
+**Note**  
+If using the QCIF Availability Zone, you will have two I.P addresses, one that says `QLD` and the other `QLD data`. The `QLD data` network is to allow an instance to access QRIScloud's RDS collections. Only instances which are permitted to access these collections need to configure and use the QLD data I.P Address. A typical Virtual Machine setup does not need to use this, only the `QLD` I.P address is required.
 {: .callout-warning}
 
 ![Instance details IP Address]({{ site.baseurl }}/assets/images/connecting/connecting-ip.png)
@@ -31,7 +31,7 @@ When you launched your instance, you chose an *Image*. Nectar images have all be
 
 When you launched your instance you chose a keypair from the registered keypairs in your Nectar account. Nectar has now applied the public key of that pair to the default user account on the instance. This means that you can connect to this account, on this instance by specifying the file location of the private key of that pair. You should remind yourself of the private and secure location where your private key is stored now.
 
-**Cloud Starters**
+**Cloud Starters**  
 In the tutorial *Creating a keypair for use in Nectar* you have created or downloaded your Private Key. The recommended location is the `.ssh` directory in your home directory, i.e. `~/.ssh`
 {: .callout-warning}
 
