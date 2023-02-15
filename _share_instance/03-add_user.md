@@ -105,7 +105,7 @@ drwxr-x--- 4 jimmy jimmy 4096 Apr  5 02:55 ..
 ```
 
 **You shall pass (log in!)**  
-Now our colleague Jimmy will be able to login to his user account. Just make sure they adjust the command to log in via SSH. Of course, they need their own private key name, putting in their specific username instead of ubuntu and the I.P Address of the instance you created.
+Now our colleague Jimmy will be able to login to his user account. Just make sure they adjust the command to log in via SSH. Of course, they need their own private key name, putting in their specific username instead of ubuntu and the IP Address of the instance you created.
  Example:
     ```
     ssh -i ~/.ssh/theirprivatekeyname jimmy@XX.XX.XX.XX

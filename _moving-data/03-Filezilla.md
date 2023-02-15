@@ -23,7 +23,7 @@ Before you connect, you need to let FileZilla know about which private key to us
 
 ### Let's connect
 Now, you can fill in the 'Quick Connection' details at the top of the main window. We have a filled in example in the screenshot as well.
-1. Add your **Host** information, this is the I.P address of your instance.
+1. Add your **Host** information, this is the IP address of your instance.
 1. Add your **Username**, which is based on what Operating System/Image you chose at setup of your instance, in this tutorial, we chose Ubuntu, so our username is `ubuntu`. For other images' usernames, [read this article here](https://support.ehelp.edu.au/support/solutions/articles/6000106269-image-catalog#username).
 1. For the **Port**, we add `22` as we are using the SSH method to connect.
 1. Lastly, then click **Quick Connect**
