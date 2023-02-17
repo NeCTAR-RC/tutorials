@@ -13,11 +13,11 @@ duration: 15
 ![Database instance dialog details tab]({{ site.baseurl }}/assets/images/database/1.png)
 1. Click the `Initialize Databases` tab. Enter `tutorial` in the `Initial Databases` field. Enter `admin` in `Initial Admin User` field. Enter a strong password in the `Password` field.
 ![Database instance dialog initialize tab]({{ site.baseurl }}/assets/images/database/2.png)
-1. Click the `Access Database` tab. Here, you can add a specific I.P or range of I.P addresses which can only access your database instance. If it is left as the default (0.0.0.0/0), it will be exposed to the entire Internet.
+1. Click the `Access Database` tab. Here, you can add a specific IP or range of IP addresses which can only access your database instance. If it is left as the default (0.0.0.0/0), it will be exposed to the entire Internet.
 ![Database access tab]({{ site.baseurl }}/assets/images/database/database-access-tab.png)
 
     **Access points?**  
-    If you restrict your database instance, remember to think about the access points you will require. It could be your individual computer, another cloud instance you are using and/or your University network I.P ranges.
+    If you restrict your database instance, remember to think about the access points you will require. It could be your individual computer, another cloud instance you are using and/or your University network IP ranges.
     {: .callout-info}
 
 1. Click `Launch` button.

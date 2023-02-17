@@ -88,7 +88,7 @@ Click `next`.
 
 ![pool-details]({{site.baseurl}}/assets/images/loadbalancing/pool_details.png)
 
-For pool members, you have the option to add external instances, via `I.P Address`, `Subnet` and `Port` details. Alternatively, you can add instances available in your project, by selecting the `Add` button. For now in this example, we will not add anything.
+For pool members, you have the option to add external instances, via `IP Address`, `Subnet` and `Port` details. Alternatively, you can add instances available in your project, by selecting the `Add` button. For now in this example, we will not add anything.
 
 ![pool-member-example]({{site.baseurl}}/assets/images/loadbalancing/pool-member.png)
 
