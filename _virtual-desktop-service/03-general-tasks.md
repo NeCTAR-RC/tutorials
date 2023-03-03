@@ -65,6 +65,10 @@ But, you may be wondering where the actual file went! Doesn't matter where you d
 
 Now, you can move this to where ever you want to store this, for example, your `Documents` folder. You can do this any way you normally would on your computer, whether its drag and drop or copy and paste etc.
 
+**Note**  
+It is important to move your files from the `GUACFS` directory into your Virtual Desktop, as this location is only for file transfer and your files are not guaranteed to persist there.
+{: .callout-danger}
+
 **To download a file to your local desktop:**
 
 1. Navigate to `Devices`, `thinclient_drives`, then open the `GUACFS` folder.
