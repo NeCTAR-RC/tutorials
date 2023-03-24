@@ -521,36 +521,6 @@ collections:
     published: 2021-09-08
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
-  deploying_slurm:
-    output: true
-    permalink: /:collection/:name
-    title: Deploying a Slurm Workload Manager cluster
-    summary: Learn how to deploy the Slurm Workload Manager with ElastiCluster.
-    category: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
-    tags:
-      - tutorial
-    level: Advanced
-    difficulty: 3 # number from 1 to 5
-    duration: 30 # number of minutes
-    status: draft # draft or published
-    published: 2021-09-21
-    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
-
-  deploying-a-hadoopspark-cluster:
-    output: true
-    permalink: /:collection/:name
-    title: Deploying a Hadoop/Spark Cluster
-    summary: Learn how to deploy a Hadoop/Spark Cluster using Elasticluster
-    category: Advanced # Beginner|Intermediate|Advanced|Series|Non-technical
-    level: Advanced
-    tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 10 # number of minutes
-    status: draft # draft or published
-    published: 2021-09-21
-    author: Sonia Ramza <sonia.ramza@ardc.edu.au>
-
   virtual-desktop-service:
     output: true
     permalink: /:collection/:name
