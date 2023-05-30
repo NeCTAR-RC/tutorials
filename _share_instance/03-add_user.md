@@ -9,7 +9,7 @@ Let's do that now.
 
 In the terminal, type in the command `useradd`, with the following parameters and the name of the new user, in this example we are creating one for jimmy:
 ```
-sudo useradd -m -U -s /bin/bash jimmy
+sudo useradd -m -g users -s /bin/bash jimmy
 ```
 ### Breaking down the command
 
@@ -29,9 +29,9 @@ Create the new users home directory if it does not exist
 -m
 ```
 
-Create a user group with the same name as the user, add the user to this group.
+Set the `users` group as the primary group for the new user.
 ```
--U
+-g users
 ```
 
 This means we will specify the name of the user's login shell.
@@ -83,7 +83,7 @@ In the file that opens, paste the contents of the required public key, and then 
 
 As we created this folder/file as root user, we have to hand over ownership to jimmy so he can access it. To do this, we can imput the following command:
 ```
-sudo chown -R jimmy:jimmy ~jimmy/.ssh
+sudo chown -R jimmy:users ~jimmy/.ssh
 ```
 To also ensure that only Jimmy has access, we enter this command:
 ```
@@ -99,9 +99,9 @@ sudo ls -al /home/jimmy/.ssh/
 And you should see the following result:
 ```
 total 8
-drwx------ 2 jimmy jimmy 4096 Apr  5 02:58 .
-drwxr-x--- 4 jimmy jimmy 4096 Apr  5 02:55 ..
--rw-r--r-- 1 jimmy jimmy    0 Apr  5 02:57 authorized_keys
+drwx------ 2 jimmy users 4096 Apr  5 02:58 .
+drwxr-x--- 4 jimmy users 4096 Apr  5 02:55 ..
+-rw-r--r-- 1 jimmy users    0 Apr  5 02:57 authorized_keys
 ```
 
 **You shall pass (log in!)**  
@@ -114,5 +114,5 @@ Now our colleague Jimmy will be able to login to his user account. Just make sur
 
 
 **Success**  
-Awesome work!! Now the new user Jimmy, should be able to SSH into their newly created user account.
+Awesome work!! Now Jimmy should be able to SSH into their newly created user account.
  {: .callout-success}
