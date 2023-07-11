@@ -31,8 +31,10 @@ You have now created a Security Group and you are ready to configure it with the
 
 3. In the Add Rule dialog, select the Rule SSH in the **Rule** selector.
 ![dropdown]({{ site.baseurl }}/assets/images/sec-groups-101/ssh-dropdown.png)
-4. Click the Add button to complete this step. You have created a Security Group and configured it with the SSH rule.
+4. A value now needs to be entered in the CIDR field. The CIDR value will specify a range of IP addresses that will be permitted to access (in this case) the SSH port. In effect it allows or blocks SSH access to the VM. For this example we will use 0.0.0.0/0, which allows all IP addresses to attempt to connect. You can also restrict access to a public or private address range or even to a single IP address. More information about CIDRs, their syntax and what they mean can be found [here.]({{ site.baseurl }}/intermediate-security-groups/03-remote-ip-range)
+![cidr-range]({{ site.baseurl }}/assets/images/sec-groups-101/sec-groups.png)
+5. Click the Add button. You have created a Security Group and configured it with the SSH rule.
 
 **SSH is special**  
 Because the SSH rule is a very commonly used rule, it is preconfigured in Nectar. You'll see that the Add Rule dialog changes to show fewer fields upon selecting the SSH rule.
-{: .callout-info} 
+{: .callout-info}
