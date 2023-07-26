@@ -67,7 +67,7 @@ redirect traffic to them depending on URL path.
 2. Secondly, create the Ingress.
 
    ```
-   apiVersion: networking.k8s.io/v1beta1
+   apiVersion: networking.k8s.io/v1
    kind: Ingress
    metadata:
      name: basic-ingress
@@ -78,16 +78,23 @@ redirect traffic to them depending on URL path.
        ingress: basic-ingress
    spec:
      rules:
-     - http:
+     - host:
+       http:
          paths:
-           - path: /apple
-             backend:
-               serviceName: apple-service
-               servicePort: 5678
-           - path: /banana
-             backend:
-               serviceName: banana-service
-               servicePort: 5678
+         - path: /apple
+           pathType: Prefix
+           backend:
+             service:
+               name: apple-service
+               port:
+                 number: 5678
+         - path: /banana
+           pathType: Prefix
+           backend:
+             service:
+               name: banana-service
+               port:
+                 number: 5678
    ```
 
 3. Wait till the Ingress becomes ready. You can see the creation events by doing
@@ -107,16 +114,16 @@ redirect traffic to them depending on URL path.
 
    ```
    $ kubectl get ingress/basic-ingress
-   NAME            HOSTS   ADDRESS         PORTS   AGE
-   basic-ingress   *       103.6.252.178   80      14m
+     NAME            CLASS    HOSTS   ADDRESS           PORTS   AGE
+     basic-ingress   <none>   *       203.101.238.232   80      25m
    ```
 
 6. Verify the Ingress is redirecting to the correct Service
 
    ```
-   $ curl http://103.6.252.178/apple
+   $ curl http://203.101.238.232/apple
    apple
-   $ curl http://103.6.252.178/banana
+   $ curl http://203.101.238.232/banana
    banana
    ```
 
