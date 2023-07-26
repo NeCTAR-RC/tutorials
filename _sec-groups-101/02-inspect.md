@@ -21,6 +21,10 @@ With the steps below you'll inspect your existing Security Groups and Rules.
 
 You will now see a list of the Security Groups that are available in your project.
 
+**Separate across projects**  
+Your security groups are separate across your Cloud projects. For example, if you created some security groups in your Project Trial, these would not appear in other projects you are a member of.
+{: .callout-info}
+
 **SSH group**
 By the end of this tutorial you need to have a Security Group that will allow you to connect to an instance using SSH.
 {: .callout-warning}

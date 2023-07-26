@@ -7,6 +7,10 @@ duration: 10
 Security Groups can be managed via the [Nectar Dashboard](https://dashboard.rc.nectar.org.au)
 by choosing `Security Groups` from the navigation menu, under `Project` -> `Network`
 
+**Separate across projects**  
+Your security groups are separate across your Cloud projects. For example, if you created some security groups in your Project Trial, these would not appear in other projects you are a member of.
+{: .callout-info}
+
 ## Adding a new Security Group
 Simply choose the `Create Security Group` button from the top navigation menu.
 You will be guided to provide a name for your new `Security Group` and an
