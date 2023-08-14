@@ -42,7 +42,7 @@ you have created.
 ![Record Sets]({{ site.baseurl }}/assets/images/dns/dns-record-set-tab.png)
 
 To list your DNS record sets using the OpenStack command line, first use the
-`openstack zone list` command to lookup the required `<zode id>`, then use:
+`openstack recordset list` command to lookup the required `<zode id>`, then use:
 
 ```
 $ openstack recordset list <zone id>
