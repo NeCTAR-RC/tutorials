@@ -21,9 +21,9 @@ Here, you can optionally give your Docker Standalone Host a custom name or set s
 
 ![Clicknext]({{site.baseurl}}/assets/images/simple-container-service/docker_configurehost.png)
 
-The next step provides the opportunity to customise your Docker compute instance. You will be required to select an Instance image. At the time of publishing, there is only one option available, which is our official Nectar image based on Ubuntu 18.04 LTS (Bionic).
+You can now customise your Docker compute instance. You will be required to select an Instance image, which currently is our official Nectar image based on Ubuntu 22.04 (Jammy).
 
-You should specify here what instance flavour if most suitable for your requirements, a keypair (optional, but recommended for SSH access) and the Availability Zone your instances should launch in, then click **Create**.
+You should specify here what instance flavour if most suitable for your requirements, a keypair (optional, but highly recommended for SSH access) and the Availability Zone your instances should launch in, then click **Create**.
 
 If you'd then like the service to launch a container for you from the Docker Hub, you can add the **Docker Container package** to your environment.
 
