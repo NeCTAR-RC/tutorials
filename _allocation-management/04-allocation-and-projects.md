@@ -10,7 +10,7 @@ To get a standard project allocated to you, you need to apply for an allocation 
 
 ### Eligibility
 
-To be eligible for an allocation you need to include *on the request form* the details of a current Nationally Competitive Research Grant, or evidence of NCRIS or ARDC support.  The criteria are set out in our *Research Cloud National Allocation Scheme* (RC-NAS) policy. If you don't have a suitable grant or support, then you may still be allocated cloud resources at the discretion of your local Nectar node.  (This applies to people at Universities and other organisations that have a formal arrangement with one of the Nectar Nodes.)
+To be eligible for an allocation you need to fulfil the criteria set out in [*Research Cloud National Allocation Scheme* (RC-NAS) policy - section 7.1](https://support.ehelp.edu.au/support/solutions/articles/6000191233-research-cloud-national-allocation-scheme-rc-nas-policy) & provide this information (e.g a particular grant or affiliation) in the allocation form. If you don't have a suitable grant or support, then you may still be allocated cloud resources at the discretion of your local Nectar node.  (This applies to people at Universities and other organisations that have a formal arrangement with one of the Nectar Nodes.)
 
 ### Service Unit Budget
 
