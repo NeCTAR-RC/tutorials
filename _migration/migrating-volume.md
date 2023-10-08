@@ -24,7 +24,7 @@ All 3 approaches to volume migration require Volume Storage quota in both the ol
 **Steps:**
 1. While the volume is still attached and mounted, double-check that it does not contain any files that need to be kept.
 
-1. [Unmount and detach old volume]({{ site.baseurl }}/volume-storage/05-unmount-detach)
+1. [Unmount and detach old volume]({{ site.baseurl }}/volume-storage/07-unmount-detach)
 
 1. Delete the old volume.  (You could defer this, but there is little point if you already know that doesn’t contain anything of value.)
 
@@ -42,7 +42,7 @@ Volume Backup may not work for large volumes. The server that performs the backu
 Note that Volume Backup stores the volume backup in Object Storage, and therefore requires sufficient Object Storage quota for the backup.
 
 **Steps:**
-1. [Unmount and detach the volume]({{ site.baseurl }}/volume-storage/05-unmount-detach) from the old instance.
+1. [Unmount and detach the volume]({{ site.baseurl }}/volume-storage/07-unmount-detach) from the old instance.
 
 1. Use the Volume Backup service to create a volume backup.  Check that the backup has completed successfully.
 
@@ -79,7 +79,7 @@ This approach is more involved than the Volume Backup approach, and may take lon
     *Note:  You need to be careful when running "rsync".  If you get the command line options and arguments incorrect, there is the potential to clobber all of the files in the old volume.*
     {: .callout-warning}
 
-1. [Detach the old volume]({{ site.baseurl }}/volume-storage/05-unmount-detach) from the old instance.
+1. [Detach the old volume]({{ site.baseurl }}/volume-storage/07-unmount-detach) from the old instance.
 
 1. Wait.  It is advisable to keep the old volume for a few days in case it is needed to roll back the migration.
 

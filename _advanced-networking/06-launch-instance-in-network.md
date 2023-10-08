@@ -6,7 +6,7 @@ duration: 6
 
 Step 5. Attach a private network to a new instance:
 
-In order for a compute instance to communicate on a private network it must be attached to an interface on that network. This section describes attaching a private network to an instance at instance launch time. If you already have a running instance, click [here.]({{sitebase.url}}/advanced-networking/09-making-changes)
+In order for a compute instance to communicate on a private network it must be attached to an interface on that network. This section describes attaching a private network to an instance at instance launch time. If you already have a running instance, click [here]({{sitebase.url}}/advanced-networking/08-making-changes).
 
 Step 5a) On the details tab, ensure you select the Availability Zone that is local to the external network to which you connected your router:
 
