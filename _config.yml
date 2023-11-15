@@ -335,21 +335,6 @@ collections:
     published: 2019-11-05
     author: Ming Fu <xiao.fu@utas.edu.au>
 
-  cloudstor:
-    output: true
-    permalink: /:collection/:name
-    title: AARNet CloudStor
-    summary: Learn how to connect your AARNet CloudStor storage to your Virtual Machine
-    category: Data
-    level: Beginner
-    tags:
-      - tutorial
-    difficulty: 1 # number from 1 to 5
-    duration: 16 # number of minutes
-    status: draft # draft or published
-    published: 2019-11-13
-    author: Ming Fu <xiao.fu@utas.edu.au>
-
   kubernetes:
     output: true
     permalink: /:collection/:name
