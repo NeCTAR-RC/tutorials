@@ -4,27 +4,61 @@ order: 6
 duration: 15
 ---
 
-In this section, we will create an [Ingress]. Octavia, the OpenStack
-LoadBalancer service, is able to work as a backend for ingress provider.
+In this section, we will create an [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+based on ingress-nginx which is an Ingress controller for Kubernetes using NGINX as a reverse
+proxy and load balancer.
 
-For this tutorial, we will create two webservers, and use the Ingress to
-redirect traffic to them depending on URL path.
+In this tutorial, we are creating two webserver deployments, and use the
+Ingress to redirect traffic to them depending on URL path.
 
-1. Firstly, let us create the two webservers
+
+1. Firstly, install the latest ingress-nginx controller version available on GitHub.
 
    ```
-   kind: Pod
-   apiVersion: v1
+   kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.6/deploy/static/provider/aws/deploy.yaml
+   ```
+
+2. Secondly, run the following to list the details of the ingress-nginx ingress controller pods and services, wait until the output
+   shows `EXTERNAL-IP` as populated.
+
+   ```
+   kubectl get all -n ingress-nginx
+   ...
+   NAME                                         TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)                      AGE
+   service/ingress-nginx-controller             LoadBalancer   10.254.167.36   130.194.251.159   80:32306/TCP,443:32266/TCP   2m58s
+   service/ingress-nginx-controller-admission   ClusterIP      10.254.37.77    <none>            443/TCP                      2m58s
+
+   NAME                                       READY   UP-TO-DATE   AVAILABLE   AGE
+   deployment.apps/ingress-nginx-controller   1/1     1            1           2m58s
+   ...
+   job.batch/ingress-nginx-admission-patch    1/1           59s        2m58s
+   ```
+
+3. Create two webserver deployments
+
+   ```
+   ---
+   apiVersion: apps/v1
+   kind: Deployment
    metadata:
-     name: apple-app
-     labels:
-       app: apple
+     name: apple-deployment
    spec:
-     containers:
-       - name: apple-app
-         image: hashicorp/http-echo
-         args:
+     selector:
+       matchLabels:
+         app: apple
+     replicas: 2
+     template:
+       metadata:
+         labels:
+           app: apple
+       spec:
+         containers:
+         - name: apple
+           image: hashicorp/http-echo
+           args:
            - "-text=apple"
+           ports:
+           - containerPort: 5678
    ---
    kind: Service
    apiVersion: v1
@@ -34,23 +68,33 @@ redirect traffic to them depending on URL path.
      selector:
        app: apple
      ports:
-       - port: 5678 # Default port for image
-     type: NodePort
+       - port: 80
+         targetPort: 5678 # Default port for image
    ```
 
    ```
-   kind: Pod
-   apiVersion: v1
+   ---
+   apiVersion: apps/v1
+   kind: Deployment
    metadata:
-     name: banana-app
-     labels:
-       app: banana
+     name: banana-deployment
    spec:
-     containers:
-       - name: banana-app
-         image: hashicorp/http-echo
-         args:
+     selector:
+       matchLabels:
+         app: banana
+     replicas: 2
+     template:
+       metadata:
+         labels:
+           app: banana
+       spec:
+         containers:
+         - name: echo1
+           image: hashicorp/http-echo
+           args:
            - "-text=banana"
+           ports:
+           - containerPort: 5678
    ---
    kind: Service
    apiVersion: v1
@@ -60,71 +104,58 @@ redirect traffic to them depending on URL path.
      selector:
        app: banana
      ports:
-       - port: 5678 # Default port for image
-     type: NodePort
+       - port: 80
+         targetPort: 5678 # Default port for image
    ```
 
-2. Secondly, create the Ingress.
+4. Let us create Ingress so apple and banana deployments could be exposed externally.
 
    ```
    apiVersion: networking.k8s.io/v1
    kind: Ingress
    metadata:
-     name: basic-ingress
+     name: fruit-ingress
      annotations:
-       kubernetes.io/ingress.class: "openstack"
-       octavia.ingress.kubernetes.io/internal: "false"
-     labels:
-       ingress: basic-ingress
+       kubernetes.io/ingress.class: "nginx"
    spec:
      rules:
-     - host:
-       http:
+     - http:
          paths:
-         - path: /apple
+         - path: "/apple"
            pathType: Prefix
            backend:
              service:
                name: apple-service
                port:
-                 number: 5678
-         - path: /banana
+                 number: 80
+         - path: "/banana"
            pathType: Prefix
            backend:
              service:
                name: banana-service
                port:
-                 number: 5678
+                 number: 80
    ```
 
-3. Wait till the Ingress becomes ready. You can see the creation events by doing
+5. Wait till the Ingress becomes ready. You can see the creation events by doing
 
    ```
-   kubectl describe ingress/basic-ingress
+   kubectl describe ingress/fruit-ingress
    ```
 
-4. You can also the check the OpenStack Loadbalancer providing the backend to this ingress by doing
+6. Verify whether Nginx Ingress can redirect the HTTP requests to the correct backend Service
 
    ```
-   openstack loadbalancer list
-   ```
-
-5. When the Ingress has been created, you should be able to see an IP associated
-   with it. For example:
-
-   ```
-   $ kubectl get ingress/basic-ingress
-     NAME            CLASS    HOSTS   ADDRESS           PORTS   AGE
-     basic-ingress   <none>   *       203.101.238.232   80      25m
-   ```
-
-6. Verify the Ingress is redirecting to the correct Service
-
-   ```
-   $ curl http://203.101.238.232/apple
+   $ curl http://130.194.251.159/apple
    apple
-   $ curl http://203.101.238.232/banana
+
+   $ curl http://130.194.251.159/banana
    banana
    ```
 
-[Ingress]: https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+## More information
+
+For more information, refer to:
+
+- [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
