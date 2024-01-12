@@ -124,7 +124,7 @@ Using the `openstack` command line client
 
 1. Choose a Cluster Template to create your Cluster from.
 
-1. Create the Cluster. Note, we are using the `uuid` from our cluster list as the value for our template, and you need to input the name of your own `keypair`.
+1. Create the Cluster. Note, we are using the `uuid` from our cluster template list as the value for our template, and you need to input the name of your own `keypair`.
 
    ```
    $ openstack coe cluster create --cluster-template cafb7e88-a548-47a4-af7a-9360561a1cee \
