@@ -5,8 +5,6 @@ This is the content that hosts the site https://tutorials.rc.nectar.org.au.
 This site is built with Jekyll and hosted on Github Pages.
 
 
+## Contributing
 
-### Contributing
-
-We welcome contributions to our Nectar tutorials. Please read [CONTRIBUTING.md](CONTRIBUTING.md)
-
+We welcome contributions to our Nectar tutorials. Please read the [CONTRIBUTING.md](CONTRIBUTING.md) document.
