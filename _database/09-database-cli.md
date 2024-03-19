@@ -46,11 +46,14 @@ Note: older versions will not be displayed
 
 Execute the below command to create a MySQL database instance, with a 1GB volume:
 
+This will use the default MySQL version and only allow access from 192.168.1.0/24
+
 ```
-$ openstack database instance create --flavor db.small --datastore MySQL --datastore_version 8.0-17 --size 1 --availability_zone melbourne-qh2 my-database-instance
+$ openstack database instance create --flavor db3.small --datastore MySQL --size 1 --availability_zone melbourne-qh2 --allowed-cidr 192.168.1.0/24 my-database-instance
 +-------------------+--------------------------------------+
 | Property          | Value                                |
 +-------------------+--------------------------------------+
+| allowed_cidrs     | ['192.168.1.0/24']                   |
 | created           | 2020-03-27T00:58:13                  |
 | datastore         | MySQL                                |
 | datastore_version | 8.0-17                               |
@@ -80,6 +83,7 @@ $ openstack database instance show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
 +-------------------+--------------------------------------+
 | Property          | Value                                |
 +-------------------+--------------------------------------+
+| allowed_cidrs     | ['192.168.1.0/24']                   |
 | created           | 2020-03-27T00:58:13                  |
 | datastore         | MySQL                                |
 | datastore_version | 8.0-17                               |
@@ -93,6 +97,31 @@ $ openstack database instance show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
 | volume            | 1                                    |
 | volume_used       | 0.13                                 |
 +-------------------+--------------------------------------+
+```
+
+## Update the instances firewall to only allow certain IP addresses
+
+```
+$ openstack database instance update --allowed-cidr 192.168.1.0/24 --allowed-cidr 10.0.0.0/24 7f465a9e-92ec-48d7-81a2-85264e7b5c95
+$ openstack database instance show 7f465a9e-92ec-48d7-81a2-85264e7b5c95
++-------------------+--------------------------------------+
+| Property          | Value                                |
++-------------------+--------------------------------------+
+| allowed_cidrs     | ['192.168.1.0/24', '10.0.0.0/24']    |
+| created           | 2020-03-27T00:58:13                  |
+| datastore         | MySQL                                |
+| datastore_version | 8.0-17                               |
+| flavor            | 325c919d-b523-4960-968c-f2baffafff94 |
+| hostname          | kwnl2vj7lhc.db.cloud.edu.au          |
+| id                | 7f465a9e-92ec-48d7-81a2-85264e7b5c95 |
+| name              | my-database-instance                 |
+| region            | Melbourne                            |
+| status            | ACTIVE                               |
+| updated           | 2020-03-27T00:58:27                  |
+| volume            | 1                                    |
+| volume_used       | 0.13                                 |
++-------------------+--------------------------------------+
+
 ```
 
 ## Create and list a backup
