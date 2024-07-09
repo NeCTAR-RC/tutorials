@@ -566,3 +566,18 @@ collections:
     published: 2022-04-06
     author: Sonia Ramza <sonia.ramza@ardc.edu.au>
 
+  kubernetes-advanced:
+    output: true
+    permalink: /:collection/:name
+    title: Kubernetes Advanced
+    summary: A tutorial for building a resilient website infrastructure with comprehensive monitoring capabilities
+    category: Cloud-native services
+    level: Advanced
+    tags:
+      - tutorial
+    difficulty: 3 # number from 1 to 5
+    duration: 30 # number of minutes
+    status: draft # draft or published
+    published: 2024-05-10
+    author: Ping Chen <ping.chen@ardc.edu.au>
+
