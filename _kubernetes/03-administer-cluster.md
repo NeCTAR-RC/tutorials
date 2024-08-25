@@ -86,18 +86,23 @@ Magnum also sets up the Kubernetes [Web
 UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 by default. Follow these steps to access it.
 
+1. Create a serviceaccount for `kubernetes-dashboard` namespace
+
+   ```
+   kubectl create serviceaccount kubernetes-dashboard -n kubernetes-dashboard
+   ```
+
 1. Create a clusterrolebinding for the `kubernetes-dashboard` service account
 
    ```
-   kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+   kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kubernetes-dashboard:kubernetes-dashboard
    ```
 
-1. Get the dashboard token.  Run the following code snippet, and copy the
-   resulting output to your clipboard
+1. Get the dashboard token.  Run the following code, and copy the resulting
+   output to your clipboard
 
    ```
-   SECRET_NAME=$(kubectl -n kube-system get secret | grep kubernetes-dashboard-token | cut -f1 -d ' ')
-   kubectl -n kube-system describe secret $SECRET_NAME | grep -E '^token' | cut -f2 -d':' | tr -d " "
+   kubectl create token kubernetes-dashboard -n kubernetes-dashboard
    ```
 
 1. Use kubectl to create a web proxy
@@ -108,7 +113,7 @@ by default. Follow these steps to access it.
    ```
 
 1. Using a browser, visit the dashboard URL. The URL is
-   [http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/)
+   [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/)
 
 1. Select the `token` option, and paste the token you copied into the field
    provided. Click login and you should be taken to an overview of your cluster.
