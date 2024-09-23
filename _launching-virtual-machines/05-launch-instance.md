@@ -11,7 +11,7 @@ You are now ready to Launch your instance! Click the blue launch instance button
 Your instance will now be built according to the configuration options we just set. The **Instances** page will list your instance' details, along with some status information.
 
 **Note:**  
-The screenshot depicts mulitple instances in the list, but you will only have one in your list.
+The screenshot depicts multiple instances in the list, but you will only have one in your list.
 {: .callout-warning}
 
 ![Launch Building]({{ site.baseurl }}/assets/images/launching-virtual-machines/launch_spawning.png)
