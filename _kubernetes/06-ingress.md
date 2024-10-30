@@ -115,9 +115,8 @@ Ingress to redirect traffic to them depending on URL path.
    kind: Ingress
    metadata:
      name: fruit-ingress
-     annotations:
-       kubernetes.io/ingress.class: "nginx"
    spec:
+     ingressClassName: "nginx"
      rules:
      - http:
          paths:
