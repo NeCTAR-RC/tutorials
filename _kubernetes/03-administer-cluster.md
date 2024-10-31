@@ -86,12 +86,6 @@ Magnum also sets up the Kubernetes [Web
 UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 by default. Follow these steps to access it.
 
-1. Create a serviceaccount for `kubernetes-dashboard` namespace
-
-   ```
-   kubectl create serviceaccount kubernetes-dashboard -n kubernetes-dashboard
-   ```
-
 1. Create a clusterrolebinding for the `kubernetes-dashboard` service account
 
    ```
