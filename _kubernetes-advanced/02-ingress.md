@@ -7,24 +7,14 @@ duration: 10
 In this section, we will deploy an [Igress-Nginx controller](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 using helm.
 
-1. To have the loadbalancer launched in a specific Nectar availability zone, we need to create an ingress-nginx values.yaml file with specified Nectar
-availability zone annotation. The example below shows how to deploy the ingress-nginx loadbalancer in AZ monash-02.
-
-   ```
-   controller:
-     Service:
-       annotations:
-         loadbalancer.openstack.org/availability-zone: monash-02
-   ```
-
-2. Add Ingress-Nginx helm repo and run helm repo update
+1. Add Ingress-Nginx helm repo and run helm repo update
 
    ```
    helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
    helm repo update
    ```
 
-3. Install Ingress-Nginx using helm with values.yaml file created in step 1
+1. Install Ingress-Nginx using helm with values.yaml file created in step 1
 
    ```
    helm install ingress-nginx -f values.yaml ingress-nginx/ingress-nginx --namespace ingress-nginx --create-namespace
@@ -57,7 +47,7 @@ availability zone annotation. The example below shows how to deploy the ingress-
       job.batch/ingress-nginx-admission-patch    1/1           59s        2m58s
    ```
 
-4. Verify whether Ingress-Nginx ingress controller is successfully deployed by checking if `ingress-nginx` namespace is created
+1. Verify whether Ingress-Nginx ingress controller is successfully deployed by checking if `ingress-nginx` namespace is created
 and `EXTERNAL-IP` of `service/ingress-nginx-controller` is populated.
 
    ```
