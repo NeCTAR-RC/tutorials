@@ -16,7 +16,7 @@ In this section, we will deploy [cert-manager](https://cert-manager.io/docs/) us
 2. Install cert-manager using helm
 
    ```
-   helm install cert-manager --namespace cert-manager --create-namespace --set installCRDs=true
+   helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --set crds.enabled=true
    NAME: cert-manager
    LAST DEPLOYED: Wed Apr 24 01:27:17 2024
    NAMESPACE: cert-manager

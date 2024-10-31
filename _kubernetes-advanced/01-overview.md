@@ -13,7 +13,6 @@ learn the minimum application requirements for a Kubernetes cluster on Nectar.
 - Build a sample website infrastructure
 - Deploy Ingress-Nginx using Helm
 - Deploy cert-manager using Helm
-- Deploy sealed-secrets using Helm
 
 ### What you'll need, a working Kubernetes cluster and Helm application.
 
