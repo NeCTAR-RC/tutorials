@@ -40,44 +40,20 @@ includes credentials to authenticate us to Kubernetes.
 1. Use kubectl to see if all your service pods in kubernetes are set up
    correctly. All the pods in the `kube-system` namespace should have status
 `Running`. For example:
-
    ```
    $ kubectl get all --all-namespaces
-   NAMESPACE     NAME                                           READY   STATUS    RESTARTS   AGE
-   kube-system   pod/coredns-6fc5967489-sdgcx                   1/1     Running   0          2m30s
-   kube-system   pod/coredns-6fc5967489-w4959                   1/1     Running   0          35m
-   kube-system   pod/heapster-7f4df8c8cf-sjxxd                  1/1     Running   0          35m
-   kube-system   pod/k8s-keystone-auth-dggn4                    1/1     Running   0          35m
-   kube-system   pod/kube-dns-autoscaler-86c44cb799-rsstj       1/1     Running   0          35m
-   kube-system   pod/kube-flannel-ds-amd64-knvfb                1/1     Running   0          3m21s
-   kube-system   pod/kube-flannel-ds-amd64-z462l                1/1     Running   0          35m
-   kube-system   pod/kubernetes-dashboard-dbc7c4fff-p46fj       1/1     Running   0          35m
-   kube-system   pod/npd-7mlhg                                  1/1     Running   0          2m41s
-   kube-system   pod/openstack-cloud-controller-manager-kjzlf   1/1     Running   0          35m
-
-   NAMESPACE     NAME                           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
-   default       service/kubernetes             ClusterIP   10.254.0.1       <none>        443/TCP                  35m
-   kube-system   service/heapster               ClusterIP   10.254.241.90    <none>        80/TCP                   35m
-   kube-system   service/kube-dns               ClusterIP   10.254.0.10      <none>        53/UDP,53/TCP,9153/TCP   35m
-   kube-system   service/kubernetes-dashboard   ClusterIP   10.254.111.120   <none>        443/TCP                  35m
-
-   NAMESPACE     NAME                                                DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR                     AGE
-   kube-system   daemonset.apps/k8s-keystone-auth                    1         1         1       1            1           node-role.kubernetes.io/master=   35m
-   kube-system   daemonset.apps/kube-flannel-ds-amd64                2         2         2       2            2           beta.kubernetes.io/arch=amd64     35m
-   kube-system   daemonset.apps/npd                                  1         1         1       1            1           <none>                            35m
-   kube-system   daemonset.apps/openstack-cloud-controller-manager   1         1         1       1            1           node-role.kubernetes.io/master=   35m
-
-   NAMESPACE     NAME                                   READY   UP-TO-DATE   AVAILABLE   AGE
-   kube-system   deployment.apps/coredns                2/2     2            2           35m
-   kube-system   deployment.apps/heapster               1/1     1            1           35m
-   kube-system   deployment.apps/kube-dns-autoscaler    1/1     1            1           35m
-   kube-system   deployment.apps/kubernetes-dashboard   1/1     1            1           35m
-
-   NAMESPACE     NAME                                             DESIRED   CURRENT   READY   AGE
-   kube-system   replicaset.apps/coredns-6fc5967489               2         2         2       35m
-   kube-system   replicaset.apps/heapster-7f4df8c8cf              1         1         1       35m
-   kube-system   replicaset.apps/kube-dns-autoscaler-86c44cb799   1         1         1       35m
-   kube-system   replicaset.apps/kubernetes-dashboard-dbc7c4fff   1         1         1       35m
+   NAMESPACE                NAME                                                                 READY   STATUS      RESTARTS       AGE
+   calico-apiserver         pod/calico-apiserver-79dbf75bfc-997sh                                1/1     Running     0              45d
+   calico-apiserver         pod/calico-apiserver-79dbf75bfc-wjqsz                                1/1     Running     0              45d
+   calico-system            pod/calico-kube-controllers-5c7ffcfbf9-q75rz                         1/1     Running     0              45d
+   calico-system            pod/calico-node-49dsv                                                1/1     Running     2 (45d ago)    45d
+   calico-system            pod/calico-node-q69tj                                                1/1     Running     0              45d
+   calico-system            pod/calico-typha-6c874f96b5-7w7pv                                    1/1     Running     0              45d
+   calico-system            pod/csi-node-driver-hl9jm                                            2/2     Running     0              45d
+   calico-system            pod/csi-node-driver-jqwrv                                            2/2     Running     0              45d
+   kube-system              pod/coredns-7c65d6cfc9-fzqmp                                         1/1     Running     0              45d
+   kube-system              pod/coredns-7c65d6cfc9-n7l9p                                         1/1     Running     0              45d
+   [output truncated]
    ```
 
 ## Using the web interface
