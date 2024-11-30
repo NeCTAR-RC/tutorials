@@ -15,8 +15,7 @@ Here are what each of these options means:
 | Shelve   |This put your Virtual Desktop on "on the shelf".  It is equivalent to turning off a computer, and it frees up some of the resources that the Desktop uses. If not taken off the shelf, the desktop will be deleted a month after it has been shelved. To turn it back on, you can simply click the **unshelve** button to turn it back on.|
 | Extend   |When you are close to expiry, you can extend your Virtual Desktop for a further 14 days of use (starting now). You can extend a Virtual Desktop indefinitely (but see "Desktop End of Life" below). |
 | Delete   |This deletes your Virtual Desktop.|
-| Boost   |While using the Virtual Desktop, if you feel you need more compute power or memory, you can boost to 16 Virtual CPU Cores and 32GB RAM.|
-
+| Boost   |While using the Virtual Desktop, if you feel you need more compute power or memory, you can boost to 16 Virtual CPU Cores and 32 GB RAM.|
 
 These are simple: all you need to do is click the particular button to make it happen.  You need to remember to save your work to the Virtual Desktop's disk before you perform a Reboot, Shelve or Boost.
 
