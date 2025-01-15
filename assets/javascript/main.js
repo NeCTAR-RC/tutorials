@@ -1,8 +1,17 @@
 $(function() {
+    // Enable Bootstrap 5 tooltips
+    $('[data-bs-toggle="tooltip"]').each(function(index) {
+        return new bootstrap.Tooltip($(this));
+    });
+
+    // Enable Bootstrap 5 popovers
+    $('[data-bs-toggle="popover"]').each(function(index) {
+        return new bootstrap.Popover($(this));
+    });
+
     // Apply Bootstrap CSS styles to plain rendered markdown
     $('.md-content table').addClass('table');
     $('.md-content img').addClass('img-fluid');
-    $('.md-content img').addClass('shadow');
     $('.md-content img').addClass('my-4');
     $('.md-content blockquote').addClass('blockquote');
 });
@@ -14,7 +23,8 @@ $(function() {
     prefetch: baseurl + '/search.json?q=' + Date.now(), /* remove Date for production caching */
   });
 
-  $('.search-filter-menu a').click(function(){
+  $('.search-filter-menu a').click(function(e) {
+    e.preventDefault();
     $('#search-filter-button').text($(this).text());
     searchResults();
   });
@@ -67,7 +77,7 @@ $(function() {
       $.each(results, function(i, tutorial) {
         result += '<div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">';
         result += '  <a class="card-tut-link" href="' + tutorial.url + '">';
-        result += '    <div class="card shadow h-100">';
+        result += '    <div class="card h-100">';
         result += '      <div class="card-header text-light bg-dark">';
         result += '        <div class="card-category">';
         result += '          <small class="title text-uppercase">' + tutorial.level + '</small>';
@@ -75,9 +85,9 @@ $(function() {
           result += '            <img src="' + baseurl + '/assets/images/series-badge.svg" class="series float-right" alt="Nectar Series">';
         }
         result += '        </div>';
-        result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
         result += '      </div>';
         result += '      <div class="card-body">';
+        result += '        <h5 class="card-title mb-0">' + tutorial.title + '</h5>';
         result += '        <small class="text-muted">' + tutorial.published + '</small>';
         result += '        <p class="card-text py-2">' + tutorial.summary + '</p>';
         result += '      </div>';
@@ -102,7 +112,7 @@ $(function() {
     }
     else {
       var noResults = '<div class="card-container col-sm-12 col-md-8 offset-md-2 mb-5">';
-          noResults += '  <div class="card shadow p-5 text-center">';
+          noResults += '  <div class="card p-5 text-center">';
           noResults += '    <h3>No Matches</h3>';
           noResults += '    <p>Can\'t find what you\'re looking for? Make a suggestion or ask our support team for help by submitting a <a href="https://support.ehelp.edu.au/support/tickets/new">support ticket</a>.</p>';
           noResults += '  </div>';

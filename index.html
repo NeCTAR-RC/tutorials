@@ -3,101 +3,92 @@ layout: default
 title: Home
 order: 0
 ---
-  <header class="pt-5">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-lg-8 offset-lg-1 col-xl-5 offset-xl-1">
-          <div class="banner-hero-card">
-            <h1 class="mb-4">ARDC Nectar Research Cloud Tutorials</h1>
-            <h6 class="mb-3">Build your practical cloud skills with Nectar Research Cloud <span class="d-inline-block">self-paced</span> online tutorials.</h6>
-            <p>Whether you are getting started, increasing your efficiency or looking to hone your cloud skills and make your solutions more sophisticated. Our technical tutorials are for <i>beginner</i>, <i>intermediate</i> and <i>advanced</i> users and we also explain some of our <i>non-technical</i> topics.</p> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-      <div class="input-group shadow">
-        <div class="input-group-prepend">
-          <button id="search-filter-button" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
-          <div class="dropdown-menu search-filter-menu">
-            <a class="dropdown-item" href="#">All Categories</a>
-            <a class="dropdown-item" href="#">Beginner</a>
-            <a class="dropdown-item" href="#">Intermediate</a>
-            <a class="dropdown-item" href="#">Advanced</a>
-            <a class="dropdown-item" href="#">Non-technical</a>
-            <a class="dropdown-item" href="#">Series</a>
-          </div>
-        </div>
-        <input id="search-input" type="search" class="form-control py-2 border-right-0" placeholder="Search tutorials..." aria-label="Search tutorials">
-        <div class="input-group-append">
-          <button id="search-clear" class="btn bg-white border border-left-0 border-right-0 rounded-0">
-            <i class="fa fa-times"></i>
-          </button>
-        </div>
-        <span class="input-group-append">
-          <div class="input-group-text bg-white border-left-0 rounded-right"><i class="fa fa-search"></i></div>
-        </span>
-      </div>
-      </div>
-    </div>
-
-    {% comment %}
-      These cards are also rendered in javascript to handle the search form.
-      Any changes you make here should be replicated exactly to the showResults
-      function in /assets/javascript/main.js
-    {% endcomment %}
-    <div id="tutorial-list" class="card-group pt-3 px-0">
-      {% include tutorials.html %}
-      {% for tutorial in all_tutorials %}
-        <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
-          <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
-            <div class="card shadow h-100">
-              <div class="card-header text-light bg-dark">
-                <div class="card-category">
-                  <small class="title text-uppercase">{{ tutorial.level }}</small>
-                  {% if tutorial.level == "Series" -%}
-                    <img src="{{ '/assets/images/series-badge.svg' | relative_url }}" class="series float-right" alt="Nectar Series">
-                  {% endif -%}
+  <section class="banner banner-with-search bg-dark bg-image">
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-sm-block col-12 col-md-6">
+                <div class="banner-content-box">
+                    <h1 class="banner-title">ARDC Nectar Research Cloud Tutorials</h1>
+                    <p class="h4 banner-subtitle">Build your practical cloud skills with Nectar Research Cloud <span class="d-inline-block">self-paced</span> online tutorials. Our technical tutorials are for <i>beginner</i>, <i>intermediate</i> and <i>advanced</i> users and we also explain some of our <i>non-technical</i> topics.</p>
                 </div>
-                <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
-              </div>
-              <div class="card-body">
-                <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
-                <p class="card-text py-2">{{ tutorial.summary }}</p>
-              </div>
-              <div class="card-footer">
-                <div class="row no-gutters">
-                  <div class="col-xs-auto">
-                    <small class="text-muted">Difficulty: </small>
-                    <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
-                      {{ tutorial.difficulty }} out of 5
-                    </span>
-                  </div>
-                  <div class="col text-right">
-                    <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
-                  </div>
-                </div>
-              </div>
             </div>
-          </a>
         </div>
-      {% endfor %}
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="banner-search-box">
+                    <div class="input-group">
+                        <button id="search-filter-button" class="btn btn-secondary dropdown-toggle rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Categories</button>
+                        <ul class="dropdown-menu search-filter-menu">
+                          <li><a class="dropdown-item" href="#">All Categories</a></li>
+                          <li><a class="dropdown-item" href="#">Beginner</a></li>
+                          <li><a class="dropdown-item" href="#">Intermediate</a></li>
+                          <li><a class="dropdown-item" href="#">Advanced</a></li>
+                          <li><a class="dropdown-item" href="#">Non-technical</a></li>
+                          <li><a class="dropdown-item" href="#">Series</a></li>
+                        </ul>
+                        <input id="search-input" type="search" class="form-control border-0 py-2" placeholder="Search tutorials..." aria-label="Search tutorials" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-  </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      {% comment %}
+        These cards are also rendered in javascript to handle the search form.
+        Any changes you make here should be replicated exactly to the showResults
+        function in /assets/javascript/main.js
+      {% endcomment %}
+      <div id="tutorial-list" class="row pt-3 px-0">
+        {% include tutorials.html %}
+        {% for tutorial in all_tutorials %}
+          <div class="card-container col-md-6 col-lg-4 m-lg-0 py-3">
+            <a class="card-tut-link" href="{{ tutorial.label | relative_url }}">
+              <div class="card h-100">
+                <div class="card-header text-white bg-dark">
+                  <div class="card-category">
+                    <small class="title text-uppercase">{{ tutorial.level }}</small>
+                    {% if tutorial.level == "Series" -%}
+                      <img src="{{ '/assets/images/series-badge.svg' | relative_url }}" class="series float-right" alt="Nectar Series">
+                    {% endif -%}
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title mb-0">{{ tutorial.title }}</h5>
+                  <small class="text-muted">{{ tutorial.published | date: "%-d %B %Y" }}</small>
+                  <p class="card-text py-2">{{ tutorial.summary }}</p>
+                </div>
+                <div class="card-footer">
+                  <div class="row no-gutters">
+                    <div class="col-xs-auto">
+                      <small class="text-muted">Difficulty: </small>
+                      <span class="difficulty-indicator difficulty-indicator-{{ tutorial.difficulty }}">
+                        {{ tutorial.difficulty }} out of 5
+                      </span>
+                    </div>
+                    <div class="col text-right">
+                      <small class="text-muted">Duration: {{ tutorial.duration }} minutes</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
   <section class="footer-callout bg-primary py-5">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
-          <div class="card text-center shadow">
+          <div class="card text-center">
             <div class="card-body px-lg-5">
               <h2 class="my-3">Interested in Nectar Research Cloud training?</h2>
               <h4 class="mb-4">Register for a Live Online Training workshop!</h4>
-              <a class="btn btn-outline-primary btn-lg mb-3" href="https://support.ehelp.edu.au/support/solutions/articles/6000156761-learning-and-training-resources">Learn More</a>
+              <a class="btn btn-outline-primary btn-lg mb-3" href="https://support.ehelp.edu.au/support/solutions/articles/6000156761-learning-and-training-resources">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@
   padding: 15px 30px 15px 15px;
   border: 1px solid;
   border-left-width: 5px;
-  border-color: lighten($color, 25%);
+  border-color: $color;
   border-left-color: $color;
   background-color: $bgcolor;
   h1, h2, h3, h4, h5, h6 {
@@ -15,7 +15,6 @@
   }
   strong {
     font-size: 1.3em;
-    color: $color;
   }
   p:last-child {
     margin-bottom: 0;
@@ -25,19 +24,28 @@
   }
 }
 
-$bs-default:   #777;
-$bs-primary:   darken(#428bca, 6.5%); // #337ab7
-$bs-success:   #5cb85c;
-$bs-info:      #5187c3;
-$bs-warning:   #f0ad4e;
-$bs-danger:    #d9534f;
+$ardc-blue:   #00A2C4;
+$ardc-pink:   #E51875;
+$ardc-yellow: #F8B20E;
+$ardc-purple: #8E489B;
+$ardc-grey:   #808080;
+$hass-orange: #f6861f;
+$people-navy: #29347b;
+$planet-green: #39833e;
+
+$bs-default:   $ardc-grey;
+$bs-primary:   $ardc-purple;
+$bs-success:   $planet-green;
+$bs-info:      $ardc-blue;
+$bs-warning:   $hass-orange;
+$bs-danger:    $ardc-pink;
 
 .callout {
-  @include bs-callout($bs-default, lighten($bs-default, 50%));
+  @include bs-callout($bs-default, lighten($bs-default, 40%));
 }
 
 .callout-primary {
-  @include bs-callout($bs-primary, lighten($bs-primary, 50%));
+  @include bs-callout($bs-primary, lighten($bs-primary, 60%));
 }
 
 .callout-danger {
@@ -45,13 +53,13 @@ $bs-danger:    #d9534f;
 }
 
 .callout-warning {
-  @include bs-callout($bs-warning, lighten($bs-warning, 36%));
+  @include bs-callout($bs-warning, lighten($bs-warning, 40%));
 }
 
 .callout-info {
-  @include bs-callout($bs-info, lighten($bs-info, 43%));
+  @include bs-callout($bs-info, lighten($bs-info, 55%));
 }
 
 .callout-success {
-  @include bs-callout($bs-success, lighten($bs-success, 40%));
+  @include bs-callout($bs-success, lighten($bs-success, 55%));
 }
