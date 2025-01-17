@@ -10,6 +10,15 @@ CONFIG = {
   'post_ext' => "md",
 }
 
+# URLs to ignore for link checking
+IGNORE_URLS = %w{
+  localhost
+  www.linkedin.com\/company\/australian-research-data-commons
+}.map{|h| "/#{h}/"}.join(",")
+
+
+### Tasks
+
 desc "Set up environment"
 task :setup do
   system("bundle install --path vendor/bundle") or raise
@@ -32,17 +41,10 @@ end # task :preview
 
 desc "Run check"
 task :check do
-  system("bundle exec jekyll build") or raise
   system("bundle exec htmlproofer \
-            --checks-to-ignore LinkCheck \
-            --log-level debug ./_site") or raise
-  system("bundle exec htmlproofer \
-            --checks-to-ignore ScriptCheck,ImageCheck \
-            --allow-hash-href \
-            --url-ignore '/localhost/' \
-            --assume_extension \
-            --typhoeus_config '{ \"ssl_verifyhost\": 0, \"ssl_verifypeer\": false }' \
-            --log-level debug ./_site")
+            --ignore-urls '#{IGNORE_URLS}' \
+            --log-level debug \
+            ./_site") or raise
 end # task :check
 
 desc "Create a new tutorial"
