@@ -27,7 +27,12 @@ end # task :setup
 desc "Build site"
 task :build do
   system("bundle exec jekyll build") or raise
-end # task :serve
+end # task :build
+
+desc "Clean site build"
+task :clean do
+  system("bundle exec jekyll clean") or raise
+end # task :clean
 
 desc "Launch preview environment"
 task :serve do
