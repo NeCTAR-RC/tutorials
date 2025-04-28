@@ -36,7 +36,7 @@ section.banner {
   &.bg-image {
     background-image: url($baseurl + "/assets/images/tutorials-banner-bg.jpg");
     background-size: cover;
-}
+  }
 }
 
 .banner-hero-card {
@@ -53,6 +53,10 @@ section.banner {
   margin-top: -25px;
   margin-right: -150px;
   margin-bottom: -250px;
+}
+
+#tutorial-page img {
+  max-width: 100%;
 }
 
 /*
@@ -204,8 +208,9 @@ code {
     color: #fff;
     background: $success;
     border-radius: 12px;
-    &:after {
-      font-family: 'Font Awesome 5 Free';
+    &::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
       content: "\f00c";
     }
   }

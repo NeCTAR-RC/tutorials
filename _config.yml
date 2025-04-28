@@ -53,6 +53,8 @@ collections:
       - cloud starter
       - launching
       - dashboard
+      - create instances
+      - creating instances
     difficulty: 1
     duration: 25
     status: draft

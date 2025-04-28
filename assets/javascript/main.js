@@ -18,7 +18,17 @@ $(function() {
 
 $(function() {
   var tutorials = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title', 'summary'),
+    datumTokenizer: function(datum) {
+      var tokens = [];
+      if (datum.title) tokens = tokens.concat(Bloodhound.tokenizers.whitespace(datum.title));
+      if (datum.summary) tokens = tokens.concat(Bloodhound.tokenizers.whitespace(datum.summary));
+      if (datum.tags && Array.isArray(datum.tags)) {
+        datum.tags.forEach(function(tag) {
+          tokens = tokens.concat(Bloodhound.tokenizers.whitespace(tag));
+        });
+      }
+      return tokens;
+    },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: baseurl + '/search.json?q=' + Date.now(), /* remove Date for production caching */
   });

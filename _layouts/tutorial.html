@@ -45,11 +45,11 @@ layout: default
             <div class="p-2">
               <p class="mb-1"><i class="fa fa-info-circle"></i> This tutorial is part of the {{ collection.curriculum }} Series.</p>
               {% if collection.curriculum == "Cloud Starter" %}
-                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Starter</a>
+                <a class="btn btn-back btn-sm p-0" href="{{ '/cloud-starter/02-tutorials' | prepend: site.baseurl }}">Back to Cloud Starter</a>
               {% elsif collection.curriculum == "Cloud Two" %}
-                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Two</a>
+                <a class="btn btn-back btn-sm p-0" href="{{ '/cloud-two/02-tutorials' | prepend: site.baseurl }}">Back to Cloud Two</a>
               {% elsif collection.curriculum == "Cloud Expert" %}
-                <a class="btn btn-link btn-sm p-0" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}"><i class="fa fa-arrow-left"></i> Back to Cloud Expert</a>
+                <a class="btn btn-back btn-sm p-0" href="{{ '/cloud-expert/02-tutorials' | prepend: site.baseurl }}">Back to Cloud Expert</a>
               {% endif %}
             </div>
           {% endif %}
