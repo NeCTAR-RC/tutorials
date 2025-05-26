@@ -1,7 +1,7 @@
 ---
 title: Overview
 order: 1
-duration: 1
+duration: 10
 ---
 
 This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
@@ -9,11 +9,12 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 ### What you'll learn
 
 - Create a Kubernetes cluster using Magnum
+- Administer your newly created Kubernetes cluster
 - Create a service using Pods
-- Create a Loadbalancer to allow external access to your service
 - Use a ReplicaSet for High Availability
 - Scale your cluster
-- Use Cinder volumes for storage
+- Create a Ingress to allow external access to your service
+- Create a Gateway to allow external access to your service
 
 ### What you'll need
 
