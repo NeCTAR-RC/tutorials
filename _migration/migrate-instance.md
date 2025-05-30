@@ -23,7 +23,7 @@ duration: 10
 
 1. [Snapshot the instance]({{ site.baseurl }}/snapshots/01-overview).  You should verify that the snapshot has been successfully uploaded to the Image catalog.
 
-1. [Launch new instance from snapshot in target Availability Zone as per the linked document]({{ site.baseurl }}/snapshots/04-launch-instance-from-snapshot). If you run into the [“No valid hosts found” issue](https://support.ehelp.edu.au/support/discussions/topics/6000060776), you could try using a smaller flavor for the new instance, either temporarily (and resize later) or permanently.  Alternatively raise a support ticket.
+1. [Launch new instance from snapshot in target Availability Zone as per the linked document]({{ site.baseurl }}/snapshots/04-launch-instance-from-snapshot). If you run into the [“No valid hosts found” issue](https://support.ehelp.edu.au/support/solutions/articles/6000279599), you could try using a smaller flavor for the new instance, either temporarily (and resize later) or permanently.  Alternatively raise a support ticket.
 
 1. Attach any migrated volumes.  After attaching the volumes, you should verify that the device names ("vdb", "vdc", etcetera) for the volumes are as expected and then mount the volumes’ file systems.
 
