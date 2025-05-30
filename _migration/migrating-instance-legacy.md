@@ -19,7 +19,7 @@ Further contextual information can be found on the [Nectar Support site](https:/
 
 1. [Snapshot the instance]({{ site.baseurl }}/snapshots/01-overview).  You should verify that the snapshot has been successfully uploaded to the Image catalog.
 
-1. [Launch new instance]({{ site.baseurl }}/snapshots/04-launch-instance-from-snapshot) from snapshot in target Availability Zone. If you run into the [“No valid hosts found”](https://support.ehelp.edu.au/support/discussions/topics/6000060776) issue, you could try using a smaller flavor for the new instance, either temporarily (and resize later) or permanently. Alternatively raise a [support ticket](https://support.ehelp.edu.au).
+1. [Launch new instance]({{ site.baseurl }}/snapshots/04-launch-instance-from-snapshot) from snapshot in target Availability Zone. If you run into the [“No valid hosts found”](https://support.ehelp.edu.au/support/solutions/articles/6000279599) issue, you could try using a smaller flavor for the new instance, either temporarily (and resize later) or permanently. Alternatively raise a [support ticket](https://support.ehelp.edu.au).
 
 1. If you have decided that you need a volume to replace the ephemeral file system:
 

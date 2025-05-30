@@ -14,6 +14,8 @@ CONFIG = {
 IGNORE_URLS = %w{
   localhost
   www.linkedin.com\/company\/australian-research-data-commons
+  x.com\/ARDC_AU
+  filezilla-project.org
 }.map{|h| "/#{h}/"}.join(",")
 
 
