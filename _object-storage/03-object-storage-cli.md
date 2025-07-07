@@ -50,7 +50,7 @@ import swiftclient
 
 user = username
 key = password
-auth_url = 'https://keystone.rc.nectar.org.au:5000/v3/'
+auth_url = 'https://identity.rc.nectar.org.au/v3/'
 auth_version = '3'
 os_options = {
     'user_domain_name':'Default',
