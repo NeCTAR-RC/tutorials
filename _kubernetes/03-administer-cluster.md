@@ -22,16 +22,13 @@ includes credentials to authenticate us to Kubernetes.
 1. Use the `openstack` tool to generate the config file for kubectl:
 
    ```
-   $ openstack coe cluster config mycluster
-   export KUBECONFIG=/home/jake/temp/coe/mycluster/config
+   openstack coe cluster config mycluster
    ```
 
 1. Set the KUBECONFIG environment variable used by copy-and-pasting
    the `export KUBECONFIG=...` line output by the above to the shell prompt:
    ```
-   $ export KUBECONFIG=/home/jake/temp/coe/mycluster/config
-   $ echo $KUBECONFIG
-   /home/jake/temp/coe/mycluster/config
+   export KUBECONFIG=<config>
    ```
 
 ## Using kubectl
