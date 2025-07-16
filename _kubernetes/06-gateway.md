@@ -1,6 +1,6 @@
 ---
 title: Installing Envoy Gateway
-order: 7
+order: 6
 duration: 25
 ---
 

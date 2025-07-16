@@ -44,9 +44,13 @@ openstack coe cluster resize mycluster --nodegroup default-worker 16
 
 ## Scaling containers
 
-Scaling up and down the number of containers is a Kubernetes operation that
-can be done using the `kubectl` command.  For example, you can change the
-number of pods in a replicaset.
+Adjusting the number of running containers is a standard operation in Kubernetes
+and can be performed using the `kubectl` command-line tool. For instance, you can
+scale the number of Pods in a Deployment using `kubectl`.
+
+```sh
+kubectl scale deployment <deployment-name> --replicas=<number> -n <namespace>
+```
 
 ## More information
 

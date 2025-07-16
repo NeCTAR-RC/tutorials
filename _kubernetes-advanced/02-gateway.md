@@ -4,8 +4,8 @@ order: 2
 duration: 15
 ---
 
-This section presents the deployment of an Envoy Gateway configured with a static external IP address. The two steps outlined below serve
-as a replacement for Step 6 in the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/07-envoy-gateway) in Kubernetes tutorial.
+This section presents the deployment of an Envoy Gateway configured with a static external IP address. The three steps outlined below serve
+as a replacement for Step 6 in the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) in Kubernetes tutorial.
 Prior to proceeding, users are required to possess adequate privileges to access and operate the Nectar CLI interface.
 
 1. Create a floating IP address via Nectar Openstack CLI interface, the network must be project floating IP network and note down the IP
@@ -48,7 +48,7 @@ address for Step 2
    apiVersion: gateway.networking.k8s.io/v1beta1
    kind: Gateway
    metadata:
-     name: httpd-gateway
+     name: gateway
      namespace: envoy-gateway-system
    spec:
      gatewayClassName: eg
@@ -71,7 +71,18 @@ address for Step 2
    kubectl apply -f gateway.yaml
    ```
 
-Please continue to Step 7 of the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/07-envoy-gateway) guide to complete the tutorial
+3. Confirm that the gateway uses the Step 1 external IP as its LoadBalancer IP.
+
+   ```
+   kubectl get gateway -n envoy-gateway-system
+   ```
+
+   ```
+   NAME            CLASS   ADDRESS          PROGRAMMED   AGE
+   gateway         envoy   160.250.232.111   True        51s
+   ```
+
+Please continue to Step 7 of the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) guide to complete the tutorial
 
 ## More information
 

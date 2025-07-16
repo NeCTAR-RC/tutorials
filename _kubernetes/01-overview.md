@@ -13,7 +13,6 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 - Create a service using Pods
 - Use a ReplicaSet for High Availability
 - Scale your cluster
-- Create a Ingress to allow external access to your service
 - Create a Gateway to allow external access to your service
 
 ### What you'll need
