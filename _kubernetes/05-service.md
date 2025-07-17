@@ -96,6 +96,7 @@ we did this, Kubernetes performed the following (simplifed) steps:
 
 Although the `port-forward` command is useful for testing out your pods,
 it requires access to the Kubernetes API. This is not available to the regular
-users who will access your service. In the next section we will set up access to
-your Pod from the Internet by setting up a load balancer.
+users who will access your service. In the following section, we will enable external
+access to the Pod by implementing a Gateway API on the newly provisioned
+Kubernetes cluster.
 
