@@ -51,14 +51,13 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
            - name: html-volume
              configMap:
                name: httpd-html
-
    ```
 
    ```
    kubectl apply -f web-server.yaml
    ```
 
-2. Create a service to the httpd-backend web deployment.
+1. Create a service to the httpd-backend web deployment.
 
    ```
    ---
@@ -73,20 +72,19 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
          targetPort: 80
      selector:
        app: httpd-backend
-
    ```
 
    ```
    kubectl apply -f httpd-backend.yaml
    ```
 
-3. Install the Gateway API CRDs and Envoy Gateway.
+1. Install the Gateway API CRDs and Envoy Gateway.
 
    ```
    helm install eg oci://docker.io/envoyproxy/gateway-helm -n envoy-gateway-system --create-namespace
    ```
 
-4. Please wait for Envoy Gateway to become available.
+1. Please wait for Envoy Gateway to become available.
 
    ```
    kubectl wait --timeout=5m -n envoy-gateway-system deployment/envoy-gateway --for=condition=Available
@@ -94,7 +92,6 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
 
    ```
    deployment.apps/envoy-gateway condition met
-
    ```
  
    ```
@@ -113,10 +110,9 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
 
    NAME                                       DESIRED   CURRENT   READY   AGE
    replicaset.apps/envoy-gateway-56dff69df6   1         1         1       34s
-
    ```
 
-5. Create a cluster-scoped GatewayClass which is not tied to any namespace.
+1. Create a cluster-scoped GatewayClass which is not tied to any namespace.
 
    ```
    ---
@@ -126,14 +122,13 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
      name: eg
    spec:
      controllerName: gateway.envoyproxy.io/gatewayclass-controller
-
    ```
 
    ```
    kubectl apply -f gateway-class.yaml
    ```
 
-6. Define a basic Gateway configuration that includes a listener configured to accept HTTP traffic.
+1. Define a basic Gateway configuration that includes a listener configured to accept HTTP traffic.
 
    ```
    ---
@@ -151,14 +146,13 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
       allowedRoutes:
         namespaces:
           from: All
-
    ```
 
    ```
    kubectl apply -f gateway.yaml
    ```
 
-7. Define a HTTPRoute so the httpd-backend deployments could be exposed externally.
+1. Define a HTTPRoute so the httpd-backend deployments could be exposed externally.
 
    ```
    ---
@@ -178,14 +172,13 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
          backendRefs:
            - name: httpd-service
              port: 80
-
    ```
 
    ```
    kubectl apply -f httpd-route.yaml
    ```
 
-8. Wait till the Envoy Gateway for httpd-backend becomes ready.
+1. Wait till the Envoy Gateway for httpd-backend becomes ready.
 
    ```
    kubectl get svc -n envoy-gateway-system
@@ -194,19 +187,20 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
    ```
    NAME                                   TYPE           CLUSTER-IP       EXTERNAL-IP       PORT(S)                                   AGE
    envoy-default-httpd-gateway-f91e69e6   LoadBalancer   172.28.137.43    160.250.232.111   80:30583/TCP                              88s
-
    ```
 
-9. Verify whether Envoy Gateway can direct the HTTP requests to the correct backend Service
+1. Verify whether Envoy Gateway can direct the HTTP requests to the correct backend Service
 
    ```
-   $ curl http://160.250.232.111
+   curl http://160.250.232.111
+   ```
+
+   ```
    <!DOCTYPE html>
    <html>
      <head><title>Welcome to HTTPD</title></head>
      <body><h1>Hello from HTTPD!</h1></body>
    </html>
-
    ```
 
 ## More information

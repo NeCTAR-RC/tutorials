@@ -22,8 +22,8 @@ configurations as set up in previous sections of this tutorial.
 
 1. Create a new Pod called `webserver` using a webserver container image. We are using nginx as an example here:
 
-   ```
-   $ kubectl run --image=nginx webserver
+   ```sh
+   kubectl run --image=nginx webserver
    pod/webserver created
    ```
 
@@ -33,16 +33,15 @@ configurations as set up in previous sections of this tutorial.
 1. Check that your Pod has started up and is running:
 
    ```
-   $ kubectl get pods
+   kubectl get pods
    NAME        READY   STATUS              RESTARTS   AGE
    webserver   0/1     ContainerCreating   0          5s
    ```
 
    Initially the status will show `ContainerCreating`.
    After a few seconds you should see the status change to `Running`:
-
    ```
-   $ kubectl get po
+   kubectl get pods
    NAME        READY   STATUS    RESTARTS   AGE
    webserver   1/1     Running   0          21s
    ```
@@ -50,7 +49,7 @@ configurations as set up in previous sections of this tutorial.
 1. Check the details of your Pod:
 
    ```
-   $ kubectl describe pod webserver
+   kubectl describe pod webserver
    Name:         webserver
    Namespace:    default
    Node:         kube-t7qvtfd34sbg-minion-0/10.0.0.80
@@ -68,7 +67,7 @@ configurations as set up in previous sections of this tutorial.
 1. Set up direct access to the Pod using the `port-forward` command:
 
    ```
-   $ kubectl port-forward pod/webserver 8000:80
+   kubectl port-forward pod/webserver 8000:80
    Forwarding from 127.0.0.1:8000 -> 80
    Forwarding from [::1]:8000 -> 80
    ```

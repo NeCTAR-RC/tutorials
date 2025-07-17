@@ -23,12 +23,16 @@ includes credentials to authenticate us to Kubernetes.
 
    ```
    openstack coe cluster config mycluster
+   export KUBECONFIG=/home/jake/temp/coe/mycluster/config
    ```
 
 1. Set the KUBECONFIG environment variable used by copy-and-pasting
    the `export KUBECONFIG=...` line output by the above to the shell prompt:
+
    ```
-   export KUBECONFIG=<config>
+   export KUBECONFIG=/home/jake/temp/coe/mycluster/config
+   echo $KUBECONFIG
+   /home/jake/temp/coe/mycluster/config
    ```
 
 ## Using kubectl
@@ -37,8 +41,12 @@ includes credentials to authenticate us to Kubernetes.
 1. Use kubectl to see if all your service pods in kubernetes are set up
    correctly. All the pods in the `kube-system` namespace should have status
 `Running`. For example:
+
    ```
-   $ kubectl get all --all-namespaces
+   kubectl get all --all-namespaces
+   ```
+
+   ```
    NAMESPACE                NAME                                                                 READY   STATUS      RESTARTS       AGE
    calico-apiserver         pod/calico-apiserver-79dbf75bfc-997sh                                1/1     Running     0              45d
    calico-apiserver         pod/calico-apiserver-79dbf75bfc-wjqsz                                1/1     Running     0              45d
@@ -75,7 +83,7 @@ by default. Follow these steps to access it.
 1. Use kubectl to create a web proxy
 
    ```
-   $ kubectl proxy
+   kubectl proxy
    Starting to serve on 127.0.0.1:8001
    ```
 

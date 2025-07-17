@@ -29,7 +29,7 @@ of the form
 they can be listed by running:
 
 ```
-$ openstack coe cluster template list
+openstack coe cluster template list
 
 +--------------------------------------+-----------------------------------------+
 | uuid                                 | name                                    |
@@ -64,7 +64,6 @@ $ openstack coe cluster template list
 | 9dceade0-b0b7-435b-a2ca-f6e63da9e1fa | kubernetes-v1.31.1-swinburne-01-v1      |
 | ...                                  |                                         |
 +--------------------------------------+-----------------------------------------+
-
 ```
 
 
@@ -87,7 +86,7 @@ supporting software that is preinstalled for a cluster. When this happens,
 Nectar will push out a new cluster template version.
 
 ```
-$ openstack coe cluster template show 6a9343d5-c98b-465b-9af8-18307305494c --max-width 132
+openstack coe cluster template show 6a9343d5-c98b-465b-9af8-18307305494c --max-width 132
 +-----------------------+----------------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                                    |
 +-----------------------+----------------------------------------------------------------------------------------------------------+
@@ -127,7 +126,6 @@ $ openstack coe cluster template show 6a9343d5-c98b-465b-9af8-18307305494c --max
 | hidden                | True                                                                                                     |
 | tags                  | -                                                                                                        |
 +-----------------------+----------------------------------------------------------------------------------------------------------+
-
 ```
 
 You can create your own templates with custom options.  Use `openstack coe
@@ -147,7 +145,7 @@ Using the `openstack` command line client
 1. Create the Cluster. Note, we are using the `uuid` from our cluster template list as the value for our template, and you need to input the name of your own `keypair`.
 
    ```
-   $ openstack coe cluster create --cluster-template 6a9343d5-c98b-465b-9af8-18307305494c \
+   openstack coe cluster create --cluster-template 6a9343d5-c98b-465b-9af8-18307305494c \
    --keypair mykey mycluster
    Request to create cluster 2444b7b8-364f-4577-a935-04bb437f780d accepted
    ```
@@ -156,7 +154,7 @@ Using the `openstack` command line client
    `CREATE_COMPLETE` status. This could take up to 15 minutes.
 
    ```
-   $ openstack coe cluster list
+   openstack coe cluster list
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
    | uuid                                 | name                 | keypair        | node_count | master_count | status          | health_status |
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
