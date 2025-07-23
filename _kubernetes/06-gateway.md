@@ -136,7 +136,7 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
    kind: Gateway
    metadata:
      name: gateway
-     namespace: envoy-gateway-system
+     namespace: default
    spec:
      gatewayClassName: eg
      listeners:
@@ -160,7 +160,7 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
    kind: HTTPRoute
    metadata:
      name: httpd-route
-     namespace: envoy-gateway-system
+     namespace: default
    spec:
      parentRefs:
        - name: gateway
@@ -178,15 +178,20 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
    kubectl apply -f httpd-route.yaml
    ```
 
-1. Wait till the Envoy Gateway for httpd-backend becomes ready.
+1. Wait till the httpd-backend route becomes ready.
 
    ```
-   kubectl get svc -n envoy-gateway-system
+   kubectl describe httproute -n default httpd-route
    ```
 
+   You should see
    ```
-   NAME                                   TYPE           CLUSTER-IP       EXTERNAL-IP       PORT(S)                                   AGE
-   envoy-default-httpd-gateway-f91e69e6   LoadBalancer   172.28.137.43    160.250.232.111   80:30583/TCP                              88s
+   Status:
+    Parents:
+      Conditions:
+        Last Transition Time:  2025-07-21T23:01:18Z
+        Message:               Route is accepted
+        ....
    ```
 
 1. Verify whether Envoy Gateway can direct the HTTP requests to the correct backend Service

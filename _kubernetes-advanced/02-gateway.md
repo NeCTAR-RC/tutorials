@@ -38,7 +38,7 @@ address for Step 2
    kind: EnvoyProxy
    metadata:
      name: proxy
-     namespace: envoy-gateway-system
+     namespace: default
    spec:
      provider:
        type: Kubernetes
@@ -50,7 +50,7 @@ address for Step 2
    kind: Gateway
    metadata:
      name: gateway
-     namespace: envoy-gateway-system
+     namespace: default
    spec:
      gatewayClassName: eg
      infrastructure:
@@ -74,7 +74,7 @@ address for Step 2
 1. Confirm that the gateway uses the Step 1 external IP as its LoadBalancer IP.
 
    ```
-   kubectl get gateway -n envoy-gateway-system
+   kubectl get gateway -n default
    ```
 
    ```
