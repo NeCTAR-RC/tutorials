@@ -1,11 +1,12 @@
 ---
-title: Creating an Envoy Gateway with a static IP address
+title: Creating Envoy GatewayClass and EnovyProxy with a floating IP address
 order: 2
 duration: 20
 ---
 
-This section presents the deployment of an Envoy Gateway configured with a static external IP address. The three steps outlined below serve
-as a replacement for Step 6 in the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) in Kubernetes tutorial.
+This section describes the deployment of an Envoy GatewayClass, in which a floating IP is assigned to the EnvoyProxy
+loadbalancer, operating under the default Envoy Gateway Controller Namespace Mode. The three steps outlined below serve
+as a replacement for Step 5 in the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) in Kubernetes tutorial.
 Prior to proceeding, users are required to possess adequate privileges to access and operate the Nectar CLI interface.
 
 1. Create a floating IP address via Nectar Openstack CLI interface, the network must be project floating IP network and note down the IP
@@ -30,7 +31,7 @@ address for Step 2
    +---------------------+--------------------------------------+
    ```
 
-1. Create EnvoyProxy and EnvoyGateway, please use the IP address from step 1 for loadBalancerIP.
+1. Create EnvoyProxy and GatewayClass, please use the IP address from step 1 for loadBalancerIP.
 
    ```
    ---
@@ -38,7 +39,7 @@ address for Step 2
    kind: EnvoyProxy
    metadata:
      name: proxy
-     namespace: default
+     namespace: envoy-gateway-system
    spec:
      provider:
        type: Kubernetes
@@ -46,43 +47,65 @@ address for Step 2
          envoyService:
            loadBalancerIP: 160.250.232.111 # Your static IP created in step 1
    ---
-   apiVersion: gateway.networking.k8s.io/v1beta1
-   kind: Gateway
+   apiVersion: gateway.networking.k8s.io/v1
+   kind: GatewayClass
    metadata:
-     name: gateway
-     namespace: default
+     name: eg
    spec:
-     gatewayClassName: eg
-     infrastructure:
-       parametersRef:
-         group: gateway.envoyproxy.io
-         kind: EnvoyProxy
-         name: proxy
-     listeners:
-       - name: http
-         protocol: HTTP
-         port: 80
-         allowedRoutes:
-           namespaces:
-             from: All# Permits routes from any namespace
+     controllerName: gateway.envoyproxy.io/gatewayclass-controller
+     parametersRef:
+       group: gateway.envoyproxy.io
+       kind: EnvoyProxy
+       name: proxy
+       namespace: envoy-gateway-system
    ```
 
    ```
-   kubectl apply -f gateway.yaml
+   kubectl apply -f gateway-class.yaml
    ```
 
-1. Confirm that the gateway uses the Step 1 external IP as its LoadBalancer IP.
+1. Confirm that the gatewayclass and envoyprox are active and operating as expected.
 
    ```
-   kubectl get gateway -n default
+   kubectl get gatewayclass
    ```
 
    ```
-   NAME            CLASS   ADDRESS          PROGRAMMED   AGE
-   gateway         envoy   160.250.232.111   True        51s
+   NAME    CONTROLLER                                      ACCEPTED   AGE
+   envoy   gateway.envoyproxy.io/gatewayclass-controller   True       3d10h
    ```
 
-Please continue to Step 7 of the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) guide to complete the tutorial
+   ```
+   kubectl describe -n envoy-gateway-system envoyproxy proxy
+   ```
+
+   ```
+   Name:         proxy
+   Namespace:    envoy-gateway-system
+   Labels:       <none>
+   Annotations:  <none>
+   API Version:  gateway.envoyproxy.io/v1alpha1
+   Kind:         EnvoyProxy
+   Metadata:
+     Creation Timestamp:  2025-08-30T18:11:35Z
+     Generation:          1
+     Resource Version:    190185
+     UID:                 04316441-73c5-4962-b646-8dd5ad0a1625
+   Spec:
+     Logging:
+       Level:
+         Default:  warn
+     Provider:
+       Kubernetes:
+         Envoy Service:
+           External Traffic Policy:  Local
+           Load Balancer IP:         160.250.232.111
+           Type:                     LoadBalancer
+       Type:                         Kubernetes
+   Events:                           <none>
+   ```
+Proceed to Step 6 of the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) guide to create a Gateway and HTTPRoute.
+This step facilitates the successful completion of the tutorial by enabling external access to the httpd service through a NeCTAR floating IP.
 
 ## More information
 
