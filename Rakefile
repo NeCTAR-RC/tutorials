@@ -16,6 +16,8 @@ IGNORE_URLS = %w{
   www.linkedin.com\/company\/australian-research-data-commons
   x.com\/ARDC_AU
   filezilla-project.org
+  education.gov.au
+  acnc.gov.au
 }.map{|h| "/#{h}/"}.join(",")
 
 
