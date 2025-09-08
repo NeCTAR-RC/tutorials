@@ -4,11 +4,18 @@ order: 2
 duration: 2
 ---
 
-A Kubernetes Cluster consists of one or more _master_ nodes, and one or more
-_worker_ nodes. A client (you) communicates with _master_ nodes using the
+A Kubernetes Cluster consists of one or more _controller_ nodes, and one or more
+_worker_ nodes. A client (you) communicates with _controller_ nodes using the
 Kubernetes API to spin up containers. The _worker_ nodes runs these containers.
 
-In this tutorial we start by creating a cluster consisting of one _master_
+For production environments, it is strongly recommended to deploy a minimum of three
+controller nodes to ensure high availability and fault tolerance. The number of
+worker nodes in a production cluster should be determined based on the expected
+workload, resource requirements, and scalability needs. For non-production use cases
+such as testing or development, a minimal setup with a single controller node
+and a single worker node may be sufficient.
+
+In this tutorial we start by creating a cluster consisting of one _controller_
 and one _worker_ node.
 
 
@@ -30,42 +37,35 @@ they can be listed by running:
 
 ```
 openstack coe cluster template list
-
-+--------------------------------------+-----------------------------------------+
-| uuid                                 | name                                    |
-+--------------------------------------+-----------------------------------------+
-| ...                                  |                                         |
-| c97af609-18e9-4581-98d3-37a1ddaeee6e | kubernetes-v1.29.9-melbourne-qh2-v1     |
-| 5eee3a21-4f11-43c0-ab77-d2337b4e3eeb | kubernetes-v1.29.9-melbourne-qh2-uom-v1 |
-| 463239ad-ede9-43a6-814d-d277fdb798fc | kubernetes-v1.29.9-monash-01-v1         |
-| dd0b1285-fccd-4b60-8f68-36e7b3d412a9 | kubernetes-v1.29.9-monash-02-v1         |
-| 9e371110-03e0-4874-a710-02ec4ee4ee4b | kubernetes-v1.29.9-intersect-v1         |
-| a6cab55a-1a71-4233-bc92-d658bf75762a | kubernetes-v1.29.9-tasmania-v1          |
-| bac1d480-49af-47d6-8dd8-c7ff43ea820d | kubernetes-v1.29.9-auckland-v1          |
-| 119a2d68-89ff-403f-9a68-ac6ebf2abd70 | kubernetes-v1.29.9-QRIScloud-v1         |
-| 5b6d6790-1a2c-4dfa-bb31-0fea286b982f | kubernetes-v1.29.9-swinburne-01-v1      |
-| 6a9343d5-c98b-465b-9af8-18307305494c | kubernetes-v1.30.5-melbourne-qh2-v1     |
-| c9c1eb96-b893-4e56-a943-170eafcb9b84 | kubernetes-v1.30.5-melbourne-qh2-uom-v1 |
-| 32ef6d5f-12e3-462a-8b63-273dfb340055 | kubernetes-v1.30.5-monash-01-v1         |
-| ae7bf373-e393-47b8-9a98-fd832b9b094c | kubernetes-v1.30.5-monash-02-v1         |
-| 813a5f4d-f3f8-458e-815b-ac0adfcd461b | kubernetes-v1.30.5-intersect-v1         |
-| 16fecb3e-03b6-4e01-86ac-9132cb0ac4c2 | kubernetes-v1.30.5-tasmania-v1          |
-| 410c24c4-8346-4958-9f27-16542e99292b | kubernetes-v1.30.5-auckland-v1          |
-| b3212707-bca9-4a44-914b-a265f0c20b04 | kubernetes-v1.30.5-QRIScloud-v1         |
-| 86000f3e-1c2b-4986-ae31-6ec6315183d5 | kubernetes-v1.30.5-swinburne-01-v1      |
-| c1a2dfe9-bb8c-4bce-82ea-75562e9265c6 | kubernetes-v1.31.1-melbourne-qh2-v1     |
-| 4af680cb-5c6a-4063-ab1c-5842a1ad8352 | kubernetes-v1.31.1-melbourne-qh2-uom-v1 |
-| d820f32f-25f4-4ac0-96c8-423772c9ea0a | kubernetes-v1.31.1-monash-01-v1         |
-| 05d989e6-128c-464f-8fb5-85f12a0faf53 | kubernetes-v1.31.1-monash-02-v1         |
-| 251bcd23-e4c4-4425-b21f-1c7691c39271 | kubernetes-v1.31.1-intersect-v1         |
-| 4a1cbaf1-df4c-410c-8906-3aaf5f809032 | kubernetes-v1.31.1-tasmania-v1          |
-| 518cc7c1-eacd-4106-864c-0bb320f2ed90 | kubernetes-v1.31.1-auckland-v1          |
-| 6a469735-a5e9-4f19-8432-d09b37453ddf | kubernetes-v1.31.1-QRIScloud-v1         |
-| 9dceade0-b0b7-435b-a2ca-f6e63da9e1fa | kubernetes-v1.31.1-swinburne-01-v1      |
-| ...                                  |                                         |
-+--------------------------------------+-----------------------------------------+
++--------------------------------------+------------------------------------------+------+
+| uuid                                 | name                                     | tags |
++--------------------------------------+------------------------------------------+------+
+| a4c63bf1-f418-49dc-a18d-e7f4b80f9f6c | kubernetes-v1.32.8-melbourne-qh2-v5      | None |
+| 73470e47-159c-47e9-a93f-3ee7e8bfe9bd | kubernetes-v1.32.8-melbourne-qh2-uom-v5  | None |
+| 4b3e793f-8f50-49e0-b146-8b8d0492955d | kubernetes-v1.32.8-monash-01-v5          | None |
+| 5c5b0259-c512-4c82-9ecb-084a525df7e5 | kubernetes-v1.32.8-monash-02-v5          | None |
+| a62e4990-a676-4083-8b8c-c70503b53635 | kubernetes-v1.32.8-intersect-v5          | None |
+| e43885f9-1948-4b69-b259-e9e2c07559d0 | kubernetes-v1.32.8-tasmania-v5           | None |
+| 0dcd88f6-947b-4b41-8c84-95ce1806dcae | kubernetes-v1.32.8-auckland-v5           | None |
+| 6691a101-b80b-4ec3-901a-ad3217e461ae | kubernetes-v1.32.8-QRIScloud-v5          | None |
+| 22286587-87e5-4f63-adfe-a841209339d6 | kubernetes-v1.32.8-swinburne-01-v5       | None |
+| 3cb2a780-31ac-475b-8ec6-36715e227e8e | kubernetes-v1.32.8-ardc-syd-1-v5         | None |
+| 4aecb0f7-e177-4c73-85ee-15018d6197c6 | kubernetes-v1.32.8-adelaide-v5           | None |
+| bca515a3-a8dd-4b81-846a-ab528dc60b96 | kubernetes-v1.32.8-intersect-adelaide-v5 | None |
+| 9c7c836e-8347-492b-bfa6-9c8d8323e72e | kubernetes-v1.33.4-melbourne-qh2-v5      | None |
+| 8ce9c30e-8eec-46c6-94cd-081bc4859d9a | kubernetes-v1.33.4-melbourne-qh2-uom-v5  | None |
+| 4466b438-d356-4577-9e63-f08356f15694 | kubernetes-v1.33.4-monash-01-v5          | None |
+| 5685df6c-505d-4413-a062-89c88da14b90 | kubernetes-v1.33.4-monash-02-v5          | None |
+| d3a86415-7de5-4cd9-9bce-6ae322446889 | kubernetes-v1.33.4-intersect-v5          | None |
+| 21e17dbf-f4d8-4b92-bcb7-7a170ad5a603 | kubernetes-v1.33.4-tasmania-v5           | None |
+| 74d05121-8494-4e9a-893f-ed9937188170 | kubernetes-v1.33.4-auckland-v5           | None |
+| 98c64e42-1675-4f75-96a6-abd484c5cc47 | kubernetes-v1.33.4-QRIScloud-v5          | None |
+| 50a341fd-823e-44ce-86ca-fb18ff787417 | kubernetes-v1.33.4-swinburne-01-v5       | None |
+| ccadc0af-e6bf-4b12-b815-be96e69ebda7 | kubernetes-v1.33.4-ardc-syd-1-v5         | None |
+| 96af99c5-86a5-4e31-91b1-e54afae5045c | kubernetes-v1.33.4-adelaide-v5           | None |
+| 08712317-7757-4db0-8bdf-90a94b41a6ba | kubernetes-v1.33.4-intersect-adelaide-v5 | None |
++--------------------------------------+------------------------------------------+------+
 ```
-
 
 ### Cluster template details
 
@@ -74,8 +74,8 @@ Templates are in the format
 are more details on what part of the name means.
 
 *`kubernetes_version`* - Nectar will provide at least one template per Kubernetes minor version.
-  - For Kubernetes v1.30, the template provided will install version v1.30.5
-  - For Kubernetes v1.31, the template provided will install version v1.31.1
+  - For Kubernetes v1.32, the template provided will install version v1.32.8
+  - For Kubernetes v1.33, the template provided will install version v1.33.4
 
 *`availability_zone`* - Nectar will provide defaults for each availability zone. This includes:
   - DNS servers
@@ -86,20 +86,20 @@ supporting software that is preinstalled for a cluster. When this happens,
 Nectar will push out a new cluster template version.
 
 ```
-openstack coe cluster template show 6a9343d5-c98b-465b-9af8-18307305494c --max-width 132
+openstack coe cluster template show 98c64e42-1675-4f75-96a6-abd484c5cc47 --max-width 132
 +-----------------------+----------------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                                    |
 +-----------------------+----------------------------------------------------------------------------------------------------------+
 | insecure_registry     | -                                                                                                        |
-| labels                | {'container_infra_prefix': 'registry.rc.nectar.org.au/nectarmagnum/', 'availability_zone': 'melbourne-   |
-|                       | qh2', 'control_plane_availability_zone': 'melbourne-qh2', 'csi_cinder_availability_zone': 'melbourne-    |
-|                       | qh2', 'octavia_provider': 'ovn', 'octavia_lb_algorithm': 'SOURCE_IP_PORT', 'capi_helm_chart_version':    |
-|                       | '0.10.1-nectar.3', 'fixed_subnet_cidr': '192.168.10.0/24'}                                               |
-| updated_at            | -                                                                                                        |
+| labels                | {'container_infra_prefix': 'registry.rc.nectar.org.au/nectarmagnum/', 'availability_zone': 'QRIScloud',  |
+|                       | 'control_plane_availability_zone': 'QRIScloud', 'csi_cinder_availability_zone': 'QRIScloud',             |
+|                       | 'octavia_provider': 'ovn', 'octavia_lb_algorithm': 'SOURCE_IP_PORT', 'capi_helm_chart_version':          |
+|                       | '0.15.0-nectar.2'}                                                                                       |
+| updated_at            | 2025-09-03T01:00:24+00:00                                                                                |
 | floating_ip_enabled   | False                                                                                                    |
 | fixed_subnet          | -                                                                                                        |
 | master_flavor_id      | m3.small                                                                                                 |
-| uuid                  | 6a9343d5-c98b-465b-9af8-18307305494c                                                                     |
+| uuid                  | 98c64e42-1675-4f75-96a6-abd484c5cc47                                                                     |
 | no_proxy              | -                                                                                                        |
 | https_proxy           | -                                                                                                        |
 | tls_disabled          | False                                                                                                    |
@@ -108,22 +108,22 @@ openstack coe cluster template show 6a9343d5-c98b-465b-9af8-18307305494c --max-w
 | http_proxy            | -                                                                                                        |
 | docker_volume_size    | -                                                                                                        |
 | server_type           | vm                                                                                                       |
-| external_network_id   | melbourne                                                                                                |
+| external_network_id   | QRIScloud                                                                                                |
 | cluster_distro        | ubuntu                                                                                                   |
-| image_id              | 839bd3d9-92a5-4b67-ab51-b727937fc41d                                                                     |
+| image_id              | 9df2abf5-9752-44a1-9aca-ed36f853a951                                                                     |
 | volume_driver         | -                                                                                                        |
 | registry_enabled      | False                                                                                                    |
 | docker_storage_driver | overlay2                                                                                                 |
 | apiserver_port        | -                                                                                                        |
-| name                  | kubernetes-v1.30.5-melbourne-qh2-v1                                                                      |
-| created_at            | 2024-10-02T05:59:39+00:00                                                                                |
+| name                  | kubernetes-v1.33.4-QRIScloud-v5                                                                          |
+| created_at            | 2025-09-02T04:24:48+00:00                                                                                |
 | network_driver        | calico                                                                                                   |
 | fixed_network         | -                                                                                                        |
 | coe                   | kubernetes                                                                                               |
 | flavor_id             | m3.small                                                                                                 |
 | master_lb_enabled     | True                                                                                                     |
-| dns_nameserver        | 128.250.201.5,128.250.66.5                                                                               |
-| hidden                | True                                                                                                     |
+| dns_nameserver        | 202.158.207.1,202.158.207.2                                                                              |
+| hidden                | False                                                                                                    |
 | tags                  | -                                                                                                        |
 +-----------------------+----------------------------------------------------------------------------------------------------------+
 ```
@@ -145,9 +145,9 @@ Using the `openstack` command line client
 1. Create the Cluster. Note, we are using the `uuid` from our cluster template list as the value for our template, and you need to input the name of your own `keypair`.
 
    ```
-   openstack coe cluster create --cluster-template 6a9343d5-c98b-465b-9af8-18307305494c \
+   openstack coe cluster create --cluster-template 98c64e42-1675-4f75-96a6-abd484c5cc47 \
    --keypair mykey mycluster
-   Request to create cluster 2444b7b8-364f-4577-a935-04bb437f780d accepted
+   Request to create cluster 7f4a506e-6d6a-4713-9d35-917d3e33096f accepted
    ```
 
 1. List the clusters in your project, and wait for your cluster to reach the
@@ -158,7 +158,7 @@ Using the `openstack` command line client
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
    | uuid                                 | name                 | keypair        | node_count | master_count | status          | health_status |
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
-   | 2444b7b8-364f-4577-a935-04bb437f780d | mycluster            | mykey          |          1 |            1 | CREATE_COMPLETE | HEALTHY       |
+   | 7f4a506e-6d6a-4713-9d35-917d3e33096f | mycluster            | mykey          |          1 |            1 | CREATE_COMPLETE | HEALTHY       |
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
    ```
 
