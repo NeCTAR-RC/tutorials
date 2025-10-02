@@ -143,9 +143,9 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
        - name: http
          protocol: HTTP
          port: 80
-      allowedRoutes:
-        namespaces:
-          from: All
+         allowedRoutes:
+           namespaces:
+             from: All
    ```
 
    ```
