@@ -153,9 +153,6 @@ to ensure the initial challenge request can be successfully completed.
          protocol: HTTPS
          port: 443
          hostname: <your domain name>.cloud.edu.au
-         allowedRoutes:
-           namespaces:
-             from: All
          tls:
            mode: Terminate
            certificateRefs:
