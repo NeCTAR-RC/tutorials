@@ -23,8 +23,8 @@ If you do choose to host your domain with us, for the entries to resolve
 properly you will need to set the *Nameserver* records of your domain to:
 
 ```
-ns1.rc.nectar.org.au (115.146.81.148)
-ns2.rc.nectar.org.au (115.146.83.81)
+ns1.rc.nectar.org.au
+ns2.rc.nectar.org.au
 ```
 
 Many institutions have service agreements in place with domain name service
