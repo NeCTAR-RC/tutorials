@@ -10,14 +10,26 @@ The Swift client is a Python client to access Swift (Object Storage) API. It has
 
 You can find more information from the [Python Swift client website](https://opendev.org/openstack/python-swiftclient).
 
+Before you start, you'll want to make sure you've followed the [OpenStack CLI tutorial]({{ site.baseurl }}/openstack-cli)
+to ensure you have the base OpenStack tools already installed.
+
 ### Installation
 
-We assume you use Ubuntu 19.04 and python3 to install the Swift Python client.
+If you're on Ubuntu Linux, you can install the package version of the Swift client:
 
 ```
 sudo apt update
 sudo apt install python3-swiftclient
 ```
+
+For other platforms, you could installing with Python package manager (`pip`) instead:
+
+```
+pip install python-swiftclient python-keystoneclient
+```
+
+Make sure you've followed the [OpenStack CLIs tutorial]({{ site.baseurl }}/openstack-cli/02-openstack-client)
+to set up your pip environment first though.
 
 ### Set up Login Credentials
 
