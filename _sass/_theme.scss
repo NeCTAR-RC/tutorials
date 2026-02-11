@@ -91,14 +91,6 @@ ul.list-bullet {
   }
 }
 
-#mc_embed_signup input:focus {
-    color: $body-color;
-    background-color: $white;
-    border-color: $white;
-    outline: 0;
-    box-shadow: 0 0 0 2px rgba(248, 178, 14, 0.5);
-}
-
 /*** Theme components ***/
 
 .breadcrumb {
@@ -137,6 +129,7 @@ ul.list-bullet {
   text-decoration: none;
   position: relative;
   padding: 0;
+  display: inline-block;
   &:before {
     content: "";
     position: absolute;
@@ -152,7 +145,7 @@ ul.list-bullet {
     margin-left: 10px;
     vertical-align: initial;
     text-rendering: auto;
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 5 Free";
     content: "\f054";
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
@@ -170,7 +163,7 @@ ul.list-bullet {
       margin-left: 12px;
       vertical-align: initial;
       text-rendering: auto;
-      font-family: "Font Awesome 6 Free";
+      font-family: "Font Awesome 5 Free";
       content: "\f054";
       font-weight: 900;
       -webkit-font-smoothing: antialiased;
@@ -179,7 +172,7 @@ ul.list-bullet {
 }
 
 .btn-back {
-  color: $gray-900;
+  color: $dark;
   font-weight: 600;
   text-decoration: none;
   position: relative;
@@ -192,38 +185,44 @@ ul.list-bullet {
     left: 20px;
     height: 1px;
     width: 0;
-    background-color: $ardc-purple;
+    background-color: #8e489b;
     transition: all 0.3s ease-in-out 0s;
   }
   &:before {
-    color: $ardc-blue;
+    color: $blue;
     margin-right: 10px;
     vertical-align: initial;
     text-rendering: auto;
-    font-family: 'Font Awesome 6 Free';
+    font-family: "Font Awesome 5 Free";
     content: "\f053";
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     transition: all 0.15s ease-in-out 0s;
   }
   &:hover {
-    color: $gray-900;
+    color: $dark;
     font-weight: 600;
     text-decoration: none;
     &:after {
       width: calc(100% - 20px);
     }
     &:before {
-      color: $ardc-purple;
+      color: $purple;
       margin-right: 12px;
       vertical-align: initial;
       text-rendering: auto;
-      font-family: 'Font Awesome 6 Free';
+      font-family: "Font Awesome 5 Free";
       content: "\f053";
       font-weight: 900;
       -webkit-font-smoothing: antialiased;
     }
   }
+}
+
+.btn-square {
+  width: 44px;
+  height: 44px;
+  padding: 10px 0;
 }
 
 .btn-primary {
@@ -245,12 +244,15 @@ ul.list-bullet {
       margin-left: 10px;
       vertical-align: top;
       text-rendering: auto;
-      font-family: "Font Awesome 6 Free";
-      content: '\f054';
+      font-family: "Font Awesome 5 Free";
+      content: "\f054";
       font-weight: 900;
-      font-style: normal;
       -webkit-font-smoothing: antialiased;
     }
+  }
+  &:disabled {
+    background-color: $gray-600;
+    border-color: $gray-600;
   }
 }
 
@@ -273,11 +275,14 @@ ul.list-bullet {
       margin-left: 10px;
       vertical-align: top;
       text-rendering: auto;
-      font-family: "Font Awesome 6 Free";
+      font-family: "Font Awesome 5 Free";
       content: "\f054";
       font-weight: 900;
       -webkit-font-smoothing: antialiased;
     }
+  }
+  &:disabled {
+    border-color: $gray-600;
   }
 }
 
@@ -293,8 +298,153 @@ ul.list-bullet {
   }
 }
 
+.btn.btn-remove {
+  padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 4px;
+
+  @include media-breakpoint-down(md) {
+    width: auto;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 14px;
+    &::after {
+      content: " Remove";
+      margin-left: 0.25rem;
+    }
+  }
+}
+
 [class*="btn-outline"]:not(.btn-outline-dark):not(:hover) {
   color: $dark !important;
+  &:disabled {
+    border-color: $gray-600;
+  }
+}
+
+/* Toast Notification Styles */
+#toast-container {
+  max-width: 350px;
+  position: fixed;
+  top: 180px; // Height of the sticky header + spacer margin
+  right: 20px;
+  z-index: 1050;
+  .toast {
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.75rem;
+      
+    .toast-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0.75rem 1rem;
+      background-color: $white;
+      .toast-icon {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+      }
+      .toast-title {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+      .toast-time {
+        font-size: 0.8rem;
+        opacity: 0.8;
+      }
+      .btn-close {
+        font-size: 0.8rem;
+        padding: 0.25rem;
+      }
+    }
+    
+    .toast-body {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+      
+    // ARDC Theme Integration
+    &.bg-success-subtle {
+      background-color: rgba($success, 0.1);
+      border-color: rgba($success, 0.2);
+    }
+    
+    &.bg-danger-subtle {
+      background-color: rgba($danger, 0.1);
+      border-color: rgba($danger, 0.2);
+    }
+    
+    &.bg-warning-subtle {
+      background-color: rgba($warning, 0.1);
+      border-color: rgba($warning, 0.2);
+    }
+    
+    &.bg-info-subtle {
+      background-color: rgba($info, 0.1);
+      border-color: rgba($info, 0.2);
+    }
+      
+    // Border styling
+    &.border-success {
+      border-left: 4px solid $success;
+    }
+    
+    &.border-danger {
+      border-left: 4px solid $danger;
+    }
+    
+    &.border-warning {
+      border-left: 4px solid $warning;
+    }
+    
+    &.border-info {
+      border-left: 4px solid $info;
+    }
+      
+    // Animation enhancements
+    &.show {
+      animation: toastSlideIn 0.3s ease-out;
+    }
+      
+    // Hover effects
+    &:hover {
+      box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+      transform: translateY(-1px);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+// Toast animations
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Responsive adjustments
+@include media-breakpoint-between(sm, lg) {
+  #toast-container {
+    top: 95px !important; // Height of the sticky header + spacer margin
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #toast-container {
+    width: calc(100vw - 1rem);
+    max-width: 100%;
+    left: 0.5rem !important;
+    right: 0.5rem !important;
+    top: 120px !important; // Height of the sticky header + spacer margin
+  }
 }
 
 a.more-details {
@@ -328,7 +478,8 @@ a.more-details {
 
 .card {
   .card-body {
-    > p {
+    font-size: 14px;
+    p, ol, ul {
       font-size: 14px;
     }
     .card-link {
@@ -362,7 +513,7 @@ a.more-details {
           margin-left: 10px;
           vertical-align: initial;
           text-rendering: auto;
-          font-family: "Font Awesome 6 Free";
+          font-family: "Font Awesome 5 Free";
           content: "\f054";
           font-weight: 900;
           -webkit-font-smoothing: antialiased;
@@ -382,7 +533,7 @@ a.more-details {
             margin-left: 12px;
             vertical-align: initial;
             text-rendering: auto;
-            font-family: "Font Awesome 6 Free";
+            font-family: "Font Awesome 5 Free";
             content: "\f054";
             font-weight: 900;
             -webkit-font-smoothing: antialiased;
@@ -505,13 +656,14 @@ a.more-details {
 .card.filter-panel {
   padding-top: 10px;
   margin-bottom: 40px;
+  min-height: 20px;
   position: relative;
   @include media-breakpoint-between(md, lg) {
     padding-top: 20px;
   }
   > .card-title {
     position: absolute;
-    background: #fff;
+    background: $body-bg;
     top: -12px;
     left: 0;
     margin: 0;
@@ -519,14 +671,55 @@ a.more-details {
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
+    &:is(a) {
+      text-decoration: none;
+      width: 100%;
+      &:after {
+        float: right;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+        border: none;
+        text-rendering: auto;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        -webkit-font-smoothing: antialiased;
+      }
+      &:after {
+        content: "\f068";
+      }
+      &.collapsing:after {
+        content: "\f068";
+      }
+      &.collapsed:after {
+        content: "\2b";
+      }
+    }
   }
   .card-body {
     font-size: 14px;
     overflow-y: auto;
     height: auto;
-    min-height: 5rem;
+    min-height: 3rem;
     max-height: 20rem;
+    &.collapsing {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $body-bg;
+        opacity: 70%;
+        z-index: 1000;
+      }
+    }
     .filter-link {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       .btn {
         text-align: left;
         padding: 0.375rem 1rem;
@@ -542,7 +735,7 @@ a.more-details {
   }
 }
 
-.accordion {
+.accordion.accordion-flush {
   .accordion-item {
     border: none;
     border-left: 5px solid $gray-200;
@@ -555,6 +748,13 @@ a.more-details {
     }
     .accordion-header {
       border-bottom: $gray-200 solid 1px;
+      padding-left: 0;
+      .accordion-button {
+        padding-left: 0;
+      }
+    }
+    .accordion-body {
+      padding-left: 0;
     }
   }
 }
@@ -671,14 +871,14 @@ nav {
           // vertical-align: middle;
           // border: none;
           // text-rendering: auto;
-          // font-family: "Font Awesome 6 Free";
+          // font-family: "Font Awesome 5 Free";
           // content: "\f078";
           // font-weight: 900;
           // -webkit-font-smoothing: antialiased;
         }
-        &.show:after {
+        // &.show:after {
           // content: "\f077";
-        }
+        // }
       }
       .navbar-nav .nav-item.dropdown {
         // position: initial;
@@ -688,7 +888,7 @@ nav {
           border: none;
           border-radius: 0;
           background-color: #f8f7fc;
-          .dropdown-item {
+          a.dropdown-item {
             color: $black;
             &:hover,
             &:active {
@@ -727,7 +927,9 @@ section.section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
+section#main {
+  min-height: 50vh;
+}
 section.banner {
   &.banner-with-search {
     margin-bottom: 100px;
@@ -736,8 +938,8 @@ section.banner {
     }
   }
   .banner-content-box {
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-top: 111px;
+    margin-bottom: 222px;
     padding: 40px;
     background: $white;
     .banner-title {
@@ -779,6 +981,18 @@ section.banner {
       top: 180px; // Height of the sticky header + spacer margin
       z-index: 1;
     }
+    .page-anchor {
+      &:not(.view-panel-heading) {
+        margin-top: 60px;
+      }
+      //   &:before {
+      //     content: '';
+      //     display: block;
+      //     height: 180px;
+      //     margin-top: -180px;
+      //     visibility: hidden;
+      //   }
+    }
   }
 }
 
@@ -797,7 +1011,7 @@ section.banner {
   .page-item {
     .page-link {
       margin: 10px;
-      width: 35px;
+      min-width: 35px;
       height: 35px;
       border: none;
       background: none;
@@ -826,6 +1040,7 @@ section.banner {
     margin-bottom: 26px;
     a {
       display: inline-block;
+      padding: 0;
       img {
         width: 100%;
         max-width: 176px;
@@ -851,7 +1066,7 @@ section.banner {
     }
   }
   .footer-links {
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       padding-left: 7rem;
     }
   }
@@ -889,6 +1104,3 @@ section.banner {
     }
   }
 }
-
-// Mailchimp signup form
-.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}#mc_embed_signup{background:#fff;clear:left;width:600px;max-width:100%;font-size:16px}#mc_embed_signup h2{font-size:18px;line-height:1.2;margin-bottom:15px}#mc_embed_signup button{border:none}#mc_embed_signup form{margin:0}#mc_embed_signup [type=submit],#mc_embed_signup button{transition:250ms ease-in-out;cursor:pointer}#mc_embed_signup .mc-field-group input,#mc_embed_signup .mc-field-group select{border:1px solid #b8b6c7;font-size:16px;height:40px;border-radius:0;padding:8px;background:#fff;color:#767676;display:block;width:100%;font-family:inherit;box-sizing:border-box}.ardc-custom--fields-grid-wrapper{grid-column-gap:2%;grid-row-gap:16px;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(auto-fill,auto);width:100%}#mc_embed_signup .ardc-custom--fields-grid-wrapper>.mc-field-group{grid-column:1/-1;padding-bottom:0}#mc-signup-modal .mc-field-group.input-group .button,#mc_embed_signup .button{margin:14px 0 0;background-color:#f8b20e;box-shadow:inset 0 0 0 1px #f8b20e;font-size:16px;line-height:1;color:#16161d;font-weight:700;padding:10px 28px;letter-spacing:.5px;height:auto;background-repeat:no-repeat;border-radius:4px;background-size:8px 12px;background-position:right 18px center}#mc-signup-modal .mc-field-group.input-group .button:hover,#mc_embed_signup .button:hover{background-image:url("https://ardc.edu.au/wp-content/themes/ardc/images/icons/arrow-right-white.svg");text-decoration:none;padding-right:37px;color:#fff;background-color:#8e489b;box-shadow:inset 0 0 0 1px #8e489b}#mc-signup-modal{display:none;pointer-events:none;position:fixed;background:rgba(0,0,0,.5);top:0;left:0;z-index:100;width:100%;height:100%;overflow:hidden}#mc-signup-modal.active{display:block;pointer-events:auto}#mc-signup-modal .mc-field-group{position:absolute;background-color:#fff;top:44%;left:50%;width:90%;max-height:90vh;transform:translate(-50%,-50%);max-width:778px;box-sizing:border-box;padding:30px;color:#494949}#mc-signup-modal ul{padding:0}#mc-signup-modal li,#mc-signup-modal ul{list-style:none}#mc-signup-modal li{padding:0!important}#mc-signup-modal .mc-field-group input{height:auto;width:auto;margin-right:.25em}#mc-signup-modal .mc-field-group input,#mc-signup-modal .mc-field-group label{display:inline-block;vertical-align:middle}.close-modal{position:absolute;top:0;right:10px;padding:10px;color:#8e489b;background:0 0;border:0;font-size:30px;font-family:inherit}.error-message{display:none;background:#fff9f9;border:1px solid #c02b0a;font-size:14.992px;margin-top:8px;padding:12.992px 24px;color:#c02b0a}#mc-signup-modal.error label,#mc-signup-modal.error p{color:#c02b0a}#mc-signup-modal.error .error-message{display:block}#mc-embedded-subscribe{border:none!important}@media all and (min-width:768px){.ardc-custom--fields-grid-wrapper{grid-template-columns:repeat(12,1fr)}#mc_embed_signup .ardc-custom--fields-grid-wrapper>.mc-field-group{grid-column:span 6}#mc-signup-modal .mc-field-group{padding:80px 70px}}
