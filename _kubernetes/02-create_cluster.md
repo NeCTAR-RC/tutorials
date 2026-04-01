@@ -74,8 +74,8 @@ Templates are in the format
 are more details on what part of the name means.
 
 *`kubernetes_version`* - Nectar will provide at least one template per Kubernetes minor version.
-  - For Kubernetes v1.32, the template provided will install version v1.32.8
-  - For Kubernetes v1.33, the template provided will install version v1.33.4
+  - For Kubernetes v1.34, the template provided will install version v1.34.6
+  - For Kubernetes v1.35, the template provided will install version v1.35.3
 
 *`availability_zone`* - Nectar will provide defaults for each availability zone. This includes:
   - DNS servers
