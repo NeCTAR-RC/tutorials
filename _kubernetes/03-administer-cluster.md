@@ -63,32 +63,51 @@ includes credentials to authenticate us to Kubernetes.
 
 ## Using the web interface
 
-Magnum also sets up the Kubernetes [Web
-UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
-by default. Follow these steps to access it.
+Magnum used to ship its own [Web UI Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), with Magnum installing it by default. This is now deprecated and no-longer maintained, but `headlamp` is now the recommended default for this. 
 
-1. Create a clusterrolebinding for the `kubernetes-dashboard` service account
+`Headlamp` gives you a browser-based view of your cluster's pods, deployments, services, logs and more. It's useful when you'd rather click around than memorise `kubectl` commands.
 
-   ```
-   kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kubernetes-dashboard:kubernetes-dashboard
-   ```
+Follow these steps to access it.
 
-1. Get the dashboard token.  Run the following code, and copy the resulting
-   output to your clipboard
+1. Install Headlamp into your cluster. The Headlamp project provides a ready-to-use manifest.
 
    ```
-   kubectl create token kubernetes-dashboard -n kubernetes-dashboard
+   kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/headlamp/main/kubernetes-headlamp.yaml
    ```
 
-1. Use kubectl to create a web proxy
+2. Deploy it and wait for it to rollout.
 
    ```
-   kubectl proxy
-   Starting to serve on 127.0.0.1:8001
+   kubectl rollout status deployment/headlamp -n kube-system --timeout=120s
    ```
 
-1. Using a browser, visit the dashboard URL. The URL is
-   [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/)
+3. Create a service account that Headlamp will use to authenticate you.
 
-1. Select the `token` option, and paste the token you copied into the field
-   provided. Click login and you should be taken to an overview of your cluster.
+   ```
+   kubectl -n kube-system create serviceaccount headlamp-admin
+   ```
+   
+4. Give it cluster-admin rights. (For a real production cluster you'd want to scope this down — see the [Headlamp RBAC docs](https://headlamp.dev/docs/latest/installation/) — but cluster-admin is fine for    this tutorial.)
+
+    ```
+    kubectl create clusterrolebinding headlamp-admin \
+    --clusterrole=cluster-admin \
+    --serviceaccount=kube-system:headlamp-admin
+    ```
+
+5. Get the dashboard token. Run the following code, and copy the resulting output to your clipboard
+
+   ```
+   kubectl create token headlamp-admin -n kube-system
+   ```
+
+6. Forward the Headlamp service to the local machine.
+
+   ```
+   kubectl port-forward -n kube-system service/headlamp 8080:80
+   Forwarding from 127.0.0.1:8080 -> 4466
+   Forwarding from [::1]:8080 -> 4466
+   ```
+
+7. Using a browser, visit the dashboard URL, and login using the token from step 5. The URL is
+   [http://localhost:8080](http://localhost:8080)
