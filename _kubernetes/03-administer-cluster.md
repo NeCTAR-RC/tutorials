@@ -63,32 +63,8 @@ includes credentials to authenticate us to Kubernetes.
 
 ## Using the web interface
 
-Magnum also sets up the Kubernetes [Web
-UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
-by default. Follow these steps to access it.
+Magnum used to ship its own [Web UI Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), with Magnum installing it by default. This is now deprecated and no-longer maintained, `headlamp` is now the recommended application for this. 
 
-1. Create a clusterrolebinding for the `kubernetes-dashboard` service account
+`Headlamp` gives you a browser-based view of your cluster's pods, deployments, services, logs and more.
 
-   ```
-   kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kubernetes-dashboard:kubernetes-dashboard
-   ```
-
-1. Get the dashboard token.  Run the following code, and copy the resulting
-   output to your clipboard
-
-   ```
-   kubectl create token kubernetes-dashboard -n kubernetes-dashboard
-   ```
-
-1. Use kubectl to create a web proxy
-
-   ```
-   kubectl proxy
-   Starting to serve on 127.0.0.1:8001
-   ```
-
-1. Using a browser, visit the dashboard URL. The URL is
-   [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/)
-
-1. Select the `token` option, and paste the token you copied into the field
-   provided. Click login and you should be taken to an overview of your cluster.
+Installation instructions can be found on the [Headlamp](https://headlamp.dev/docs/latest/installation/in-cluster/) site.
