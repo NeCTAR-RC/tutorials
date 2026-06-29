@@ -18,6 +18,7 @@ IGNORE_URLS = %w{
   filezilla-project.org
   education.gov.au
   acnc.gov.au
+  dev.mysql.com
 }.map{|h| "/#{h}/"}.join(",")
 
 

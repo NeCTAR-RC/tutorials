@@ -40,6 +40,18 @@ supported is Kubernetes, so this tutorial will only cover topics that are
 related to Kubernetes.
 
 
+**Openstack resources in Magnum**  
+Do not make manual changes in OpenStack to any resources created or managed
+by Magnum. Changes should be performed either using Magnum CLI commands or
+within the Nectar Dashboard to ensure long-term stability and compatibility.
+Direct modifications to Magnum infrastructure components in OpenStack can
+destabilise your cluster, prevent future updates from applying, and introduce
+critical errors. Support for clusters containing unauthorised manual
+modifications is limited, and we may be unable to assist with issues arising
+from such changes.
+{: .callout-warning}
+
+
 ## Kubernetes Tutorial
 
 Kubernetes has an extensive [documentation
