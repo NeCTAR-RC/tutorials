@@ -10,7 +10,7 @@ In this section, we will deploy a kubernetes cluster with autoscaling feature [C
 
    ```
    openstack coe cluster create --cluster-template \
-   kubernetes-v1.31.1-ardc-syd-1-v5 --master-count 1 --node-count 1 \
+   kubernetes-v1.35.4-ardc-syd-1-calico-v2 --master-count 1 --node-count 1 \
    --labels auto_scaling_enabled=true,min_node_count=1,max_node_count=3 \
    --keypair <project key> mycluster
    Request to create cluster cae2a382-26a5-438d-bbdc-e694249bbede accepted
@@ -96,8 +96,8 @@ In this section, we will deploy a kubernetes cluster with autoscaling feature [C
    nginx-deployment-d556bf558-shqt2   1/1     Running   0          9m11s
    kubectl get nodes
    NAME                                                STATUS   ROLES           AGE   VERSION
-   mycluster-l76uten6iljx-control-plane-xlmq4          Ready    control-plane   42m   v1.31.1
-   mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq   Ready    <none>          39m   v1.31.1
+   mycluster-l76uten6iljx-control-plane-xlmq4          Ready    control-plane   42m   v1.35.4
+   mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq   Ready    <none>          39m   v1.35.4
    ```
 
 1. Scaling up the nginx application deployment
@@ -147,9 +147,9 @@ In this section, we will deploy a kubernetes cluster with autoscaling feature [C
 
    ```
    NAME                                                STATUS   ROLES           AGE   VERSION
-   mycluster-l76uten6iljx-control-plane-xlmq4          Ready    control-plane   51m   v1.31.1
-   mycluster-l76uten6iljx-default-worker-4dqrj-br8p9   Ready    <none>          66s   v1.31.1
-   mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq   Ready    <none>          48m   v1.31.1
+   mycluster-l76uten6iljx-control-plane-xlmq4          Ready    control-plane   51m   v1.35.4
+   mycluster-l76uten6iljx-default-worker-4dqrj-br8p9   Ready    <none>          66s   v1.35.4
+   mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq   Ready    <none>          48m   v1.35.4
    ```
 
 1. Scaling down the nginx application deployment
@@ -177,8 +177,8 @@ In this section, we will deploy a kubernetes cluster with autoscaling feature [C
 
    ```
    NAME                                                STATUS   ROLES           AGE   VERSION
-   mycluster-l76uten6iljx-control-plane-xlmq4          Ready    control-plane   100m   v1.31.1
-   mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq   Ready    <none>          97m    v1.31.1
+   mycluster-l76uten6iljx-control-plane-xlmq4          Ready    control-plane   100m   v1.35.4
+   mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq   Ready    <none>          97m    v1.35.4
    os coe cluster list
    +--------------------------------------+-----------+---------+------------+--------------+-----------------+---------------+
    | uuid                                 | name      | keypair | node_count | master_count | status          | health_status |
