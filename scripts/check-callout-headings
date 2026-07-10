@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# pre-commit hook: callout blocks must be a bold heading line, a hard
+# line break, and body text, e.g.
+#
+#   **Heading**  <- ends with two spaces (or <br/>)
+#   Body text.
+#   {: .callout-warning}
+#
+# Headings missing only the hard line break are fixed in place and
+# reported, and the hook fails so the fixes can be reviewed and staged.
+# Structural problems (no bold heading, no body text, heading and body
+# on the same line) are reported for manual fixing.
+
+set -euo pipefail
+
+status=0
+
+for file in "$@"; do
+    problems=$(awk '
+        { sub(/\r$/, ""); buf[FNR] = $0 }
+        /^[[:space:]]*\{: *\.callout/ {
+            end = FNR - 1
+            s = end
+            while (s > 0 && buf[s] !~ /^[[:space:]]*$/ && buf[s] !~ /^---/ && buf[s] !~ /^[[:space:]]*\{:/)
+                s--
+            h = s + 1
+            if (h > end) {
+                printf "%d\treport\tempty callout\n", FNR
+                next
+            }
+            hline = buf[h]
+            if (hline !~ /^[^[:alnum:]]*\*\*/) {
+                printf "%d\treport\tcallout has no bold heading\n", h
+                next
+            }
+            rest = hline
+            sub(/^[^*]*\*\*[^*]+\*\*/, "", rest)
+            if (rest ~ /^[[:space:]]*<br *\/?>/) {
+                # explicit break after the heading; body may follow on
+                # the same source line or on the following lines
+                sub(/^[[:space:]]*<br *\/?>/, "", rest)
+                gsub(/[^[:alnum:]]/, "", rest)
+                if (rest == "" && h == end)
+                    printf "%d\treport\tcallout has no body text\n", h
+                next
+            }
+            resttest = rest
+            gsub(/[^[:alnum:]]/, "", resttest)
+            if (resttest != "") {
+                printf "%d\treport\theading and body text on the same line\n", h
+                next
+            }
+            if (h == end) {
+                printf "%d\treport\tcallout has no body text\n", h
+                next
+            }
+            if (hline !~ /(  |<br *\/?>[[:space:]]*)$/)
+                printf "%d\tfix\tmissing hard line break after heading\n", h
+        }
+    ' "$file")
+
+    [ -n "$problems" ] || continue
+    status=1
+
+    while IFS=$'\t' read -r line action message; do
+        if [ "$action" = "fix" ]; then
+            sed -i "${line}s/[[:space:]]*\$/  /" "$file"
+            echo "fixed: ${file}:${line}: ${message}"
+        else
+            echo "error: ${file}:${line}: ${message}"
+        fi
+    done <<< "$problems"
+done
+
+exit $status

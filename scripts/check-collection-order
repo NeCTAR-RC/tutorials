@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# pre-commit hook: every tutorial page must have an "order" value in its
+# frontmatter, and order values must be unique within each collection.
+# Duplicate orders make the page navigation ambiguous; a missing order
+# hides the page from navigation.
+
+set -euo pipefail
+
+status=0
+
+for dir in _*/; do
+    case "$dir" in
+        _site/|_layouts/|_includes/|_sass/|_rake/) continue ;;
+    esac
+    [ -n "$(find "$dir" -maxdepth 1 -name '*.md' -print -quit)" ] || continue
+
+    declare -A seen=()
+    for file in "$dir"*.md; do
+        order=$(awk '
+            sub(/\r$/, "") { }
+            /^---[[:space:]]*$/ { f++; next }
+            f == 1 && /^order:/ { print $2; exit }
+            f >= 2 { exit }
+        ' "$file")
+        if [ -z "$order" ]; then
+            echo "error: ${file}: no \"order\" in frontmatter"
+            status=1
+        elif [ -n "${seen[$order]:-}" ]; then
+            echo "error: ${file}: order ${order} already used by ${seen[$order]}"
+            status=1
+        else
+            seen[$order]=$file
+        fi
+    done
+    unset seen
+done
+
+exit $status

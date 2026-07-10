@@ -1,0 +1,39 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude: ^(vendor/|_site/|assets/javascript/.*\.(min\.js|map)$)
+      - id: trailing-whitespace
+        # markdown uses two trailing spaces as a hard line break
+        args: [--markdown-linebreak-ext=md]
+        exclude: ^(vendor/|_site/|assets/javascript/.*\.(min\.js|map)$)
+  - repo: local
+    hooks:
+      - id: callout-headings
+        name: callout headings end with a hard line break
+        entry: scripts/check-callout-headings
+        language: script
+        files: ^_.*\.md$
+        exclude: ^_site/
+      - id: collection-order
+        name: tutorial pages have unique order values
+        entry: scripts/check-collection-order
+        language: script
+        files: ^_.*\.md$
+        exclude: ^_site/
+        pass_filenames: false
+      - id: image-refs
+        name: markdown image references exist
+        entry: scripts/check-image-refs
+        language: script
+        files: ^_.*\.md$
+        exclude: ^_site/
+      - id: html-check
+        name: jekyll build and htmlproofer (manual)
+        entry: bash -c 'rake build && rake check'
+        language: system
+        pass_filenames: false
+        stages: [manual]

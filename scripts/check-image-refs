@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# pre-commit hook: local image references in markdown must point to
+# files that exist in the repository. Catches broken image paths before
+# the full htmlproofer run in CI.
+
+set -euo pipefail
+
+status=0
+
+for file in "$@"; do
+    while IFS=: read -r line ref; do
+        [ -n "$ref" ] || continue
+        # resolve liquid baseurl prefix and strip a leading slash
+        path=$(echo "$ref" | sed -e 's/{{ *site\.baseurl *}}//' -e 's/^\///')
+        if [ ! -f "$path" ]; then
+            echo "error: ${file}:${line}: image not found: ${ref}"
+            status=1
+        fi
+    done < <(grep -no '!\[[^]]*\]([^)]*)' "$file" \
+             | sed 's/\(^[0-9]*\):.*(\(.*\))/\1:\2/' \
+             | grep -v ':https\?://')
+done
+
+exit $status

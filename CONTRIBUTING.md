@@ -182,6 +182,22 @@ There a certain things we need to highlight to users, such as "Warnings" or a "N
 
 </code>
 
+A callout should consist of a bold heading and body text, with the heading
+followed by a markdown hard line break (two trailing spaces), so the heading
+and body render on separate lines:
+
+```
+**Heading**␣␣
+Body text explaining the important information.
+{: .callout-warning}
+```
+
+(where `␣␣` is two literal spaces at the end of the line)
+
+A pre-commit hook checks callouts follow this format. You can run it with
+`pre-commit run callout-headings --all-files` after installing
+[pre-commit](https://pre-commit.com/) with `pre-commit install`.
+
 <br>
 
 **Beware of the hidden spaces**
