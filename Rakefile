@@ -26,7 +26,8 @@ IGNORE_URLS = %w{
 
 desc "Set up environment"
 task :setup do
-  system("bundle install --path vendor/bundle") or raise
+  system("bundle config set path 'vendor/bundle'") or raise
+  system("bundle install") or raise
 end # task :setup
 
 desc "Build site"
