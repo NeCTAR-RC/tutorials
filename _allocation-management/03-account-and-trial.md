@@ -12,7 +12,7 @@ You log on to [Nectar dashboard](https://dashboard.rc.nectar.org.au/) using [AAF
 
 Your account associated with your email address, will contain account-related information, such as your public-private key pairs (when you register them), your Nectar OpenStack password or any Application Credentials you might create.
 
-**Your password**
+**Your password**  
 Your Nectar OpenStack password is not the same thing as your AAF/Tuakiri password. Read more about the Nectar OpenStack password in our [knowledge base article](https://support.ehelp.edu.au/support/solutions/articles/6000145832-the-nectar-openstack-password). Note also that [Nectar OpenStack Application Credentials](https://support.ehelp.edu.au/support/solutions/articles/6000212274-application-credentials) are a more sophisticated solution than the Nectar OpenStack password for similar use.
 {: .callout-warning}
 
@@ -28,5 +28,6 @@ Note that 1 vCPU-month equates to 1 Nectar server with 1 vCPU running for 30 day
 
 Once you have used all of the allocated resources, or once 6 months have elapsed, your pt-project will expire. If you have built up anything valuable in your *pt-project* you can request that we *Convert your trial project* when you apply for a project allocation. If your application is approved, the content of your project trial will be moved to your new project, and your project trial quotas reduced to zero.
 
+**Project trial expiry**  
 Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to submit a *timely* allocation request. Further details are in the section entitled "Project Trial" in our support article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal).
 {: .callout-warning}

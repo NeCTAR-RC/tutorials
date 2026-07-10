@@ -22,6 +22,7 @@ You can now type commands into your console in just the same way you would in th
 $ sudo apt update
 ```
 
+**Package updates**  
 If you ran the command above in a Ubuntu or Debian instance, then  the operating system checks for updates to any installed components. It reports how many packages can be upgraded. You can learn more about the command line, sudo and installing and maintaining software [here]({{sitebase.url}}/cli-101/01-overview).
 {: .callout-warning}
 

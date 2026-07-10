@@ -30,6 +30,7 @@ If you select the Custom resource bundle, you need to specify your resource requ
 
 For large requests or requests for advanced or scarce resources, you will be expected to provide a technical justification. If you’re not completely sure just yet, then that’s okay. You will be able to request amendments to your project. We will describe the amendment process below.
 
+**Further reading**  
 More information can be found in the [Allocations](https://support.ehelp.edu.au/support/solutions/folders/6000230417) section of our knowledge base.  This includes the current [Research Cloud National Allocation Scheme (RC-NAS) Policy](https://support.ehelp.edu.au/support/solutions/articles/6000191233).
 {: .callout-danger}
 
@@ -43,5 +44,6 @@ Project managers have access to a few functions that ordinary project members do
 - Project listed in *My Requests*, *Amend/Extend* ability
 - Allocation and Expiry process communications
 
+**Tenants and tenancies**  
 Occasionally you will come across the terms *tenant* (or *tenancy*) and *tenant-manager*. These are alternative terms for *project* and *project manager* respectively.
 {: .callout-warning}

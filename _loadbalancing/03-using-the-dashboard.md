@@ -98,7 +98,7 @@ Let's give the name `my-monitor`. For type let's select `HTTP`. Now, we can clic
 
 ![healthchecker page]({{site.baseurl}}/assets/images/loadbalancing/my-monitor.png)
 
-**Success!** 
+**Success!**  
 You've created a loadbalancer. Nice work! You should see something similar to below on your loadbalancer list.
 {: .callout-success}
 

@@ -54,6 +54,6 @@ and port number.
 
 ![finish]({{site.baseurl}}/assets/images/simple-container-service/quick_deployed.png)
 
-**Success!** 
+**Success!**  
 You've created a container. Nice work! On the next page, we will talk about using the CLI interface.
 {: .callout-success}

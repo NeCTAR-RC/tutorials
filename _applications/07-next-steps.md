@@ -10,5 +10,6 @@ You have launched an application environment in the Nectar Research cloud. You h
 The new instance that has been created is accessible using terminal software with SSH too.
 {: .callout-warning}
 
-**Application catalog** In this tutorial you've learnt to launch an application from our Nectar Application catalog. You've used an R-Studio example. Browse through the [Applications catalog](https://dashboard.rc.nectar.org.au/app-catalog/catalog/) to see our other preconfigured applications.
+**Application catalog**  
+In this tutorial you've learnt to launch an application from our Nectar Application catalog. You've used an R-Studio example. Browse through the [Applications catalog](https://dashboard.rc.nectar.org.au/app-catalog/catalog/) to see our other preconfigured applications.
 {: .callout-warning}

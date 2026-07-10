@@ -46,7 +46,8 @@ Note that Volume Backup stores the volume backup in Object Storage, and therefor
 
 1. Use the Volume Backup service to create a volume backup.  Check that the backup has completed successfully.
 
-    Note:  Do not use a Volume Snapshot. You will not be able to create a new volume in the new AZ from the snapshot.
+    **Note**  
+    Do not use a Volume Snapshot. You will not be able to create a new volume in the new AZ from the snapshot.
     {: .callout-danger}
 
 1. [Create a new volume]({{ site.baseurl }}/volume-storage/03-create-attach) from the backup in the new AZ
@@ -76,7 +77,8 @@ This approach is more involved than the Volume Backup approach, and may take lon
 
 1. Use [rsync to copy the data from the old volume to the new volume](https://support.ehelp.edu.au/support/solutions/articles/6000085112-backing-up-data). This could take some time, especially if your volume’s content consists of a huge number of small files.
 
-    *Note:  You need to be careful when running "rsync".  If you get the command line options and arguments incorrect, there is the potential to clobber all of the files in the old volume.*
+    **Note**  
+    *You need to be careful when running "rsync".  If you get the command line options and arguments incorrect, there is the potential to clobber all of the files in the old volume.*
     {: .callout-warning}
 
 1. [Detach the old volume]({{ site.baseurl }}/volume-storage/07-unmount-detach) from the old instance.

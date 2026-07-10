@@ -23,7 +23,7 @@ how to set up a Kubernetes Cluster on Nectar Cloud.
 
 
 
-**kubectl version skew policy** 
+**kubectl version skew policy**  
 kubectl is officially supported within one minor version (older or newer)
 of kube-apiserver. If your cluster is running 1.28.7 you should use a kubectl
 between 1.27 and 1.29. See the k8s version skew policy [here.](https://kubernetes.io/releases/version-skew-policy/).

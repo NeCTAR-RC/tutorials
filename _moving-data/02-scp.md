@@ -11,7 +11,8 @@ $ scp source-file destination-file
 ```
 The command will take a variation of this form above; we will explore some of the variations below.
 
-**Default or custom private key name/location** If you have your private key in the default location of `~/.ssh/id_rsa` then you don't need to specify it to the `scp` command. If you have a custom name or location, then you need to specify it to `scp` using the `-i` argument. In this case the generic form is like this:
+**Default or custom private key name/location**  
+If you have your private key in the default location of `~/.ssh/id_rsa` then you don't need to specify it to the `scp` command. If you have a custom name or location, then you need to specify it to `scp` using the `-i` argument. In this case the generic form is like this:
 `scp -i /path/to/your/private_key source-file destination-file`
 {: .callout-warning}
 

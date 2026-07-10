@@ -8,6 +8,7 @@ Command line applications are great, and can easily be automated and scheduled u
 
 [Filezilla](https://filezilla-project.org/) is a graphical tool for moving data. We'll be using SFTP to create a connection to our instance and move some data there and back.
 
+**Other options**  
 Filezilla is one of many options for graphical data moving tools. Other popular options include Cyberduck (cross platform) and WinSCP
 {: .callout-warning}
 

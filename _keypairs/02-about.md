@@ -12,7 +12,7 @@ Some institutions offer [Windows OS support](https://support.ehelp.edu.au/suppor
 
 A Public-Private keypair is a pair of files, your **Private key** and your **Public key**. They uniquely belong to each other (just like a lock and key). Your Private key file is yours, and yours alone (just like your car or house keys!). You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise and authenticate you in a remote computer account.
 
-**Important**
+**Important**  
 Keep your Private key *private and secure*
 {: .callout-danger}
 

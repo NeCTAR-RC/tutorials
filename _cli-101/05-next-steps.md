@@ -13,6 +13,6 @@ In this tutorial you learnt:
 
 You can learn much more about the shell, bash or the command line from the web, but with the skills learnt here, you'll be all set to complete our Nectar tutorials.
 
-**Cloud Starter**
+**Cloud Starter**  
 Congratulations. You've completed another step on your Cloud Computing journey. Continue with the [Cloud Starter Series](/cloud-starter/02-tutorials)
 {: .callout-success}

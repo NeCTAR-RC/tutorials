@@ -6,7 +6,8 @@ duration: 5
 
 Another way to generate a keypair is to use the `ssh-keygen` command using the Command Line. You then need to import your Public Key into Nectar for Nectar use.
 
-Note: For Windows users, you can use Powershell, for Mac users Terminal.
+**Note**  
+For Windows users, you can use Powershell, for Mac users Terminal.
 {: .callout-success}
 
 ### Generating your keypair
@@ -25,7 +26,7 @@ Note: For Windows users, you can use Powershell, for Mac users Terminal.
    ```
    For the purpose of this tutorial you can enter an empty passphrase. `ssh-keygen` generates a pair of keys in the directory `.ssh`.
 
-   **overwrite? (y/n)**
+   **overwrite? (y/n)**  
    If a file with the default key name already exists, `ssh-keygen` will warn you before overwriting. You should not overwrite any existing keys, unless you are absolutely certain it is not in use. Better to choose a different name.
    {: .callout-danger}
 
@@ -44,7 +45,7 @@ A key pair is just a pair of text files. You can view the contents of your key f
 
 To use your key pair with Nectar you need to *Import* your public key (`id_rsa.pub` in the example above) into Nectar. `.pub` is the file extension for your public key.
 
-**Important**
+**Important**  
 Make sure you import your *public* key here, *not the private one*
 {: .callout-warning}
 

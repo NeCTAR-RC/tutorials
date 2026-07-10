@@ -20,7 +20,8 @@ Choosing keypair at this stage is recommended. It will enable you to access your
 
 You can choose an optional **Host name** and **DNS zone** name for your instance. If you choose a DNS zone at this stage, we will automatically create a DNS entry for you and provision a HTTPS security certificate for your instance.
 
-**Highly recommended** Choosing an easy Host name and associating your project's DNS zone is highly recommended. Not only will you be able to access your R-Studio on the slick URL of `https://[hostname].[project].cloud.edu.au`, your R-Studio instance will be set up with encrypted communications (i.e. `https`), significantly improving the security of your instance.
+**Highly recommended**  
+Choosing an easy Host name and associating your project's DNS zone is highly recommended. Not only will you be able to access your R-Studio on the slick URL of `https://[hostname].[project].cloud.edu.au`, your R-Studio instance will be set up with encrypted communications (i.e. `https`), significantly improving the security of your instance.
 {: .callout-warning}
 
 

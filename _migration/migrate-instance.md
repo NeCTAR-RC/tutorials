@@ -12,6 +12,7 @@ duration: 10
 
 1. [Back up your files](https://support.ehelp.edu.au/support/solutions/articles/6000085112-backing-up-data).
 
+    **Backups**  
     You should already have a procedure for making regular backups of your valuable files held on your instances and attached storage.  Before you start the migration, make sure that your backups are up to date.
     {: .callout-primary}
 
@@ -43,6 +44,6 @@ Up to and including step #8, you simply need to restart the old instance and rea
 
 Once you have put the new instance into service (step #8) you may need to take steps to deal with data or database changes made by users since the changeover.  In the worst case, these could be abandoned.
 
-### Note
+**Note**  
 Once an old instance is deleted (Step #11), it cannot be recovered.
 {: .callout-danger}
