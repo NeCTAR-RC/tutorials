@@ -14,7 +14,7 @@ There are a few changes needed on the virtual machine to enable X11 forwarding. 
 2. Locate and uncomment or change line `X11Forwarding` to be `X11Forwarding yes`. This line allows the graphical application to be forwarded over to your computer.
     ```
     X11Forwarding yes
-    ``` 
+    ```
 
 3. Restart SSH daemon.
     ```

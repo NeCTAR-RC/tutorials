@@ -63,7 +63,7 @@ includes credentials to authenticate us to Kubernetes.
 
 ## Using the web interface
 
-Magnum used to ship its own [Web UI Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), with Magnum installing it by default. This is now deprecated and no-longer maintained, `headlamp` is now the recommended application for this. 
+Magnum used to ship its own [Web UI Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), with Magnum installing it by default. This is now deprecated and no-longer maintained, `headlamp` is now the recommended application for this.
 
 `Headlamp` gives you a browser-based view of your cluster's pods, deployments, services, logs and more.
 

@@ -32,4 +32,3 @@ In this exercise, we are going to delete the `tutorial_new` database that we jus
 1. Click the `Delete Database` button.
 1. In the `Confirm Delete Database` dialog, click the `Delete Database` button.
 1. The page will refresh to show that the database has gone.
-

@@ -98,4 +98,3 @@ it requires access to the Kubernetes API. This is not available to the regular
 users who will access your service. In the following section, we will enable external
 access to the Pod by implementing a Gateway API on the newly provisioned
 Kubernetes cluster.
-

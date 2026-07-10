@@ -30,7 +30,7 @@ From the [Nectar Dashboard](https://dashboard.rc.nectar.org.au), navigate to the
 
 Locate the snapshot you want to restore, then from the right-hand side in the `Actions` list, select `Create Volume`.
 
-In the `Create Volume` window, type in the name for the new volume and an optional description. Other options should be automatically pre-filled when you select your snapshot. 
+In the `Create Volume` window, type in the name for the new volume and an optional description. Other options should be automatically pre-filled when you select your snapshot.
 
 ![The volume dialog]({{site.baseurl}}/assets/images/snapshots/snapshot-volume-snapshot-dialog.png)
 

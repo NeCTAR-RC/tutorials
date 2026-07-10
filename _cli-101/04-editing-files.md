@@ -4,7 +4,7 @@ order: 4
 duration: 15
 ---
 
-It is handy to know the basics on how to edit files. There are a number of different programs available, but for this example and throughout the tutorials we will use Nano. 
+It is handy to know the basics on how to edit files. There are a number of different programs available, but for this example and throughout the tutorials we will use Nano.
 
 To use a text editor, you simply put the name of the editor, then the name of the file you wish to open. If the file doesn't exist already, it will be automatically created for you.
 

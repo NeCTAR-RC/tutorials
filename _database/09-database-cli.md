@@ -189,4 +189,3 @@ You can get a list of the available `datastore` and `database` commands by runni
 To get help on a specific command, give the full command to `database help`; e.g. `openstack help database user create`.  This will give a synopsis of the command along with the documentation of the options and arguments.
 
 It is also possible to interact with the Database service programatically; e.g. using the `python-troveclient` libraries or by sending requests to the web APIs.
-

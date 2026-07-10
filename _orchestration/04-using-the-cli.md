@@ -1,6 +1,6 @@
 ---
 title: Using the command line tools
-order: 3
+order: 4
 duration: 15
 ---
 

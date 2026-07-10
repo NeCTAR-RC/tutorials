@@ -12,7 +12,7 @@ learn the minimum application requirements for a Kubernetes cluster on Nectar.
 
 - Assign a static IP to Envoy Gateway loadbalancer
 - Deploy cert-manager using Helm
-- Deploy a kubernetes cluster with autoscaling feature enabled 
+- Deploy a kubernetes cluster with autoscaling feature enabled
 
 ### What you'll need, a working Kubernetes cluster and Helm application.
 

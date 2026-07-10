@@ -65,4 +65,3 @@ reference material.
 
 If you would like to interact with the HTTP REST API directly, you can find the
 [OpenStack API Documentation](https://developer.openstack.org/api-ref/dns/)
-

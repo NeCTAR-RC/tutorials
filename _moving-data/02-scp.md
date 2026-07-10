@@ -49,4 +49,3 @@ $ scp wile@144.6.123.234:~/outputs/results.dat outputs/
 Here we use the `scp` command, we connect to the remote instance using the connection details: `wile@144.6.123.234:`, and specify the remote *source-file* 'results.dat' in the user (`wile`'s) home directory, subdirectory outputs (`~/outputs/results.dat`). We specify the destination directory `outputs/` but we retain the source-file filename `results.dat`. Note that the directory 'outputs' needs to exist. Again: you need to find and substitute the remote username and host IP address for your situation.
 
 In the examples above we've shown some variations of the basic form of `scp` commands to move data between your local machine and your remote instance. `scp` is a powerful tool; we suggest you have a read of the `man` pages (run `$ man scp`) to get an idea of the options that `scp` takes. Being a command line tool, it can be easily automated or scheduled.
-

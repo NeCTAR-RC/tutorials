@@ -38,4 +38,3 @@ Once installed and running, you should click the `Create Session` button and pro
 Once you have created the session and connected, the XFCE desktop environment will appear and you can launch R-Studio from the Applications menu.
 
 ![RStudio desktop]({{ site.baseurl }}/assets/images/applications/rstudio-desktop.png)
-

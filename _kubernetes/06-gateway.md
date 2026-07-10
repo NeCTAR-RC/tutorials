@@ -93,7 +93,7 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
    ```
    deployment.apps/envoy-gateway condition met
    ```
- 
+
    ```
    kubectl get all -n envoy-gateway-system
    ```

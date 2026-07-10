@@ -9,4 +9,3 @@ A volume storage allocation can be requested using the Allocation Request form, 
 Like instances, volumes are hosted in an availability zone and importantly volumes can only be attached to instances running in the same availability zone. When requesting a volume storage allocation, you will need to consider where your solution will be hosted.
 
 ![Volume Service - Allocation Request Form]({{ site.baseurl }}/assets/images/volume-storage/allocation-form-on.png)
-

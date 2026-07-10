@@ -29,4 +29,3 @@ For security reasons, we *recommend* that you *either* provide a specific host I
 {: .callout-danger}
 
 In the next section, you will learn how to create and restore database backups.
-

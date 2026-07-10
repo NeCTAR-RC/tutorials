@@ -338,7 +338,7 @@ ul.list-bullet {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 0.75rem;
-      
+
     .toast-header {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       padding: 0.75rem 1rem;
@@ -360,55 +360,55 @@ ul.list-bullet {
         padding: 0.25rem;
       }
     }
-    
+
     .toast-body {
       font-size: 0.9rem;
       line-height: 1.4;
     }
-      
+
     // ARDC Theme Integration
     &.bg-success-subtle {
       background-color: rgba($success, 0.1);
       border-color: rgba($success, 0.2);
     }
-    
+
     &.bg-danger-subtle {
       background-color: rgba($danger, 0.1);
       border-color: rgba($danger, 0.2);
     }
-    
+
     &.bg-warning-subtle {
       background-color: rgba($warning, 0.1);
       border-color: rgba($warning, 0.2);
     }
-    
+
     &.bg-info-subtle {
       background-color: rgba($info, 0.1);
       border-color: rgba($info, 0.2);
     }
-      
+
     // Border styling
     &.border-success {
       border-left: 4px solid $success;
     }
-    
+
     &.border-danger {
       border-left: 4px solid $danger;
     }
-    
+
     &.border-warning {
       border-left: 4px solid $warning;
     }
-    
+
     &.border-info {
       border-left: 4px solid $info;
     }
-      
+
     // Animation enhancements
     &.show {
       animation: toastSlideIn 0.3s ease-out;
     }
-      
+
     // Hover effects
     &:hover {
       box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);

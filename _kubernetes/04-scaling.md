@@ -57,4 +57,3 @@ kubectl scale deployment <deployment-name> --replicas=<number> -n <namespace>
 For more information, refer to:
 - [Magnum scaling
 documentation](https://docs.openstack.org/magnum/latest/user/#scaling).
-

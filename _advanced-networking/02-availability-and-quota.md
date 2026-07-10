@@ -39,5 +39,3 @@ neutron quota-show
 ```
 
 note: -1 denotes unlimited
-
-

@@ -11,7 +11,7 @@ duration: 5
 The terminology used in the DBaaS domain can be a bit confusing.  The most potentially confusing is that the word "database" is used in different contexts with subtly different meanings.  In this tutorial, we will try to consistently use the following terminology:
 
 - The Nectar Database Service:  This is the OpenStack service that manages and controls Database instances.  It is also commonly refered to as Trove; see above.
-- A Database Instance:  This is a virtual machine that has a Datastore installed on it.  It will hold one or more Databases that are stored on its virtual disk drive(s). 
+- A Database Instance:  This is a virtual machine that has a Datastore installed on it.  It will hold one or more Databases that are stored on its virtual disk drive(s).
 - A Datastore:  This refers to an installation of a relational database product such as MySQL or PostgreSQL.  A Database Instance supports exactly one Datastore.
 - A Database.  This is a collection of relational tables and indexes that hold an application's data, together with its schemas, stored procedures and so on.  A Database is held on a Database Instance.
 
@@ -34,7 +34,7 @@ The database flavors currently available are:
 
 Access to the Nectar database service is governed by its own type of quota, which you must apply for, through the allocation request form in the dashboard.
 
-The allocation form allows you to request quota for `database ram` and `database storage`.  You should also include quota for Object storage to hold database backups. 
+The allocation form allows you to request quota for `database ram` and `database storage`.  You should also include quota for Object storage to hold database backups.
 
 ## What you'll learn
 

@@ -14,7 +14,7 @@ To be eligible for an allocation you need to fulfil the criteria set out in [*Re
 
 ## Resource Bundles
 
-In STEP 2: Cloud resources of the allocation request form, you need to select a Resource Bundle. There are four resource bundle options: 
+In STEP 2: Cloud resources of the allocation request form, you need to select a Resource Bundle. There are four resource bundle options:
 * Standard
 * Powerful
 * Extreme

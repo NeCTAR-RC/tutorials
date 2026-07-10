@@ -27,5 +27,3 @@ delete any records you wish within this zone.
 
 - Access to a Nectar project
 - An understanding of the Nectar [OpenStack CLI]({{sitebase.url}}/openstack-cli/01-overview)
-
-

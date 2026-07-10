@@ -40,4 +40,3 @@ You can attach the volume created earlier to a running virtual machine. See the 
 Nectar will now attach your volume to the selected instance. When this is complete your volume (on the `Volumes | Volumes` page) will show a value in the Attached To column similar to `/dev/vdc on acme_vm` in the example screenshot below.
 
 ![Volume attached to instance]({{ site.baseurl }}/assets/images/volume-storage/volume-attached.png)
-

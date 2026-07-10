@@ -31,4 +31,3 @@ $ man lsblk
 $ man df
 $ man du
 ```
-

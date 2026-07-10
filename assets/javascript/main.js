@@ -143,10 +143,10 @@ $(function() {
       storeCompleted(tutorialLabel);
     }
   }
-  
+
   if($(".series-tutorial").length && localStorage.completedTutorials) {
-    // If the current page has the .series-tutorial elements 
-    // and localStorage.completedTutorials exists, 
+    // If the current page has the .series-tutorial elements
+    // and localStorage.completedTutorials exists,
     // show completed status
     showCompletedStatus();
   }
@@ -157,7 +157,7 @@ function storeCompleted(completedTutorial) {
   if(localStorage.completedTutorials) {
     //console.log("Has local storage object");
     var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
-    
+
     // Is the completed tutorial label in stored list of completed tutorials?
     if($.inArray(completedTutorial, completedTutorialsArr) == -1) {
       // It's not found so let's update the stored list
@@ -174,7 +174,7 @@ function storeCompleted(completedTutorial) {
 function showCompletedStatus() {
   $(".series-tutorial").each(function() {
     var tutorialLabel = $(this).attr('id');
-    
+
     var completedTutorialsArr = JSON.parse(localStorage.getItem("completedTutorials"));
     if($.inArray(tutorialLabel, completedTutorialsArr) != -1) {
       console.log("Completed " + tutorialLabel);

@@ -57,4 +57,3 @@ On the other hand, if you have changed your mind, you can discard the resize and
 ```
 nova resize-revert <instance>
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: Using the dashboard
-order: 2
+order: 3
 duration: 10
 ---
 

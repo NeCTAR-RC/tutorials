@@ -29,4 +29,3 @@ If you ran the command above in a Ubuntu or Debian instance, then  the operating
 **the console vs. pasting and data**  
 The console is a straightforward web-based tool to access your instance command line. Two major drawbacks are that the *console doesn't accept pasting data* from the clipboard, and *you cannot transfer data from your local machine to your instance*.
 {: .callout-danger}
-

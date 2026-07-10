@@ -33,5 +33,3 @@ If using the QCIF Availability Zone, you will have two IP addresses, one that sa
 **High five!**
 
 ![High Five]({{ site.baseurl }}/assets/images/launching-virtual-machines/high-five.png)
-
-

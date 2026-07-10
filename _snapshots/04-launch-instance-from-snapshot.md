@@ -13,7 +13,7 @@ Locate the snapshot image in the list of images and click `Launch` in the `Actio
 ![The instances page]({{site.baseurl}}/assets/images/snapshots/snapshot-images-page.png)
 
 The launching steps are exactly the same as launching a new virtual machine, except that the new instance will already have the operating system settings, configurations and installations of the original instance.
-Please refer to tutorial [Launching Virtual Machines]({{site.baseurl}}/launching-virtual-machines) for more information. 
+Please refer to tutorial [Launching Virtual Machines]({{site.baseurl}}/launching-virtual-machines) for more information.
 
 **Note**  
 The flavor of instance must be large enough to fit the image on the primary root disk.

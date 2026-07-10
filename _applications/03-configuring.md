@@ -30,7 +30,7 @@ Choosing an easy Host name and associating your project's DNS zone is highly rec
 
 ### Existing Volume
 
-Optionally, select your existing volume. Click `Next` to continue. You can complete this tutorial without using an *existing volume*. 
+Optionally, select your existing volume. Click `Next` to continue. You can complete this tutorial without using an *existing volume*.
 
 **A word on Volumes**  
 With R-Studio you can select an existing volume for application data storage. Using a Volume makes any data you generate on your instance persistent, i.e. you can terminate the instance, but your data will remain intact on the volume until you launch a new instance with that volume attached. If you plan to use a volume, you have to have a Volume storage allocation and you have to make sure your volume and application environment are in the same Availability Zone. Learn more about volumes in our Volume Storage tutorial.
@@ -45,7 +45,7 @@ In this step, you should provide your desired **Username** and **Password** for 
 ![Configure user]({{ site.baseurl }}/assets/images/applications/rstudio-user.png)
 
 **Passwords**  
-Needless to say you should be sensible about passwords; see [here](https://support.ehelp.edu.au/support/solutions/articles/6000213823). 
+Needless to say you should be sensible about passwords; see [here](https://support.ehelp.edu.au/support/solutions/articles/6000213823).
 {: .callout-warning}
 
 The last step allows you to provide a name. You can keep the default, *R-Studio*, or supply your own. Click `Create` to continue.
