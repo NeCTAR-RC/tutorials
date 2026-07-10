@@ -95,6 +95,7 @@ If not, you should complete the Cloud Starter section first before you continue 
 - How to use Object Storage via the Nectar Cloud Dashboard
 - How to use the Swift command line client to access Object Storage
 - How to use Cyberduck to access Object Storage
+- How to use rclone to access Object Storage
 
 ### What you'll need
 

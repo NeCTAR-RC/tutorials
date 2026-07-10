@@ -1,12 +1,12 @@
 ---
 title: Next Steps
-order: 5
+order: 6
 duration: 1
 ---
 
 In this tutorial you learned how to use Object Storage via the Dashboard,
-Cyberduck, sftp-cloudfs and the Swift python client.  Now you should now
-be ready to start using Object Storage in your Nectar projects.
+Cyberduck, rclone and the Swift python client. You should now be ready to start
+using Object Storage in your Nectar projects.
 
 **Cloud Two**  
 Congratulations. You've completed another step on your Cloud Computing journey.
