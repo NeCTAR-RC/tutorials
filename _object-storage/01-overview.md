@@ -96,6 +96,7 @@ If not, you should complete the Cloud Starter section first before you continue 
 - How to use the Swift command line client to access Object Storage
 - How to use Cyberduck to access Object Storage
 - How to use rclone to access Object Storage
+- How to access the S3 API using EC2 credentials
 
 ### What you'll need
 
