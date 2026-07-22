@@ -139,3 +139,15 @@ username and password.
 Note that not every S3 feature is available; for details of what is
 supported, see the
 [Swift S3 API compatibility documentation](https://docs.openstack.org/swift/latest/s3_compat.html).
+
+**Signature Version 4 streaming uploads**  
+Nectar Object Storage supports AWS Signature Version 4 (v4) request
+signing, but does not yet support v4 *streaming* uploads, where the
+client signs and sends an object in chunks (also known as
+`aws-chunked` uploads).  Support for these is expected soon.  The tools
+covered on this page work with their default settings, but if uploads
+fail with a signature or authorisation error, look for a client option
+to disable chunked or streaming uploads, or switch the client to the
+older Signature Version 2 (for example, rclone can be switched by
+adding `v2_auth = true` to the remote's configuration).
+{: .callout-info}
