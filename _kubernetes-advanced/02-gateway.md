@@ -1,5 +1,5 @@
 ---
-title: Creating Envoy GatewayClass and EnovyProxy with a floating IP address
+title: Creating Envoy GatewayClass and EnvoyProxy with a floating IP address
 order: 2
 duration: 20
 ---
@@ -64,15 +64,15 @@ address for Step 2
    kubectl apply -f gateway-class.yaml
    ```
 
-1. Confirm that the gatewayclass and envoyprox are active and operating as expected.
+1. Confirm that the GatewayClass and EnvoyProxy are active and operating as expected.
 
    ```
    kubectl get gatewayclass
    ```
 
    ```
-   NAME    CONTROLLER                                      ACCEPTED   AGE
-   envoy   gateway.envoyproxy.io/gatewayclass-controller   True       3d10h
+   NAME   CONTROLLER                                      ACCEPTED   AGE
+   eg     gateway.envoyproxy.io/gatewayclass-controller   True       3d10h
    ```
 
    ```
@@ -105,7 +105,7 @@ address for Step 2
    Events:                           <none>
    ```
 Proceed to Step 6 of the [Installing Envoy Gateway]({{ site.baseurl }}/kubernetes/06-gateway) guide to create a Gateway and HTTPRoute.
-This step facilitates the successful completion of the tutorial by enabling external access to the httpd service through a NeCTAR floating IP.
+This step facilitates the successful completion of the tutorial by enabling external access to the httpd service through a Nectar floating IP.
 
 ## More information
 

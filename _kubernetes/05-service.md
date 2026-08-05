@@ -10,7 +10,7 @@ Kubernetes.
 A Pod is the smallest deployable unit of computing that you
 can create and manage in Kubernetes.  A Pod holds one (or more) _containers_.
 For more detailed information, refer to the
-[Pods overview](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/)
+[Pods overview](https://kubernetes.io/docs/concepts/workloads/pods/)
 in the Kubernetes documentation.
 
 The following steps show how to create a Pod in Kubernetes that runs a single
@@ -52,16 +52,16 @@ configurations as set up in previous sections of this tutorial.
    kubectl describe pod webserver
    Name:         webserver
    Namespace:    default
-   Node:         kube-t7qvtfd34sbg-minion-0/10.0.0.80
+   Node:         mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq/10.0.0.80
    <...snipped...>
    Events:
-     Type    Reason     Age    From                                   Message
-     ----    ------     ----   ----                                   -------
-     Normal  Scheduled  3m10s  default-scheduler                      Successfully assigned default/webserver to kube-t7qvtfd34sbg-minion-0
-     Normal  Pulling    3m8s   kubelet, kube-t7qvtfd34sbg-minion-0  Pulling image "nginx"
-     Normal  Pulled     3m     kubelet, kube-t7qvtfd34sbg-minion-0  Successfully pulled image "nginx"
-     Normal  Created    3m     kubelet, kube-t7qvtfd34sbg-minion-0  Created container webserver
-     Normal  Started    3m     kubelet, kube-t7qvtfd34sbg-minion-0  Started container webserver
+     Type    Reason     Age    From               Message
+     ----    ------     ----   ----               -------
+     Normal  Scheduled  3m10s  default-scheduler  Successfully assigned default/webserver to mycluster-l76uten6iljx-default-worker-4dqrj-cwmjq
+     Normal  Pulling    3m8s   kubelet            Pulling image "nginx"
+     Normal  Pulled     3m     kubelet            Successfully pulled image "nginx"
+     Normal  Created    3m     kubelet            Created container webserver
+     Normal  Started    3m     kubelet            Started container webserver
    ```
 
 1. Set up direct access to the Pod using the `port-forward` command:
@@ -81,12 +81,12 @@ configurations as set up in previous sections of this tutorial.
 In this section we requested Kubernetes to run an `nginx` image.  When
 we did this, Kubernetes performed the following (simplifed) steps:
 
-1. The Kubernetes master scheduled the Pod to run on a free Node in the cluster
+1. The Kubernetes control plane scheduled the Pod to run on a free Node in the cluster
 
 1. The node started a Pod
 
 1. The node fetched the image from Docker Hub, based on the given image name; i.e.
-   [https://hub.docker.com/nginx](https://hub.docker.com/_/nginx)
+   [https://hub.docker.com/_/nginx](https://hub.docker.com/_/nginx)
 
 1. The node created a container with the image and started it inside the Pod
 

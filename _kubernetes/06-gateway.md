@@ -194,7 +194,21 @@ In this tutorial, we are creating a webserver deployment and use the Envoy Gatew
         ....
    ```
 
-1. Verify whether Envoy Gateway can direct the HTTP requests to the correct backend Service
+1. Retrieve the external IP address assigned to your Gateway. When the Gateway
+   is created, an Octavia load balancer is provisioned for it and its address
+   appears in the `ADDRESS` column:
+
+   ```
+   kubectl get gateway gateway -n default
+   ```
+
+   ```
+   NAME      CLASS   ADDRESS           PROGRAMMED   AGE
+   gateway   eg      160.250.232.111   True         2m
+   ```
+
+1. Verify whether Envoy Gateway can direct the HTTP requests to the correct
+   backend Service, using the Gateway address from the previous step:
 
    ```
    curl http://160.250.232.111

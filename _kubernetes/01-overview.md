@@ -20,15 +20,14 @@ This tutorial will show you how to use Kubernetes on the Nectar Research Cloud.
 - A Nectar project with at least the [Standard Bundle](https://support.ehelp.edu.au/support/solutions/articles/6000271205)
 - [Set up the OpenStack Command Line Tool - Tutorial]({{ site.baseurl }}/openstack-cli/01-overview)
 - [python-openstackclient](https://pypi.org/project/python-openstackclient/)
-- [python-heatclient](https://pypi.org/project/python-heatclient/)
 - [python-magnumclient](https://pypi.org/project/python-magnumclient/)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
 
 **kubectl version skew policy**  
 kubectl is officially supported within one minor version (older or newer)
-of kube-apiserver. If your cluster is running 1.21.1 you should use a kubectl
-between 1.20 and 1.22. See the k8s version skew policy [here.](https://kubernetes.io/releases/version-skew-policy/)
+of kube-apiserver. If your cluster is running 1.35.4 you should use a kubectl
+between 1.34 and 1.36. See the k8s version skew policy [here.](https://kubernetes.io/releases/version-skew-policy/)
 {: .callout-warning}
 
 
@@ -58,10 +57,10 @@ Kubernetes has an extensive [documentation
 site](https://kubernetes.io/docs/concepts/), which covers many of the
 concepts that we will be covering, often in greater depth than we do here.
 
-The purpose of this tutorial is not to replace Kubernetes documention.
+The purpose of this tutorial is not to replace Kubernetes documentation.
 Rather we aim to show you how to quickly set up a Kubernetes cluster on
 the Nectar Research Cloud, and how to integrate Kubernetes with native
 OpenStack services like Cinder.
 
-This tutorial uses the Openstack command-line tools rather than the
+This tutorial uses both the Openstack command-line tools and the
 "Project > Container Infra" dashboard panels.
