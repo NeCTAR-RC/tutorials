@@ -18,11 +18,11 @@ Your Nectar OpenStack password is not the same thing as your AAF/Tuakiri passwor
 
 ### Your pt-project
 
-In this project you are allocated a very limited quota of 2vCPU of resources for a maximum of 6 vCPU-month of running time. The project also has a time limit of 180 days (approximately 6 months).
+In this project you are allocated a very limited quota of 4vCPU of resources for a maximum of 6 vCPU-month of running time. The project also has a time limit of 6 months.
 
 Like other standard projects, your pt project is the home of instances, it has quota of some resources allocated (e.g. vCPU, RAM) and project-related things, such as Security Groups.
 
-In other ways your pt-project is different from standard projects. It has *limited resources* (2 vCPU for up to 6 vCPU-months). You cannot share your pt-project with others; there is no user management to grant access to other Nectar users. You get your pt *no questions asked*; there is no application or allocation process. Your *pt-project* is useful for trialing Nectar or indeed completing most of our Nectar tutorials.
+In other ways your pt-project is different from standard projects. It has *limited resources* (4 vCPU for up to 6 vCPU-months). You cannot share your pt-project with others; there is no user management to grant access to other Nectar users. You get your pt *no questions asked*; there is no application or allocation process. Your *pt-project* is useful for trialing Nectar or indeed completing most of our Nectar tutorials.
 
 Note that 1 vCPU-month equates to 1 Nectar server with 1 vCPU running for 30 days. For the purpose of this measure, a server that is in "paused", "stopped" or "shut-off" state also counts as running.  The only way to stop the meter is to either Delete the server or Shelve it.
 
