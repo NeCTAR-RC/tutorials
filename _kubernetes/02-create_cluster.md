@@ -32,8 +32,8 @@ allows you to specify various configuration options for the Cluster including:
 As the number of configuration options can be overwhelming, Nectar provides
 a few default templates to get you started quickly. These templates have names
 of the form
-`kubernetes-<kubernetes_version>-<availability_zone>-<template_version>`, and
-they can be listed by running:
+`kubernetes-<kubernetes_version>-<availability_zone>-<network_driver>-<template_version>`,
+and they can be listed by running:
 
 ```
 openstack coe cluster template list
@@ -88,21 +88,27 @@ openstack coe cluster template list
 ### Cluster template details
 
 Templates are in the format
-`kubernetes-<kubernetes_version>-<availability_zone>-<template_version>`. Here
-are more details on what part of the name means.
+`kubernetes-<kubernetes_version>-<availability_zone>-<network_driver>-<template_version>`.
+Here are more details on what each part of the name means.
 
-*`kubernetes_version`* - Nectar will provide at least one template per Kubernetes major version.
+*`kubernetes_version`* - Nectar will provide at least one template per Kubernetes minor version.
 
 *`availability_zone`* - Nectar will provide defaults for each availability zone. This includes:
   - DNS servers
   - CIDR for nodes to reduce clashes in RFC1918 addresses for each institution
 
-*`template_version`* - Nectar may occassionally update Glance images or
+*`network_driver`* - The Container Network Interface (CNI) plugin used for pod
+networking within the cluster. Nectar provides templates using either
+[Calico](https://www.tigera.io/project-calico/) or
+[Cilium](https://cilium.io/). If you are unsure which to choose, Cilium is a
+safe default.
+
+*`template_version`* - Nectar may occasionally update Glance images or
 supporting software that is preinstalled for a cluster. When this happens,
 Nectar will push out a new cluster template version.
 
 ```
-os coe cluster template show 22b5eb02-124c-4c63-a0d8-85f710e105f9 --max-width 132
+openstack coe cluster template show 22b5eb02-124c-4c63-a0d8-85f710e105f9 --max-width 132
 +-----------------------+----------------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                                    |
 +-----------------------+----------------------------------------------------------------------------------------------------------+
@@ -153,17 +159,19 @@ version of the default template, apart from those that you specifically
 want to change.
 
 
-## Create a Cluster
+## Create a Cluster using the command line
 
 Using the `openstack` command line client
 
 1. Choose a Cluster Template to create your Cluster from.
 
-1. Create the Cluster. Note, we are using the `uuid` from our cluster template list as the value for our template, and you need to input the name of your own `keypair`.
+1. Create the Cluster. Note, we are using the `uuid` of the
+   `kubernetes-v1.35.4-ardc-syd-1-calico-v2` template from our cluster template
+   list as the value for our template, and you need to input the name of your
+   own `keypair`.
 
    ```
-   openstack coe cluster create --cluster-template 98c64e42-1675-4f75-96a6-abd484c5cc47 \
-   --keypair mykey mycluster
+   openstack coe cluster create --cluster-template 22b5eb02-124c-4c63-a0d8-85f710e105f9 mycluster
    Request to create cluster 7f4a506e-6d6a-4713-9d35-917d3e33096f accepted
    ```
 
@@ -175,9 +183,40 @@ Using the `openstack` command line client
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
    | uuid                                 | name                 | keypair        | node_count | master_count | status          | health_status |
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
-   | 7f4a506e-6d6a-4713-9d35-917d3e33096f | mycluster            | mykey          |          1 |            1 | CREATE_COMPLETE | HEALTHY       |
+   | 7f4a506e-6d6a-4713-9d35-917d3e33096f | mycluster            |                |          1 |            1 | CREATE_COMPLETE | HEALTHY       |
    +--------------------------------------+----------------------+----------------+------------+--------------+-----------------+---------------+
    ```
+
+## Create a Cluster using the Nectar Dashboard
+
+As an alternative to the command line, you can create a cluster from the
+[Nectar Dashboard](https://dashboard.rc.nectar.org.au/). Go to
+**Project > Container Infra > Clusters** and click **+ Create Cluster**. The
+dialog walks you through three steps.
+
+1. **Details**. Enter a name for your cluster, then select the Kubernetes
+   version, the availability zone and the network driver. As you make your
+   selections, the Cluster Configuration summary shows the cluster template
+   that will be used.
+
+   ![Create New Cluster dialog, Details step]({{ site.baseurl }}/assets/images/kubernetes/create-cluster-step1-details.png)
+
+1. **Size**. Choose the number of control plane nodes and worker nodes, and a
+   flavour for each. For production clusters we recommend three control plane
+   nodes. For testing, one control plane node and one worker node is
+   sufficient.
+
+   ![Create New Cluster dialog, Size step]({{ site.baseurl }}/assets/images/kubernetes/create-cluster-step2-size.png)
+
+1. **Advanced**. Optionally store etcd on a separate Cinder volume by ticking
+   **Store etcd on a separate volume** and setting a volume size. If the
+   volume type is left blank, the standard volume type is used. Click
+   **Submit** to create the cluster.
+
+   ![Create New Cluster dialog, Advanced step]({{ site.baseurl }}/assets/images/kubernetes/create-cluster-step3-advanced.png)
+
+Your new cluster will appear in the Clusters list. Wait for its status to
+reach `CREATE_COMPLETE`. This could take up to 15 minutes.
 
 **Not recommended for Production**  
 This example uses your personal credentials, which may not be desirable in a

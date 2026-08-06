@@ -1,10 +1,19 @@
 ---
-title: Deploy a Kubernetes cluster using magnum Capi driver with autoscaling feature
+title: Deploy a Kubernetes cluster with autoscaling
 order: 4
 duration: 30
 ---
 
-In this section, we will deploy a kubernetes cluster with autoscaling feature [Cluster Autoscaler](https://cluster-api.sigs.k8s.io/tasks/automated-machine-management/autoscaling).
+In this section, we will deploy a kubernetes cluster with the [Cluster Autoscaler](https://cluster-api.sigs.k8s.io/tasks/automated-machine-management/autoscaling)
+feature enabled. With autoscaling, Magnum automatically adds worker nodes when
+your workloads need more resources, and removes them again when they are no
+longer required, within a minimum and maximum node count that you define.
+
+## Creating an autoscaling cluster using the command line
+
+The steps below use the OpenStack command line to enable autoscaling on the
+`default-worker` node group at cluster creation, by passing the
+`auto_scaling_enabled`, `min_node_count` and `max_node_count` labels.
 
 1. Create a Kubernetes cluster with autoscaling enabled
 
@@ -30,7 +39,7 @@ In this section, we will deploy a kubernetes cluster with autoscaling feature [C
    +--------------+--------------------------------------------------------------------------------+
    ```
 
-1. Verify whether the cluster creation is successfully created
+1. Verify that the cluster has been created successfully
 
    ```
    openstack coe cluster list
@@ -44,9 +53,22 @@ In this section, we will deploy a kubernetes cluster with autoscaling feature [C
    +--------------------------------------+-----------+---------+------------+--------------+--------------------+---------------+
    ```
 
+## Creating an autoscaling cluster using the Nectar Dashboard
+
+You can also create the cluster using the Nectar Dashboard, as described in
+[Creating a Cluster]({{ site.baseurl }}/kubernetes/02-create-cluster). The
+dashboard cluster-creation dialog does not enable autoscaling on the
+`default-worker` node group. To use autoscaling on any cluster, add a node
+group with **Enable Autoscaling** ticked, as described in
+[Scaling]({{ site.baseurl }}/kubernetes/04-scaling). If you need the
+`default-worker` node group itself to autoscale, use the command line method
+above.
+
+## Deploying an application and testing autoscaling
+
 1. Download the kubeconfig file and verify the cluster nodes using kubectl in accordance with the [Administering a Cluster]({{ site.baseurl }}/kubernetes/03-administer-cluster) in Kubernetes tutorial
 
-1. Deploy an application - ngnix.yaml
+1. Deploy an application - nginx.yaml
 
    ```
    apiVersion: apps/v1

@@ -68,3 +68,30 @@ Magnum used to ship its own [Web UI Dashboard](https://kubernetes.io/docs/tasks/
 `Headlamp` gives you a browser-based view of your cluster's pods, deployments, services, logs and more.
 
 Installation instructions can be found on the [Headlamp](https://headlamp.dev/docs/latest/installation/in-cluster/) site.
+
+## Upgrading a cluster
+
+You can upgrade your cluster to a newer Kubernetes version from the Nectar
+Dashboard. The upgrade is a rolling upgrade, meaning nodes are replaced one at
+a time so your cluster keeps running while it upgrades.
+
+1. Go to **Project > Container Infra > Clusters**. Find your cluster in the
+   list, open the dropdown menu next to **Manage Node Groups** and select
+   **Rolling Cluster Upgrade**.
+
+   ![Cluster actions menu with Rolling Cluster Upgrade]({{ site.baseurl }}/assets/images/kubernetes/upgrade-cluster-step1-menu.png)
+
+1. In the **Rolling Cluster Upgrade** dialog, select the Kubernetes version to
+   upgrade to and click **Submit**. For example, a cluster running v1.34.7 can
+   be upgraded to 1.35.4.
+
+   ![Rolling Cluster Upgrade dialog with Kubernetes Version selection]({{ site.baseurl }}/assets/images/kubernetes/upgrade-cluster-step2-version.png)
+
+The cluster status changes to `UPDATE_IN_PROGRESS` while nodes are replaced,
+and returns to `UPDATE_COMPLETE` when the upgrade has finished. You can watch
+the nodes being replaced with `kubectl get nodes`.
+
+**Upgrade one version at a time**  
+Kubernetes control plane upgrades on Nectar must proceed through each
+nominated release in order; skipping versions is not supported.
+{: .callout-warning}
