@@ -139,6 +139,5 @@ button next to `+Folder`.
 **Expiry and Deletion**  
 When a Nectar project expires, all resources left behind are deleted after
 a grace period.
-If a container in the project is marked as "public", it will not be
-deleted automatically and will persist after the project has expired.
+Note: Prior to August 2026 public/shared containers in object store were not deleted, this is no longer the case. All object store data is now deleted.
 {: .callout-warning}
