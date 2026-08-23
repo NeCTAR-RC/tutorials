@@ -32,43 +32,10 @@ window for Nectar Object Storage.
 ### Openstack Credentials
 
 Before you can connect to your Nectar object storage containers using
-Cyberduck, you need to know your Nectar account name and password.
-(The password is NOT the institutional password that you normally use
-when logining in to the Nectar Dashboard.  Rather is a password that
-you would normally generate using the Nectar Dashboard.)
-
-**Your OpenStack password**  
-If you have already generated and saved your OpenStack password you can
-skip this next step.  Note that when you generate a new password, the
-previous version will stop working.
-{: .callout-warning}
-
-
-1. Log on to your [Nectar Dashboard](https://dashboard.rc.nectar.org.au).
-
-2. Your Nectar account name is shown in the top right of the Dashboard:
-   it is typically your email address.
-
-3. Use the pulldown menu next to your account name to select the `Settings`
-   page.
-
-4. In the `Settings` menu, click the `Reset Password` menu item.
-
-![settings]({{ site.baseurl }}/assets/images/object-storage/settings.png)
-
-5. In the `Reset Menu Form` page, click the `Reset Password` button.
-
-6. Copy and paste the password, and save it in a safe place.  (If you have
-   a "key ring" or "password safe" application on your desktop, that would
-   be place to save the password.
-
-    ![password-reset]({{ site.baseurl }}/assets/images/object-storage/password_reset.png)
-
-Note that your Openstack password applies to all of your Nectar projects,
-including your "project trial" (if it is still active).  If you have
-previously embedded the password in scripts or application configurations,
-you will need to update the scripts.  (Note that there are better ways
-to do this; see the Application Credentials tutorial.)
+Cyberduck, you need to know your Nectar account name and OpenStack
+password.  If you don't have these, follow the
+[Setting up your credentials]({{ site.baseurl }}/openstack-cli/04-credentials)
+tutorial first.
 
 ### Connecting using Cyberduck
 
