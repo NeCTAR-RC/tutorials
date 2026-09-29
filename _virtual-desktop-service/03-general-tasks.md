@@ -57,7 +57,7 @@ Copying and pasting text between your local computer and the Virtual Desktop sho
 - If you are using a Mac, use your `Commmand` key as normal when copying from your local computer, but use `Ctrl` instead when pasting to the Virtual Desktop.
 - When using Firefox browser and the Neurodesktop, there are extra steps required to ensure the copy/paste function works.
 
-If you have any issues, consider checking out the [Neurodesk FAQ](https://neurodesk.org/overview/faq/#clipboard-issues) on using the clipboard, which will apply to the Virtual Desktop service.
+If you have any issues, consider checking out the [Neurodesk FAQ](https://neurodesk.org/support/faq/#keyboard-clipboard-and-language-support) on using the clipboard, which will apply to the Virtual Desktop service.
 
 ### Transferring files
 
